@@ -1,0 +1,147 @@
+/**
+ * Generic classes
+ */
+body {
+	margin: 0px;
+	padding: 0px;
+	background: transparent url(../images/bg.tile.png) repeat;
+}
+
+#sscrLogo {
+	position:absolute;
+	top:1820px;
+	right:180px;
+}
+
+/**
+ * Landing Page classes
+ */
+#pageLanding {
+	height: 1920px;
+	width:1080px;
+	background: transparent url(../images/bg.tile.png) repeat;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#plSpacer {
+	height:350px;
+}
+
+/**
+ * General Page Class
+ */
+div[id*="page"] {
+	height: 1920px;
+	width:1080px;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	background: transparent url(../images/bg.tile.png) repeat;
+	text-align: center;
+	vertical-align: middle;
+	display: none;
+}
+
+/**
+ * Main Page (Menu) classes
+ */
+#pageMain {
+
+}
+
+/**
+ * News Page classes
+ */
+#pageNews {
+
+}
+
+/**
+ * Events Page classes
+ */
+#pageEvents {
+
+}
+
+/**
+ * Tourism Page classes
+ */
+#pageTourism {
+
+}
+
+/**
+ * Culture Page classes
+ */
+#pageCulture {
+
+}
+
+/**
+ * Hotels Page classes
+ */
+#pageHotels {
+
+}
+
+/**
+ * Restaurants Page classes
+ */
+#pageRestaurants {
+
+}
+
+/**
+ * Map Page classes
+ */
+#pageMap {
+
+}
+
+/**
+ * Land Page classes
+ */
+#pageLand {
+
+}
+
+/**
+ * Weather Page classes
+ */
+#pageWeather {
+
+}
+
+/**
+ * General Menu Item Class
+ */
+div[id*="cat"] {
+	height: 216px;
+	width: 216px;
+	margin: 57px;
+	background: transparent;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 20px;
+	border: solid 5px #FFFFFF;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	display: inline-block;
+	
+	text-shadow: 3px 3px 3px #000000;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: "Arial, Helvetica, sans-serif";
+	color: #FFFFFF;
+	
+}
+
+/**
+ * Scroll pane
+ */
+.scroll-pane {
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+}

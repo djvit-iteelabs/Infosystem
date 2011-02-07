@@ -1,0 +1,200 @@
+/**
+ * @author Vitaly Yatsunyck
+ * Copyringt (c) 2011 MARZ Touch InfoSystem 
+ * 
+ * @version 0.0.1
+ * @uses jQuery 1.4.2
+ */
+
+/**
+ * OSK (On Screen Keyboard) class constructor
+ */
+function OSK(){
+};
+
+/**
+ * InfoSystem class definition
+ */
+OSK.prototype = {
+	oskMode: null,  	//  norm num
+	oskUpperCase: null,		//  upper lower
+	oskTarget: null,	//	textbox
+	oskContainer: null,	//	keyboard div
+	oskABC: null,		//  ABC modeContainer
+	oskNum: null,		//  Num modeContainer
+	/**
+	 * Initialize OSK component
+	 */
+	init: function(language){
+		var _this = this;
+		if ( (typeof(language) === 'undefined') || (language == null) || (language.length == 0) )
+			language = 'en';
+		
+		if (this.oskMode == null)
+			this.oskMode = 'norm';
+		
+		this.oskUpperCase = false;	
+
+		// Create and add OSK DOM
+		// 1. Container + modes (normal and num)
+		// 2. lines
+		// 3. buttons
+		this.oskContainer = document.createElement("div");
+		$(this.oskContainer).attr('id', 'oskContainer');
+		
+		// Iterate over modes
+		for (var i = 0; i < oskData[language].length; i++) {
+			var currMode = oskData[language][i];
+			
+			// Create and Add mode DIV
+			var modeContainer = document.createElement("div");
+			$(modeContainer).attr('id', 'oskMode' + currMode.mode);
+			
+			if((currMode.mode != this.oskMode) ){
+				$(modeContainer).css('display','none');
+				this.oskNum = modeContainer;	
+			} else {
+				this.oskABC = modeContainer;
+			}
+			
+			$(this.oskContainer).append(modeContainer);
+			
+			// Iterate over lines
+			for (var j = 0; j < currMode.lines.length; j++ ) {
+				var currLine = currMode.lines[j];
+				
+				// Add Line DIV
+				var lineContainer = document.createElement("div");
+				$(lineContainer).attr('id', 'oskLine_' + currMode.mode + '_' + j);
+				$(lineContainer).attr('class', 'oskLine');
+				$(modeContainer).append(lineContainer);
+				
+				// Iterate over	buttons
+				for (var k = 0; k < currLine.buttons.length; k++) {
+					var button = currLine.buttons[k]
+					
+					// Add Button SPAN
+					var oskButton = document.createElement("span");
+					
+					$(oskButton).attr('class', 'oskButton');			
+					$(oskButton).text(button.text);
+					$(lineContainer).append(oskButton);
+					
+					// Bind SPAN Events depending on the type and char properties
+					switch(button.type) {
+						case "0":
+		    				$(oskButton).attr('class','separator');
+						break;
+						case "1":
+							$(oskButton).click(function(){
+								var s = $(this).text();
+								
+								if (_this.oskUpperCase) {
+									$(_this.oskTarget).val($(_this.oskTarget).val() + s);
+								}
+								else {
+									$(_this.oskTarget).val($(_this.oskTarget).val() + s.toLowerCase());
+								}
+							});
+						break;
+						case "2":
+							switch (button.command) {
+								case "enter":
+									$(oskButton).attr('id', 'enter');
+									
+									$(oskButton).click(function(){
+										_this.hideKeyboard();
+										//$(_this.oskTarget).focus();
+									});
+									break;
+								case "space":
+									$(oskButton).attr('id', 'space');
+									
+									$(oskButton).click(function(){
+										$(_this.oskTarget).val($(_this.oskTarget).val() + ' ');
+									});
+									break;
+								case "switchMode":
+									$(oskButton).attr('id', 'switchMode');
+									
+									$(oskButton).click(function() {										 
+										if (_this.oskMode == 'norm') {
+											$(_this.oskABC).css('display', 'none');
+											$(_this.oskNum).css('display','block');
+											_this.oskMode = 'num';
+										}
+										else {
+											$(_this.oskNum).css('display','none');
+											$(_this.oskABC).css('display','block');
+											_this.oskMode = 'norm';
+										}
+									});										
+									break;
+								case "switchCase":
+									$(oskButton).attr('id', 'switchCase');
+									$(oskButton).click(function(){
+										_this.oskUpperCase = !_this.oskUpperCase;
+										
+										if(_this.oskUpperCase){
+											$(this).addClass("blueHighlight");
+										} else{
+											$(this).attr("class","oskButton");	
+										}
+									});
+									break;
+								case "backspace":
+									$(oskButton).attr('id', 'backspace');
+									
+									$(oskButton).click(function(){
+										var str = $(_this.oskTarget).val();
+										$(_this.oskTarget).val(str.substr(0,str.length - 1));
+									});
+									break;
+								default:
+									$(oskButton).attr('id', 'oskBtn_' + j + '_' + k);
+									
+									$(oskButton).mouseover(function(){
+										$(this).css("-webkit-box-shadow","40px 40px 10px #000");
+									});
+							}
+						break;
+					}
+				}
+			}
+		}
+		
+		// Add OSk to the HTML DOM
+		$('body').append(this.oskContainer);
+		
+		_this.hideKeyboard();
+		
+		// Bind OSK events
+		$('input[type="text"]').focus(function(){
+			_this.showKeyboard($(this));
+		});
+	},
+	
+	/**
+	 * Show OSK
+	 * @param {Object} textbox which should be a target of the button events
+	 */
+	showKeyboard: function(textbox) {
+		// Set the target textbox
+		this.oskTarget = textbox;
+		
+		// Show the keyboard
+		$(this.oskContainer).fadeIn(500);
+	},
+	
+	/**
+	 * Hide OSK
+	 */
+	hideKeyboard: function() {
+		// Empty the target textbox
+		this.oskTarget = null;
+		
+		// Show the keyboard
+		$(this.oskContainer).fadeOut(500);
+	}	
+	
+}
