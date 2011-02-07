@@ -4,7 +4,8 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background: transparent url(../images/bg.tile.png) repeat;
+	background: #000000 url(../images/Background.png) no-repeat;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 #sscrLogo {
@@ -29,11 +30,13 @@ body {
 }
 
 /**
- * General Page Class
+ * General Page Classes
  */
 div[id*="page"] {
-	height: 1920px;
-	width:1080px;
+	min-height:1920px;
+	position:relative;
+   	width:1080px;
+	height:1920px;
 	border: 0px;
 	margin: 0px;
 	padding: 0px;
@@ -43,17 +46,64 @@ div[id*="page"] {
 	display: none;
 }
 
+#mainHeader {
+	height:124px;
+	width: 1080px;
+	background: transparent url(../images/Top.png) repeat;
+	
+	color: #FFFFFF;
+	font-size: 90px;
+	font-family: "Arial";
+	text-shadow: 5px 5px 5px #000000;
+}
+
+#mainFooter {
+	background: transparent url(../images/Bottom.png) repeat;
+	position:absolute;
+	bottom:0;
+ 	width:100%;
+	height:110px;   /* Height of the footer */
+	line:110px;
+}
+
+#mainFootLeft {
+	width: 200px;
+	height: 110px;
+	display:inline-block;
+	float:left;
+}
+
+#mainFootCenter {
+	width: 650px;
+	height: 110px;
+	display:inline-block;
+	float:left;
+}
+
+#mainFootRight {
+	width:200px;
+	height: 110px;
+	display:inline-block;
+	float:left;
+}
+
+#mainFootRight img {
+	padding: 5px 0px 0px 60px;
+}
+
+
 /**
  * Main Page (Menu) classes
  */
 #pageMain {
-
+	background: transparent url(../images/Background.png) no-repeat;
 }
 
 /**
  * News Page classes
  */
 #pageNews {
+	background: transparent url(../images/Background.png) no-repeat;
 
 }
 
@@ -61,6 +111,7 @@ div[id*="page"] {
  * Events Page classes
  */
 #pageEvents {
+	background: transparent url(../images/Background.png) no-repeat;
 
 }
 
@@ -68,6 +119,7 @@ div[id*="page"] {
  * Tourism Page classes
  */
 #pageTourism {
+	background: transparent url(../images/Background.png) no-repeat;
 
 }
 
@@ -75,6 +127,7 @@ div[id*="page"] {
  * Culture Page classes
  */
 #pageCulture {
+	background: transparent url(../images/Background.png) no-repeat;
 
 }
 
@@ -82,6 +135,7 @@ div[id*="page"] {
  * Hotels Page classes
  */
 #pageHotels {
+	background: transparent url(../images/Background.png) no-repeat;
 
 }
 
@@ -89,6 +143,7 @@ div[id*="page"] {
  * Restaurants Page classes
  */
 #pageRestaurants {
+	background: transparent url(../images/Background.png) no-repeat;
 
 }
 
@@ -96,6 +151,7 @@ div[id*="page"] {
  * Map Page classes
  */
 #pageMap {
+	background: transparent url(../images/Background.png) no-repeat;
 
 }
 
@@ -103,6 +159,7 @@ div[id*="page"] {
  * Land Page classes
  */
 #pageLand {
+	background: transparent url(../images/Background.png) no-repeat;
 
 }
 
@@ -110,6 +167,7 @@ div[id*="page"] {
  * Weather Page classes
  */
 #pageWeather {
+	background: transparent url(../images/Background.png) no-repeat;
 
 }
 
@@ -117,24 +175,93 @@ div[id*="page"] {
  * General Menu Item Class
  */
 div[id*="cat"] {
-	height: 216px;
-	width: 216px;
-	margin: 57px;
+	height: 256px;
+	width: 256px;
+	margin: 150px 50px 50px 50px;
 	background: transparent;
 	text-align: center;
 	vertical-align: middle;
-	border-radius: 20px;
-	border: solid 5px #FFFFFF;
+	/*border-radius: 20px;
+	border: solid 5px #FFFFFF;*/
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	display: inline-block;
-	
-	text-shadow: 3px 3px 3px #000000;
 	text-transform: uppercase;
 	font-size: 30px;
-	font-family: "Arial, Helvetica, sans-serif";
 	color: #FFFFFF;
+}
+
+/**
+ * Menu item detailed items - categories
+ */
+
+#catEvents {
+	background-image: url(../images/Events.png);
+}
+
+#catNews {
+	background-image: url(../images/News.png);
+}
+
+#catTourism {
+	background-image: url(../images/Recreation.png);
+}
+
+#catCulture {
+	background-image: url(../images/Culture.png);
+}
+
+#catHotels {
+	background-image: url(../images/Hotels.png);
+}
+
+#catRestaurants {
+	background-image: url(../images/Restaurants.png);
+}
+
+#catMap {
+	background-image: url(../images/Map.png);
+}
+
+#catLand {
+	background-image: url(../images/RealEstate.png);
+}
+
+#catWeather {
+	background-image: url(../images/Weather.png);
+}
+
+.button {
+	display:inline-block;
+	height:50px;
+	padding: 10px 20px 10px 23px;
+	margin: 20px 0px 0px 0px;
+	color: #FFFFFF;
+	font-size: 40px;
+	text-shadow: 2px 2px 3px #444444;
 	
+	border: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	
+	background-color: #1a82f7;
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0, rgb(46,46,46)),
+	    color-stop(1, rgb(150,150,150))
+	);
+	background-image: -moz-linear-gradient(
+	    center bottom,
+	    rgb(46,46,46) 0%,
+	    rgb(150,150,150) 100%
+	);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
 
 /**

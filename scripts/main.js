@@ -26,6 +26,9 @@ InfoSystem.prototype = {
 	
 	init: function() {
 		var _this = this; // Closure reference
+		
+		// Disable text selections
+		$('body').disableSelection();
 
 		// Initialize pages
 		this.pages = new Array();
@@ -47,7 +50,10 @@ InfoSystem.prototype = {
 		var catItems = $('div[id*="cat"]');
 		for (var i = 0; i < catItems.length; i++) {
 			$(catItems[i]).click(function(){
-				_this.showPage($(this).attr('page'));				
+				var _targetElement = this;
+				$(_targetElement).children().hide( "puff", { }, 500, function(){
+					_this.showPage($(_targetElement).attr('page'));
+					} );				
 			});
 		}
 		
@@ -64,6 +70,14 @@ InfoSystem.prototype = {
 		
 		// Start activity monitor
 		setInterval(function(){_this.checkActivity()}, this.activityCheckInterval);
+		
+		// Intialize buttons
+		$('span[id*="btn"]').click(function(){
+			$(this).css('-webkit-box-shadow', '0px 0px 20px #FFFFFF');
+			$(this).bind('webkitTransitionEnd', function() { 
+		         _this.showPage('pageMain');
+		     });
+		}); 
 		
 		// Initialize Scrollers
 		/*var pane = $('.scroll-pane');
@@ -83,6 +97,8 @@ InfoSystem.prototype = {
 		var p = $(this.pages[pageId]);
 		this.activePage = this.pages[pageId];
 		var _this = this;
+		
+		$('span[id*="btn"]').css('-webkit-box-shadow', '0px 0px 0px #FFFFFF');
 		
 		// TODO: Use/Change some animation here
 		this.hidePages(function(){
@@ -109,9 +125,9 @@ InfoSystem.prototype = {
 				page.fadeOut(500, function(){
 					//page.css('display', 'none');
 					callback();
-					
-					return;
 				});
+				
+				return;
 			} 
 		} 
 		

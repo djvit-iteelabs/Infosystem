@@ -4,7 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>InfoSystem</title>
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
-		<script type="text/javascript" src="scripts/jquery-1.4.2.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-ui-1.8.9.custom.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery.jscrollpane.js"></script>
 		<script type="text/javascript" src="scripts/main.js"></script>
 		<script type="text/javascript">
@@ -26,20 +27,54 @@
 		
 		<!-- Main menu page -->
 		<div id="pageMain">
-			<div id="catEvents" page="pageEvents">Events</div>
-			<div id="catNews" page="pageNews">News</div>
-			<div id="catTourism" page="pageTourism">Tourism</div>
-			<div id="catCulture" page="pageCulture">Culture</div>
-			<div id="catHotels" page="pageHotels">Hotels</div>
-			<div id="catRestaurants" page="pageRestaurants">Restaurants</div>
-			<div id="catMap" page="pageMap">Map</div>
-			<div id="catLand" page="pageLand">Land</div>
-			<div id="catWeather" page="pageWeather">Weather</div>
+			<!-- Page header -->
+			<div id="mainHeader">altstätten</div>
+			
+			<!-- Page elements -->
+			<div id="catEvents" page="pageEvents">
+				<img alt="Page Events" src="images/Events.png">
+			</div>
+			<div id="catNews" page="pageNews">
+				<img alt="Page News" src="images/News.png">
+			</div>
+			<div id="catTourism" page="pageTourism">
+				<img alt="Page Tourism" src="images/Recreation.png">
+			</div>
+			<div id="catCulture" page="pageCulture">
+				<img alt="Page Culture" src="images/Culture.png">
+			</div>
+			<div id="catHotels" page="pageHotels">
+				<img alt="Page Hotels" src="images/Hotels.png">
+			</div>
+			<div id="catRestaurants" page="pageRestaurants">
+				<img alt="Page Restaurants" src="images/Restaurants.png">
+			</div>
+			<div id="catMap" page="pageMap">
+				<img alt="Page Map" src="images/Map.png">
+			</div>
+			<div id="catLand" page="pageLand">
+				<img alt="Page Real Estate" src="images/RealEstate.png">
+			</div>
+			<div id="catWeather" page="pageWeather">
+				<img alt="Page Weather" src="images/Weather.png">
+			</div>
+			
+			<!-- Page Footer -->
+			<div id="mainFooter">
+				<div id="mainFootLeft">&nbsp;</div>
+				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootRight">
+					<img src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
+				</div>
+			</div>
 		</div>
 		
 		<!-- Category pages -->
 		<!-- EVENTS -->
 		<div id="pageEvents">
+			<!-- Page header -->
+			<div id="mainHeader">altstätten : events</div>
+
 			<div class="scroll-pane">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ligula id sem tristique ultrices
@@ -95,46 +130,155 @@
 					amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
 				</p>
 			</div>
+			
+			<!-- Page Footer -->
+			<div id="mainFooter">
+				<div id="mainFootLeft">
+					<span id="btnBack" class="button">Zurück</span>
+				</div>
+				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootRight">
+					<img src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
+				</div>
+			</div>
+
 		</div>
 
 		<!-- NEWS -->
 		<div id="pageNews">
-			<h1>News</h1>
+			<!-- Page header -->
+			<div id="mainHeader">altstätten : news</div>
+
+			<!-- Page Footer -->
+			<div id="mainFooter">
+				<div id="mainFootLeft">
+					<span id="btnBack" class="button">Zurück</span>
+				</div>
+				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootRight">
+					<img src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
+				</div>
+			</div>
 		</div>
 		
 		<!-- Recreation / Tourism -->
 		<div id="pageTourism">
-			<h1>Recreation / Tourism</h1>
+			<!-- Page header -->
+			<div id="mainHeader">altstätten : tourism</div>
+
+			<!-- Page Footer -->
+			<div id="mainFooter">
+				<div id="mainFootLeft">
+					<span id="btnBack" class="button">Zurück</span>
+				</div>
+				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootRight">
+					<img src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
+				</div>
+			</div>
+
 		</div>
 
 		<!-- Culture -->
 		<div id="pageCulture">
-			<h1>Culture</h1>
+			<!-- Page header -->
+			<div id="mainHeader">altstätten : culture</div>
+
+			<!-- Page Footer -->
+			<div id="mainFooter">
+				<div id="mainFootLeft">
+					<span id="btnBack" class="button">Zurück</span>
+				</div>
+				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootRight">
+					<img src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
+				</div>
+			</div>
 		</div>
 
 		<!-- Hotels -->
 		<div id="pageHotels">
-			<h1>Hotels</h1>
+			<!-- Page header -->
+			<div id="mainHeader">altstätten : hotels</div>
+
+			<!-- Page Footer -->
+			<div id="mainFooter">
+				<div id="mainFootLeft">
+					<span id="btnBack" class="button">Zurück</span>
+				</div>
+				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootRight">
+					<img src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
+				</div>
+			</div>
 		</div>
 
 		<!-- Restaurants -->
 		<div id="pageRestaurants">
-			<h1>Restaurants</h1>
+			<!-- Page header -->
+			<div id="mainHeader">altstätten : restaurants</div>
+
+			<!-- Page Footer -->
+			<div id="mainFooter">
+				<div id="mainFootLeft">
+					<span id="btnBack" class="button">Zurück</span>
+				</div>
+				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootRight">
+					<img src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
+				</div>
+			</div>
+
 		</div>
 
 		<!-- Map -->
 		<div id="pageMap">
-			<h1>Map</h1>
+			<!-- Page header -->
+			<div id="mainHeader">altstätten : map</div>
+
+			<!-- Page Footer -->
+			<div id="mainFooter">
+				<div id="mainFootLeft">
+					<span id="btnBack" class="button">Zurück</span>
+				</div>
+				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootRight">
+					<img src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
+				</div>
+			</div>
 		</div>
 
 		<!-- Real Estate / Land -->
 		<div id="pageLand">
-			<h1>Real Estate / Land</h1>
+			<!-- Page header -->
+			<div id="mainHeader">altstätten : real estate</div>
+			<!-- Page Footer -->
+			<div id="mainFooter">
+				<div id="mainFootLeft">
+					<span id="btnBack" class="button">Zurück</span>
+				</div>
+				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootRight">
+					<img src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
+				</div>
+			</div>
 		</div>
 
 		<!-- Weather -->
 		<div id="pageWeather">
-			<h1>Weather</h1>
+			<!-- Page header -->
+			<div id="mainHeader">altstätten : weather</div>
+
+			<!-- Page Footer -->
+			<div id="mainFooter">
+				<div id="mainFootLeft">
+					<span id="btnBack" class="button">Zurück</span>
+				</div>
+				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootRight">
+					<img src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
+				</div>
+			</div>
 		</div>
 
     </body>
