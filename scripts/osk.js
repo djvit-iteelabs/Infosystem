@@ -22,10 +22,12 @@ OSK.prototype = {
 	oskContainer: null,	//	keyboard div
 	oskABC: null,		//  ABC modeContainer
 	oskNum: null,		//  Num modeContainer
+	oskCallback: null,	// Callback function invoked on submit
+	
 	/**
-	 * Initialize OSK component
+	 * Function to initialize OSK component
 	 */
-	init: function(language){
+	init: function(callback, language){
 		var _this = this;
 		if ( (typeof(language) === 'undefined') || (language == null) || (language.length == 0) )
 			language = 'en';
@@ -33,7 +35,10 @@ OSK.prototype = {
 		if (this.oskMode == null)
 			this.oskMode = 'norm';
 		
-		this.oskUpperCase = false;	
+		this.oskUpperCase = false;
+		
+		if (typeof(callback) === 'function')
+			this.oskCallback = callback; 
 
 		// Create and add OSK DOM
 		// 1. Container + modes (normal and num)
@@ -103,9 +108,13 @@ OSK.prototype = {
 									$(oskButton).attr('id', 'enter');
 									
 									$(oskButton).click(function(){
+										if (typeof(_this.oskCallback) === 'function') {
+											_this.oskCallback($(_this.oskTarget).val());
+										}
 										_this.hideKeyboard();
-										//$(_this.oskTarget).focus();
+
 									});
+
 									break;
 								case "space":
 									$(oskButton).attr('id', 'space');
@@ -163,14 +172,28 @@ OSK.prototype = {
 			}
 		}
 		
-		// Add OSk to the HTML DOM
+		// Add OSK to the HTML DOM
 		$('body').append(this.oskContainer);
 		
+		// Hide OSK by default
 		_this.hideKeyboard();
 		
 		// Bind OSK events
 		$('input[type="text"]').focus(function(){
 			_this.showKeyboard($(this));
+		});
+		
+		// Bind hiding of the keyboard on click outside of it
+		$('body').click(function(e){
+			var clickedOn = $(e.target);
+			if ((typeof(_this.oskTarget) === 'undefined') || (_this.oskTarget == null)) return;
+
+			if ((clickedOn.parents().andSelf().is('#oskContainer')) || (clickedOn.attr('id') == _this.oskTarget.attr('id'))) {
+				// do nothing
+			} 
+			else {
+				_this.hideKeyboard();
+			}
 		});
 	},
 	
@@ -183,7 +206,8 @@ OSK.prototype = {
 		this.oskTarget = textbox;
 		
 		// Show the keyboard
-		$(this.oskContainer).fadeIn(500);
+		var options = {};
+		$(this.oskContainer).show( 'slide', options, 500);
 	},
 	
 	/**
@@ -194,7 +218,8 @@ OSK.prototype = {
 		this.oskTarget = null;
 		
 		// Show the keyboard
-		$(this.oskContainer).fadeOut(500);
+		var options = {};
+		$(this.oskContainer).hide( 'slide', options, 500);
 	}	
 	
 }

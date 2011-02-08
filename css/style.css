@@ -50,11 +50,11 @@ div[id*="page"] {
 	height:124px;
 	width: 1080px;
 	background: transparent url(../images/Top.png) repeat;
-	
-	color: #FFFFFF;
-	font-size: 90px;
-	font-family: "Arial";
-	text-shadow: 5px 5px 5px #000000;
+	text-align: left;
+}
+
+#mainHeader div {
+	height:124px;
 }
 
 #mainFooter {
@@ -63,7 +63,6 @@ div[id*="page"] {
 	bottom:0;
  	width:100%;
 	height:110px;   /* Height of the footer */
-	line:110px;
 }
 
 #mainFootLeft {
@@ -91,6 +90,45 @@ div[id*="page"] {
 	padding: 5px 0px 0px 60px;
 }
 
+.headerText {
+	color: #FFFFFF;
+	font-size: 90px;
+	font-family: Arial;
+	text-shadow: 2px 2px 2px #666666;
+	text-align: left;
+	display: inline-block;
+	height:90px;
+	padding: 10px 0px 0px 0px;
+}
+
+.bottomTextBox {
+	height: 40px;
+	width: 500px;
+	color:#444444;
+	font-size:30px;
+	text-shadow: 1px 1px 0px #EEEEEE;
+	border: 3px #555555 solid; 
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+}
+
+
+#dateText {
+	color: #FFFFFF;
+	font-size: 20px;
+	font-family: Arial;
+	text-shadow: 2px 2px 2px #666666;
+	text-align: right;
+	display: inline-block;
+	padding: 20px 20px 20px 20px;
+}
+
+#cityLogo {
+	padding: 0px 0px 50px 30px;
+	vertical-align: middle;
+}
 
 /**
  * Main Page (Menu) classes
@@ -152,7 +190,17 @@ div[id*="page"] {
  */
 #pageMap {
 	background: transparent url(../images/Background.png) no-repeat;
+}
 
+#mapContainer {
+	height:1500px;
+	width: 900px;
+	margin: 85px 85px 0px 85px;
+	border: 3px #555555 solid; 
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-webkit-box-shadow: 5px 5px 10px black;
 }
 
 /**
@@ -181,8 +229,7 @@ div[id*="cat"] {
 	background: transparent;
 	text-align: center;
 	vertical-align: middle;
-	/*border-radius: 20px;
-	border: solid 5px #FFFFFF;*/
+	border-radius: 20px;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	display: inline-block;
@@ -271,4 +318,19 @@ div[id*="cat"] {
 	width: 100%;
 	height: 200px;
 	overflow: auto;
+}
+
+/**
+ * Generic Styles
+ */
+.left {
+	float:left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear:both;
 }

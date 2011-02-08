@@ -1,10 +1,12 @@
 #oskContainer{
 	position: absolute;
+	left: 30px;
+	bottom: -1100px;
 	height:auto;
 	width:auto;
 	padding: 10px;
 	background: white;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
@@ -12,16 +14,19 @@
 
 .oskButton{
 	display:inline-block;
-	width: 30px;
-	height:20px;
-	padding: 5px;
-	margin : 5px;
-	font-weight: bolder;
-	text-align:center;
-	background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ccc));
-	border: 1px solid gray;
+	width: 40px;
+	height:30px;
+	padding: 15px;
+	margin : 10px;
+	font-weight: bold;
+	font-size: 30px; 
+	text-shadow: 2px 2px 2px #FFFFFF;	
+	text-align: center;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#CCCCCC));
+	border: none;
 	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px; 
+	-moz-border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 3px #444444;
 	cursor: pointer;	
 }
 
@@ -34,17 +39,17 @@
 .separator{
 	display:inline-block;
 	border: 0px;
-	width: 15px;
+	width: 25px;
 	height: 20px;
 	background: white;
 }
 
 #space{
-	width: 400px;
+	width: 640px;
 }
 
 #enter{
-	width: 75px;
+	width: 115px;
 }
 
 #backspace{
@@ -52,9 +57,9 @@
 }
 
 #switchCase{
-	width: 40px;
+	width: 50px;
 }
 
 #switchMode{
-	width: 40px;
+	width: 80px;
 }

@@ -4,15 +4,25 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>InfoSystem</title>
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="css/osk.css" />
+		
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery-ui-1.8.9.custom.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery.jscrollpane.js"></script>
 		<script type="text/javascript" src="scripts/main.js"></script>
+		<script type="text/javascript" src="scripts/maps.js"></script>
+		<script type="text/javascript" src="scripts/osk.data.js"></script>
+		<script type="text/javascript" src="scripts/osk.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// Intialize InfoSystem
 				var infoSystem = new InfoSystem();
-				infoSystem.init();		
+				infoSystem.init();
+				
+				// Initialize On Screen Keyboard
+				var osk = new OSK();
+				osk.init(googleMap.findAddress);		
 			});
 		</script>
     </head>
@@ -28,7 +38,15 @@
 		<!-- Main menu page -->
 		<div id="pageMain">
 			<!-- Page header -->
-			<div id="mainHeader">altstätten</div>
+			<div id="mainHeader">
+				<div class="left">
+					<img alt="Logo" id="cityLogo" src="images/logo.png" />
+					<span class="headerText">Altstätten</span>
+				</div>
+				<div class="right">
+					<span id="dateText">&nbsp;</span>
+				</div>
+			</div>
 			
 			<!-- Page elements -->
 			<div id="catEvents" page="pageEvents">
@@ -73,7 +91,15 @@
 		<!-- EVENTS -->
 		<div id="pageEvents">
 			<!-- Page header -->
-			<div id="mainHeader">altstätten : events</div>
+			<div id="mainHeader">
+				<div class="left">
+					<img alt="Logo" id="cityLogo" src="images/logo.png" />
+					<span class="headerText">Altstätten</span>
+				</div>
+				<div class="right">
+					<span id="dateText">&nbsp;</span>
+				</div>
+			</div>
 
 			<div class="scroll-pane">
 				<p>
@@ -147,7 +173,15 @@
 		<!-- NEWS -->
 		<div id="pageNews">
 			<!-- Page header -->
-			<div id="mainHeader">altstätten : news</div>
+			<div id="mainHeader">
+				<div class="left">
+					<img alt="Logo" id="cityLogo" src="images/logo.png" />
+					<span class="headerText">Altstätten</span>
+				</div>
+				<div class="right">
+					<span id="dateText">&nbsp;</span>
+				</div>
+			</div>
 
 			<!-- Page Footer -->
 			<div id="mainFooter">
@@ -164,7 +198,15 @@
 		<!-- Recreation / Tourism -->
 		<div id="pageTourism">
 			<!-- Page header -->
-			<div id="mainHeader">altstätten : tourism</div>
+			<div id="mainHeader">
+				<div class="left">
+					<img alt="Logo" id="cityLogo" src="images/logo.png" />
+					<span class="headerText">Altstätten</span>
+				</div>
+				<div class="right">
+					<span id="dateText">&nbsp;</span>
+				</div>
+			</div>
 
 			<!-- Page Footer -->
 			<div id="mainFooter">
@@ -182,7 +224,15 @@
 		<!-- Culture -->
 		<div id="pageCulture">
 			<!-- Page header -->
-			<div id="mainHeader">altstätten : culture</div>
+			<div id="mainHeader">
+				<div class="left">
+					<img alt="Logo" id="cityLogo" src="images/logo.png" />
+					<span class="headerText">Altstätten</span>
+				</div>
+				<div class="right">
+					<span id="dateText">&nbsp;</span>
+				</div>
+			</div>
 
 			<!-- Page Footer -->
 			<div id="mainFooter">
@@ -199,7 +249,15 @@
 		<!-- Hotels -->
 		<div id="pageHotels">
 			<!-- Page header -->
-			<div id="mainHeader">altstätten : hotels</div>
+			<div id="mainHeader">
+				<div class="left">
+					<img alt="Logo" id="cityLogo" src="images/logo.png" />
+					<span class="headerText">Altstätten</span>
+				</div>
+				<div class="right">
+					<span id="dateText">&nbsp;</span>
+				</div>
+			</div>
 
 			<!-- Page Footer -->
 			<div id="mainFooter">
@@ -216,7 +274,15 @@
 		<!-- Restaurants -->
 		<div id="pageRestaurants">
 			<!-- Page header -->
-			<div id="mainHeader">altstätten : restaurants</div>
+			<div id="mainHeader">
+				<div class="left">
+					<img alt="Logo" id="cityLogo" src="images/logo.png" />
+					<span class="headerText">Altstätten</span>
+				</div>
+				<div class="right">
+					<span id="dateText">&nbsp;</span>
+				</div>
+			</div>
 
 			<!-- Page Footer -->
 			<div id="mainFooter">
@@ -234,14 +300,27 @@
 		<!-- Map -->
 		<div id="pageMap">
 			<!-- Page header -->
-			<div id="mainHeader">altstätten : map</div>
+			<div id="mainHeader">
+				<div class="left">
+					<img alt="Logo" id="cityLogo" src="images/logo.png" />
+					<span class="headerText">Altstätten</span>
+				</div>
+				<div class="right">
+					<span id="dateText">&nbsp;</span>
+				</div>
+			</div>
+			<div id="mapContainer">
+				
+			</div>
 
 			<!-- Page Footer -->
 			<div id="mainFooter">
 				<div id="mainFootLeft">
 					<span id="btnBack" class="button">Zurück</span>
 				</div>
-				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootCenter">
+					<input type="text" id="searchCondition" class="bottomTextBox" />
+				</div>
 				<div id="mainFootRight">
 					<img src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
 				</div>
@@ -251,7 +330,16 @@
 		<!-- Real Estate / Land -->
 		<div id="pageLand">
 			<!-- Page header -->
-			<div id="mainHeader">altstätten : real estate</div>
+			<div id="mainHeader">
+				<div class="left">
+					<img alt="Logo" id="cityLogo" src="images/logo.png" />
+					<span class="headerText">Altstätten</span>
+				</div>
+				<div class="right">
+					<span id="dateText">&nbsp;</span>
+				</div>
+			</div>
+			
 			<!-- Page Footer -->
 			<div id="mainFooter">
 				<div id="mainFootLeft">
@@ -267,7 +355,15 @@
 		<!-- Weather -->
 		<div id="pageWeather">
 			<!-- Page header -->
-			<div id="mainHeader">altstätten : weather</div>
+			<div id="mainHeader">
+				<div class="left">
+					<img alt="Logo" id="cityLogo" src="images/logo.png" />
+					<span class="headerText">Altstätten</span>
+				</div>
+				<div class="right">
+					<span id="dateText">&nbsp;</span>
+				</div>
+			</div>
 
 			<!-- Page Footer -->
 			<div id="mainFooter">
