@@ -23,7 +23,7 @@ var googleMap = {
             navigationControl: true,
             navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL}
         }
-        //this.map = new google.maps.Map(document.getElementById(map_container), myOptions);
+        this.map = new google.maps.Map(document.getElementById(map_container), myOptions);
 		
 		// Initialize geocoder
 		this.geocoder = new google.maps.Geocoder();
