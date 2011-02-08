@@ -23,9 +23,13 @@ InfoSystem.prototype = {
 	activityCheckInterval: 30000, // Activity check interval
 	lastActivityLimit: 300000, // Last activity in milliseconds (5m)
 	eventsAPI: null,
+	map: null,
 	
 	init: function() {
 		var _this = this; // Closure reference
+		
+		// Disable text selections
+		$('body').disableSelection();
 
 		// Initialize pages
 		this.pages = new Array();
@@ -47,7 +51,10 @@ InfoSystem.prototype = {
 		var catItems = $('div[id*="cat"]');
 		for (var i = 0; i < catItems.length; i++) {
 			$(catItems[i]).click(function(){
-				_this.showPage($(this).attr('page'));				
+				var _targetElement = this;
+				$(_targetElement).children().hide( "puff", { }, 500, function(){
+					_this.showPage($(_targetElement).attr('page'));
+					} );				
 			});
 		}
 		
@@ -64,6 +71,18 @@ InfoSystem.prototype = {
 		
 		// Start activity monitor
 		setInterval(function(){_this.checkActivity()}, this.activityCheckInterval);
+		
+		// Intialize buttons
+		$('span[id*="btn"]').click(function(){
+			$(this).css('-webkit-box-shadow', '0px 0px 20px #FFFFFF');
+			$(this).bind('webkitTransitionEnd', function() { 
+		         _this.showPage('pageMain');
+		     });
+		});
+		
+		// Initialize date
+		$('span[id*="date"]').text(this.getDateTimeString());
+		
 		
 		// Initialize Scrollers
 		/*var pane = $('.scroll-pane');
@@ -84,12 +103,17 @@ InfoSystem.prototype = {
 		this.activePage = this.pages[pageId];
 		var _this = this;
 		
+		// Reset button glow/shadow
+		$('span[id*="btn"]').css('-webkit-box-shadow', '0px 0px 0px #FFFFFF');
+		
 		// TODO: Use/Change some animation here
 		this.hidePages(function(){
+			//_this.refreshPage();
 			p.fadeIn(500, function(){
-				if (pageId == 'pageEvents') {
-					$('.scroll-pane').jScrollPane();
-				}
+				_this.refreshPage();
+				//if (pageId == 'pageEvents') {
+				//	$('.scroll-pane').jScrollPane();
+				//}
 			});
 		});
 	},
@@ -109,9 +133,9 @@ InfoSystem.prototype = {
 				page.fadeOut(500, function(){
 					//page.css('display', 'none');
 					callback();
-					
-					return;
 				});
+				
+				return;
 			} 
 		} 
 		
@@ -120,7 +144,22 @@ InfoSystem.prototype = {
 			callback();
 		}
 	},
+	
+	/**
+	 * Refreshes DOM/Layout of currently active page
+	 */
+	refreshPage: function(){
+		switch(this.activePage.id) {
+			case 'pageMap':
+				googleMap.initMap('mapContainer'); 
+				break;
+		}
 
+	},
+
+	/**
+	 * Activity monitor callback
+	 */
 	checkActivity: function(){
 		var currDate = new Date();
 		var diff = currDate - this.lastActivity;
@@ -128,6 +167,43 @@ InfoSystem.prototype = {
 			this.showPage('pageLanding');
 		}
 	},
+	
+	/**
+	 * Returns formatted current Date string
+	 */
+	getDateString: function(){
+		var date = new Date();
+		var dt = date.getDate();
+		var mn = date.getMonth();
+		var yr = date.getFullYear();
+		
+		return dt + '/' + mn + '/' + yr;
+	},
+	
+	/**
+	 * Returns formatted current Time string
+	 */
+	getTimeString: function(){
+		var time = new Date();
+		var hr = time.getHours();
+		var min = time.getMinutes();
+		if (min < 10) min = "0" + min;
+
+		var sec = time.getSeconds();
+		
+		return hr + ':' + min;
+	},
+	
+	/**
+	 * Returns formatted current Date and Time string
+	 */
+	getDateTimeString: function(){
+		return this.getDateString() + ' ' + this.getTimeString();		
+	}
+	
+
+	
+	
 // Swipe Setup function - iPhone
 /*function setSwipe(div, callback) {
     div.bind('touchstart', function (e) {
