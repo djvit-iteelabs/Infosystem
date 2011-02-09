@@ -8,12 +8,30 @@
 		<script type="text/javascript" src="scripts/osk.data.js"></script>
 		<script type="text/javascript" src="scripts/osk.js"></script>
 		<script type="text/javascript">
+			jQuery.fn.extend({
+    			disableSelection : function() {
+            		this.each(function() {
+                    	this.onselectstart = function() { return false; };
+                    	this.unselectable = "on";
+                    	jQuery(this).css('-moz-user-select', 'none');
+            		});
+    			},
+    			enableSelection : function() {
+            		this.each(function() {
+                    	this.onselectstart = function() {};
+                    	this.unselectable = "off";
+                    	jQuery(this).css('-moz-user-select', 'auto');
+            		});
+    			}
+			});
+			
 			var osk = null; 
 
 			$(document).ready(function(){
 				// Intialize InfoSystem
 				osk = new OSK();
-				osk.init();	
+				osk.init();
+				$('body *').disableSelection();	
 			});
 		</script>
     </head>

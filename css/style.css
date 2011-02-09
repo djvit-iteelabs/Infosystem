@@ -205,6 +205,34 @@ div[id*="page"] {
 	-webkit-box-shadow: 5px 5px 10px black;
 }
 
+#cornerTL{
+	position:absolute;
+	top: 209px;
+	left: 85px;
+	z-index:99999;
+}
+
+#cornerTR{
+	position:absolute;
+	top: 209px;
+	left: 971px;
+	z-index:99999;
+}
+
+#cornerBR{
+	position:absolute;
+	top: 1695px;
+	left: 970px;
+	z-index:99999;
+}
+
+#cornerBL{
+	position:absolute;
+	top: 1695px;
+	left: 85px;
+	z-index:99999;
+}
+
 /**
  * Land Page classes
  */
