@@ -4,7 +4,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #000000 url(../images/Background.png) no-repeat;
+	background: #000000 url(../images/bg.tile.png) no-repeat;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
@@ -134,62 +134,64 @@ div[id*="page"] {
  * Main Page (Menu) classes
  */
 #pageMain {
-	background: transparent url(../images/Background.png) no-repeat;
+	/*background: transparent url(../images/Background.png) no-repeat; */
+	background: transparent url(../images/bg.tile.png) no-repeat;
 }
 
 /**
  * News Page classes
  */
 #pageNews {
-	background: transparent url(../images/Background.png) no-repeat;
-
+	/*background: transparent url(../images/Background.png) no-repeat; */
+	background: transparent url(../images/bg.tile.png) no-repeat;
 }
 
 /**
  * Events Page classes
  */
 #pageEvents {
-	background: transparent url(../images/Background.png) no-repeat;
-
+	/*background: transparent url(../images/Background.png) no-repeat; */
+	background: transparent url(../images/bg.tile.png) no-repeat;
 }
 
 /**
  * Tourism Page classes
  */
 #pageTourism {
-	background: transparent url(../images/Background.png) no-repeat;
-
+	/*background: transparent url(../images/Background.png) no-repeat; */
+	background: transparent url(../images/bg.tile.png) no-repeat;
 }
 
 /**
  * Culture Page classes
  */
 #pageCulture {
-	background: transparent url(../images/Background.png) no-repeat;
-
+	/*background: transparent url(../images/Background.png) no-repeat; */
+	background: transparent url(../images/bg.tile.png) no-repeat;
 }
 
 /**
  * Hotels Page classes
  */
 #pageHotels {
-	background: transparent url(../images/Background.png) no-repeat;
-
+	/*background: transparent url(../images/Background.png) no-repeat; */
+	background: transparent url(../images/bg.tile.png) no-repeat;
 }
 
 /**
  * Restaurants Page classes
  */
 #pageRestaurants {
-	background: transparent url(../images/Background.png) no-repeat;
-
+	/*background: transparent url(../images/Background.png) no-repeat; */
+	background: transparent url(../images/bg.tile.png) no-repeat;
 }
 
 /**
  * Map Page classes
  */
 #pageMap {
-	background: transparent url(../images/Background.png) no-repeat;
+	/*background: transparent url(../images/Background.png) no-repeat; */
+	background: transparent url(../images/bg.tile.png) no-repeat;
 }
 
 #mapContainer {
@@ -207,16 +209,16 @@ div[id*="page"] {
  * Land Page classes
  */
 #pageLand {
-	background: transparent url(../images/Background.png) no-repeat;
-
+	/*background: transparent url(../images/Background.png) no-repeat; */
+	background: transparent url(../images/bg.tile.png) no-repeat;
 }
 
 /**
  * Weather Page classes
  */
 #pageWeather {
-	background: transparent url(../images/Background.png) no-repeat;
-
+	/*background: transparent url(../images/Background.png) no-repeat; */
+	background: transparent url(../images/bg.tile.png) no-repeat;
 }
 
 /**
