@@ -81,7 +81,9 @@ InfoSystem.prototype = {
 		});
 		
 		// Initialize date
-		$('span[id*="date"]').text(this.getDateTimeString());
+		//$('span[id*="date"]').text(this.getDateTimeString());
+		var timer = new Timer();
+		timer.init();
 		
 		
 		// Initialize Scrollers
