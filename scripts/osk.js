@@ -23,6 +23,7 @@ OSK.prototype = {
 	oskABC: null,		//  ABC modeContainer
 	oskNum: null,		//  Num modeContainer
 	oskCallback: null,	// Callback function invoked on submit
+	oskShown: null,		//Keyboard status
 	
 	/**
 	 * Function to initialize OSK component
@@ -36,6 +37,7 @@ OSK.prototype = {
 			this.oskMode = 'norm';
 		
 		this.oskUpperCase = false;
+		this.oskShown = true;
 		
 		if (typeof(callback) === 'function')
 			this.oskCallback = callback; 
@@ -163,7 +165,7 @@ OSK.prototype = {
 									$(oskButton).attr('id', 'oskBtn_' + j + '_' + k);
 									
 									$(oskButton).mouseover(function(){
-										$(this).css("-webkit-box-shadow","40px 40px 10px #000");
+										$(this).addClass("-webkit-box-shadow","0px 0px 10px blue");
 									});
 							}
 						break;
@@ -207,7 +209,10 @@ OSK.prototype = {
 		
 		// Show the keyboard
 		var options = {};
-		$(this.oskContainer).show( 'slide', options, 500);
+		if (!this.oskShown) {
+			$(this.oskContainer).show('slide', options, 500);
+			this.oskShown = true;
+		}
 	},
 	
 	/**
@@ -219,7 +224,10 @@ OSK.prototype = {
 		
 		// Show the keyboard
 		var options = {};
-		$(this.oskContainer).hide( 'slide', options, 500);
+		if (this.oskShown) {
+			$(this.oskContainer).hide('slide', options, 500);
+			this.oskShown = false;
+		}
 	}	
 	
 }
