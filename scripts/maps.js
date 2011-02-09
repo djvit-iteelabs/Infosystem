@@ -5,6 +5,10 @@
  * @version 0.0.1
  * @uses Google maps API V3 (3.1)
  */
+
+/**
+ * Google Map functional wrapper global singleton object
+ */
 var googleMap = {
 	map: null,
 	geocoder: null,

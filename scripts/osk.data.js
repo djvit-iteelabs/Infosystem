@@ -1,3 +1,13 @@
+/**
+ * @author Vitaly Yatsunyck
+ * Copyringt (c) 2011 MARZ Touch InfoSystem 
+ * 
+ * @version 0.0.1
+ */
+
+/**
+ * OSK Data definition
+ */
 var oskData = {
 	"en": [
 		{
