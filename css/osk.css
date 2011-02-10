@@ -29,8 +29,6 @@
 	
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	-webkit-box-shadow: 0px 0px 2px #444444;
-	cursor: pointer;	
 }
 
 .blueHighlight{
@@ -39,6 +37,9 @@
 	-webkit-box-shadow: 0px 0px 7px blue;
 }
 
+.shadow{
+	-webkit-box-shadow: 0px 0px 2px #444444;	
+}
 .separator{
 	display:inline-block;
 	border: 0px;

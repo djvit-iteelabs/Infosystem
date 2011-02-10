@@ -82,12 +82,24 @@ OSK.prototype = {
 					
 					// Add Button SPAN
 					var oskButton = document.createElement("span");
-					
-					$(oskButton).attr('class', 'oskButton');			
+								
 					$(oskButton).text(button.text);
+					$(oskButton).attr('class', 'oskButton shadow');
 					$(lineContainer).append(oskButton);
 					
 					// Bind SPAN Events depending on the type and char properties
+
+					if(button.command != "switchCase"){						
+						$(oskButton).mousedown(function(){
+							$(this).attr("class","oskButton");;
+						});
+						
+						$(oskButton).mouseup(function(){
+							$(this).attr("class","oskButton shadow");
+						});
+					}
+						
+
 					switch(button.type) {
 						case "0":
 		    				$(oskButton).attr('class','separator');
@@ -147,9 +159,9 @@ OSK.prototype = {
 										_this.oskUpperCase = !_this.oskUpperCase;
 										
 										if(_this.oskUpperCase){
-											$(this).addClass("blueHighlight");
+											$(this).attr("class","oskButton blueHighlight");
 										} else{
-											$(this).attr("class","oskButton");	
+											$(this).attr("class","oskButton shadow");	
 										}
 									});
 									break;
@@ -164,12 +176,11 @@ OSK.prototype = {
 								default:
 									$(oskButton).attr('id', 'oskBtn_' + j + '_' + k);
 									
-									$(oskButton).mouseover(function(){
-										$(this).addClass("-webkit-box-shadow","0px 0px 10px blue");
-									});
 							}
 						break;
+						
 					}
+					
 				}
 			}
 		}
