@@ -10,11 +10,12 @@
 		<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery-ui-1.8.9.custom.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery.jscrollpane.js"></script>
-		<script type="text/javascript" src="scripts/main.js"></script>
+		<script type="text/javascript" src="scripts/jquery.clicknscroll-1.0.js"></script>
 		<script type="text/javascript" src="scripts/maps.js"></script>
 		<script type="text/javascript" src="scripts/osk.data.js"></script>
 		<script type="text/javascript" src="scripts/osk.js"></script>
 		<script type="text/javascript" src="scripts/timer.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// Intialize InfoSystem
@@ -23,7 +24,13 @@
 				
 				// Initialize On Screen Keyboard
 				var osk = new OSK();
-				osk.init(googleMap.findAddress);		
+				osk.init(googleMap.findAddress);
+				
+				$("body").clickNScroll({
+				   reverse: true,
+				   acceleration: .5,
+				   rightMouse: true
+				});
 			});
 		</script>
     </head>
@@ -102,7 +109,7 @@
 				</div>
 			</div>
 
-			<div class="scroll-pane">
+			<div class="scroll-pane" id="scrollPane">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ligula id sem tristique ultrices
 					eget id neque. Duis enim turpis, tempus at accumsan vitae, lobortis id sapien. Pellentesque nec orci
