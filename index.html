@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>InfoSystem</title>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+		<title>InfoSystem</title>
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
 		<link type="text/css" rel="stylesheet" href="css/osk.css" />
 		
@@ -10,11 +10,12 @@
 		<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery-ui-1.8.9.custom.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery.jscrollpane.js"></script>
-		<script type="text/javascript" src="scripts/jquery.clicknscroll-1.0.js"></script>
 		<script type="text/javascript" src="scripts/maps.js"></script>
 		<script type="text/javascript" src="scripts/osk.data.js"></script>
 		<script type="text/javascript" src="scripts/osk.js"></script>
 		<script type="text/javascript" src="scripts/timer.js"></script>
+		<script type="text/javascript" src="scripts/rss.data.js"></script>
+		<script type="text/javascript" src="scripts/rss.js"></script>
 		<script type="text/javascript" src="scripts/main.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
@@ -26,11 +27,9 @@
 				var osk = new OSK();
 				osk.init(googleMap.findAddress);
 				
-				$("body").clickNScroll({
-				   reverse: true,
-				   acceleration: .5,
-				   rightMouse: true
-				});
+				// Initialize RSS
+				RSS.getList('data/events.rss', '#dataContainerEvents',  15);
+				RSS.getList('data/news.rss', '#dataContainerNews',  15);
 			});
 		</script>
     </head>
@@ -108,62 +107,9 @@
 					<span id="dateText">&nbsp;</span>
 				</div>
 			</div>
-
-			<div class="scroll-pane" id="scrollPane">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ligula id sem tristique ultrices
-					eget id neque. Duis enim turpis, tempus at accumsan vitae, lobortis id sapien. Pellentesque nec orci
-					mi, in pharetra ligula. Nulla facilisi. Nulla facilisi. Mauris convallis venenatis massa, quis
-					consectetur felis ornare quis. Sed aliquet nunc ac ante molestie ultricies. Nam pulvinar ultricies
-					bibendum. Vivamus diam leo, faucibus et vehicula eu, molestie sit amet dui. Proin nec orci et elit
-					semper ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-					mus. Sed quis urna mi, ac dignissim mauris. Quisque mollis ornare mauris, sed laoreet diam malesuada
-					quis. Proin vel elementum ante. Donec hendrerit arcu ac odio tincidunt posuere. Vestibulum nec risus
-					eu lacus semper viverra.
-				</p>
-				<p style="width: 900px;">
-					Vestibulum dictum consectetur magna eu egestas. Praesent molestie dapibus erat, sit amet sodales
-					lectus congue ut. Nam adipiscing, tortor ac blandit egestas, lorem ligula posuere ipsum, nec
-					faucibus nisl enim eu purus. Quisque bibendum diam quis nunc eleifend at molestie libero tincidunt.
-					Quisque tincidunt sapien a sapien pellentesque consequat. Mauris adipiscing venenatis augue ut
-					tempor. Donec auctor mattis quam quis aliquam. Nullam ultrices erat in dolor pharetra bibendum.
-					Suspendisse eget odio ut libero imperdiet rhoncus. Curabitur aliquet, ipsum sit amet aliquet varius,
-					est urna ullamcorper magna, sed eleifend libero nunc non erat. Vivamus semper turpis ac turpis
-					volutpat non cursus velit aliquam. Fusce id tortor id sapien porta egestas. Nulla venenatis luctus
-					libero et suscipit. Sed sed purus risus. Donec auctor, leo nec eleifend vehicula, lacus felis
-					sollicitudin est, vitae lacinia lectus urna nec libero. Aliquam pellentesque, arcu condimentum
-					pharetra vestibulum, lectus felis malesuada felis, vel fringilla dolor dui tempus nisi. In hac
-					habitasse platea dictumst. Ut imperdiet mauris vitae eros varius eget accumsan lectus adipiscing.
-				</p>
-				<p>
-					Quisque et massa leo, sit amet adipiscing nisi. Mauris vel condimentum dolor. Duis quis ullamcorper
-					eros. Proin metus dui, facilisis id bibendum sed, aliquet non ipsum. Aenean pulvinar risus eu nisi
-					dictum eleifend. Maecenas mattis dolor eget lectus pretium eget molestie libero auctor. Praesent sit
-					amet tellus sed nibh convallis semper. Curabitur nisl odio, feugiat non dapibus sed, tincidunt ut
-					est. Nullam erat velit, suscipit aliquet commodo sit amet, mollis in mauris. Curabitur pharetra
-					dictum interdum. In posuere pretium ultricies. Curabitur volutpat eros vehicula quam ultrices
-					varius. Proin volutpat enim a massa tempor ornare. Sed ullamcorper fermentum nisl, ac hendrerit sem
-					feugiat ac. Donec porttitor ullamcorper quam. Morbi pretium adipiscing quam, quis bibendum diam
-					congue eget. Sed at lectus at est malesuada iaculis. Sed fermentum quam dui. Donec eget ipsum dolor,
-					id mollis nisi. Donec fermentum vehicula porta.
-				</p>
-				<p>
-					Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-					Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
-					sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-					Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,
-					commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
-					ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.
-					Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-					eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-					luctus, metus
-				</p>
-				<p>
-					Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-					Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-					amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-				</p>
-			</div>
+			
+			<!-- Content Area -->
+			<div id="dataContainerEvents" class="rssData"></div>
 			
 			<!-- Page Footer -->
 			<div id="mainFooter">
@@ -191,135 +137,8 @@
 				</div>
 			</div>
 			
-			<div id="dataContainer">
-				<div class="rssData">
-					<div class="rssItem" data="00001">
-						<img class="rssImage" alt="Element Image" />
-						<span class="rssItemTitle">Quisque</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">Quisque et massa leo, sit amet adipiscing nisi. Mauris vel condimentum dolor. Duis quis ullamcorper
-							eros. Proin metus dui, facilisis id bibendum sed, aliquet non ipsum. Aenean pulvinar risus eu nisi
-							dictum eleifend. 
-						</span>
-					</div>
-					<div class="rssItem" data="00002">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Quisque sit amet est et sapien</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,
-							commodo vitae, ornare sit amet, wisi. 
-						</span>
-					</div>
-					<div class="rssItem" data="00003">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Praesent dapibus, neque id cursus faucibus</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">
-							Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-							eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-							luctus, metus
-						</span>
-					</div>
-					<div class="rssItem" data="00004">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Lorem ipsum</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ligula id sem tristique ultrices
-							eget id neque. Duis enim turpis, tempus at accumsan vitae, lobortis id sapien. Pellentesque nec orci
-							mi, in pharetra ligula. Nulla facilisi. Nulla facilisi. Mauris convallis venenatis massa, quis
-							consectetur felis ornare quis. 
-						</span>
-					</div>
-					<div class="rssItem" data="00005">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Donec auctor mattis</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">Donec auctor mattis quam quis aliquam. Nullam ultrices erat in dolor pharetra bibendum.
-							Suspendisse eget odio ut libero imperdiet rhoncus. Curabitur aliquet, ipsum sit amet aliquet varius,
-							est urna ullamcorper magna, sed eleifend libero nunc non erat.
-						</span>
-					</div>
-					<div class="rssItem" data="00006">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Donec</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">Donec auctor mattis quam quis aliquam. Nullam ultrices erat in dolor pharetra bibendum.
-							Suspendisse eget odio ut libero imperdiet rhoncus. Curabitur aliquet, ipsum sit amet aliquet varius,
-							est urna ullamcorper magna, sed eleifend libero nunc non erat.
-						</span>
-					</div>
-					<div class="rssItem" data="00007">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Curabitur aliquet</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">Donec auctor mattis quam quis aliquam. Nullam ultrices erat in dolor pharetra bibendum.
-							Suspendisse eget odio ut libero imperdiet rhoncus. Curabitur aliquet, ipsum sit amet aliquet varius,
-							est urna ullamcorper magna, sed eleifend libero nunc non erat.
-						</span>
-					</div>
-					<div class="rssItem" data="00008">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Nulla facilisi</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ligula id sem tristique ultrices
-							eget id neque. Duis enim turpis, tempus at accumsan vitae, lobortis id sapien. Pellentesque nec orci
-							mi, in pharetra ligula. Nulla facilisi. Nulla facilisi. Mauris convallis venenatis massa, quis
-							consectetur felis ornare quis. 
-						</span>
-					</div>
-					<div class="rssItem" data="00009">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Nullam ultrices erat in dolor</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">Donec auctor mattis quam quis aliquam. Nullam ultrices erat in dolor pharetra bibendum.
-							Suspendisse eget odio ut libero imperdiet rhoncus. Curabitur aliquet, ipsum sit amet aliquet varius,
-							est urna ullamcorper magna, sed eleifend libero nunc non erat.
-						</span>
-					</div>
-					<div class="rssItem" data="000010">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Aliquam erat volutpat</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">
-							Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-							eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-							luctus, metus
-						</span>
-					</div>
-					<div class="rssItem" data="000011">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Suspendisse eget odio</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">Donec auctor mattis quam quis aliquam. Nullam ultrices erat in dolor pharetra bibendum.
-							Suspendisse eget odio ut libero imperdiet rhoncus. Curabitur aliquet, ipsum sit amet aliquet varius,
-							est urna ullamcorper magna, sed eleifend libero nunc non erat.
-						</span>
-					</div>
-					<div class="rssItem" data="000012">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Mauris convallis</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ligula id sem tristique ultrices
-							eget id neque. Duis enim turpis, tempus at accumsan vitae, lobortis id sapien. Pellentesque nec orci
-							mi, in pharetra ligula. Nulla facilisi. Nulla facilisi. Mauris convallis venenatis massa, quis
-							consectetur felis ornare quis. 	
-						</span>
-					</div>
-					<div class="rssItem" data="000013">
-						<img class="rssImage" alt="Element Image"/>
-						<span class="rssItemTitle">Praesent dapibus</span>
-						<span class="rssItemDate">11/11/2011</span>
-						<span class="rssItemDescription">
-							Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-							eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-							luctus, metus
-						</span>
-					</div>
-				</div>
-			</div>
+			<!-- Content Area -->
+			<div id="dataContainerNews" class="rssData"></div>
 
 			<!-- Page Footer -->
 			<div id="mainFooter">
@@ -345,6 +164,7 @@
 					<span id="dateText">&nbsp;</span>
 				</div>
 			</div>
+			<div id="dataContainerTourism" class="rssData"></div>
 
 			<!-- Page Footer -->
 			<div id="mainFooter">

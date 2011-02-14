@@ -11,11 +11,9 @@ Timer.prototype = {
 		if(!this.timer)
 			this.timer = window.setInterval(function(){
 				var d = new Date();
-				var t = document.getElementById("dateText");
-		
-				$(t).html(d.toLocaleDateString() + " " +
+				$("#dateText").html(d.toLocaleDateString() + " " +
 						 d.toLocaleTimeString());
-			},1000);
+			}, 1000);
 		else
 			this.stop();
 	},

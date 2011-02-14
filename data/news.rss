@@ -7,12 +7,15 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:ev="http://www.w3.org/2001/xml-events">
     <channel rdf:about="http://www.altstaetten.ch/de/news.rss">
-        <title>News : Gemeinde Altstдtten </title>
-        <description>Aktuelle Neuigkeiten der Gemeinde Altstдtten </description>
+        <title>News : Gemeinde Altstätten </title>
+        <description>Aktuelle Neuigkeiten der Gemeinde Altstätten </description>
         <link>http://www.altstaetten.ch/de/</link>
-       <dc:date>2011-02-09</dc:date>
+       <date>2011-02-14</date>
         <items>
             <rdf:Seq>
+                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136384"/>
+                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136305"/>
+                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136109"/>
                 <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136026"/>
                 <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135766"/>
                 <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135290"/>
@@ -23,102 +26,170 @@
                 <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134303"/>
                 <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133984"/>
                 <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133982"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133838"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133837"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133719"/>
             </rdf:Seq>
         </items>
     </channel>
+    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136384">
+        <dc:format>text/html</dc:format>
+        <date>2011-02-14</date>
+        <title>Revision der Richtplanung</title>
+        <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136384</link>
+        <description>Der bestehende kommunale Richtplan wurde bereits Anfang der 1990er-Jahre erarbeitet. Der rechtsgültige Zonenplan ist seit 1996 in Kraft und wurde mit diversen Zonenplanänderungen fortwährend ergänzt. Zwischenzeitlich haben sich verschiedene Grundlagen geändert. So hat der Stadtrat im Frühjahr 2008 entschieden, die gültige Richtplanung nach neuzeitlichen Planungsgrundsätzen komplett zu überarbeiten und auf die zukünftigen Bedürfnisse der Stadt auszurichten.
+
+Überarbeitung des Richtplans
+Üblicherweise wird die Richtplanung in regelmässigen Abständen überprüft und gegebenenfalls aktualisiert. Für die Überarbeitung des Richtplans wurde eine stadtinterne Planungskommission eingesetzt. Diese wurde vom Raumplanungsbüro Strittmatter Partner AG, St. Gallen, unterstützt. Der Richtplan, bestehend aus den Sachbereichen Siedlung, Natur und Landschaft, Verkehr und Infrastruktur, dient dem Stadtrat als Führungsinstrument für die Entwicklung der Stadt. Der Richtplan koordiniert die Entwicklung der Stadt für einen Zeithorizont von 25 Jahren und wird ungefähr alle 10 bis 15 Jahre einer Totalrevision unterzogen. Dazwischen kann die Richtplanung im Sinne einer rollenden Planung fortlaufend den sich ändernden Verhältnissen angepasst werden.
+
+Richtplan ist behördenverbindlich
+Der Richtplan ist ein behördenverbindliches Planungsinstrument. Der Richtplan ist damit das Führungs- und Koordinationsinstrument des Stadtrates und der Verwaltung, hat jedoch direkt keine grundeigentümerverbindliche Wirkung. Die Umsetzung der Richtplanung wir mit anderen Planungsinstrumenten wie beispielsweise Zonenplanung oder Sondernutzungspläne sichergestellt. Ein massgeblicher Teil des Richtplaninhaltes wird überhaupt nicht grundeigentümerverbindlich umgesetzt, sondern weist die Behörde an, im Sinne des Planungsinhaltes tätig zu werden.
+
+Inhalt der kommunalen Richtplanung
+Die kommunale Richtplanung setzt sich zusammen aus dem Planungsbericht und den Richtplankarten. Er behandelt die Sachbereiche Siedlung (Nutzung, Schutz und Gestaltung), Natur und Landschaft (Nutzung, Schutz und Gestaltung), Verkehr und Infrastruktur. Die Richtplaninhalte werden, gegliedert in einzelne Sachbereiche, in den Objektblättern festgehalten.
+
+Einzelne Sachbereiche
+Für jeden Sachbereich wurden Ziele und Grundsätze festgelegt. Diese sind auf die spezifischen Verhältnisse der Stadt Altstätten ausgelegt. Die Ziele ergänzen die Vorstellungen der Stadt und die allgemein geltenden Ziele und Grundsätze der Raumordnung und des kantonalen Richtplans.
+
+Sachbereich Siedlung
+Im Sachbereich Siedlung liegen die Aktivierung von geeignetem Bauland für den kurz- bis mittelfristigen Bedarf und die Festlegung von neuen, auch längerfristigen Reserveflächen im Vordergrund. Der Richtplan bezeichnet neben neuen Entwicklungsgebieten auch Entwicklungsschwerpunkte im bestehenden Siedlungsgebiet. Dabei wird insbesondere auf die Verdichtung nach innen geachtet; gegen aussen wird die Entwicklung mit einer Siedlungsbegrenzungslinie eingegrenzt. Dabei ist zu berücksichtigen, dass in Altstätten die Kapazitätsgrenzen für Wohnbaulandeinzonungen erschöpft sind. Dies bedeutet, dass der Stadtrat auf Grund der kantonalen Vorgaben zurzeit keine neuen Wohngebiete einzonen kann, da die Reserven für die erwartete Entwicklung ausreichend sind.
+
+Sachbereich Natur und Landschaft
+Der Sachbereich Natur und Landschaft ist die direkte Grundlage für den Zonenplan ausserhalb des Siedlungsgebietes. Er macht Aussagen zur Art der vorgesehenen Nutzung in der Landschaft. Ein wichtiger Bestandteil ist dabei der Schutz und Erhalt von charakteristischen und aus geschichtlicher oder gestalterischer Sicht wichtigen Objekte und Gebiete. Im Bericht Schutz werden nutzungsüberlagernde Aussagen getroffen. Diese bilden die Grundlage der kommunalen Schutzverordnung. 
+
+Sachbereich Verkehr und Infrastruktur
+Der Sachbereich Verkehr und Infrastruktur beschäftigt sich mit der Sicherung der Erschliessung innerhalb der Stadt und deren Anbindung an das übergeordnete Netz für alle Verkehrsarten. Die bisherigen Planungen wurden überprüft und soweit angezeigt ergänzt. Insbesondere wird Wert auf einen reibungslosen Verkehrsablauf sowie sichere Fuss- und Schulwege gelegt.
+
+Vorprüfung durch Kanton
+Die materiellen Arbeiten zur Revision der Richtplanung sind nun abgeschlossen. Die Konzeption dauerte von August 2008 bis Juli 2010. Die gesamte Planung wurde von Juli bis Dezember 2010 von den kantonalen Fachstellen geprüft. Die Stadt hat die Hinweise der kantonalen Behörden eingesehen, beurteilt und die verschiedenen Interessen abgewogen. An seiner Sitzung vom 24. Januar 2011 hat der Stadtrat dem Richtplan zugestimmt und für die öffentliche Bekanntmachung freigegeben. 
+
+Öffentliche Bekanntmachung
+Die öffentliche Bekanntmachung dauert 30 Tage und läuft von Dienstag, 15. Februar 2011, bis Freitag, 18. März 2011. Die Unterlagen sind während dieser Frist im Rathaus Altstätten, Rathausplatz 2, 9450 Altstätten (Planauflageraum, 3. Obergeschoss) während der ordentlichen Büroöffnungszeiten einsehbar. Die Bevölkerung kann beim öffentlichen Bekanntmachungsverfahren schriftlich Stellung zu den Inhalten nehmen.
+
+„Kontaktstunden“ im Bauamt
+Am Mittwoch, 23. Februar 2011, von 8.00 bis 14.00 Uhr, und Dienstag, 1. März 2011, von 15.00 bis 19.00 Uhr, finden jeweils auf Voranmeldung betreute „Kontaktstunden“ statt. Dabei sind Vertreter der Bauverwaltung sowie des Planungsbüros Strittmatter Partner AG, St. Gallen, anwesend. Anmeldungen sind an das Bauamt der Stadt Altstätten zu richten (Telefon 071 757 77 80). </description>
+        <ev:startdate>2011-03-14</ev:startdate>
+        <ev:enddate>2011-05-14</ev:enddate>
+    </item>
+    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136305">
+        <dc:format>text/html</dc:format>
+        <date>2011-02-13</date>
+        <title>Resultate Volksabstimmung vom 13. Februar 2011</title>
+        <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136305</link>
+        <description>Die Ergebnisse der Stadt Altstätten finden Sie in den unten eingefügten PDF-Dateien.</description>
+        <ev:startdate>2011-03-13</ev:startdate>
+        <ev:enddate>2011-05-13</ev:enddate>
+    </item>
+    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136109">
+        <dc:format>text/html</dc:format>
+        <date>2011-02-10</date>
+        <title>Baumschneidekurs am 19. Februar 2011</title>
+        <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136109</link>
+        <description>Seit einigen Jahren führt die Stadt Altstätten jährlich den beliebten Baumschneidekurs durch. Die Baumschneidekurse sind in Anlehnung an die durchgeführten Hochstamm-Obstbaumaktionen eingeführt worden. Auch in diesem Jahr wird wieder eine Baumaktion durchgeführt.
+
+Hochstamm-Obstbaumaktion
+Ab sofort können bei der Stadtverwaltung Hochstamm-Obstbäume zum verbilligten Preis von 30 Franken pro Baum bestellt werden. Bestellformulare können beim Frontoffice (Telefon 071 757 77 20) bzw. beim Bauamt der Stadt Altstätten (Telefon 071 757 77 83) bezogen werden. Bezugsberechtigt sind Personen mit Wohnsitz in der Politischen Gemeinde Altstätten
+
+Obstbaum-Schnittkurs in Lüchingen
+Ebenso wichtig wie die Pflanzung junger Obstbäume ist auch die regelmässige und fachgerechte Pflege. Aus diesem Grunde bietet die Stadt Altstätten am Samstag, 19. Februar 2011, von 13.30 bis zirka 16.00 Uhr, bei der Obst- und Beerenanlage von Peter Eugster, im Gehrenhof 6, Lüchingen, einen Obstbaum-Schnittkurs an. Auch zum Thema Beerengehölze, Spalier- und Niederstammbäume werden an diesem Nachmittag Infos und Tipps vermittelt. Kursleiter sind Florian Vetsch, Grabs, und Peter Lippus, Widnau.
+
+Kursinhalt
+Das Ziel des Kurses besteht darin, Grundwissen für das richtige Schneiden der Bäume und der Beerengehölze zu vermitteln. Auch wertvolle Tipps zur fachgerechten Pflanzung von Jungbäumen und Pflanzen werden von den Kursleitern abgegeben. Die Pflegeschnitte erfolgen durch die Kursleiter unter Einbezug der Kursteilnehmenden.
+
+Anmeldungen
+Die Stadt Altstätten lädt interessierte Personen ein, den Kurs zu besuchen und freut sich auf einen interessanten und abwechslungsreichen Kursnachmittag. Anmeldungen sind bis 17. Februar 2011 an Markus Stieger, Bauamt (Telefon 071 757 77 83 oder E-Mail markus.stieger@altstaetten.ch) oder Peter Eugster, Lüchingen (Telefon 071 755 28 09 oder E-Mail eugster-gehrenhof@bluewin.ch) zu richten. Der Kurs wird bei genügend Anmeldungen durchgeführt. Sollte der Kurs mangels Anmeldungen nicht stattfinden, werden die angemeldeten Personen informiert. Treffpunkt ist am 19. Februar 2011 um 13.15 Uhr beim Ribelhof, Rietstrasse 52, Lüchingen. Die Kursteilnehmenden werden gebeten, auf witterungsgerechte Bekleidung zu achten. Von den Kursteilnehmenden wird ein kleiner Unkostenbeitrag erhoben.
+
+Die Stadt Altstätten freut sich über eine grosse Anzahl Kursbesucherinnen und Kursbesucher. </description>
+        <ev:startdate>2011-03-10</ev:startdate>
+        <ev:enddate>2011-05-10</ev:enddate>
+    </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136026">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-02-09</dc:date>
+        <date>2011-02-09</date>
         <title>Frontoffice</title>
         <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136026</link>
-        <description>Damit auch berufstдtige Einwohnerinnen und Einwohner die Dienstleistungen der Stadt beanspruchen kцnnen, ist das Frontoffice wiederum am nдchsten Samstag, 12. Februar 2011, von 09.00 Uhr bis 11.00 Uhr, geцffnet.</description>
+        <description>Damit auch berufstätige Einwohnerinnen und Einwohner die Dienstleistungen der Stadt beanspruchen können, ist das Frontoffice wiederum am nächsten Samstag, 12. Februar 2011, von 09.00 Uhr bis 11.00 Uhr, geöffnet.</description>
         <ev:startdate>2011-03-09</ev:startdate>
         <ev:enddate>2011-06-09</ev:enddate>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135766">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-02-07</dc:date>
+        <date>2011-02-07</date>
         <title>Abstimmungsbeschwerde abgewiesen</title>
         <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135766</link>
-        <description>Mit Eingabe vom 10. Dezember 2010 wurde beim Departement des Innern des Kantons St. Gallen eine Abstimmungsbeschwerde wegen Rechtswidrigkeit des an der Urnenabstimmung vom 28. November 2010 gefassten Beschlusses der Bьrgerschaft erhoben. Die Beschwerde fьhrende Person beantragte, den Beschluss der Bьrgerschaft vom 28. November 2010 durch das Departement des Innern aufzuheben.
+        <description>Mit Eingabe vom 10. Dezember 2010 wurde beim Departement des Innern des Kantons St. Gallen eine Abstimmungsbeschwerde wegen Rechtswidrigkeit des an der Urnenabstimmung vom 28. November 2010 gefassten Beschlusses der Bürgerschaft erhoben. Die Beschwerde führende Person beantragte, den Beschluss der Bürgerschaft vom 28. November 2010 durch das Departement des Innern aufzuheben.
 
-Beschwerdegrьnde
-Zur Begrьndung fьhrte die Beschwerde fьhrende Person zusammengefasst aus, der mit der Urnenabstimmung vom 28. November 2010 gesprochene Nettokredit von 4,576 Mio. Franken enthalte diverse Positionen, welche die durch den Stadtrat vorgesehenen, aber hinsichtlich ihrer Realisierung keinesfalls sicheren Projekte Zentrumsьberbauung und Rathaus betrдfen. 
+Beschwerdegründe
+Zur Begründung führte die Beschwerde führende Person zusammengefasst aus, der mit der Urnenabstimmung vom 28. November 2010 gesprochene Nettokredit von 4,576 Mio. Franken enthalte diverse Positionen, welche die durch den Stadtrat vorgesehenen, aber hinsichtlich ihrer Realisierung keinesfalls sicheren Projekte Zentrumsüberbauung und Rathaus beträfen. 
 
-Sдmtliche Beschwerdepunkte abgewiesen
-Am 4. Februar 2011 hat das Departement des Innern des Kantons St. Gallen entschieden, dass die Abstimmungsbeschwerde vom 10. Dezember 2010 abgewiesen wird. Zusammenfassend hat sich nach Ansicht des Departements des Innern ergeben, dass die Anlagekosten fьr die Infrastruktur- und Verkehrsanlagen des Stadtentwicklungsprojektes Freihof-Rathaus den Stimmberechtigten unabhдngig von den gegebenenfalls noch in Zusammenhang mit der Zentrumsьberbauung und dem Rathausneubau anfallenden Kosten zur Abstimmung vorgelegt werden durften. Die Einheit der Materie ist durch die separate Beschlussfassung der Stimmberechtigten nicht verletzt. Die gegen den Beschluss vom 28. November 2010 wegen Rechtswidrigkeit erhobene Abstimmungsbeschwerde wurde abgewiesen. 
+Sämtliche Beschwerdepunkte abgewiesen
+Am 4. Februar 2011 hat das Departement des Innern des Kantons St. Gallen entschieden, dass die Abstimmungsbeschwerde vom 10. Dezember 2010 abgewiesen wird. Zusammenfassend hat sich nach Ansicht des Departements des Innern ergeben, dass die Anlagekosten für die Infrastruktur- und Verkehrsanlagen des Stadtentwicklungsprojektes Freihof-Rathaus den Stimmberechtigten unabhängig von den gegebenenfalls noch in Zusammenhang mit der Zentrumsüberbauung und dem Rathausneubau anfallenden Kosten zur Abstimmung vorgelegt werden durften. Die Einheit der Materie ist durch die separate Beschlussfassung der Stimmberechtigten nicht verletzt. Die gegen den Beschluss vom 28. November 2010 wegen Rechtswidrigkeit erhobene Abstimmungsbeschwerde wurde abgewiesen. 
 
 Aufschiebende Wirkung entzogen
-Um schnellstmцglich mit dem Bau der Infrastruktur- und Verkehrsanlagen beginnen zu kцnnen, beantragte die Stadt Altstдtten beim Departement des Innern, dass der Abstimmungsbeschwerde die aufschiebende Wirkung entzogen wird. Der Entscheid ьber die aufschiebende Wirkung erforderte eine Interessenabwдgung. Als wichtiger Grund gilt insbesondere das цffentliche Interesse, das den sofortigen Vollzug eines Beschlusses gebietet. Das Departement des Innern hat in seinen Ausfьhrungen anerkannt, dass die Stimmbьrgerschaft bereits zum zweiten Mal grossmehrheitlich die Anpassung der Verkehrs- und Infrastrukturanlagen im Zentrum als notwendig und in der vorgeschlagenen Dimension als sinnvoll beurteilte. Die Verzцgerung erscheint umso mehr als unverstдndlich, als die Beschwerde fьhrende Person fьr die Rьge der verletzten Einheit der Materie bereits vom Verwaltungsgericht im September 2010 eine abschlдgige Antwort zur Beschwerde gegen den Beschluss der Bьrgerschaft vom Mai 2009 erhalten hat. Dem цffentlichen Interesse an der Vermeidung eines weiteren Projektaufschubs steht kein erkennbarer schьtzenswertes Interesse der Beschwerde fьhrenden Person entgegen. Um sicherzustellen, dass eine allfдllige Beschwerde gegen den vorliegenden Entscheid die Umsetzung des Beschlusses der Bьrgerschaft nicht noch weiter verzцgert, ist deshalb einer allfдlligen Beschwerde gegen den vorliegenden Entscheid die aufschiebende Wirkung zu entziehen. Somit kann mit dem Bau der Infrastruktur- und Verkehrsanlagen begonnen werden. 
+Um schnellstmöglich mit dem Bau der Infrastruktur- und Verkehrsanlagen beginnen zu können, beantragte die Stadt Altstätten beim Departement des Innern, dass der Abstimmungsbeschwerde die aufschiebende Wirkung entzogen wird. Der Entscheid über die aufschiebende Wirkung erforderte eine Interessenabwägung. Als wichtiger Grund gilt insbesondere das öffentliche Interesse, das den sofortigen Vollzug eines Beschlusses gebietet. Das Departement des Innern hat in seinen Ausführungen anerkannt, dass die Stimmbürgerschaft bereits zum zweiten Mal grossmehrheitlich die Anpassung der Verkehrs- und Infrastrukturanlagen im Zentrum als notwendig und in der vorgeschlagenen Dimension als sinnvoll beurteilte. Die Verzögerung erscheint umso mehr als unverständlich, als die Beschwerde führende Person für die Rüge der verletzten Einheit der Materie bereits vom Verwaltungsgericht im September 2010 eine abschlägige Antwort zur Beschwerde gegen den Beschluss der Bürgerschaft vom Mai 2009 erhalten hat. Dem öffentlichen Interesse an der Vermeidung eines weiteren Projektaufschubs steht kein erkennbarer schützenswertes Interesse der Beschwerde führenden Person entgegen. Um sicherzustellen, dass eine allfällige Beschwerde gegen den vorliegenden Entscheid die Umsetzung des Beschlusses der Bürgerschaft nicht noch weiter verzögert, ist deshalb einer allfälligen Beschwerde gegen den vorliegenden Entscheid die aufschiebende Wirkung zu entziehen. Somit kann mit dem Bau der Infrastruktur- und Verkehrsanlagen begonnen werden. 
 
 
-Weiterzug an das Verwaltungsgericht mцglich
-Gegen den Entscheid kann innert vierzehn Tagen seit Erцffnung Beschwerde beim Verwaltungsgericht erhoben werden. Einer allfдlligen Beschwerde gegen den Entscheid des Departements des Innern des Kantons St. Gallen wurde die aufschiebende Wirkung entzogen. Damit kann mit den Bauarbeiten trotz einer mцglichen Beschwerde beim Verwaltungsgericht begonnen werden.
+Weiterzug an das Verwaltungsgericht möglich
+Gegen den Entscheid kann innert vierzehn Tagen seit Eröffnung Beschwerde beim Verwaltungsgericht erhoben werden. Einer allfälligen Beschwerde gegen den Entscheid des Departements des Innern des Kantons St. Gallen wurde die aufschiebende Wirkung entzogen. Damit kann mit den Bauarbeiten trotz einer möglichen Beschwerde beim Verwaltungsgericht begonnen werden.
 
 Baubeginn
-Der Stadtrat ist erfreut ьber den fьr die Stadt Altstдtten positiven Entscheid des Departements des Innern des Kantons St. Gallen. Es ist fьr Altstдtten wichtig, dass mit den Bauarbeiten der Infrastruktur- und Verkehrsanlagen begonnen werden kann, damit sich die Verkehrssituation im Zentrum von Altstдtten fьr alle Verkehrsteilnehmenden bald verbessern wird. </description>
+Der Stadtrat ist erfreut über den für die Stadt Altstätten positiven Entscheid des Departements des Innern des Kantons St. Gallen. Es ist für Altstätten wichtig, dass mit den Bauarbeiten der Infrastruktur- und Verkehrsanlagen begonnen werden kann, damit sich die Verkehrssituation im Zentrum von Altstätten für alle Verkehrsteilnehmenden bald verbessern wird. </description>
         <ev:startdate>2011-03-07</ev:startdate>
         <ev:enddate>2011-05-07</ev:enddate>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135290">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-01-31</dc:date>
+        <date>2011-01-31</date>
         <title>Lichtmess- und Pelzfellmarkt am 3. Februar 2011</title>
         <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135290</link>
-        <description>Altstдtten, die historische Marktstadt, wurde dank ihren traditionellen Mдrkten und dem Handel mit Textilien schon frьh zu einem wichtigen Marktort. Nach wie vor ist Altstдtten bekannt fьr seine Mдrkte. Der bevorstehende Lichtmess- und Pelzfellmarkt ist der erste grцssere Markt im neuen Jahr. Weitere Mдrkte werden folgen. 
+        <description>Altstätten, die historische Marktstadt, wurde dank ihren traditionellen Märkten und dem Handel mit Textilien schon früh zu einem wichtigen Marktort. Nach wie vor ist Altstätten bekannt für seine Märkte. Der bevorstehende Lichtmess- und Pelzfellmarkt ist der erste grössere Markt im neuen Jahr. Weitere Märkte werden folgen. 
 
-Ьber 200-jдhrige Tradition
-Seit 1802, jeweils am Donnerstag nach Lichtmess, findet dieser traditionelle Anlass statt. Felle von Rotfьchsen, Mardern und Dachsen aus heimischer Jagd sowie Kaninchen werden einem interessierten Publikum angeboten. An den Stдnden werden handgearbeitete Produkte und Erzeugnisse aus heimischer Produktion von Pelznдher, Bьchsenmacher, Kьrschner und Prдparatoren gezeigt. Der Pelzfellmarkt findet im Saal des Hotels Sonne statt, der ьbrige Markt auf dem Gemьsemarkt.
+Über 200-jährige Tradition
+Seit 1802, jeweils am Donnerstag nach Lichtmess, findet dieser traditionelle Anlass statt. Felle von Rotfüchsen, Mardern und Dachsen aus heimischer Jagd sowie Kaninchen werden einem interessierten Publikum angeboten. An den Ständen werden handgearbeitete Produkte und Erzeugnisse aus heimischer Produktion von Pelznäher, Büchsenmacher, Kürschner und Präparatoren gezeigt. Der Pelzfellmarkt findet im Saal des Hotels Sonne statt, der übrige Markt auf dem Gemüsemarkt.
 
-Hцhepunkte am Markttag
-Der Auftritt der Jagdhornblдser vor dem Hotel Sonne um 9 Uhr, die Prдmierung der schцnsten Fuchsfelle um 10.35 Uhr und die Verlosung der Gratistombola um 11 Uhr gehцren zu den Hцhepunkten des Lichtmess- und Pelzfellmarktes.
+Höhepunkte am Markttag
+Der Auftritt der Jagdhornbläser vor dem Hotel Sonne um 9 Uhr, die Prämierung der schönsten Fuchsfelle um 10.35 Uhr und die Verlosung der Gratistombola um 11 Uhr gehören zu den Höhepunkten des Lichtmess- und Pelzfellmarktes.
 
-Die Besucherinnen und Besucher werden eingeladen, einen Moment in eine „andere Welt“ einzutauchen und sich von der Vielfдltigkeit und dem Treiben am Lichtmess- und Pelzfellmarkt ьberraschen zu lassen. 
+Die Besucherinnen und Besucher werden eingeladen, einen Moment in eine „andere Welt“ einzutauchen und sich von der Vielfältigkeit und dem Treiben am Lichtmess- und Pelzfellmarkt überraschen zu lassen. 
 
-Die Stadt Altstдtten freut sich auf zahlreiche Besuchende. </description>
+Die Stadt Altstätten freut sich auf zahlreiche Besuchende. </description>
         <ev:startdate>2011-02-28</ev:startdate>
         <ev:enddate>2011-04-30</ev:enddate>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135133">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-01-28</dc:date>
-        <title>Positiver Steuerabschluss fьr das Jahr 2010</title>
+        <date>2011-01-28</date>
+        <title>Positiver Steuerabschluss für das Jahr 2010</title>
         <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135133</link>
-        <description>Der Stadtrat hat die Steuerabrechnung 2010 der Stadt Altstдtten genehmigt. Bei den Einkommens- und Vermцgenssteuern der Stadt Altstдtten resultiert fьr 2010 ein Mehrertrag von 927'600 Franken. Bei den Steueranteilen wie beispielsweise Gewinn- und Kapitalsteuern erzielt die Stadt Altstдtten gegenьber dem Budget Mehreinnahmen von netto 624'700 Franken. Insgesamt betragen die Steuermehreinnahmen Total 2,25 Mio. Franken. 
+        <description>Der Stadtrat hat die Steuerabrechnung 2010 der Stadt Altstätten genehmigt. Bei den Einkommens- und Vermögenssteuern der Stadt Altstätten resultiert für 2010 ein Mehrertrag von 927'600 Franken. Bei den Steueranteilen wie beispielsweise Gewinn- und Kapitalsteuern erzielt die Stadt Altstätten gegenüber dem Budget Mehreinnahmen von netto 624'700 Franken. Insgesamt betragen die Steuermehreinnahmen Total 2,25 Mio. Franken. 
 
 Weniger Steuerkraft
-Die einfache Steuer (100 %) der natьrlichen Personen hat im Jahr 2010 ohne Nachzahlungen Fr. 16'106'224.15 ergeben. Im Vorjahr betrug sie Fr. 16'915'256.79. Die Abnahme macht somit Fr. 809'032.64 oder 4,7 Prozent aus. Laut Steuerplan rechnete der Stadtrat fьr 2010 mit einer Abnahme der einfachen Steuer von 8,37 Prozent.
+Die einfache Steuer (100 %) der natürlichen Personen hat im Jahr 2010 ohne Nachzahlungen Fr. 16'106'224.15 ergeben. Im Vorjahr betrug sie Fr. 16'915'256.79. Die Abnahme macht somit Fr. 809'032.64 oder 4,7 Prozent aus. Laut Steuerplan rechnete der Stadtrat für 2010 mit einer Abnahme der einfachen Steuer von 8,37 Prozent.
 
 Die Steuerkraft je Einwohner betrug im Jahr 2010 rund 1’893 Franken. 2009 betrug die Steuerkraft noch 1'996 Franken. Inklusive der Quellensteuerpflichtigen lag die einfache Steuer je Einwohner 2010 bei rund 2'022 Franken (2009: 2'138 Franken). 
 
 Gemeindesteuern
-Bei den Einkommens- und Vermцgenssteuern 2010 wurden 24'642'600 Franken erzielt. Budgetiert waren Einnahmen von 23,715 Mio. Franken. Dies ergibt Mehreinnahmen von 927'600 Franken.
+Bei den Einkommens- und Vermögenssteuern 2010 wurden 24'642'600 Franken erzielt. Budgetiert waren Einnahmen von 23,715 Mio. Franken. Dies ergibt Mehreinnahmen von 927'600 Franken.
 
-Die Einkommens- und Vermцgenssteuern frьherer Jahre ergeben 2'509'200 Franken. Budgetiert waren 1,9 Mio. Franken. Die Mehreinnahmen betragen 609'200 Franken. Dieses Ergebnis wurde infolge unerwartet hoher Nachzahlungen aus den Vorjahren erzielt.
+Die Einkommens- und Vermögenssteuern früherer Jahre ergeben 2'509'200 Franken. Budgetiert waren 1,9 Mio. Franken. Die Mehreinnahmen betragen 609'200 Franken. Dieses Ergebnis wurde infolge unerwartet hoher Nachzahlungen aus den Vorjahren erzielt.
 
-Im Jahr 2010 wurden 1'632'300 Franken fьr Grundsteuern (+ Fr. 300.-- gegenьber Budget) sowie 709'600 Franken fьr Handдnderungssteuern eingenommen (+ Fr. 9'600 Franken gegenьber Budget).
+Im Jahr 2010 wurden 1'632'300 Franken für Grundsteuern (+ Fr. 300.-- gegenüber Budget) sowie 709'600 Franken für Handänderungssteuern eingenommen (+ Fr. 9'600 Franken gegenüber Budget).
 
 Mehrertrag dank positiver Wirtschaftsentwicklung
-Die Einnahmen der Gewinn- und Kapitalsteuern juristischer Personen haben 3'506'700 Franken ergeben. Gegenьber dem Budget ergibt dies Mehreinnahmen von 956'700 Franken. Dank der positiven Entwicklung der Wirtschaft, die sich bei der Budgetierung noch nicht abzeichnete, haben sich die eher zurьckhaltenden Prognosen damit nicht bestдtigt.
+Die Einnahmen der Gewinn- und Kapitalsteuern juristischer Personen haben 3'506'700 Franken ergeben. Gegenüber dem Budget ergibt dies Mehreinnahmen von 956'700 Franken. Dank der positiven Entwicklung der Wirtschaft, die sich bei der Budgetierung noch nicht abzeichnete, haben sich die eher zurückhaltenden Prognosen damit nicht bestätigt.
 
 
-Tiefere Grundstьckgewinne
-Hingegen resultiert bei den Grundstьckgewinnsteuern bei einem budgetierten Ertrag von 500'000 Franken und einem Ergebnis von 341'400 Franken ein Minus von 158'600 Franken. Dies zeigt auch, dass im Jahr 2010 trotz vieler Handдnderungen weniger Grundstьckgewinne erzielt worden sind.
+Tiefere Grundstückgewinne
+Hingegen resultiert bei den Grundstückgewinnsteuern bei einem budgetierten Ertrag von 500'000 Franken und einem Ergebnis von 341'400 Franken ein Minus von 158'600 Franken. Dies zeigt auch, dass im Jahr 2010 trotz vieler Handänderungen weniger Grundstückgewinne erzielt worden sind.
 
-Mindereinnahmen gegenьber dem Budget 2010 sind bei den Feuerwehrabgaben (minus 89'900 Franken), bei den Quellensteuern natьrlicher und juristischer Personen (minus 147'200 Franken) sowie bei den Grenzgдngersteuern (minus 49'600 Franken) zu verzeichnen. 
+Mindereinnahmen gegenüber dem Budget 2010 sind bei den Feuerwehrabgaben (minus 89'900 Franken), bei den Quellensteuern natürlicher und juristischer Personen (minus 147'200 Franken) sowie bei den Grenzgängersteuern (minus 49'600 Franken) zu verzeichnen. 
 
 Steuerfuss
-Der Steuerfuss hat fьr 2010 153 % betragen. In diesem Steuerfuss sind die Primar- und Oberstufenschul¬gemeinden eingeschlossen. Der Steuerfuss von 153 % gilt auch fьr das Jahr 2011 unverдndert.
+Der Steuerfuss hat für 2010 153 % betragen. In diesem Steuerfuss sind die Primar- und Oberstufenschul¬gemeinden eingeschlossen. Der Steuerfuss von 153 % gilt auch für das Jahr 2011 unverändert.
 
 Steuerablieferungen
-Unter Berьcksichtigung der Verrechnungssteuer-Gutschriften machen die Steuereinnahmen 63'863'000 Franken aus (Vorjahr: Fr. 63'418'900.--). Diese teilen sich wie folgt auf:
+Unter Berücksichtigung der Verrechnungssteuer-Gutschriften machen die Steuereinnahmen 63'863'000 Franken aus (Vorjahr: Fr. 63'418'900.--). Diese teilen sich wie folgt auf:
 
 - Bund Fr. 7'424'500.-- (11,6 %)
 - Kanton St. Gallen Fr. 17'136'000.-- (26,8 %)
-- Stadt Altstдtten / Schulgemeinden Fr. 35'907'500.-- (56,3 %)
+- Stadt Altstätten / Schulgemeinden Fr. 35'907'500.-- (56,3 %)
 - Kirchen Fr. 3'395'000.-- (5,3 %)
 
 
@@ -128,144 +199,92 @@ Der Stadtrat dankt allen Steuerpflichtigen, welche die Steuern im Jahr 2010 fris
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134864">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-01-26</dc:date>
+        <date>2011-01-26</date>
         <title>Sirenentest am 2. Februar 2011</title>
         <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134864</link>
-        <description>Am 2. Februar 2011, um 13.30 Uhr, wird in der ganzen Schweiz das Zeichen „Allgemeiner Alarm“ ausgelцst. Dabei erklingt wдhrend einer Minute ein regelmдssig auf- und absteigender Heulton. Wenn nцtig, darf die Sirenenkontrolle bis 14.00 Uhr weiter gefьhrt werden.
+        <description>Am 2. Februar 2011, um 13.30 Uhr, wird in der ganzen Schweiz das Zeichen „Allgemeiner Alarm“ ausgelöst. Dabei erklingt während einer Minute ein regelmässig auf- und absteigender Heulton. Wenn nötig, darf die Sirenenkontrolle bis 14.00 Uhr weiter geführt werden.
 
 Gesamtschweizerischer Sirenentest
-Gesamtschweizerisch werden rund 8'000 Sirenen auf ihre Funktionstьchtigkeit getestet. Im Kanton St. Gallen werden dabei alle 227 stationдren Sirenen ferngesteuert sowie von Hand ausgelцst. Ebenfalls werden 152 mobile Sirenen getestet.
+Gesamtschweizerisch werden rund 8'000 Sirenen auf ihre Funktionstüchtigkeit getestet. Im Kanton St. Gallen werden dabei alle 227 stationären Sirenen ferngesteuert sowie von Hand ausgelöst. Ebenfalls werden 152 mobile Sirenen getestet.
 
 Was gilt bei einem echten Sirenenalarm?
-Wenn das Zeichen „Allgemeiner Alarm“ ausserhalb der angekьndigten Sirenenkontrolle ertцnt, bedeutet dies, dass eine Gefдhrdung der Bevцlkerung mцglich ist. In diesem Fall ist die Bevцlkerung aufgefordert, Radio zu hцren, die Anweisungen der Behцrden zu befolgen und die Nachbarn zu informieren.
+Wenn das Zeichen „Allgemeiner Alarm“ ausserhalb der angekündigten Sirenenkontrolle ertönt, bedeutet dies, dass eine Gefährdung der Bevölkerung möglich ist. In diesem Fall ist die Bevölkerung aufgefordert, Radio zu hören, die Anweisungen der Behörden zu befolgen und die Nachbarn zu informieren.
 
 Information zur Alarmierung
-Weitere Hinweise und Verhaltensregeln fьr den Fall eines echten Alarms finden sich im Merkblatt „Alarmierung der Bevцlkerung“ auf den hintersten Seiten jedes Telefonbuches, ferner auf Seite 662 im Teletext sowie im Internet unter www.bevoelkerungsschutz.ch (Dokumente / Unterlagen Alarmierung). Wertvolle Informationen enthдlt auch der Flyer Nr. 408.945 „Schutz der Bevцlkerung bei Gefдhrdung“.
+Weitere Hinweise und Verhaltensregeln für den Fall eines echten Alarms finden sich im Merkblatt „Alarmierung der Bevölkerung“ auf den hintersten Seiten jedes Telefonbuches, ferner auf Seite 662 im Teletext sowie im Internet unter www.bevoelkerungsschutz.ch (Dokumente / Unterlagen Alarmierung). Wertvolle Informationen enthält auch der Flyer Nr. 408.945 „Schutz der Bevölkerung bei Gefährdung“.
 
-Die Bevцlkerung wird um Verstдndnis fьr die mit der Sirenenkontrolle verbundenen Unannehmlichkeiten gebeten. </description>
+Die Bevölkerung wird um Verständnis für die mit der Sirenenkontrolle verbundenen Unannehmlichkeiten gebeten. </description>
         <ev:startdate>2011-02-26</ev:startdate>
         <ev:enddate>2011-04-26</ev:enddate>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134756">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-01-25</dc:date>
-        <title>Infostelle fьr Migrantinnen und Migranten im St. Galler Rheintal</title>
+        <date>2011-01-25</date>
+        <title>Infostelle für Migrantinnen und Migranten im St. Galler Rheintal</title>
         <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134756</link>
-        <description>Neuzuzьgerinnen und Neuzuzьger haben es teilweise schwer, sich in einer Gemeinde respektive im Kanton zu Recht zu finden. Besonders betroffen sind Migrantinnen und Migranten. Neben mцglichen Problemen mit den verschiedenen Institutionen, Regeln und Gesetzen kommen die Sprachschwierigkeiten dazu.
+        <description>Neuzuzügerinnen und Neuzuzüger haben es teilweise schwer, sich in einer Gemeinde respektive im Kanton zu Recht zu finden. Besonders betroffen sind Migrantinnen und Migranten. Neben möglichen Problemen mit den verschiedenen Institutionen, Regeln und Gesetzen kommen die Sprachschwierigkeiten dazu.
 
-Aus diesem Grund цffnet am Dienstag, 1. Februar 2011, in den Rдumlichkeiten des „Vereins St. Galler Rheintal“ im „ri.nova Impulszentrum“ an der Alten Landstrasse 106 in Rebstein eine neue Informationsstelle ihre Tore. Der niederschwellige Auskunftsdienst ist jeden Dienstag von 19 bis 21 Uhr geцffnet. Er richtet sich an alle Bewohnerinnen und Bewohner des St. Galler Rheintals und ist kostenlos.
+Aus diesem Grund öffnet am Dienstag, 1. Februar 2011, in den Räumlichkeiten des „Vereins St. Galler Rheintal“ im „ri.nova Impulszentrum“ an der Alten Landstrasse 106 in Rebstein eine neue Informationsstelle ihre Tore. Der niederschwellige Auskunftsdienst ist jeden Dienstag von 19 bis 21 Uhr geöffnet. Er richtet sich an alle Bewohnerinnen und Bewohner des St. Galler Rheintals und ist kostenlos.
 
-Im Rahmen des Massnahmenpakets „Zusammenleben im St.Galler Rheintal – mitenand statt nebetenand“ wurde diese Infostelle ins Leben gerufen. In insgesamt sechs Sprachen – Deutsch, Albanisch, Englisch, Serbokroatisch, Tamilisch und Tьrkisch – werden Ratsuchende unterstьtzt. Dabei handelt es um eine niederschwellige Hilfe in allen Bereichen des tдglichen Lebens. Dazu gehцren der Umgang mit Behцrden und Institutionen, Probleme rund um die Sozialversicherungen (AHV, IV, Pensions- oder Krankenkasse), Fragen zum Aufenthalt in der Schweiz, zur Einbьrgerungen, zu Problemen am Arbeitsplatz oder mit dem Arbeitsamt sowie Fragen rund ums Wohnen, Schule oder Familie.
+Im Rahmen des Massnahmenpakets „Zusammenleben im St.Galler Rheintal – mitenand statt nebetenand“ wurde diese Infostelle ins Leben gerufen. In insgesamt sechs Sprachen – Deutsch, Albanisch, Englisch, Serbokroatisch, Tamilisch und Türkisch – werden Ratsuchende unterstützt. Dabei handelt es um eine niederschwellige Hilfe in allen Bereichen des täglichen Lebens. Dazu gehören der Umgang mit Behörden und Institutionen, Probleme rund um die Sozialversicherungen (AHV, IV, Pensions- oder Krankenkasse), Fragen zum Aufenthalt in der Schweiz, zur Einbürgerungen, zu Problemen am Arbeitsplatz oder mit dem Arbeitsamt sowie Fragen rund ums Wohnen, Schule oder Familie.
 
-In speziellen Fдllen helfen die Beraterinnen und Berater auch gerne beim Ьbersetzen und Ausfьllen von Formularen. Bei komplizierteren Angelegenheiten wie Steuererklдrung, Schuldensanierungen oder schwierigen Rechtsfragen werden die Ratsuchenden auf Wunsch an die entsprechenden Spezialisten weitergeleitet. 
+In speziellen Fällen helfen die Beraterinnen und Berater auch gerne beim Übersetzen und Ausfüllen von Formularen. Bei komplizierteren Angelegenheiten wie Steuererklärung, Schuldensanierungen oder schwierigen Rechtsfragen werden die Ratsuchenden auf Wunsch an die entsprechenden Spezialisten weitergeleitet. 
 </description>
         <ev:startdate>2011-02-25</ev:startdate>
         <ev:enddate>2011-04-25</ev:enddate>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134645">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-01-24</dc:date>
+        <date>2011-01-24</date>
         <title>Neue Sammelstelle beim SBB-Bahnhof</title>
         <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134645</link>
-        <description>Die Stadt Altstдtten hat im vergangenen Oktober beim SBB-Bahnhof eine neue Sammelstelle installiert. Bei dieser neuen Art von Sammelstelle wurden Untergrundcontainer eingesetzt. Somit befinden sich die Recyclingmaterialien unter der Erde. Entsorgen kann man Glas, Aluminium sowie Stahl- und Weissblechdosen. 
+        <description>Die Stadt Altstätten hat im vergangenen Oktober beim SBB-Bahnhof eine neue Sammelstelle installiert. Bei dieser neuen Art von Sammelstelle wurden Untergrundcontainer eingesetzt. Somit befinden sich die Recyclingmaterialien unter der Erde. Entsorgen kann man Glas, Aluminium sowie Stahl- und Weissblechdosen. 
 
 Glas nach Farben sortieren
-Altglas kann nach Farben sortiert in die Container geworfen werden. Das Glas sollte gesдubert sein. Verschlьsse und Verschlussteile jeder Art, Kapseln, Umhьllungen, Metallteile usw. sind zu entfernen. Spiegel- und Fensterglas sowie Porzellan, Ton und Steingut gehцren nicht in die Sammelstelle. Saubere Aluminiumverpackungen, Alu-Getrдnkedosen sowie Stahlblechverpackungen kцnnen in den entsprechenden Containern entsorgt werden. 
+Altglas kann nach Farben sortiert in die Container geworfen werden. Das Glas sollte gesäubert sein. Verschlüsse und Verschlussteile jeder Art, Kapseln, Umhüllungen, Metallteile usw. sind zu entfernen. Spiegel- und Fensterglas sowie Porzellan, Ton und Steingut gehören nicht in die Sammelstelle. Saubere Aluminiumverpackungen, Alu-Getränkedosen sowie Stahlblechverpackungen können in den entsprechenden Containern entsorgt werden. 
 
 Ruhezeiten einhalten
-Die Bevцlkerung wird gebeten, bei der Entsorgung die Ruhezeiten einzuhalten. An Sonn- und Feiertagen sowie nachts von 20.00 bis 07.00 Uhr darf kein Glas in die Glascontainer geworfen werden. Da sich kein Abfallkorb bei dieser Sammelstelle befindet, werden die Einwohnerinnen und Einwohner gebeten, die mitgebrachten Gebinde wie Plastiktaschen, Kartonschachteln und dergleichen im eigenen Hauskehricht selber zu beseitigen. Jegliches widerrechtliche Ablagern von Abfдllen bei dieser Sammelstelle ist verboten. Zuwiderhandlungen werden mit Busse bestraft. </description>
+Die Bevölkerung wird gebeten, bei der Entsorgung die Ruhezeiten einzuhalten. An Sonn- und Feiertagen sowie nachts von 20.00 bis 07.00 Uhr darf kein Glas in die Glascontainer geworfen werden. Da sich kein Abfallkorb bei dieser Sammelstelle befindet, werden die Einwohnerinnen und Einwohner gebeten, die mitgebrachten Gebinde wie Plastiktaschen, Kartonschachteln und dergleichen im eigenen Hauskehricht selber zu beseitigen. Jegliches widerrechtliche Ablagern von Abfällen bei dieser Sammelstelle ist verboten. Zuwiderhandlungen werden mit Busse bestraft. </description>
         <ev:startdate>2011-02-24</ev:startdate>
         <ev:enddate>2011-04-24</ev:enddate>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134303">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-01-19</dc:date>
-        <title>Ьber 200 Medienmitteilungen der Stadt Altstдtten</title>
+        <date>2011-01-19</date>
+        <title>Über 200 Medienmitteilungen der Stadt Altstätten</title>
         <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134303</link>
-        <description>Eine offene, ehrliche und aktive Kommunikation bildet eine wesentliche Grundlage fьr das Vertrauen der Bevцlkerung und der Medien in den Stadtrat und die Verwaltung. Die Exekutive der Stadt Altstдtten hat den Grundsatz, ьber politisch wichtige Vorkommnisse, Ereignisse und Entscheide aktiv, transparent, umfassend und frьhzeitig zu informieren.
+        <description>Eine offene, ehrliche und aktive Kommunikation bildet eine wesentliche Grundlage für das Vertrauen der Bevölkerung und der Medien in den Stadtrat und die Verwaltung. Die Exekutive der Stadt Altstätten hat den Grundsatz, über politisch wichtige Vorkommnisse, Ereignisse und Entscheide aktiv, transparent, umfassend und frühzeitig zu informieren.
 
-Die Medien wurden im vergangenen Jahr mit 211 Medientexten (Vorjahr: 183 Medientexte) bedient. Die „News“ kцnnen auch auf der stдdtischen Website www.altstaetten.ch eingesehen oder via E-Mail abonniert werden. In der Rubrik „Aktuelles, Kommunikation“ findet man diesbezьglich weitere Informationen. Die Medienmitteilungen des vergangenen Jahres stehen im News-Archiv nach wie vor online zur Verfьgung.</description>
+Die Medien wurden im vergangenen Jahr mit 211 Medientexten (Vorjahr: 183 Medientexte) bedient. Die „News“ können auch auf der städtischen Website www.altstaetten.ch eingesehen oder via E-Mail abonniert werden. In der Rubrik „Aktuelles, Kommunikation“ findet man diesbezüglich weitere Informationen. Die Medienmitteilungen des vergangenen Jahres stehen im News-Archiv nach wie vor online zur Verfügung.</description>
         <ev:startdate>2011-02-19</ev:startdate>
         <ev:enddate>2011-04-19</ev:enddate>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133984">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-01-14</dc:date>
+        <date>2011-01-14</date>
         <title>Fahrverbote im Gebiet Gehrenmoos-Schachen-Baffles</title>
         <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133984</link>
-        <description>In letzter Zeit sind bei der Stadt Altstдtten verschiedentlich Begehren fьr den Erlass von Verkehrsmassnahmen an Gemeindestrassen 2. und 3. Klasse im Gebiet Gehrenmoos–Schachen– Baffles, Lьchingen/Altstдtten, beantragt worden. 
+        <description>In letzter Zeit sind bei der Stadt Altstätten verschiedentlich Begehren für den Erlass von Verkehrsmassnahmen an Gemeindestrassen 2. und 3. Klasse im Gebiet Gehrenmoos–Schachen– Baffles, Lüchingen/Altstätten, beantragt worden. 
 
-Die Grьnde fьr den Erlass der Verkehrsmassnahmen sind vielfдltig. Teilweise werden die Strassen bei Veranstaltungen unberechtigterweise als „Parkflдche“ benutzt, wobei dadurch den Anwohnenden und den landwirtschaftlichen Bewirtschaftenden die Zufahrt verunmцglicht wird. Zunehmend wird aber auch festgestellt, dass die Strassen als Abkьrzungen oder Schleichwege genutzt werden. Es handelt sich vorwiegend um Naturstrassen 3. Klasse, welche der Land- und Forstwirtschaft dienen.
+Die Gründe für den Erlass der Verkehrsmassnahmen sind vielfältig. Teilweise werden die Strassen bei Veranstaltungen unberechtigterweise als „Parkfläche“ benutzt, wobei dadurch den Anwohnenden und den landwirtschaftlichen Bewirtschaftenden die Zufahrt verunmöglicht wird. Zunehmend wird aber auch festgestellt, dass die Strassen als Abkürzungen oder Schleichwege genutzt werden. Es handelt sich vorwiegend um Naturstrassen 3. Klasse, welche der Land- und Forstwirtschaft dienen.
 
-Bei der Befigstrasse, Abschnitt Kesselbach bis Rietstrasse, und der Kesselbachstrasse, Abschnitt Wagner J. AG bis Brьcke Kesselbach, sowie der Tiefenackerstrasse, Abschnitt Polypag AG bis Brьcke Kesselbach, wird je ein Verbot fьr Lastwagen mit dem Zusatz „Zubringerdienst gestattet“ erlassen. Alle drei Strassenabschnitte sind Gemeindestrassen 2. Klasse, jedoch nicht fьr den Schwerverkehr ausgebaut.
+Bei der Befigstrasse, Abschnitt Kesselbach bis Rietstrasse, und der Kesselbachstrasse, Abschnitt Wagner J. AG bis Brücke Kesselbach, sowie der Tiefenackerstrasse, Abschnitt Polypag AG bis Brücke Kesselbach, wird je ein Verbot für Lastwagen mit dem Zusatz „Zubringerdienst gestattet“ erlassen. Alle drei Strassenabschnitte sind Gemeindestrassen 2. Klasse, jedoch nicht für den Schwerverkehr ausgebaut.
 
-Die Kantonspolizei St. Gallen hat die Verkehrsmassnahmen geprьft und erachtet diese als ausgewiesen. Die Ausschreibung erfolgt am 17. Januar 2011 im kantonalen Amtsblatt und in den amtlichen Publikationsorganen der Stadt Altstдtten.</description>
+Die Kantonspolizei St. Gallen hat die Verkehrsmassnahmen geprüft und erachtet diese als ausgewiesen. Die Ausschreibung erfolgt am 17. Januar 2011 im kantonalen Amtsblatt und in den amtlichen Publikationsorganen der Stadt Altstätten.</description>
         <ev:startdate>2011-02-14</ev:startdate>
         <ev:enddate>2011-04-14</ev:enddate>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133982">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-01-14</dc:date>
-        <title>Дnderung Heizanschlьsse</title>
+        <date>2011-01-14</date>
+        <title>Änderung Heizanschlüsse</title>
         <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133982</link>
-        <description>Die Heizungen des Pfarrhauses, des Pfrundhauses und des Pfarreisekretariates der Kath. Kirchgemeinde sind am Heizsystem des Rathauses angeschlossen. Diese Heizsysteme werden getrennt und die vorgenannten Gebдude neu an die Fernheizleitung beim Kath. Pfarreiheim angeschlossen. 
+        <description>Die Heizungen des Pfarrhauses, des Pfrundhauses und des Pfarreisekretariates der Kath. Kirchgemeinde sind am Heizsystem des Rathauses angeschlossen. Diese Heizsysteme werden getrennt und die vorgenannten Gebäude neu an die Fernheizleitung beim Kath. Pfarreiheim angeschlossen. 
 
-Aus diesem Grund muss der Rathausplatz geцffnet und die Leitung abgehдngt werden. Beim Rathausplatz ist daher vom 17. – 21. Januar 2011 mit Verkehrsbeschrдnkungen zu rechnen. Der Zugang zu den genannten Liegenschaften bleibt gewдhrleistet.
+Aus diesem Grund muss der Rathausplatz geöffnet und die Leitung abgehängt werden. Beim Rathausplatz ist daher vom 17. – 21. Januar 2011 mit Verkehrsbeschränkungen zu rechnen. Der Zugang zu den genannten Liegenschaften bleibt gewährleistet.
 
-Die Stadt Altstдtten dankt fьr das Verstдndnis.</description>
+Die Stadt Altstätten dankt für das Verständnis.</description>
         <ev:startdate>2011-02-14</ev:startdate>
         <ev:enddate>2011-04-14</ev:enddate>
-    </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133838">
-        <dc:format>text/html</dc:format>
-        <dc:date>2011-01-13</dc:date>
-        <title>Altstдtter Wohnbevцlkerung per 31. Dezember 2010</title>
-        <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133838</link>
-        <description>Im vergangenen Jahr stieg zwar die Zahl der stдndigen Wohnbevцlkerung der Stadt Altstдtten von 10'768 um 15 auf 10'783 Personen an. Zдhlt man Flьchtlinge sowie Asylantinnen und Asylanten (17 Personen), Kurzaufenthalterinnen und Kurzaufenthalter (36 Personen) sowie Wochenaufenthalterinnen und Wochenaufenthalter (115 Personen) ebenfalls dazu, so betrug die Gesamtzahl der Einwohnenden der Stadt Altstдtten Ende 2010 insgesamt 10’951 Personen. 
-
-Von den 10'951 in Altstдtten wohnhaften Personen sind 8'451 Schweizerinnen und Schweizer (davon 3'660 Ortsbьrger/innen). Der Anteil der auslдndischen Bevцlkerung betrдgt rund 23 Prozent (2’500 Personen).
-
-Die Bevцlkerung setzt sich aus 5'559 Frauen und 5'392 Mдnnern zusammen.
-
-Im Schulkreis Altstдtten wohnen 8'232 Einwohner/innen, im Schulkreis Lьchingen 1'576 Personen, im Schulkreis Hinterforst 554 Einwohner/innen, im Schulkreis Lienz 441 Personen und im Schulkreis Kobelwald-Hub-Hard 148 Einwohner/innen.
-
-2'640 Personen sind 0 bis 20 Jahre alt (24,1 %), 2'839 Einwohner/innen 21 bis 40 Jahre alt (25,9 %), 3'114 Personen 41 bis 60 Jahre alt (28,4 %) und 2'358 Personen sind дlter als 61 Jahre.
-
-Mehr als die Hдlfte der Einwohnenden von Altstдtten sind rцmisch-katholisch, nдmlich 5'960 Personen (54,4 %). 2'142 Einwohner/innen sind evangelisch-reformiert (19,6 %) und 2'849 Personen gehцren einer anderen Glaubensgemeinschaft oder keiner an (26 %). 
-
-4'749 Einwohner/innen sind ledig, 4'761 Personen sind verheiratet, 797 geschieden und 644 verwitwet.
-
-Im Jahre 2010 waren 95 Geburten und 92 Todesfдlle zu verzeichnen.</description>
-        <ev:startdate>2011-02-13</ev:startdate>
-        <ev:enddate>2011-04-13</ev:enddate>
-    </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133837">
-        <dc:format>text/html</dc:format>
-        <dc:date>2011-01-13</dc:date>
-        <title>Beschдdigung des Kunstwerkes bei der Aufbahrungshalle</title>
-        <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133837</link>
-        <description>Anfang Dezember 2010 wurde das von Ferdinand Gehr geschaffene Kunstwerk bei der Aufbahrungshalle des Friedhofs in Altstдtten mutwillig beschдdigt. Dabei wurde mit vereistem Schnee ein Teil der Scheiben eingeschlagen.
-
-Die Aufwendungen fьr die Reparatur dieses Kunstwerkes belaufen sich auf 15'000 bis 16'000 Franken.
-
-Die Stadt Altstдtten hat eine Strafanzeige gegen Unbekannt eingereicht und hofft, dass die Tдterschaft eruiert werden kann. Beim vorliegenden Sachschaden mit einer so hohen Schadensumme kann nicht mehr von einem Lausbubenstreich ausgegangen werden.</description>
-        <ev:startdate>2011-02-13</ev:startdate>
-        <ev:enddate>2011-04-13</ev:enddate>
-    </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133719">
-        <dc:format>text/html</dc:format>
-        <dc:date>2011-01-11</dc:date>
-        <title>Informationsveranstaltung ьber Fasnachtsprojekt fьr Mдdchen</title>
-        <link>http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133719</link>
-        <description>Jugendarbeiterin Veronika Loos wird ьber das neue Prдventionsprojekt informieren, bei welchem es darum geht, an den Fasnachtsumzьgen in Altstдtten am 6. sowie 8. Mдrz 2011 mitzuwirken. Das Thema &quot;Zigis – gut oder schlecht?&quot; werden die beteiligten Mдdchen kreativ und witzig umsetzen. 
-
-Trotz den nachgewiesenen gesundheitlichen Risiken rauchen rund 25 Prozent aller Jugendlichen sowie ein Drittel der Erwachsenen. Mit dem Projekt soll die Bevцlkerung an den Fasnachtsumzьgen auf das Thema sensibilisiert werden.
-
-Um das Prдventionsprojekt optimal umzusetzen und die Utensilien zu gestalten, zu nдhen und zu basteln, werden sich die Mдdchen mehrmals treffen. Die ersten Termine sind montags, 17. und 31. Januar 2011 sowie 7. Februar 2011 (jeweils von 18 bis 21 Uhr). 
-
-Weitere Informationen zum Mдdchen-Fasnachtsprojekt und zur Anmeldung gibt es direkt bei Veronika Loos im Jugendtreff, Telefonnummer 079 384 79 19, oder auf der Website www.jugend-altstaetten.ch.
-</description>
-        <ev:startdate>2011-02-11</ev:startdate>
-        <ev:enddate>2011-04-11</ev:enddate>
     </item>
 </rdf:RDF>

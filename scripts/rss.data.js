@@ -6,18 +6,12 @@
  */
 
 /**
- * RSS Data definition
+ * RSS template data definition
  */
-var rssData = {
-	"container" : "<div class=\"rssData\">%####%</div>",
-	"item"  : "<div class=\"rssItem\">%####%</div>",
-	"image" : "<img class=\"rssImage\" src=\"%####%\" />",
-	"title" : "<span class=\"rssItemTitle\">%####%</span>",
-	"date"  : "<span class=\"rssItemDate\">%####%</span>",
-	"description" : "<span class=\"rssItemDescription\">%####%</span>"
+var RSSData = {
+	"item"  : "<div class=\"rssItem\"  data=\"%####_01%\">%####_00%</div>",
+	"image" : "<img class=\"rssImage\" src=\"%####_00%\" alt=\"Element Image\" />",
+	"title" : "<span class=\"rssItemTitle\">%####_00%</span>",
+	"date"  : "<span class=\"rssItemDate\">%####_00%</span>",
+	"description" : "<span class=\"rssItemDescription\">%####_00%</span>"
 };
-
-		
-		
-	 
-
