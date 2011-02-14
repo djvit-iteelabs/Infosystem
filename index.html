@@ -17,12 +17,19 @@
 		<script type="text/javascript" src="scripts/rss.data.js"></script>
 		<script type="text/javascript" src="scripts/rss.js"></script>
 		<script type="text/javascript" src="scripts/main.js"></script>
+		<script type="text/javascript" src="scripts/themes.data.js"></script>
+		<script type="text/javascript" src="scripts/themes.js"></script>
+		
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// Intialize InfoSystem
 				var infoSystem = new InfoSystem();
 				infoSystem.init();
-				
+		
+				//Initialize themesRotator		
+				var themes = new themesRotator();
+				themes.init(3000);
+						
 				// Initialize On Screen Keyboard
 				var osk = new OSK();
 				osk.init(googleMap.findAddress);

@@ -2,6 +2,10 @@
  * @author Eugen
  */
 
+/**
+ * Active timer
+ */
+
  function Timer(){	
  };
 
@@ -11,9 +15,11 @@ Timer.prototype = {
 		if(!this.timer)
 			this.timer = window.setInterval(function(){
 				var d = new Date();
-				$("#dateText").html(d.toLocaleDateString() + " " +
+				var t = $("#dateText");
+		
+				t.html(d.toLocaleDateString() + "<br/>" +
 						 d.toLocaleTimeString());
-			}, 1000);
+			},1000);
 		else
 			this.stop();
 	},

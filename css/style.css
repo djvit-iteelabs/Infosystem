@@ -4,7 +4,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #000000 url(../images/Background.png) no-repeat;
+	background: #000000 url(../images/Background.Silver.png) no-repeat;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 #pageLanding {
 	height: 1920px;
 	width:1080px;
-	background: transparent url(../images/bg.tile.png) repeat;
+	background: transparent url(../images/bg.tile.silver.png) repeat;
 	text-align: center;
 	vertical-align: middle;
 }

@@ -76,6 +76,7 @@ InfoSystem.prototype = {
 		$('span[id*="btn"]').click(function(){
 			$(this).css('-webkit-box-shadow', '0px 0px 20px #FFFFFF');
 			$(this).bind('webkitTransitionEnd', function() { 
+				var options = {};
 		         _this.showPage('pageMain');
 		     });
 		});
@@ -83,8 +84,7 @@ InfoSystem.prototype = {
 		// Initialize date
 		//$('span[id*="date"]').text(this.getDateTimeString());
 		var timer = new Timer();
-		timer.init();
-		
+		timer.init('dateText');
 		
 		// Initialize Scrollers
 		/*var pane = $('.scroll-pane');
@@ -111,6 +111,7 @@ InfoSystem.prototype = {
 		// TODO: Use/Change some animation here
 		this.hidePages(function(){
 			//_this.refreshPage();
+			//p.show("slide",{},"slow",function(){_this.refreshPage();});
 			p.fadeIn(500, function(){
 				_this.refreshPage();
 				//if (pageId == 'pageEvents') {
