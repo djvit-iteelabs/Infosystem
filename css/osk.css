@@ -1,4 +1,4 @@
-#oskContainer{
+#oskContainer {
 	position: absolute;
 	left: 30px;
 	bottom: -1100px;
@@ -13,11 +13,11 @@
 	z-index: 999999;
 }
 
-.oskButton{
+.oskButton {
 	display:inline-block;
 	width: 40px;
-	height:30px;
-	padding: 15px;
+	height: 30px;
+	padding: 10px;
 	margin : 10px;
 	font-weight: bold;
 	font-size: 30px; 
@@ -25,42 +25,43 @@
 	text-align: center;
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#CCCCCC));
 	/*border: none;*/
-	border: 1px solid silver;
+	border: 0px solid transparent;
 	
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 }
 
-.blueHighlight{
+.blueHighlight {
 	text-shadow:0px 0px 5px blue;	
-	border: 1px solid blue;
-	-webkit-box-shadow: 0px 0px 7px blue;
+	border: 0px solid blue;
+	-webkit-box-shadow: 0px 0px 10px blue;
 }
 
-.shadow{
-	-webkit-box-shadow: 0px 0px 2px #444444;	
+.shadow {
+	-webkit-box-shadow: 0px 0px 3px #444444;
 }
-.separator{
+
+.separator {
 	display:inline-block;
 	border: 0px;
 	width: 25px;
 	height: 20px;
-	background: white;
+	background: transparent;
 }
 
-#space{
+#space {
 	width: 640px;
 }
 
-#enter{
+#enter {
 	width: 115px;
 }
 
-#backspace{
+#backspace {
 	width: 50px;
 }
 
-#switchCase{
+#switchCase {
 	width: 50px;
 }
 
