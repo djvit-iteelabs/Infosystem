@@ -23,12 +23,14 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// Intialize InfoSystem
+				$('#standbyHand').animate({top:"650px",left:"400px"},"slow");
+				
 				var infoSystem = new InfoSystem();
 				infoSystem.init();
 		
 				//Initialize themesRotator		
 				var themes = new themesRotator();
-				themes.init(3000);
+				themes.init(1000);
 						
 				// Initialize On Screen Keyboard
 				var osk = new OSK();
@@ -45,7 +47,9 @@
 		<div id="pageLanding">
 			<div id="plSpacer"></div>
 			<img src="images/standby.sm.txt.png" alt="Herzlish Wilcommen"/><br />
-			<img src="images/standby.hand.png" alt="Touch screen to start"/>
+			<div id="standbyHand">
+				<img src="images/standby.hand.png" alt="Touch screen to start"/>
+			</div>	
 			<img id="sscrLogo" src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
 		</div>
 		

@@ -413,3 +413,13 @@ div[id*="cat"] {
 	height: 200px;
 	overflow: auto;
 }
+
+/**
+ * Standby Hand
+ */
+#standbyHand{
+	position: absolute;
+	top: 1000px;
+	left: 800px;
+	width: auto;
+}
