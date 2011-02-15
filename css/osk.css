@@ -1,7 +1,8 @@
 #oskContainer {
 	position: absolute;
 	left: 30px;
-	bottom: -1100px;
+	top: 1500px;
+	/*bottom: -1100px;*/
 	height:auto;
 	width:auto;
 	padding: 10px;

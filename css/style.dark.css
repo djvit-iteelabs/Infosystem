@@ -454,3 +454,15 @@ div[id*="cat"] {
 	height: 200px;
 	overflow: auto;
 }
+
+/**
+ * Standby Hand
+ */
+#standbyHand{
+	position: absolute;
+	margin-left: 700px;
+	margin-top: 800px;
+	background: url(../images/standby.hand.png);
+	width: 390px;
+	height: 465px;
+}
