@@ -311,21 +311,52 @@ div[id*="cat"] {
 /**
  * RSS related styles
  */
+.rssContainer {
+	height: 1750px;
+	width: 1080px;
+	overflow: hidden;
+}
+
+.rssSlider {
+	height: 1750px;
+	width: 2165px;
+	overflow: hidden;
+	position: absolute;
+	left: 0px;
+	top: 200px;
+}
+
 .rssData {
 	height: 1750px;
-	width: auto;
+	width: 1080px;
 	overflow:hidden;
 	text-align: left;
+	display: inline-block;
+	float:left;
 }
+
+.rssDetails {
+	height: 1750px;
+	width: 1080px;
+	overflow:hidden;
+	text-align: left;
+	display: inline-block;
+	float:left;
+}
+
 .rssItem {
-	margin: 30px 30px 0px 30px;
-	padding: 20px;
+	margin: 20px 20px 0px 20px;
+	padding: 10px 20px 20px 20px;
 	border: none;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-box-shadow: 5px 5px 10px #000000;
+	
+	width: auto;
+	min-height: 70px;
+	max-height: 100px;
 
-	background: -webkit-gradient(linear, 0 0, 0 100%, from(#DDDDDD), to(#555555));
+	background: -webkit-gradient(linear, 0 0, 0 50%, from(#DDDDDD), to(#555555));
 }
 
 .rssImage {
@@ -337,24 +368,34 @@ div[id*="cat"] {
 }
 
 .rssItemTitle {
-	font-size: 30px;
-	color:#777777;
-	text-shadow: 1px 1px 3px #000000;
+	font-size: 28px;
+	font-weight: bold;
+	color:#000000;
+	text-shadow: 1px 1px 2px #CCCCCC;
 	display: block;
 }
 
 .rssItemDate{
 	font-size: 15px;
-	color: #EEEEEE;
-	text-shadow: 1px 1px 3px #000000;
+	font-weight: bold;
+	color: #000000;
+	text-shadow: 1px 1px 1px #FFFFFF;
 	display: block;
 }
 
 .rssItemDescription {
-	font-size: 20px;
+	font-size: 15px;
 	color:#FFFFFF;
 	text-shadow: 1px 1px 2px #222222;
 	display: block;
+	
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+	width: auto;
+	height: 55px;
+
 }
 
 /**

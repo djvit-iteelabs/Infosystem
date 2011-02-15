@@ -10,7 +10,7 @@
         <title>Anlässe : Gemeinde Altstätten </title>
         <description>Aktuelle Anlässe der Gemeinde Altstätten </description>
         <link>http://www.altstaetten.ch/de/</link>
-       <dc:date>2011-02-14</dc:date>
+       <date>2011-02-14</date>
         <items>
             <rdf:Seq>
                 <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=350420"/>
@@ -169,7 +169,7 @@
     </channel>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=350420">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-02-18</dc:date>
+        <date>2011-02-18</date>
         <title>Urknall</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=350420</link>
         <description>Herzlich willkommen zum Urknall, dem ultimativen und fulminanten Startschuss zur Altstätter Strassenfasnacht.
@@ -182,7 +182,7 @@
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351694">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-02-18</dc:date>
+        <date>2011-02-18</date>
         <title>Vollmondwalking</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351694</link>
         <description>Vollmondwalking von Oberegg zum St. Anton und über Rütegg zurück. Einkehr auf dem St. Anton.
@@ -191,28 +191,28 @@ Genauere Auskünfte und Anmeldung bei Jacqueline Rodighiero, Telefon 071 755 22 
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=350941">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-02-19</dc:date>
+        <date>2011-02-19</date>
         <title>HipHop- Jugendbeiz im Jugendtreff &quot;Jugendegg&quot;</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=350941</link>
         <description>Am  Samstag 19.02.2011 heisst es von 20-24 Uhr wieder: Jugendbeiz im Jugendtreff „Jugendegg“ in Altstätten. Dieses Mal werden die HipHop Freunde auf ihre Kosten kommen und verschiedenste MusikerInnen werden ihre Beats, Raps und Rimes zum Besten geben. Bis jetzt bestätigt sind: Rapkickz Ent., Little D, DJ k.a, Key Morten und Fej_One. Die Auftretenden haben das Ziel die ZühörerInnen mit ihren Sounds zu Begeistern und Bühnenerfahrung zu sammeln. Weitere Gäste werden auf der Jugendtreff- Bühne erwartet und bestimmt gibt’s auch spontane Performances zu sehen und zu hören. Mit der Jugendbeiz bietet die Jugendarbeit Altstätten eine Plattform für junge musikalische Talente und  eine attraktive, unkommerzionelle Ausgangsmöglichkeit in Altstätten. Wie immer sind an der Jugendbeiz alle Interessierten herzlich willkommen. Weitere Infos gibt’s unter: www.jugend-altstaetten.ch</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309033">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-02-19</dc:date>
+        <date>2011-02-19</date>
         <title>Thomas C. Breuer</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309033</link>
         <description>siehe www.diogenes-theater.ch und Homepage des Künstlers</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309032">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-02-26</dc:date>
+        <date>2011-02-26</date>
         <title>Ferruccdio Cainero &quot;Caineriade - die schönsten Erzählungen und Lieder&quot;</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309032</link>
         <description>siehe www.diogenes-theater.ch und Homepage des Künstlers</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351695">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-01</dc:date>
+        <date>2011-03-01</date>
         <title>Nordic Walking Tagesausflug</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351695</link>
         <description>Walking-Ausflug
@@ -249,7 +249,7 @@ Telefon 071 755 22 34 / Mobile 079 560 16 78 / Mail: jac1@gmx.ch</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312640">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-03</dc:date>
+        <date>2011-03-03</date>
         <title>Kinderumzug</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312640</link>
         <description>14 Uhr Kinderumzug durch die Marktgasse
@@ -257,7 +257,7 @@ Anschliessend bis ca. 18 Uhr Kinderfasnacht im Festzelt auf dem Stossplatz</desc
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=342474">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-03</dc:date>
+        <date>2011-03-03</date>
         <title>Maskenball</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=342474</link>
         <description>Maskenball der Frauenriege Lüchingen
@@ -268,7 +268,7 @@ Guggenmusik: Bazzaschüttler, Guggigässler, Lavaria, Räbafäger, Städtlichlep
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327209">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-03</dc:date>
+        <date>2011-03-03</date>
         <title>Unentgeltliche Rechtsberatung / Rechtsauskunft</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327209</link>
         <description>In Altstätten werden in der Regel jeden 1. Donnerstag im Monat unentgeltliche Rechtsberatungen angeboten. Die Mitglieder des St. Gallischen Anwaltsverbandes erbringen diese Dienstleistung freiwillig und unentgeltlich.  
@@ -276,14 +276,14 @@ Guggenmusik: Bazzaschüttler, Guggigässler, Lavaria, Räbafäger, Städtlichlep
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312639">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-04</dc:date>
+        <date>2011-03-04</date>
         <title>Botz - Tuusignacht</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312639</link>
         <description>Unterhaltungsabend für alle Fasnächtler. Programm mit international bekannten Künstlern und Komikern. Guggenauftritte und Tanzmusik.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254703">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-05</dc:date>
+        <date>2011-03-05</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254703</link>
         <description>Das Altpapier wird durch die Kolping-Familie Hinterforst/Eichberg am Samstag, 5. März 2011, eingesammelt.
@@ -292,7 +292,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=315900">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-05</dc:date>
+        <date>2011-03-05</date>
         <title>FCA Narraobed</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=315900</link>
         <description>Narraobed FC Altstätten im Sonnensaal
@@ -301,7 +301,7 @@ Jede Stunde 1 Guggenmusik</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343037">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-05</dc:date>
+        <date>2011-03-05</date>
         <title>Front Office / Einwohneramt geöffnet</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343037</link>
         <description>Beim Frontoffice im Parterre des Rathauses Altstätten sind wichtige Dienstleistungen mit Publikumsverkehr zusammengefasst. Sie melden sich beim Frontoffice an oder ab, bestellen eine Identitätskarte. Sie bezahlen Strom, Wasser und die Dienstleistungen der Gemeindeantennenanlage. Sie kaufen Containerplomben, Bündel-, Sperrgut- oder Grüngutmarken. Sie lösen die Hundemarke, reservieren die Tageskarte des Generalabonnements, lösen Parkkarten oder lassen Ihre Unterschrift beglaubigen. 
@@ -310,42 +310,42 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312644">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-05</dc:date>
+        <date>2011-03-05</date>
         <title>Tschätteriumzug</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312644</link>
         <description>Guggenumzug am Abend und anschliessend Festbetrieb in der gesamten Altstadt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312356">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-05</dc:date>
+        <date>2011-03-05</date>
         <title>Warm up</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312356</link>
         <description>Idealer Auftakt, um am Fasnachtssamstag ab 13:13 Uhr in Stimmung zu kommen. Jede Stunde Guggenkonzert.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312637">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-06</dc:date>
+        <date>2011-03-06</date>
         <title>Grosser internationaler Fasnachtsumzug</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312637</link>
         <description>Fasnachtsumzug mit ca. 60 - 70 Gruppen</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312635">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-06</dc:date>
+        <date>2011-03-06</date>
         <title>Polonaise der Ehrendamen und Röllelibutzen</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312635</link>
         <description>Polonaise der Ehrendamen und Röllelibutzen auf der Breite.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312638">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-06</dc:date>
+        <date>2011-03-06</date>
         <title>Polonaise der kleinen Ehrendamen und Butzen</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=312638</link>
         <description>Polonaise der kleinen Ehrendamen und Butzen</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=348849">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-07</dc:date>
+        <date>2011-03-07</date>
         <title>Fasnachtsmontag</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=348849</link>
         <description>Orangenverteilung Rathaus 16 Uhr
@@ -354,28 +354,28 @@ Böggverbrennung Breite 19 Uhr
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=314648">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-08</dc:date>
+        <date>2011-03-08</date>
         <title>Abendpolonaise</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=314648</link>
         <description>Abendpolonaise der Ehrendamen und Röllelibutzen mit bengalischer Beleuchtung auf dem Frauenhofplatz und anschliessend auf dem Rathausplatz.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=314649">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-08</dc:date>
+        <date>2011-03-08</date>
         <title>Fasnachtsumzug</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=314649</link>
         <description>Umzug der Altstätter Fasnachtsvereine. Anschliessend Polonaise der Ehrendamen und Röllelibutzen auf der Breite und Platzkonzerte der Altstätter Guggenmusiken in der Stadt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=314650">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-08</dc:date>
+        <date>2011-03-08</date>
         <title>Sternmarsch</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=314650</link>
         <description>Sternmarsche der Ehrendamen und Röllelibutzen ab Lüchingen, Kirlen und Städtli zum Engelplatz. 08.45 Uhr Polonaise auf dem Engelplatz. </description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254830">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-09</dc:date>
+        <date>2011-03-09</date>
         <title>Sammlung Altmetall</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254830</link>
         <description>Wichtig:
@@ -385,7 +385,7 @@ Böggverbrennung Breite 19 Uhr
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321939">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-10</dc:date>
+        <date>2011-03-10</date>
         <title>Hauptversammlung Verkehrsverein Altstätten</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321939</link>
         <description>Hauptversammlung
@@ -394,7 +394,7 @@ Details gemäss Einladung und Presse</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254833">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-10</dc:date>
+        <date>2011-03-10</date>
         <title>Sammlung Altmetall</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254833</link>
         <description>Wichtig:
@@ -404,7 +404,7 @@ Details gemäss Einladung und Presse</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=282947">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-12</dc:date>
+        <date>2011-03-12</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=282947</link>
         <description>Das Altpapier wird durch den STV Lüchingen eingesammelt.
@@ -413,7 +413,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254682">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-12</dc:date>
+        <date>2011-03-12</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254682</link>
         <description>Das Altpapier wird in Altstätten von der Pfadi am Samstag, 12. März 2011, eingesammelt.
@@ -422,35 +422,35 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=290396">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-12</dc:date>
+        <date>2011-03-12</date>
         <title>DV ostschweizerischer Tambourenverband OTV</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=290396</link>
         <description>DV ostschweizerischer Tambourenverband OTV</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309436">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-16</dc:date>
+        <date>2011-03-16</date>
         <title>Hauptversammlung GFA</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309436</link>
         <description>Hauptversammlung</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309031">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-19</dc:date>
+        <date>2011-03-19</date>
         <title>Compagnie Buffpapier &quot;Le petit Cabaret Grotesque&quot;</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309031</link>
         <description>siehe www.diogenes-theater.ch und Homepage der Künstler</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=337243">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-23</dc:date>
+        <date>2011-03-23</date>
         <title>Kirchgemeindeversammlung</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=337243</link>
         <description>Kirchgemeindeversammlung</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=322791">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-26</dc:date>
+        <date>2011-03-26</date>
         <title>Flohmarkt</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=322791</link>
         <description>Am Flohmarkt werden nicht mehr benötigte Haushaltsartikel, Möbel, Bücher, Sammlerstücke und weitere Raritäten angeboten. Hier lässt sich noch feilschen…
@@ -458,7 +458,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=311089">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-26</dc:date>
+        <date>2011-03-26</date>
         <title>Gessler Zwillinge &quot;Friede Freude Eierkuchen&quot;</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=311089</link>
         <description>Try-Out Auftritt der Gessler Zwillinge
@@ -467,21 +467,21 @@ Wir freuen uns auf Ihren Besuch!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=290398">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-03-26</dc:date>
+        <date>2011-03-26</date>
         <title>Hauptversammlung Tambourenverein</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=290398</link>
         <description>Hauptversammlung</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254805">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-01</dc:date>
+        <date>2011-04-01</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254805</link>
         <description>An diesem Datum werden die Grünabfälle in Lüchingen eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=316715">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-01</dc:date>
+        <date>2011-04-01</date>
         <title>Landjugend Unterhaltung</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=316715</link>
         <description>Auch dieses Mal möchten wir wieder alle ganz herzlich zu unserer Unterhaltung einladen. Wir spielen ein Theater in drei Akten, anschliessend spielt Tanzmusik. Auch in einer Bar und Kaffestube kann man sich verweilen.
@@ -492,28 +492,28 @@ Sa, 2. April 2011 ab 20.00 Uhr Abendvorstellung</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=348629">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-02</dc:date>
+        <date>2011-04-02</date>
         <title>Big-Band Konzert</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=348629</link>
         <description>Big-Band Sound vom Feinsten präsentiert die SSC Big Band Rheintal, DIE Big Band: Swing,Rock,Funk,Latin,Blues,Shuffle,Jazz-Balladen usw.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=348628">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-02</dc:date>
+        <date>2011-04-02</date>
         <title>Big-Band Konzert</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=348628</link>
         <description>Big-Band Sound vom Feinsten präsentiert die SSC Big Band Rheintal, DIE Big Band: Swing,Rock,Funk,Latin,Blues,Shuffle,Jazz-Balladen usw.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309030">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-02</dc:date>
+        <date>2011-04-02</date>
         <title>Martin O. Neues Programm</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309030</link>
         <description>siehe www.diogenes-theater.ch und Homepage des Künstlers</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254723">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-04</dc:date>
+        <date>2011-04-04</date>
         <title>Grünabfuhr </title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254723</link>
         <description>Grünabfuhr-Tour Altstätten 1 
@@ -521,7 +521,7 @@ Trogenerstr. (bis Rest. Krone), Kratz, Alte Ruppenstr. (bis Rest. Krone), Breite
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327211">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-07</dc:date>
+        <date>2011-04-07</date>
         <title>Unentgeltliche Rechtsberatung / Rechtsauskunft</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327211</link>
         <description>In Altstätten werden in der Regel jeden 1. Donnerstag im Monat unentgeltliche Rechtsberatungen angeboten. Die Mitglieder des St. Gallischen Anwaltsverbandes erbringen diese Dienstleistung freiwillig und unentgeltlich.  
@@ -529,7 +529,7 @@ Trogenerstr. (bis Rest. Krone), Kratz, Alte Ruppenstr. (bis Rest. Krone), Breite
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254764">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-08</dc:date>
+        <date>2011-04-08</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254764</link>
         <description>Grünabfuhr-Tour Altstätten 2 
@@ -537,21 +537,21 @@ Heidenerstr. (bis Burg), Spitalstr. Bildstr., Blatten, Kronensiedlung, Obermühl
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309029">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-08</dc:date>
+        <date>2011-04-08</date>
         <title>Mammutjäger &quot;Die Krone der Erschöpfung&quot;</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309029</link>
         <description>siehe www.diogenes-theater.ch und Homepage der Künstler</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309028">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-09</dc:date>
+        <date>2011-04-09</date>
         <title>Esther Hasler &quot;Laus den Affen!&quot;</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=309028</link>
         <description>Siehe www.diogenes-theater.ch und Homepage der Künstlerin. Wir freuen uns über Ihren Besuch!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343040">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-09</dc:date>
+        <date>2011-04-09</date>
         <title>Front Office / Einwohneramt geöffnet</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343040</link>
         <description>Beim Frontoffice im Parterre des Rathauses Altstätten sind wichtige Dienstleistungen mit Publikumsverkehr zusammengefasst. Sie melden sich beim Frontoffice an oder ab, bestellen eine Identitätskarte. Sie bezahlen Strom, Wasser und die Dienstleistungen der Gemeindeantennenanlage. Sie kaufen Containerplomben, Bündel-, Sperrgut- oder Grüngutmarken. Sie lösen die Hundemarke, reservieren die Tageskarte des Generalabonnements, lösen Parkkarten oder lassen Ihre Unterschrift beglaubigen. 
@@ -560,14 +560,14 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=313487">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-09</dc:date>
+        <date>2011-04-09</date>
         <title>Generalversammlung Raiffeisenbank Oberes Rheintal</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=313487</link>
         <description>12. Generalversammlung der Raiffeisenbank Oberes Rheintal</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254783">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-11</dc:date>
+        <date>2011-04-11</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254783</link>
         <description>Grünabfuhr-Tour Altstätten 3 
@@ -575,7 +575,7 @@ Feld, Kesselbachstr., Rorschacherstr., Bahnhofstr., Industriegebiet westlich der
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/politik/sitzung/?action=showevent&amp;event_id=332925">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-14</dc:date>
+        <date>2011-04-14</date>
         <title>Bürgerversammlung</title>
         <link>http://www.altstaetten.ch/de/politik/sitzung/?action=showevent&amp;event_id=332925</link>
         <description>Bürgerversammlung zur Genehmigung der Jahresrechnung 2010.
@@ -583,7 +583,7 @@ Weitere Traktanden folgen.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254794">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-15</dc:date>
+        <date>2011-04-15</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254794</link>
         <description>Grünabfuhr-Tour Altstätten 4 
@@ -591,28 +591,28 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=294723">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-16</dc:date>
+        <date>2011-04-16</date>
         <title>Generalversammlung der Clientis Biene Bank im Rheintal</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=294723</link>
         <description>132. Generalversammlung der Clientis Biene Bank im Rheintal</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254816">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-18</dc:date>
+        <date>2011-04-18</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254816</link>
         <description>An diesem Datum werden die Grünabfälle in Hinterforst, Hub, Plona und Lienz eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321940">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-23</dc:date>
+        <date>2011-04-23</date>
         <title>&quot;De Osterhas chunnt&quot;</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321940</link>
         <description>Osterhase im Städtli</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=347225">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-28</dc:date>
+        <date>2011-04-28</date>
         <title>4. Rheintaler Comedy Night</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=347225</link>
         <description>Zwei hochkarätige Comedy Künstler am gleichen Abend:
@@ -622,21 +622,21 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351294">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-04-29</dc:date>
+        <date>2011-04-29</date>
         <title>Stadtführung in Altstätten</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351294</link>
         <description>Öffentliche Führung mit Rundgang durch die Altstadt. Erfahren Sie wissenswertes über die historischen Bauten und erhalten Sie Einblick in die Geschichte der Stadt und ihrer Bewohnerinnen und Bewohner.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254714">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-02</dc:date>
+        <date>2011-05-02</date>
         <title>Altpapiersammlung/Zeitungen/Karton</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254714</link>
         <description>Das Altpapier wird durch die Primarschule am Montag, 2. Mai 2011, eingesammelt. In Lienz wird auch Karton mit der Altpapiersammlung mitgenommen.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=322785">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-05</dc:date>
+        <date>2011-05-05</date>
         <title>Mai-Markt</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=322785</link>
         <description>Mai-Markt mit Waren / Gemüse / Vieh
@@ -647,14 +647,14 @@ Am &quot;Mai-Markt&quot; werden in den Strassen und Gassen der malerischen Altst
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254806">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-06</dc:date>
+        <date>2011-05-06</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254806</link>
         <description>An diesem Datum werden die Grünabfälle in Lüchingen eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254683">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-07</dc:date>
+        <date>2011-05-07</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254683</link>
         <description>Das Altpapier wird von der Pfadi am Samstag, 7. Mai 2011 gesammelt.
@@ -663,7 +663,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254725">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-09</dc:date>
+        <date>2011-05-09</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254725</link>
         <description>Grünabfuhr-Tour Altstätten 1 
@@ -672,14 +672,14 @@ Trogenerstr. (bis Rest. Krone), Kratz, Alte Ruppenstr. (bis Rest. Krone), Breite
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=300092">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-11</dc:date>
+        <date>2011-05-11</date>
         <title>4. Altstätter Stadt-OL</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=300092</link>
         <description>4. Altstätter Stadt-OL und Rheintaler OL-Cup; Start einzeln oder in Teams bis 3 Personen möglich, verschiedene Streckenlängen; weitere Informationen folgen.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327213">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-12</dc:date>
+        <date>2011-05-12</date>
         <title>Unentgeltliche Rechtsberatung / Rechtsauskunft</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327213</link>
         <description>In Altstätten werden in der Regel jeden 1. Donnerstag im Monat unentgeltliche Rechtsberatungen angeboten. Die Mitglieder des St. Gallischen Anwaltsverbandes erbringen diese Dienstleistung freiwillig und unentgeltlich.  
@@ -687,7 +687,7 @@ Trogenerstr. (bis Rest. Krone), Kratz, Alte Ruppenstr. (bis Rest. Krone), Breite
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254765">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-13</dc:date>
+        <date>2011-05-13</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254765</link>
         <description>Grünabfuhr-Tour Altstätten 2 
@@ -696,7 +696,7 @@ Heidenerstr. (bis Burg), Spitalstr. Bildstr., Blatten, Kronensiedlung, Obermühl
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343041">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-14</dc:date>
+        <date>2011-05-14</date>
         <title>Front Office / Einwohneramt geöffnet</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343041</link>
         <description>Beim Frontoffice im Parterre des Rathauses Altstätten sind wichtige Dienstleistungen mit Publikumsverkehr zusammengefasst. Sie melden sich beim Frontoffice an oder ab, bestellen eine Identitätskarte. Sie bezahlen Strom, Wasser und die Dienstleistungen der Gemeindeantennenanlage. Sie kaufen Containerplomben, Bündel-, Sperrgut- oder Grüngutmarken. Sie lösen die Hundemarke, reservieren die Tageskarte des Generalabonnements, lösen Parkkarten oder lassen Ihre Unterschrift beglaubigen. 
@@ -705,7 +705,7 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/politik/abstimmungsresultate/?action=showobject&amp;object_id=315654">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-15</dc:date>
+        <date>2011-05-15</date>
         <title>Volksabstimmung vom 15. Mai 2011</title>
         <link>http://www.altstaetten.ch/de/politik/abstimmungsresultate/?action=showobject&amp;object_id=315654</link>
         <description>Vorlagen und Abstimmungsergebnisse
@@ -716,7 +716,7 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254784">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-16</dc:date>
+        <date>2011-05-16</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254784</link>
         <description>Grünabfuhr-Tour Altstätten 3 
@@ -724,7 +724,7 @@ Feld, Kesselbachstr., Rorschacherstr., Bahnhofstr., Industriegebiet westlich der
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254795">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-20</dc:date>
+        <date>2011-05-20</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254795</link>
         <description>Grünabfuhr-Tour Altstätten 4 
@@ -732,28 +732,28 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254817">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-23</dc:date>
+        <date>2011-05-23</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254817</link>
         <description>An diesem Datum werden die Grünabfälle in Hinterforst, Hub, Plona und Lienz eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351323">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-05-27</dc:date>
+        <date>2011-05-27</date>
         <title>Stadtführung in Altstätten</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351323</link>
         <description>Öffentliche Führung mit Rundgang durch die Altstadt. Erfahren Sie wissenswertes über die historischen Bauten und erhalten Sie Einblick in die Geschichte der Stadt und ihrer Bewohnerinnen und Bewohner.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254807">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-03</dc:date>
+        <date>2011-06-03</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254807</link>
         <description>An diesem Datum werden die Grünabfälle in Lüchingen eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327215">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-09</dc:date>
+        <date>2011-06-09</date>
         <title>Unentgeltliche Rechtsberatung / Rechtsauskunft</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327215</link>
         <description>In Altstätten werden in der Regel jeden 1. Donnerstag im Monat unentgeltliche Rechtsberatungen angeboten. Die Mitglieder des St. Gallischen Anwaltsverbandes erbringen diese Dienstleistung freiwillig und unentgeltlich.  
@@ -761,7 +761,7 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254766">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-10</dc:date>
+        <date>2011-06-10</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254766</link>
         <description>Grünabfuhr-Tour Altstätten 2 
@@ -769,7 +769,7 @@ Heidenerstr. (bis Burg), Spitalstr. Bildstr., Blatten, Kronensiedlung, Obermühl
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254693">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-11</dc:date>
+        <date>2011-06-11</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254693</link>
         <description>Das Altpapier wird durch den STV Lüchingen eingesammelt.
@@ -778,7 +778,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=307229">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-17</dc:date>
+        <date>2011-06-17</date>
         <title>Beizen- und Vereinsturnier FC Altstätten</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=307229</link>
         <description>Beizen- und Vereinturnier FCA
@@ -786,7 +786,7 @@ Sportplatz Grüntal</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254797">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-17</dc:date>
+        <date>2011-06-17</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254797</link>
         <description>Grünabfuhr-Tour Altstätten 4 
@@ -794,7 +794,7 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343042">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-18</dc:date>
+        <date>2011-06-18</date>
         <title>Front Office / Einwohneramt geöffnet</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343042</link>
         <description>Beim Frontoffice im Parterre des Rathauses Altstätten sind wichtige Dienstleistungen mit Publikumsverkehr zusammengefasst. Sie melden sich beim Frontoffice an oder ab, bestellen eine Identitätskarte. Sie bezahlen Strom, Wasser und die Dienstleistungen der Gemeindeantennenanlage. Sie kaufen Containerplomben, Bündel-, Sperrgut- oder Grüngutmarken. Sie lösen die Hundemarke, reservieren die Tageskarte des Generalabonnements, lösen Parkkarten oder lassen Ihre Unterschrift beglaubigen. 
@@ -803,7 +803,7 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=307230">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-18</dc:date>
+        <date>2011-06-18</date>
         <title>PWB Kickoff-Turnier  FC Altstätten</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=307230</link>
         <description>PWB Kickoff-Turnier
@@ -812,7 +812,7 @@ Sportplatz Grüntal</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254726">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-20</dc:date>
+        <date>2011-06-20</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254726</link>
         <description>Grünabfuhr-Tour Altstätten 1 
@@ -821,7 +821,7 @@ Trogenerstr. (bis Rest. Krone), Kratz, Alte Ruppenstr. (bis Rest. Krone), Breite
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254785">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-20</dc:date>
+        <date>2011-06-20</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254785</link>
         <description>Grünabfuhr-Tour Altstätten 3 
@@ -829,14 +829,14 @@ Feld, Kesselbachstr., Rorschacherstr., Bahnhofstr., Industriegebiet westlich der
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351325">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-24</dc:date>
+        <date>2011-06-24</date>
         <title>Stadtführung in Altstätten</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351325</link>
         <description>Öffentliche Führung mit Rundgang durch die Altstadt. Erfahren Sie wissenswertes über die historischen Bauten und erhalten Sie Einblick in die Geschichte der Stadt und ihrer Bewohnerinnen und Bewohner.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=307231">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-25</dc:date>
+        <date>2011-06-25</date>
         <title>Jubiläumsturnier FCA Veteranen</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=307231</link>
         <description>25 Jahre FCA Veteranen
@@ -845,14 +845,14 @@ Sportplatz Grüntal</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254820">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-27</dc:date>
+        <date>2011-06-27</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254820</link>
         <description>An diesem Datum werden die Grünabfälle in Hinterforst, Hub, Plona und Lienz eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351847">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-06-29</dc:date>
+        <date>2011-06-29</date>
         <title>Blutspendeanlass des Samaritervereins Altstätten</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351847</link>
         <description>Der Samariterverein Altstätten führt gemeinsam mit dem Spital Altstätten alljährlich einen Blutspendeanlass durch. Eingeladen sind alle gesunden Frauen und Männer im Alter zwischen 18 und 65 Jahren. 
@@ -860,7 +860,7 @@ Bitte falls vorhanden den Blutspendeausweis oder sonst einen Personalausweis mit
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254685">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-07-02</dc:date>
+        <date>2011-07-02</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254685</link>
         <description>Das Altpapier wird von der Pfadi eingesammelt.
@@ -869,7 +869,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254708">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-07-02</dc:date>
+        <date>2011-07-02</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254708</link>
         <description>Das Altpapier wird durch die Kolping-Familie Hinterforst/Eichberg eingesammelt.
@@ -878,7 +878,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343043">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-07-02</dc:date>
+        <date>2011-07-02</date>
         <title>Front Office / Einwohneramt geöffnet</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343043</link>
         <description>Beim Frontoffice im Parterre des Rathauses Altstätten sind wichtige Dienstleistungen mit Publikumsverkehr zusammengefasst. Sie melden sich beim Frontoffice an oder ab, bestellen eine Identitätskarte. Sie bezahlen Strom, Wasser und die Dienstleistungen der Gemeindeantennenanlage. Sie kaufen Containerplomben, Bündel-, Sperrgut- oder Grüngutmarken. Sie lösen die Hundemarke, reservieren die Tageskarte des Generalabonnements, lösen Parkkarten oder lassen Ihre Unterschrift beglaubigen. 
@@ -887,7 +887,7 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327216">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-07-07</dc:date>
+        <date>2011-07-07</date>
         <title>Unentgeltliche Rechtsberatung / Rechtsauskunft</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327216</link>
         <description>In Altstätten werden in der Regel jeden 1. Donnerstag im Monat unentgeltliche Rechtsberatungen angeboten. Die Mitglieder des St. Gallischen Anwaltsverbandes erbringen diese Dienstleistung freiwillig und unentgeltlich.  
@@ -895,14 +895,14 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254809">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-07-08</dc:date>
+        <date>2011-07-08</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254809</link>
         <description>An diesem Datum werden die Grünabfälle in Lüchingen eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254727">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-07-11</dc:date>
+        <date>2011-07-11</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254727</link>
         <description>Grünabfuhr-Tour Altstätten 1 
@@ -910,7 +910,7 @@ Trogenerstr. (bis Rest. Krone), Kratz, Alte Ruppenstr. (bis Rest. Krone), Breite
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254767">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-07-15</dc:date>
+        <date>2011-07-15</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254767</link>
         <description>Grünabfuhr-Tour Altstätten 2 
@@ -919,7 +919,7 @@ Heidenerstr. (bis Burg), Spitalstr. Bildstr., Blatten, Kronensiedlung, Obermühl
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254786">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-07-18</dc:date>
+        <date>2011-07-18</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254786</link>
         <description>Grünabfuhr-Tour Altstätten 3 
@@ -928,7 +928,7 @@ Feld, Kesselbachstr., Rorschacherstr., Bahnhofstr., Industriegebiet westlich der
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254798">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-07-22</dc:date>
+        <date>2011-07-22</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254798</link>
         <description>Grünabfuhr-Tour Altstätten 4 
@@ -937,14 +937,14 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254821">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-07-25</dc:date>
+        <date>2011-07-25</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254821</link>
         <description>An diesem Datum werden die Grünabfälle in Hinterforst, Hub, Plona und Lienz eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=347223">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-07-28</dc:date>
+        <date>2011-07-28</date>
         <title>Film im Städtli - Openair-Kino-Woche</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=347223</link>
         <description>Openair-Kino auf dem Kirchplatz und inmitten der Altstadt.
@@ -952,14 +952,14 @@ Am 1. August, Nationalfeiertag, findet keine Filmvorführung statt. </descriptio
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321941">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-01</dc:date>
+        <date>2011-08-01</date>
         <title>1. August Feier</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321941</link>
         <description>Details gemäss Presse</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327217">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-04</dc:date>
+        <date>2011-08-04</date>
         <title>Unentgeltliche Rechtsberatung / Rechtsauskunft</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327217</link>
         <description>In Altstätten werden in der Regel jeden 1. Donnerstag im Monat unentgeltliche Rechtsberatungen angeboten. Die Mitglieder des St. Gallischen Anwaltsverbandes erbringen diese Dienstleistung freiwillig und unentgeltlich.  
@@ -967,21 +967,21 @@ Am 1. August, Nationalfeiertag, findet keine Filmvorführung statt. </descriptio
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254810">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-12</dc:date>
+        <date>2011-08-12</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254810</link>
         <description>An diesem Datum werden die Grünabfälle in Lüchingen eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321953">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-13</dc:date>
+        <date>2011-08-13</date>
         <title>Staablueme</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321953</link>
         <description>Kulturwoche</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254728">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-15</dc:date>
+        <date>2011-08-15</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254728</link>
         <description>Grünabfuhr-Tour Altstätten 1 
@@ -989,7 +989,7 @@ Trogenerstr. (bis Rest. Krone), Kratz, Alte Ruppenstr. (bis Rest. Krone), Breite
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254778">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-19</dc:date>
+        <date>2011-08-19</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254778</link>
         <description>Grünabfuhr-Tour Altstätten 2 
@@ -998,7 +998,7 @@ Heidenerstr. (bis Burg), Spitalstr. Bildstr., Blatten, Kronensiedlung, Obermühl
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=322784">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-22</dc:date>
+        <date>2011-08-22</date>
         <title>August-Jahrmarkt</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=322784</link>
         <description>Am &quot;Augschta-Markt&quot; werden in den Strassen und Gassen der malerischen Altstadt Waren angeboten. Der grösste der vier Altstätter Jahrmärkte bietet auch eine Kilbi mit Bahnen und Schiessbuden sowie musikalische Unterhaltung bis in die Abendstunden. Auf der Breite findet der traditionsreiche Viehmarkt statt. 
@@ -1008,7 +1008,7 @@ Heidenerstr. (bis Burg), Spitalstr. Bildstr., Blatten, Kronensiedlung, Obermühl
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254787">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-22</dc:date>
+        <date>2011-08-22</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254787</link>
         <description>Grünabfuhr-Tour Altstätten 3 
@@ -1016,14 +1016,14 @@ Feld, Kesselbachstr., Rorschacherstr., Bahnhofstr., Industriegebiet westlich der
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=344014">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-25</dc:date>
+        <date>2011-08-25</date>
         <title>Film &quot;Gardi Hutter&quot;</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=344014</link>
         <description>Filmpremière &quot;Gardi Hutter&quot;</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254800">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-26</dc:date>
+        <date>2011-08-26</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254800</link>
         <description>Grünabfuhr-Tour Altstätten 4 
@@ -1031,21 +1031,21 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321942">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-26</dc:date>
+        <date>2011-08-26</date>
         <title>Neuzuzügerbegrüssung</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321942</link>
         <description>Details gemäss Einladung</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254822">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-08-29</dc:date>
+        <date>2011-08-29</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254822</link>
         <description>An diesem Datum werden die Grünabfälle in Hinterforst, Hub, Plona und Lienz eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327218">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-01</dc:date>
+        <date>2011-09-01</date>
         <title>Unentgeltliche Rechtsberatung / Rechtsauskunft</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327218</link>
         <description>In Altstätten werden in der Regel jeden 1. Donnerstag im Monat unentgeltliche Rechtsberatungen angeboten. Die Mitglieder des St. Gallischen Anwaltsverbandes erbringen diese Dienstleistung freiwillig und unentgeltlich.  
@@ -1053,7 +1053,7 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254687">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-03</dc:date>
+        <date>2011-09-03</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254687</link>
         <description>Das Altpapier wird von der Pfadi eingesammelt.
@@ -1062,7 +1062,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254698">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-03</dc:date>
+        <date>2011-09-03</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254698</link>
         <description>Das Altpapier wird durch den STV Lüchingen eingesammelt.
@@ -1071,7 +1071,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343044">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-03</dc:date>
+        <date>2011-09-03</date>
         <title>Front Office / Einwohneramt geöffnet</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343044</link>
         <description>Beim Frontoffice im Parterre des Rathauses Altstätten sind wichtige Dienstleistungen mit Publikumsverkehr zusammengefasst. Sie melden sich beim Frontoffice an oder ab, bestellen eine Identitätskarte. Sie bezahlen Strom, Wasser und die Dienstleistungen der Gemeindeantennenanlage. Sie kaufen Containerplomben, Bündel-, Sperrgut- oder Grüngutmarken. Sie lösen die Hundemarke, reservieren die Tageskarte des Generalabonnements, lösen Parkkarten oder lassen Ihre Unterschrift beglaubigen. 
@@ -1080,7 +1080,7 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254831">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-07</dc:date>
+        <date>2011-09-07</date>
         <title>Sammlung Altmetall</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254831</link>
         <description>Wichtig:
@@ -1090,7 +1090,7 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254834">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-08</dc:date>
+        <date>2011-09-08</date>
         <title>Sammlung Altmetall</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254834</link>
         <description>Wichtig:
@@ -1100,21 +1100,21 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=289587">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-09</dc:date>
+        <date>2011-09-09</date>
         <title>60 Jahre Tambourenverein, Fahnenweihe und Ostschweizeriche Jungtambourenwettspiele</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=289587</link>
         <description>Der Tambourenverein Lüchingen feiert sein 60 jähriges Jubiläum mit einer Fahnenweihe und den ostschweizerischen Jungtambourenwettspiele.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254812">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-09</dc:date>
+        <date>2011-09-09</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254812</link>
         <description>An diesem Datum werden die Grünabfälle in Lüchingen eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=345824">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-11</dc:date>
+        <date>2011-09-11</date>
         <title>Respect-Camp</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=345824</link>
         <description>So. 11. - Di. 13.9.11 RESPECT CAMP, Sportanlagen Gesa Altstätten
@@ -1133,7 +1133,7 @@ Weitere Infos unter www.jugend-altstaetten.ch
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254730">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-12</dc:date>
+        <date>2011-09-12</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254730</link>
         <description>Grünabfuhr-Tour Altstätten 1 
@@ -1142,7 +1142,7 @@ Trogenerstr. (bis Rest. Krone), Kratz, Alte Ruppenstr. (bis Rest. Krone), Breite
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254779">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-16</dc:date>
+        <date>2011-09-16</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254779</link>
         <description>Grünabfuhr-Tour Altstätten 2 
@@ -1151,7 +1151,7 @@ Heidenerstr. (bis Burg), Spitalstr. Bildstr., Blatten, Kronensiedlung, Obermühl
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254788">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-19</dc:date>
+        <date>2011-09-19</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254788</link>
         <description>Grünabfuhr-Tour Altstätten 3 
@@ -1160,7 +1160,7 @@ Feld, Kesselbachstr., Rorschacherstr., Bahnhofstr., Industriegebiet westlich der
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254801">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-23</dc:date>
+        <date>2011-09-23</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254801</link>
         <description>Grünabfuhr-Tour Altstätten 4 
@@ -1168,7 +1168,7 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=322790">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-24</dc:date>
+        <date>2011-09-24</date>
         <title>Flohmarkt</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=322790</link>
         <description>Am Flohmarkt werden nicht mehr benötigte Haushaltsartikel, Möbel, Bücher, Sammlerstücke und weitere Raritäten angeboten. Hier lässt sich noch feilschen…
@@ -1176,28 +1176,28 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254823">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-26</dc:date>
+        <date>2011-09-26</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254823</link>
         <description>An diesem Datum werden die Grünabfälle in Hinterforst, Hub, Plona und Lienz eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321945">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-26</dc:date>
+        <date>2011-09-26</date>
         <title>Törggahültschet</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321945</link>
         <description>Törggahültschet in der Marktgasse am Altstätter Samstig</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351329">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-09-30</dc:date>
+        <date>2011-09-30</date>
         <title>Stadtführung in Altstätten</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=351329</link>
         <description>Öffentliche Führung mit Rundgang durch die Altstadt. Erfahren Sie wissenswertes über die historischen Bauten und erhalten Sie Einblick in die Geschichte der Stadt und ihrer Bewohnerinnen und Bewohner.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343046">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-10-01</dc:date>
+        <date>2011-10-01</date>
         <title>Front Office / Einwohneramt geöffnet</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343046</link>
         <description>Beim Frontoffice im Parterre des Rathauses Altstätten sind wichtige Dienstleistungen mit Publikumsverkehr zusammengefasst. Sie melden sich beim Frontoffice an oder ab, bestellen eine Identitätskarte. Sie bezahlen Strom, Wasser und die Dienstleistungen der Gemeindeantennenanlage. Sie kaufen Containerplomben, Bündel-, Sperrgut- oder Grüngutmarken. Sie lösen die Hundemarke, reservieren die Tageskarte des Generalabonnements, lösen Parkkarten oder lassen Ihre Unterschrift beglaubigen. 
@@ -1206,7 +1206,7 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327220">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-10-06</dc:date>
+        <date>2011-10-06</date>
         <title>Unentgeltliche Rechtsberatung / Rechtsauskunft</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327220</link>
         <description>In Altstätten werden in der Regel jeden 1. Donnerstag im Monat unentgeltliche Rechtsberatungen angeboten. Die Mitglieder des St. Gallischen Anwaltsverbandes erbringen diese Dienstleistung freiwillig und unentgeltlich.  
@@ -1214,7 +1214,7 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315350">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-10-10</dc:date>
+        <date>2011-10-10</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315350</link>
         <description>Grünabfuhr-Tour Altstätten 1 
@@ -1222,14 +1222,14 @@ Trogenerstr. (bis Rest. Krone), Kratz, Alte Ruppenstr. (bis Rest. Krone), Breite
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315349">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-10-14</dc:date>
+        <date>2011-10-14</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315349</link>
         <description>An diesem Datum werden die Grünabfälle in Lüchingen eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315352">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-10-17</dc:date>
+        <date>2011-10-17</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315352</link>
         <description>Grünabfuhr-Tour Altstätten 3 
@@ -1237,7 +1237,7 @@ Feld, Kesselbachstr., Rorschacherstr., Bahnhofstr., Industriegebiet westlich der
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315351">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-10-21</dc:date>
+        <date>2011-10-21</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315351</link>
         <description>Grünabfuhr-Tour Altstätten 2 
@@ -1246,7 +1246,7 @@ Heidenerstr. (bis Burg), Spitalstr. Bildstr., Blatten, Kronensiedlung, Obermühl
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/politik/abstimmungsresultate/?action=showevent&amp;event_id=315657">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-10-23</dc:date>
+        <date>2011-10-23</date>
         <title>Volksabstimmung und Wahlen vom 23. Oktober 2011</title>
         <link>http://www.altstaetten.ch/de/politik/abstimmungsresultate/?action=showevent&amp;event_id=315657</link>
         <description>Vorlagen und Abstimmungsergebnisse
@@ -1258,14 +1258,14 @@ An diesem Datum finden auch die Nationalratswahlen statt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315354">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-10-24</dc:date>
+        <date>2011-10-24</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315354</link>
         <description>An diesem Datum werden die Grünabfälle in Hinterforst, Hub, Plona und Lienz eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315353">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-10-28</dc:date>
+        <date>2011-10-28</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315353</link>
         <description>Grünabfuhr-Tour Altstätten 4 
@@ -1274,21 +1274,21 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254720">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-10-31</dc:date>
+        <date>2011-10-31</date>
         <title>Altpapiersammlung/Zeitungen/Karton</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254720</link>
         <description>Das Altpapier wird durch die Primarschule eingesammelt. In Lienz wird auch Karton mit der Altpapiersammlung mitgenommen.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=349001">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-03</dc:date>
+        <date>2011-11-03</date>
         <title>Berufsevent</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=349001</link>
         <description>Der Berufsevent des Vereins «Chance Industrie Rheintal» findet vom 3. bis 5. November 2011 bereits zum fünften Mal statt. Die Schülerinnen und Schüler können sich am attraktiven und informativen Berufsevent über verschiedenen Lehrberufe in der Rheintaler Industrie informieren.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327221">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-03</dc:date>
+        <date>2011-11-03</date>
         <title>Unentgeltliche Rechtsberatung / Rechtsauskunft</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327221</link>
         <description>In Altstätten werden in der Regel jeden 1. Donnerstag im Monat unentgeltliche Rechtsberatungen angeboten. Die Mitglieder des St. Gallischen Anwaltsverbandes erbringen diese Dienstleistung freiwillig und unentgeltlich.  
@@ -1296,7 +1296,7 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315055">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-05</dc:date>
+        <date>2011-11-05</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315055</link>
         <description>Das Altpapier wird von der Pfadi eingesammelt.
@@ -1305,7 +1305,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315056">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-05</dc:date>
+        <date>2011-11-05</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315056</link>
         <description>Das Altpapier wird durch die Kolping-Familie Hinterforst/Eichberg eingesammelt.
@@ -1314,7 +1314,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343047">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-05</dc:date>
+        <date>2011-11-05</date>
         <title>Front Office / Einwohneramt geöffnet</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343047</link>
         <description>Beim Frontoffice im Parterre des Rathauses Altstätten sind wichtige Dienstleistungen mit Publikumsverkehr zusammengefasst. Sie melden sich beim Frontoffice an oder ab, bestellen eine Identitätskarte. Sie bezahlen Strom, Wasser und die Dienstleistungen der Gemeindeantennenanlage. Sie kaufen Containerplomben, Bündel-, Sperrgut- oder Grüngutmarken. Sie lösen die Hundemarke, reservieren die Tageskarte des Generalabonnements, lösen Parkkarten oder lassen Ihre Unterschrift beglaubigen. 
@@ -1323,21 +1323,21 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321949">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-08</dc:date>
+        <date>2011-11-08</date>
         <title>Vereinspräsidentenkonferenz</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321949</link>
         <description>Details gemäss Einladung</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315355">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-11</dc:date>
+        <date>2011-11-11</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315355</link>
         <description>An diesem Datum werden die Grünabfälle in Lüchingen eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315356">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-14</dc:date>
+        <date>2011-11-14</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315356</link>
         <description>Grünabfuhr-Tour Altstätten 1 
@@ -1347,7 +1347,7 @@ Trogenerstr. (bis Rest. Krone), Kratz, Alte Ruppenstr. (bis Rest. Krone), Breite
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315357">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-18</dc:date>
+        <date>2011-11-18</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315357</link>
         <description>Grünabfuhr-Tour Altstätten 2 
@@ -1356,7 +1356,7 @@ Heidenerstr. (bis Burg), Spitalstr. Bildstr., Blatten, Kronensiedlung, Obermühl
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254791">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-21</dc:date>
+        <date>2011-11-21</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254791</link>
         <description>Grünabfuhr-Tour Altstätten 3 
@@ -1364,7 +1364,7 @@ Feld, Kesselbachstr., Rorschacherstr., Bahnhofstr., Industriegebiet westlich der
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254803">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-25</dc:date>
+        <date>2011-11-25</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254803</link>
         <description>Grünabfuhr-Tour Altstätten 4 
@@ -1372,7 +1372,7 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/politik/abstimmungsresultate/?action=showevent&amp;event_id=315658">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-27</dc:date>
+        <date>2011-11-27</date>
         <title>Volksabstimmung vom 27. November 2011</title>
         <link>http://www.altstaetten.ch/de/politik/abstimmungsresultate/?action=showevent&amp;event_id=315658</link>
         <description>Vorlagen und Abstimmungsergebnisse
@@ -1383,14 +1383,14 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254825">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-11-28</dc:date>
+        <date>2011-11-28</date>
         <title>Grünabfuhr</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=254825</link>
         <description>An diesem Datum werden die Grünabfälle in Hinterforst, Hub, Plona und Lienz eingesammelt.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327223">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-12-01</dc:date>
+        <date>2011-12-01</date>
         <title>Unentgeltliche Rechtsberatung / Rechtsauskunft</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327223</link>
         <description>In Altstätten werden in der Regel jeden 1. Donnerstag im Monat unentgeltliche Rechtsberatungen angeboten. Die Mitglieder des St. Gallischen Anwaltsverbandes erbringen diese Dienstleistung freiwillig und unentgeltlich.  
@@ -1398,7 +1398,7 @@ Oberrieterstr., Harztannenstr., Eichbergerstr., Rundstr., Alte Landstr., Kirlens
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315057">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-12-03</dc:date>
+        <date>2011-12-03</date>
         <title>Altpapiersammlung/Zeitungen</title>
         <link>http://www.altstaetten.ch/de/verwaltung/abfall/abfalldaten/?action=showevent&amp;event_id=315057</link>
         <description>Das Altpapier wird durch den STV Lüchingen eingesammelt.
@@ -1407,7 +1407,7 @@ Karton wird mit der Altpapiersammlung nicht mitgenommen!</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343049">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-12-03</dc:date>
+        <date>2011-12-03</date>
         <title>Front Office / Einwohneramt geöffnet</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=343049</link>
         <description>Beim Frontoffice im Parterre des Rathauses Altstätten sind wichtige Dienstleistungen mit Publikumsverkehr zusammengefasst. Sie melden sich beim Frontoffice an oder ab, bestellen eine Identitätskarte. Sie bezahlen Strom, Wasser und die Dienstleistungen der Gemeindeantennenanlage. Sie kaufen Containerplomben, Bündel-, Sperrgut- oder Grüngutmarken. Sie lösen die Hundemarke, reservieren die Tageskarte des Generalabonnements, lösen Parkkarten oder lassen Ihre Unterschrift beglaubigen. 
@@ -1416,21 +1416,21 @@ Diese Dienstleistungen werden einmal pro Monat auch am Samstagvormittag in der Z
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321950">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-12-04</dc:date>
+        <date>2011-12-04</date>
         <title>Klausfahrt zum Rietli</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=321950</link>
         <description>Details gemäss Presse und Ausschreibung</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=322788">
         <dc:format>text/html</dc:format>
-        <dc:date>2011-12-08</dc:date>
+        <date>2011-12-08</date>
         <title>Niklaus-Jahrmarkt</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=322788</link>
         <description>Der traditionelle Klausmarkt (oder &quot;Chläusler&quot;) in Altstätten lädt ein zum Bummeln durch das farbenfrohe Marktgeschehen. Die heimelige Altstadt-Atmosphäre umrahmt vom weihnachtlich geschmückten Städtchen sorgt für eine wunderbare Kulisse. Die Stadt der Lichter und der Samichlaus mit Schmutzli erwarten Sie.</description>
     </item>
     <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327058">
         <dc:format>text/html</dc:format>
-        <dc:date>2012-11-30</dc:date>
+        <date>2012-11-30</date>
         <title>Tag der Briefmarke</title>
         <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=327058</link>
         <description>Tag der Briefmarke, organisiert vom Philatelisten-Verein Rheintal.

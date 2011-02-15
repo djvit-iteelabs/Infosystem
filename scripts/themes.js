@@ -17,7 +17,7 @@ themesRotator.prototype = {
 		
 		this.thmThemes = {};
 				
-		if(parseInt(i)&& (i > 1000))
+		/*if(parseInt(i)&& (i > 1000))
 			this.thmInterval = i;
 		else
 			this.thmInterval = 1000;
@@ -38,5 +38,6 @@ themesRotator.prototype = {
 			}, this.thmInterval);
 		else
 			window.clearInterval(this.thmTimer);
+			*/
 	}
 }

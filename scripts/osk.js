@@ -142,13 +142,17 @@ OSK.prototype = {
 									
 									$(oskButton).click(function() {										 
 										if (_this.oskMode == 'norm') {
-											$(_this.oskABC).css('display', 'none');
-											$(_this.oskNum).css('display','block');
+											//$(_this.oskABC).css('display', 'none');
+											//$(_this.oskNum).css('display','block');
+											$(_this.oskABC).fadeOut(1000);
+											$(_this.oskNum).fadeIn(1000);
 											_this.oskMode = 'num';
 										}
 										else {
-											$(_this.oskNum).css('display','none');
-											$(_this.oskABC).css('display','block');
+											//$(_this.oskNum).css('display','none');
+											//$(_this.oskABC).css('display','block');
+											$(_this.oskNum).fadeOut(1000);
+											$(_this.oskABC).fadeIn(1000);
 											_this.oskMode = 'norm';
 										}
 									});										

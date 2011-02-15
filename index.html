@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=iso-8859-1" />
 		<title>InfoSystem</title>
-		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.dark.css" />
 		<link type="text/css" rel="stylesheet" href="css/osk.css" />
 		
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -35,7 +35,7 @@
 				osk.init(googleMap.findAddress);
 				
 				// Initialize RSS
-				RSS.getList('data/events.rss', '#dataContainerEvents',  15);
+				RSS.getList('data/events.rss', '#divEventsList',  15);
 				RSS.getList('data/news.rss', '#dataContainerNews',  15);
 			});
 		</script>
@@ -116,7 +116,12 @@
 			</div>
 			
 			<!-- Content Area -->
-			<div id="dataContainerEvents" class="rssData"></div>
+			<div class="rssContainer" >
+				<div class="rssSlider">
+					<div id="divEventsList" class="rssData"></div>
+					<div id="divEventsDetail" class="rssDetails"></div>
+				</div>
+			</div>
 			
 			<!-- Page Footer -->
 			<div id="mainFooter">

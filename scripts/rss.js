@@ -29,7 +29,7 @@ var RSS = {
 				var description = $item.find('description').text();
 				description = description.replace(/\n/gi, '<br />');
 				var pubDate = $item.find('date').text();
-				var data = link.substring(link.indexOf('info_id=') + 8, link.length);
+				var data = link.substring(link.indexOf('_id=') + 4, link.length);
 	 
 				// Build HTML output based on the template
 				var htmlItem = '';
@@ -51,7 +51,8 @@ var RSS = {
 			
 			$('.rssItem').click( function(){
 				RSS.getDetails(this, function(content){
-					alert('CALLBACK - ' + content);
+					$(targetContainer).next().html(content);
+					$('.rssSlider').animate({"left": "-=1080px"}, "slow");
 				});
 			}); 
 		});
@@ -66,7 +67,7 @@ var RSS = {
 			},
 			error: function(xhr, msg, error) {
 				//TODO: Provide styles error message/notification
-				alert(msg + '\n\n\n' + error);		
+				alert('RSS Content not found');		
 			}
 		});
 		
