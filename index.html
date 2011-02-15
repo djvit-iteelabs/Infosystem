@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery-ui-1.8.9.custom.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery.jscrollpane.js"></script>
+		<script type="text/javascript" src="scripts/jquery.easing.js"></script>
 		<script type="text/javascript" src="scripts/maps.js"></script>
 		<script type="text/javascript" src="scripts/osk.data.js"></script>
 		<script type="text/javascript" src="scripts/osk.js"></script>
@@ -23,7 +24,7 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// Intialize InfoSystem
-				$('#standbyHand').animate({top:"650px",left:"400px"},"slow");
+				$('#standbyHand').animate({marginLeft:"-=210px",marginTop:"-=800px",opacity:"toggle"},5000,"easeOutBounce");
 				
 				var infoSystem = new InfoSystem();
 				infoSystem.init();
@@ -47,9 +48,7 @@
 		<div id="pageLanding">
 			<div id="plSpacer"></div>
 			<img src="images/standby.sm.txt.png" alt="Herzlish Wilcommen"/><br />
-			<div id="standbyHand">
-				<img src="images/standby.hand.png" alt="Touch screen to start"/>
-			</div>	
+			<div id="standbyHand"></div>	
 			<img id="sscrLogo" src="images/logo.sscr.box.sm.png" alt="Swiss Screen">
 		</div>
 		

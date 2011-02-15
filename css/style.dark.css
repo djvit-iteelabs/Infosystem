@@ -419,7 +419,9 @@ div[id*="cat"] {
  */
 #standbyHand{
 	position: absolute;
-	top: 1000px;
-	left: 800px;
-	width: auto;
+	margin-left: 700px;
+	margin-top: 800px;
+	background: url(../images/standby.hand.png);
+	width: 390px;
+	height: 465px;
 }
