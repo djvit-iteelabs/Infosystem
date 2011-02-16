@@ -20,18 +20,21 @@
 		<script type="text/javascript" src="scripts/main.js"></script>
 		<script type="text/javascript" src="scripts/themes.data.js"></script>
 		<script type="text/javascript" src="scripts/themes.js"></script>
+		<script type="text/javascript" src="scripts/standbyhand.js"></script>
 		
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// Intialize InfoSystem
-				$('#standbyHand').animate({marginLeft:"-=210px",marginTop:"-=800px",opacity:"toggle"},5000,"easeOutBounce");
+				//$('#standbyHand').animate({marginLeft:"-=210px",marginTop:"-=800px",opacity:"toggle"},5000,"easeOutBounce").animate({marginLeft:"+=210px",marginTop:"+=800px",opacity:"toggle"},5000);
+				var standbyhand = new standbyHand();
+				standbyhand.init(5000,15000,3000,"easeInOutQuart");
 				
 				var infoSystem = new InfoSystem();
 				infoSystem.init();
 		
 				//Initialize themesRotator		
 				var themes = new themesRotator();
-				themes.init(1000);
+				themes.init(60000);
 						
 				// Initialize On Screen Keyboard
 				var osk = new OSK();

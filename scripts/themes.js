@@ -16,7 +16,7 @@ themesRotator.prototype = {
 		
 		this.thmThemes = {};
 				
-		if(parseInt(i)&& (i > 1000))
+		if(parseInt(i) && (i > 1000))
 			this.thmInterval = i;
 		else
 			this.thmInterval = 1000;
@@ -34,13 +34,15 @@ themesRotator.prototype = {
 		
 		$('link[href*=style]').attr('href','css/' + this.checktime());
 		
-		if(!this.thmTimer)
+		if (!this.thmTimer) 
 			this.thmTimer = window.setInterval(function(){
 				//$('link[href*=style]').attr('href','css/' + _this.thmThemes[Math.round(Math.random())]['theme']);
-				$('link[href*=style]').attr('href','css/' + _this.checktime());
+				$('link[href*=style]').attr('href', 'css/' + _this.checktime());
 			}, this.thmInterval);
-		else
+		else {
 			window.clearInterval(this.thmTimer);
+			this.thmTimer = null;
+		}
 	},
 	
 	checktime : function(){
