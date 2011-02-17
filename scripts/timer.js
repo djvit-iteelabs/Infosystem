@@ -23,8 +23,21 @@ Timer.prototype = {
 		else
 			this.stop();
 	},
+	
 	stop : function(){
 		window.clearInterval(this.timer);
 		this.timer = null;
+	},
+	
+	setDate: function(){
+		var d = new Date();
+		var dy = d.getDay();
+		var m = d.getMonth();
+		var y = d.getFullYear();
+		var t = $(".dateText");
+		if (m < 10) m = '0' + m;
+		if (dy < 10) dy = '0' + dy;
+
+		t.html(dy + '/' + m + '/' + y);
 	}
 }

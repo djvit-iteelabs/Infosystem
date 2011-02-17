@@ -57,13 +57,13 @@ standbyHand.prototype = {
 		
 		this.sbhContainer.animate({
 			marginLeft: "-=210px",
-			marginTop: "-=800px",
+			marginTop: "-=500px",
 			opacity: "toggle"
 		},this.sbhMoveTime,this.sbhStyle,function(){
 			_this.sbhContainer.css("background", "url(../images/hand.red.png)");}).
 			delay(this.sbhDelay).animate({
 				marginLeft: "+=210px",
-				marginTop: "+=800px",
+				marginTop: "+=500px",
 				opacity: "toggle"
 			}, this.sbhMoveTime);
 	}

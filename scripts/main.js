@@ -84,7 +84,7 @@ InfoSystem.prototype = {
 		// Initialize date
 		//$('span[id*="date"]').text(this.getDateTimeString());
 		var timer = new Timer();
-		timer.init('dateText');
+		timer.setDate();
 		
 		// Initialize Scrollers
 		/*var pane = $('.scroll-pane');
@@ -106,7 +106,7 @@ InfoSystem.prototype = {
 		var _this = this;
 		
 		// Reset button glow/shadow
-		$('span[id*="btn"]').css('-webkit-box-shadow', '0px 0px 0px #FFFFFF');
+		$('span[id*="btn"]').css('-webkit-box-shadow', '0px 0px 0px #000000');
 		
 		// TODO: Use/Change some animation here
 		this.hidePages(function(){

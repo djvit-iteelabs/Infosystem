@@ -4,7 +4,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #000000 url(../images/Background.png) no-repeat;
+	background: #000000 url(../images/bg.night.png) no-repeat;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
@@ -40,7 +40,7 @@ div[id*="page"] {
 	border: 0px;
 	margin: 0px;
 	padding: 0px;
-	background: transparent url(../images/bg.tile.png) repeat;
+	background: transparent url(../images/bg.night.jpg) repeat;
 	text-align: center;
 	vertical-align: middle;
 	display: none;
@@ -49,7 +49,7 @@ div[id*="page"] {
 #mainHeader {
 	height:124px;
 	width: 1080px;
-	background: transparent url(../images/Top.png) repeat;
+	background: transparent;
 	text-align: left;
 }
 
@@ -58,7 +58,7 @@ div[id*="page"] {
 }
 
 #mainFooter {
-	background: transparent url(../images/Bottom.png) repeat;
+	background: transparent;
 	position:absolute;
 	bottom:0;
  	width:100%;
@@ -135,7 +135,7 @@ div[id*="page"] {
  */
 #pageMain {
 	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.tile.png) no-repeat;
+	background: transparent url(../images/bg.night.jpg) no-repeat;
 }
 
 /**
@@ -143,7 +143,7 @@ div[id*="page"] {
  */
 #pageNews {
 	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.tile.png) no-repeat;
+	background: transparent url(../images/bg.night.jpg) no-repeat;
 }
 
 /**
@@ -151,7 +151,7 @@ div[id*="page"] {
  */
 #pageEvents {
 	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.tile.png) no-repeat;
+	background: transparent url(../images/bg.night.jpg) no-repeat;
 }
 
 /**
@@ -159,7 +159,7 @@ div[id*="page"] {
  */
 #pageTourism {
 	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.tile.png) no-repeat;
+	background: transparent url(../images/bg.night.jpg) no-repeat;
 }
 
 /**
@@ -167,7 +167,7 @@ div[id*="page"] {
  */
 #pageCulture {
 	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.tile.png) no-repeat;
+	background: transparent url(../images/bg.night.jpg) no-repeat;
 }
 
 /**
@@ -175,7 +175,7 @@ div[id*="page"] {
  */
 #pageHotels {
 	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.tile.png) no-repeat;
+	background: transparent url(../images/bg.night.jpg) no-repeat;
 }
 
 /**
@@ -183,7 +183,7 @@ div[id*="page"] {
  */
 #pageRestaurants {
 	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.tile.png) no-repeat;
+	background: transparent url(../images/bg.night.jpg) no-repeat;
 }
 
 /**
@@ -191,7 +191,7 @@ div[id*="page"] {
  */
 #pageMap {
 	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.tile.png) no-repeat;
+	background: transparent url(../images/bg.night.jpg) no-repeat;
 }
 
 #mapContainer {
@@ -318,7 +318,7 @@ div[id*="cat"] {
 }
 
 .rssSlider {
-	height: 1750px;
+	height: 1250px;
 	width: 2165px;
 	overflow: hidden;
 	position: absolute;
@@ -327,7 +327,7 @@ div[id*="cat"] {
 }
 
 .rssData {
-	height: 1750px;
+	height: 1250px;
 	width: 1080px;
 	overflow:hidden;
 	text-align: left;
@@ -336,7 +336,7 @@ div[id*="cat"] {
 }
 
 .rssDetails {
-	height: 1750px;
+	height: 1250px;
 	width: 1080px;
 	overflow:hidden;
 	text-align: left;

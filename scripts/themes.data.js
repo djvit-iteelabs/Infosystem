@@ -8,7 +8,7 @@
 
 var themesData = {
 		"themes" : [
-			{"name":"silver","start": "10.00","end": "22.00","theme": "style.css"},
-			{"name": "dark","start": "22.00","end": "10.00","theme": "style.dark.css"}
+			{"name": "day", "start": "1.00", "end": "22.00", "theme": "style.day.css"},
+			{"name": "night", "start": "22.00", "end": "1.00", "theme": "style.night.css"}
 		]
 }

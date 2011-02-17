@@ -20,7 +20,7 @@ var googleMap = {
 	initMap: function(map_container){
 		// Initialize map		
         var myOptions = {
-            zoom: 13,
+            zoom: 16,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             mapTypeControl: true,
             mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
@@ -33,7 +33,15 @@ var googleMap = {
 		this.geocoder = new google.maps.Geocoder();
 		var initialAddress = '9450 Altstätten, Schweiz';
 		
-		this.findAddress(initialAddress);
+		//this.findAddress(initialAddress);
+		
+		var altstatten = new google.maps.LatLng(47.378315, 9.538313);
+  		googleMap.map.setCenter(altstatten);
+		var marker = new google.maps.Marker({
+	        position: altstatten, 
+	        map: googleMap.map,
+	        title:"Altstätten, InfoSystem"
+	    }); 
 	},
 	
 	/**
@@ -48,6 +56,11 @@ var googleMap = {
         _this.geocoder.geocode({ 'address': address }, function (results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
                 googleMap.map.setCenter(results[0].geometry.location);
+				var marker = new google.maps.Marker({
+			        position: results[0].geometry.location, 
+			        map: googleMap.map,
+			        title: address
+			    }); 
             } else {
                 alert("Cannot find specified address");
             }

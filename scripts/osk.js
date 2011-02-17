@@ -144,15 +144,19 @@ OSK.prototype = {
 										if (_this.oskMode == 'norm') {
 											//$(_this.oskABC).css('display', 'none');
 											//$(_this.oskNum).css('display','block');
-											$(_this.oskABC).fadeOut(1000);
-											$(_this.oskNum).fadeIn(1000);
+											$(_this.oskABC).fadeOut('fast', function(){
+												$(_this.oskNum).fadeIn();	
+											});
+											
 											_this.oskMode = 'num';
 										}
 										else {
 											//$(_this.oskNum).css('display','none');
 											//$(_this.oskABC).css('display','block');
-											$(_this.oskNum).fadeOut(1000);
-											$(_this.oskABC).fadeIn(1000);
+											$(_this.oskNum).fadeOut('fast', function(){
+												$(_this.oskABC).fadeIn();	
+											});
+											
 											_this.oskMode = 'norm';
 										}
 									});										

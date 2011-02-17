@@ -53,6 +53,7 @@ var RSS = {
 				RSS.getDetails(this, function(content){
 					$(targetContainer).next().html(content);
 					$('.rssSlider').animate({"left": "-=1080px"}, "slow");
+					
 				});
 			}); 
 		});
