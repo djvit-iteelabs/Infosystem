@@ -10,6 +10,7 @@ themesRotator.prototype = {
 	thmThemes: null,	// array of styles 
 	thmInterval: null,	// how often check the time(milliseconds)
 	thmCount : null,    // themes count
+	thmName : null,     //current theme name
 	
 	init : function(i){ // i - initial interval
 		var _this = this;
@@ -46,6 +47,7 @@ themesRotator.prototype = {
 	},
 	
 	checktime : function(){
+		var _this = this;
 		var d= new Date();
 		var t = d.getHours();
 			
@@ -54,14 +56,43 @@ themesRotator.prototype = {
 		for(var i = 0;i < this.getcount();i++){
 			var start = parseInt(this.thmThemes[i]['start'])
 			var end = parseInt(this.thmThemes[i]['end']);
+			var name = this.thmThemes[i]['name'];
 			
 			if (start < end){
-				if((t >= start) && (t <= end))
+				if ((t >= start) && (t <= end)) {
 					th = this.thmThemes[i]['theme'];
+						
+					$("div.menuItem img").each(function(){
+						var str = $(this).attr("src");
+						
+						if ((_this.thmName == null) || (_this.thmName === 'undefined'))
+							str = str.replace("###",name);
+						else
+							str = str.replace(_this.thmName,name);
+							
+						$(this).attr("src",str);	
+					});
+
+					this.thmName = this.thmThemes[i]['name'];
+				}
 			}
 			if (start > end){
-				if((t >= start) || (t <= end))
-			  		th = this.thmThemes[i]['theme'];				
+				if ((t >= start) || (t <= end)) {
+					th = this.thmThemes[i]['theme'];
+					
+					$("div.menuItem img").each(function(){
+						var str = $(this).attr("src");
+						
+						if ((_this.thmName == null) || (_this.thmName === 'undefined'))
+							str = str.replace("###",name);
+						else
+							str = str.replace(_this.thmName,name);
+							
+						$(this).attr("src",str);	
+					});
+					
+					this.thmName = this.thmThemes[i]['name'];
+				}				
 			}
 		}
 		
