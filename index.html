@@ -22,7 +22,11 @@
 		<script type="text/javascript" src="scripts/themes.js"></script>
 		<script type="text/javascript" src="scripts/standbyhand.js"></script>
 		<script type="text/javascript" src="scripts/clock.js"></script>
+		<script type="text/javascript" src="scripts/paging.js"></script>
+		<script type="text/javascript" src="http://map.search.ch/api/map.js?lang=de"></script>
+		<script type="text/javascript" src="scripts/map.ch.js"></script>
 
+		
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// Intialize InfoSystem
@@ -39,11 +43,15 @@
 						
 				// Initialize On Screen Keyboard
 				var osk = new OSK();
-				osk.init(googleMap.findAddress, 'de');
+				//osk.init(googleMap.findAddress, 'de');
+				osk.init(chMap.findAddress, 'de');
 				
 				// Initialize RSS
 				RSS.getList('data/events.rss', '#divEventsList',  15);
-				RSS.getList('data/news.rss', '#dataContainerNews',  15);				
+				RSS.getList('data/news.rss', '#dataContainerNews',  15);
+				
+				var rssPaging = new infoPaging();
+				rssPaging.init('#divEventsList','.rssItem',5);			
 			});
 		</script>
     </head>

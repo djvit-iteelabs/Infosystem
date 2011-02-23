@@ -154,7 +154,8 @@ InfoSystem.prototype = {
 	refreshPage: function(){
 		switch(this.activePage.id) {
 			case 'pageMap':
-				googleMap.initMap('mapContainer'); 
+				//googleMap.initMap('mapContainer');
+				chMap.initMap('mapContainer'); 
 				break;
 		}
 
