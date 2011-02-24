@@ -26,24 +26,8 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// Intialize InfoSystem
-				//$('#standbyHand').animate({marginLeft:"-=210px",marginTop:"-=800px",opacity:"toggle"},5000,"easeOutBounce").animate({marginLeft:"+=210px",marginTop:"+=800px",opacity:"toggle"},5000);
-				var standbyhand = new standbyHand();
-				standbyhand.init(5000,15000,3000,"easeInOutQuart");
-				
 				var infoSystem = new InfoSystem();
 				infoSystem.init();
-		
-				//Initialize themesRotator		
-				var themes = new themesRotator();
-				themes.init(60000);
-						
-				// Initialize On Screen Keyboard
-				var osk = new OSK();
-				osk.init(googleMap.findAddress, 'de');
-				
-				// Initialize RSS
-				RSS.getList('data/events.rss', '#divEventsList',  15);
-				RSS.getList('data/news.rss', '#dataContainerNews',  15);				
 			});
 		</script>
     </head>
@@ -74,7 +58,6 @@
 				</div>
 			</div>
 			<br class="clear" />
-			
 			
 			<!-- Page elements -->
 			<div class="menuItem">
@@ -148,38 +131,43 @@
 		<!-- EVENTS -->
 		<div id="pageEvents">
 			<!-- Page header -->
-			<div id="mainHeader">
-				<span class="dateText">&nbsp;</span><br/>
-				<div>
+			<div id="listHeader">
+				<div class="dateText">&nbsp;</div><br/>
+				<div id="titlePage">
 					<!-- Title -->
-					<div id="titleLogo"></div>
-					
-					<!-- Analog Clock -->
-					<ul class="clock">	
-					   	<li class="sec"></li>
-					   	<li class="hour"></li>
-						<li class="min"></li>
-					</ul>
+					<img src="images/logo.png" alt="Altstatten" id="altstattenLogo"/>
+					<span>Veranstaltungen</span>
 				</div>
 			</div>
 			<br class="clear" />			
 			<!-- Content Area -->
 			<div class="rssContainer" >
 				<div class="rssSlider">
-					<div id="divEventsList" class="rssData"></div>
-					<div id="divEventsDetail" class="rssDetails"></div>
+					<div class="divScrolledList">
+						<div class="divListTitle">
+							<span>Datum</span>
+							<span>Veranstaltung</span>
+						</div>
+						<div id="divEventsList" class="rssData"></div>
+					</div>
+					
+					<div id="divEventsDetail" class="rssDetails">
+						<div class="divListTitle">
+							<div class="buttonToList"></div>
+							<span id="rssDetailTitle"></span>
+						</div>
+						<div id="rssDetailTarget" class="rssData"></div>
+					</div>
 				</div>
 			</div>
 			
 			<!-- Page Footer -->
 			<div id="mainFooter">
-				<div id="mainFootLeft">
-					<span id="btnBack" class="button">Zurück</span>
+				<div id="mainFootLeft">&nbsp;</div>
+				<div id="mainFootCenter">
+					<div id="btnBack" class="buttonBack"></div>
 				</div>
-				<div id="mainFootCenter">&nbsp;</div>
-				<div id="mainFootRight">
-					<div class="sscrLogoPageRight"></div>
-				</div>
+				<div id="mainFootRight">&nbsp;</div>
 			</div>
 
 		</div>
@@ -204,7 +192,14 @@
 			<br class="clear" />
 			
 			<!-- Content Area -->
-			<div id="dataContainerNews" class="rssData"></div>
+			<div class="rssContainer" >
+				<div class="rssSlider">
+					<div id="divNewsList" class="rssData"></div>
+					<div id="divNewsDetail" class="rssDetails">
+						<div class="backToList"><< Back</div>
+					</div>
+				</div>
+			</div>
 
 			<!-- Page Footer -->
 			<div id="mainFooter">

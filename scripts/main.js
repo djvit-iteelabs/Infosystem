@@ -47,6 +47,36 @@ InfoSystem.prototype = {
 		
 		this.showPage('pageLanding');
 		
+				// Initialize date
+		//$('span[id*="date"]').text(this.getDateTimeString());
+		var timer = new Timer();
+		timer.setDate();
+		
+		// Initialize Stand By screen animation
+		var standbyhand = new standbyHand();
+		standbyhand.init(5000, 15000, 3000,"easeInOutQuart");
+		
+		//Initialize themesRotator		
+		var themes = new themesRotator();
+		themes.init(60000);
+				
+		// Initialize On Screen Keyboard
+		var osk = new OSK();
+		osk.init(googleMap.findAddress, 'de');
+		
+		// Initialize RSS readers
+		var rss = new RSS();
+		rss.init(
+			[{
+				"src": "data/events.rss",
+				"target": "#divEventsList"
+			}, {
+				"src": "data/news.rss",
+				"target": "#divNewsList"
+			}]
+		);
+		
+/////////////////////////////////////////
 		// Initialize menu items and their events
 		var catItems = $('div[id*="cat"]');
 		for (var i = 0; i < catItems.length; i++) {
@@ -70,31 +100,20 @@ InfoSystem.prototype = {
 		});
 		
 		// Start activity monitor
-		setInterval(function(){_this.checkActivity()}, this.activityCheckInterval);
+		setInterval(function() {
+			_this.checkActivity();
+			}, 
+		this.activityCheckInterval);
 		
 		// Intialize buttons
-		$('span[id*="btn"]').click(function(){
-			$(this).css('-webkit-box-shadow', '0px 0px 20px #FFFFFF');
+		$('[id*="btn"]').click(function(){
+			/*$(this).css('-webkit-box-shadow', '0px 0px 20px #FFFFFF');
 			$(this).bind('webkitTransitionEnd', function() { 
 				var options = {};
 		         _this.showPage('pageMain');
-		     });
+		     });*/
+			_this.showPage('pageMain');
 		});
-		
-		// Initialize date
-		//$('span[id*="date"]').text(this.getDateTimeString());
-		var timer = new Timer();
-		timer.setDate();
-		
-		// Initialize Scrollers
-		/*var pane = $('.scroll-pane');
-		pane.jScrollPane(
-			{
-				showArrows: true,
-				animateScroll: true
-			}
-		);
-		this.eventsAPI = pane.data('jsp'); */
 	},
 	
 	/**

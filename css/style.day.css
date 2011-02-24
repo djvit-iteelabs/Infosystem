@@ -32,7 +32,20 @@ body {
 	height: 165px;
 	width: 632px;
 	display: inline-block;
-	margin: 100px 0px 0px 50px;
+	margin: 130px 0px 0px 50px;
+}
+
+#altstattenLogo {
+	padding: 30px 0px 0px 10px; 
+	margin: 20px 0px 0px 30px;
+}
+
+#titlePage {
+	display: inline-block;
+	font-size: 100px;
+	font-weight: bold;
+	color: #000000;
+	text-shadow: 0px 0px 1px #AAAAAA;
 }
 
 #sscrLogo {
@@ -101,32 +114,40 @@ div[id*="page"] {
 	text-align: left;
 }
 
+#listHeader {
+	height:300px;
+	width: 1080px;
+	background: transparent;
+	text-align: left;	
+}
+
 #mainFooter {
 	background: transparent;
 	position: absolute;
 	bottom:0;
  	width:100%;
-	height:110px;   /* Height of the footer */
+	height:74px;   /* Height of the footer */
 }
 
 #mainFootLeft {
 	width: 200px;
-	height: 110px;
+	height: 74px;
 	display:inline-block;
 	float:left;
 }
 
 #mainFootCenter {
 	width: 650px;
-	height: 110px;
+	height: 74px;
 	display:inline-block;
 	float:left;
-	padding: 20px 0px 0px 0px;
+	text-align: center;
+	padding: 00px 0px 0px 0px;
 }
 
 #mainFootRight {
 	width:200px;
-	height: 110px;
+	height: 74px;
 	display:inline-block;
 	float:left;
 }
@@ -161,12 +182,17 @@ div[id*="page"] {
 
 
 .dateText {
-	font-size: 26px;
+	font-size: 36px;
 	font-weight: bold;
 	color: #000000;	
-	text-align: right;
+	text-align: center;
 	display: inline-block;
-	padding: 20px 20px 20px 60px;
+	padding: 5px 0px 0px 0px;
+	margin: 0px 0px 0px 730px;
+	
+	height: 68px;
+	width: 300px;
+	background: transparent url(../images/date.bg.day.png) no-repeat;
 }
 
 #cityLogo {
@@ -379,33 +405,68 @@ div[id*="cat"] img {
 /**
  * RSS related styles
  */
-
 .rssContainer {
-	height: 1750px;
+	height: 1450px;
 	width: 1080px;
 	overflow: hidden;
 }
 
 .rssSlider {
-	height: 1250px;
+	height: 1470px;
 	width: 2165px;
 	overflow: hidden;
 	position: absolute;
 	left: 0px;
-	top: 400px;
+	top: 320px;
+}
+
+.divScrolledList {
+	border: none;
+}
+
+.divListTitle {
+	background: #FFFFFF;
+	border-radius: 30px 30px 0px 0px;
+	-webkit-border-radius: 30px 30px 0px 0px;
+	-moz-border-radius: 30px 30px 0px 0px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+
+	width: 960px;
+	height: 50px;
+	margin: 0px 50px 0px 50px;
+	padding: 10px;
+	text-align: left;
+	font-size: 36px;
+	font-weight: bold;
+	color: #000000;
+	z-index: -1;
+}
+.divListTitle span {
+	display: inline-block;
+	padding: 10px 0px 0px 10px;
+	min-width: 250px;
 }
 
 .rssData {
-	height: 1250px;
-	width: 1080px;
-	overflow:hidden;
+	height: 1350px;
+	width: 960px;
+	margin: 0px 50px 0px 50px;
+	padding: 10px;
+	overflow: hidden;
 	text-align: left;
 	display: inline-block;
 	float:left;
+	
+	border-radius: 0px 0px 30px 30px;
+	-webkit-border-radius: 0px 0px 30px 30px;
+	-moz-border-radius: 0px 0px 30px 30px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	z-index: -2;
+	background: #000000;
 }
 
 .rssDetails {
-	height: 1250px;
+	height: 1450px;
 	width: 1080px;
 	overflow:hidden;
 	text-align: left;
@@ -414,18 +475,15 @@ div[id*="cat"] img {
 }
 
 .rssItem {
-	margin: 20px 20px 0px 20px;
-	padding: 5px 20px 30px 20px;
-	border: none;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-box-shadow: 5px 5px 10px #000000;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 10px 30px 10px;
+	border-bottom: 3px solid #FFFFFF;
 	
 	width: auto;
 	min-height: 70px;
 	max-height: 100px;
-
-	background: -webkit-gradient(linear, 0 0, 0 100%, from(#DDDDDD), to(#555555));
+	vertical-align: top;
+	background: transparent;
 }
 
 .rssImage {
@@ -437,23 +495,24 @@ div[id*="cat"] img {
 }
 
 .rssItemTitle {
-	font-size: 40px;
-	color:#777777;
-	text-shadow: 1px 1px 3px #000000;
-	display: block;
-	
+	font-size: 36px;
+	color:#FFFFFF;
+	text-shadow: 0px 0px 1px #AAAAAA;
+	display: inline-block;
+	padding: 10px 0px 0px 10px;	
+	max-width: 660px;
 	overflow: hidden;
-	text-overflow: ellipsis;
-	-o-text-overflow: ellipsis;
-	white-space: nowrap;
-	width: auto;
+	white-space: normal;
 }
 
 .rssItemDate{
-	font-size: 20px;
-	color: #EEEEEE;
-	text-shadow: 1px 1px 3px #000000;
-	display: block;
+	font-size: 36px;
+	color:#FFFFFF;
+	text-shadow: 0px 0px 1px #AAAAAA;
+	display: inline-block;
+	line-height: 36px;
+	padding: 10px 0px 0px 10px;
+	min-width:250px;
 }
 
 .rssItemDescription {
@@ -507,6 +566,18 @@ div[id*="cat"] img {
 	transition: all 0.4s ease-in-out;
 }
 
+.buttonBack {
+	height: 75px;
+	width: 495px;
+	margin: 0px 0px 0px 110px;
+	background: transparent url(../images/back.btn.day.png) no-repeat;
+	
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
 .left {
 	float:left;
 }
@@ -537,21 +608,21 @@ div[id*="cat"] img {
 
 .clock {
 	position: relative;
-	width: 328px;
-	height: 328px;
+	width: 276px;
+	height: 276px;
 	margin: 20px auto 0 auto;
-	top: -320px;
-	left: 370px;
+	top: -280px;
+	left: 360px;
 	background: url(../images/clock.bg.day.png) no-repeat;
 	list-style: none;
 }
 
 .sec, .min, .hour {
 	position: absolute;
-	width: 11px;
-	height: 328px;
+	width: 9px;
+	height: 276px;
 	top: 0px;
-	left: 164px;
+	left: 138px;
 }
 
 .sec {
