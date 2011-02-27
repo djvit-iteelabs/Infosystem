@@ -32,6 +32,7 @@
 				// Intialize InfoSystem
 				var infoSystem = new InfoSystem();
 				infoSystem.init();
+
 			});
 		</script>
     </head>
@@ -365,7 +366,7 @@
 			</div>
 			<br class="clear" />
 			
-			<!-- MAP content contaiber -->
+			<!-- MAP content container -->
 			<div id="mapContainer">
 				
 			</div>
@@ -399,29 +400,67 @@
 		<!-- Real Estate / Land -->
 		<div id="pageLand">
 			<!-- Page header -->
-			<div id="mainHeader">
-				<span class="dateText">&nbsp;</span><br/>
-				<div>
+			<div id="listHeader">
+				<div class="dateText">&nbsp;</div><br/>
+				<div id="titlePage">
 					<!-- Title -->
-					<div id="titleLogo"></div>
-					
-					<!-- Analog Clock -->
-					<ul class="clock">	
-					   	<li class="sec"></li>
-					   	<li class="hour"></li>
-						<li class="min"></li>
-					</ul>
+					<img src="images/logo.png" alt="Altstatten" id="altstattenLogo"/>
+					<span style="font-size:50px;text-align: center;display: inline-block;width: 800px;">
+						Bitte wählen Sie die gewunschte Haltenstelle:
+					</span>
 				</div>
 			</div>
-			<br class="clear" />
+						
+			<!-- Content Area -->
 			
+			<div id="divLandsList" class="rssData landHeight">
+				<div id="Bahnhof" class="rssItem">
+					<img class="rssImage" src="" alt="Image" />
+					<span class="rssItemTitle" style="cursor:pointer">Altstätten Bahnhof SBB</span>
+					<span class="rssItemDate"></span>
+					<span class="rssItemDescription"></span>
+				</div>
+				<div id="Rathaus" class="rssItem">
+					<img class="rssImage" src="" alt="Image" />
+					<span class="rssItemTitle" style="cursor:pointer">Altstätten Rathaus</span>
+					<span class="rssItemDate"></span>
+					<span class="rssItemDescription"></span>
+				</div>
+				<div id="Stadt" class="rssItem">
+					<img class="rssImage" src="" alt="Image" />
+					<span class="rssItemTitle" style="cursor:pointer">Altstätten Stadt (AB)</span>
+					<span class="rssItemDate"></span>
+					<span class="rssItemDescription"></span>
+				</div>
+			</div>
+
+			<br class="clear" />
+
+			<!-- MAP content container -->
+			<div id="mapContainerLand">
+				
+			</div>
+			<div id="cornerTLLand">
+				<img src="images/corner.01.png" alt="" />
+			</div>
+			<div id="cornerTRLand">
+				<img src="images/corner.02.png"  alt=""/>
+			</div>
+			<div id="cornerBRLand">
+				<img src="images/corner.03.png"  alt="" />
+			</div>
+			<div id="cornerBLLand">
+				<img src="images/corner.04.png"  alt=""/>
+			</div>			
 			
 			<!-- Page Footer -->
 			<div id="mainFooter">
 				<div id="mainFootLeft">
 					<span id="btnBack" class="button">Zurück</span>
 				</div>
-				<div id="mainFootCenter">&nbsp;</div>
+				<div id="mainFootCenter">
+
+				</div>
 				<div id="mainFootRight">
 					<div class="sscrLogoPageRight"></div>
 				</div>

@@ -45,24 +45,25 @@ InfoSystem.prototype = {
 			$(p).css('display', 'none');
 		}
 		
-		this.showPage('pageLanding');
-		
-				// Initialize date
-		//$('span[id*="date"]').text(this.getDateTimeString());
-		var timer = new Timer();
-		timer.setDate();
-		
 		// Initialize Stand By screen animation
 		var standbyhand = new standbyHand();
 		standbyhand.init(5000, 15000, 3000,"easeInOutQuart");
 		
+		this.showPage('pageLanding');		
+				// Initialize date
+		//$('span[id*="date"]').text(this.getDateTimeString());
+		var timer = new Timer();
+		timer.setDate();
+				
 		//Initialize themesRotator		
 		var themes = new themesRotator();
 		themes.init(60000);
 				
+		chLandMap.initMap('mapContainerLand');
+
 		// Initialize On Screen Keyboard
 		var osk = new OSK();
-		osk.init(googleMap.findAddress, 'de');
+		osk.init(chSearchMap.findAddress, 'de');
 		
 		// Initialize RSS readers
 		var rss = new RSS();
@@ -113,6 +114,18 @@ InfoSystem.prototype = {
 		         _this.showPage('pageMain');
 		     });*/
 			_this.showPage('pageMain');
+		});
+		
+		//Immobilien actions
+		$("#divLandsList span[class='rssItemTitle']").click(function(){
+			var txt = $(this).text();
+			chLandMap.findAddress(txt);
+			
+			var poi = new SearchChPOI({center: txt,
+									   title:"Immobilien",
+									   html: "<strong>"+txt+"<\/strong>", 
+									   icon:"images/marker.png"});
+			chLandMap.map.addPOI(poi);
 		});
 	},
 	
@@ -174,7 +187,8 @@ InfoSystem.prototype = {
 		switch(this.activePage.id) {
 			case 'pageMap':
 				//googleMap.initMap('mapContainer');
-				chMap.initMap('mapContainer'); 
+				chSearchMap.initMap('mapContainer');
+				chLandMap.initMap('mapContainerLand'); 
 				break;
 		}
 
