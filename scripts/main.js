@@ -64,8 +64,7 @@ InfoSystem.prototype = {
 		// Initialize On Screen Keyboard
 		var osk = new OSK();
 		osk.init(chSearchMap.findAddress, 'de');
-		
-		// Initialize RSS readers
+				// Initialize RSS readers
 		var rss = new RSS();
 		rss.init(
 			[{
