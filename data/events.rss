@@ -167,11 +167,11 @@
             </rdf:Seq>
         </items>
     </channel>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=350420">
+    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/welcome.php?action=showevent&event_id=136026">
         <dc:format>text/html</dc:format>
-        <date>2011-02-18</date>
+        <date>2011-02-17</date>
         <title>Urknall</title>
-        <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/?action=showevent&amp;event_id=350420</link>
+        <link>http://www.altstaetten.ch/de/aktuelles/anlaesseaktuelles/welcome.php?action=showevent&event_id=309032</link>
         <description>Herzlich willkommen zum Urknall, dem ultimativen und fulminanten Startschuss zur Altstätter Strassenfasnacht.
 
 - 18.59 Uhr Start zum Urknall

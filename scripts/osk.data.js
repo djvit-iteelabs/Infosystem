@@ -159,7 +159,7 @@ var oskData = {
 						{ "text":"L", "char":"L", "type":"1" },
 						{ "text":"Ö", "char":"Ö", "type":"1" },
 						{ "text":"Ä", "char":"Ä", "type":"1" },
-						{ "text":"Submit", "char":"", "type":"2", "command":"enter" }
+						{ "text":"Suche", "char":"", "type":"2", "command":"enter" }
 					]
 				}, 
 				{
@@ -218,7 +218,7 @@ var oskData = {
 						{ "text":"@", "char":"@", "type":"1" },
 						{ "text":"#", "char":"#", "type":"1" },
 						{ "text":"|", "char":"|", "type":"1" },
-						{ "text":"Submit", "char":"", "type":"2", "command":"enter" }
+						{ "text":"Suche", "char":"", "type":"2", "command":"enter" }
 					]
 				}, 
 				{
