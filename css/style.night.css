@@ -421,6 +421,9 @@ div[id*="cat"] img {
 
 .divScrolledList {
 	border: none;
+	position: relative;
+	top: 0px;
+	left: 0px;
 }
 
 .divListTitle {
@@ -462,6 +465,10 @@ div[id*="cat"] img {
 	-webkit-box-shadow: 10px 10px 10px #000000;
 	z-index: -2;
 	background: #DDDDDD;
+	padding: 10px;
+	text-align: left;
+	font-size: 36px;
+	color: #000000;
 }
 
 .rssDetails {
@@ -576,6 +583,7 @@ div[id*="cat"] img {
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
+
 .buttonToList {
 	height: 51px;
 	width: 50px;

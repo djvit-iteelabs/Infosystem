@@ -23,7 +23,7 @@ RSS.prototype  = {
 		
 		for(var r in this.rssSrcList) {
 			var rssData = this.rssSrcList[r];
-			this.getList(rssData.src, rssData.target, 20);
+			this.getList(rssData.src, rssData.target, rssData.layout, 20);
 		}
 		
 		// Bind the events
@@ -34,10 +34,18 @@ RSS.prototype  = {
 	 * bindEvents - registers RSS events
 	 */
 	bindEvents: function(context){
+		var _this = this;
 		// Back to List event handler
 		$('.buttonToList').click(function(){
-			$('.rssSlider').animate({"left": "+=1080px"}, "slow");
-		});	},
+			$('.lrSlider').animate({"left": "+=1080px"}, "slow");
+		});
+		
+		$('body').bind('showPageMain', function(){
+			setTimeout(function(){
+				_this.resetPanels();	
+			}, 3000);
+		});	
+	},
 	
 	/**
 	 * Reads RSS data and injects HTML content
@@ -45,7 +53,7 @@ RSS.prototype  = {
 	 * @param {Object} targetContainer
 	 * @param {Object} count
 	 */
-	getList: function(rssUrl, targetContainer, count) {
+	getList: function(rssUrl, targetContainer, rssListLayout, count) {
 		var _this = this;
 		// Get the RSS content
 		$.get(rssUrl, function(data) {
@@ -55,8 +63,8 @@ RSS.prototype  = {
 				
 				// Fetch title, URL, description and publication date
 				var $item = $(this);
-				var image = $item.find('image').text();
 				var title = $item.find('title').text();
+				var image = $item.attr('image');
 				var link  = $item.attr('rdf:about');
 				var description = $item.find('description').text();
 				description = description.replace(/\n/gi, '<br />');
@@ -66,26 +74,34 @@ RSS.prototype  = {
 				// Build HTML output based on the template
 				var htmlItem = '';
 				if ( (typeof(image) !== 'undefined') && (image != null) && (image != '') ) {
-					htmlItem += RSSData.image.replace('%####%', image);
+					htmlItem += RSSData.image.replace('%####_00%', image);
 				}
-				htmlItem += RSSData.date.replace('%####_00%', pubDate);
+				if ((typeof(pubDate) !== 'undefined') && (pubDate != null) && (pubDate != '')) {
+					htmlItem += RSSData.date.replace('%####_00%', pubDate);
+				}
 				htmlItem += RSSData.title.replace('%####_00%', title);
 				//htmlItem += RSSData.description.replace('%####_00%', description);
-				htmlItem = RSSData.item.replace('%####_00%', htmlItem);
+				if (rssListLayout == 'date-title') {
+					htmlItem = RSSData.item.replace('%####_00%', htmlItem);
+				} else if (rssListLayout == 'picture-title') {
+					htmlItem = RSSData.itemWImage.replace('%####_00%', htmlItem);
+				}
 				htmlItem = htmlItem.replace('%####_01%', data);
 				htmlItem = htmlItem.replace('%####_02%', title);
 	 
 				// Put that feed content on the screen!
-				$(targetContainer).append($(htmlItem));
+				$(targetContainer).find('#divItemsList').append($(htmlItem));
 				
 				// Bind events
 				$('[data="' + data + '"]').click(function() {
 					_this.getDetails($(this), function(elm, content){
-						$('#rssDetailTitle').html($(elm).attr('title'));
-						$(targetContainer).parent().next().children('#rssDetailTarget').html(content);
-						$('.rssSlider').animate({"left": "-=1080px"}, "slow");
+						$(targetContainer).parent().find('#rssDetailTitle').html($(elm).attr('title'));
+						$(targetContainer).parent().find('#rssDetailTarget').html(content);
+						$('.lrSlider').animate({"left": "-=1080px"}, "slow");
 					});
 				});
+				
+
 				
 				// Append only given number of records
 				if (index > count) return;
@@ -102,7 +118,7 @@ RSS.prototype  = {
 			},
 			error: function(xhr, msg, error) {
 				//TODO: Provide styles error message/notification
-				alert('RSS Content not found');		
+				//alert('RSS Content not found');		
 			}
 		});
 		
@@ -110,6 +126,6 @@ RSS.prototype  = {
 	},
 	
 	resetPanels: function() {
-		$('.rssSlider').css('left', '0px');
+		$('.lrSlider').css('left', '0px');
 	}
 }

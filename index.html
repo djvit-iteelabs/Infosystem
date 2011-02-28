@@ -9,8 +9,8 @@
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery-ui-1.8.9.custom.min.js"></script>
-		<script type="text/javascript" src="scripts/jquery.jscrollpane.js"></script>
 		<script type="text/javascript" src="scripts/jquery.easing.js"></script>
+		<script type="text/javascript" src="scripts/jgesture-1.0.3.js"></script>
 		<script type="text/javascript" src="scripts/maps.js"></script>
 		<script type="text/javascript" src="scripts/osk.data.js"></script>
 		<script type="text/javascript" src="scripts/osk.js"></script>
@@ -23,6 +23,7 @@
 		<script type="text/javascript" src="scripts/standbyhand.js"></script>
 		<script type="text/javascript" src="scripts/clock.js"></script>
 		<script type="text/javascript" src="scripts/paging.js"></script>
+		<script type="text/javascript" src="scripts/swipe.js"></script>
 		<script type="text/javascript" src="http://map.search.ch/api/map.js?lang=de"></script>
 		<script type="text/javascript" src="scripts/map.ch.js"></script>
 
@@ -61,7 +62,6 @@
 					</ul>
 				</div>
 			</div>
-			<br class="clear" />
 			
 			<!-- Page elements -->
 			<div class="menuItem">
@@ -71,31 +71,28 @@
 				<span class="catText">Veranstaltungen</span>
 			</div>
 			<div class="menuItem">
-				<div id="catNews" page="pageNews">
-					<img alt="Page News" src="images/info.###.png">
-				</div><br>
-				<span class="catText">Infos Altstätten</span>
+				<div id="catQuiz" page="pageQuiz">
+					<img alt="Page Quiz" src="images/quiz.###.png">
+					</div><br>
+				<span class="catText">Quiz</span>
 			</div>
 			<div class="menuItem">
 				<div id="catTourism" page="pageTourism">
-					<img alt="Page Tourism" src="images/recreation.###.png">
+					<img alt="Page Tourism" src="images/freizeit.###.png">
 				</div><br>
 				<span class="catText">Freizeit/Sport</span>
 			</div>
 			<div class="menuItem">
-				<div id="catCulture" page="pageCulture">
-					<img alt="Page Culture" src="images/culture.###.png">
+				<div id="catHotels" page="pageHotels">
+					<img alt="Page Hotels" src="images/hotel.###.png">
 				</div><br>
-				<span class="catText">Kultur</span>
+				<span class="catText">Hotels</span>
 			</div>
-			<!-- <div id="catHotels" page="pageHotels">
-				<img alt="Page Hotels" src="images/ho">
-			</div> -->
 			<div class="menuItem">
 				<div id="catRestaurants" page="pageRestaurants">
 					<img alt="Page Restaurants" src="images/restaurant.###.png">
 				</div><br>
-				<span class="catText">Hotels/Gastronomie</span>
+				<span class="catText">Gastronomie</span>
 			</div>
 			<div class="menuItem">
 				<div id="catMap" page="pageMap">
@@ -104,10 +101,10 @@
 				<span class="catText">Ortsplan</span>
 			</div>
 			<div class="menuItem">
-				<div id="catLand" page="pageLand">
-					<img alt="Page Real Estate" src="images/realestate.###.png">
+				<div id="catSchedule" page="pageSchedule">
+					<img alt="Page Map" src="images/train.###.png">
 				</div><br>
-				<span class="catText">Immobilien</span>
+				<span class="catText">Fahrplan</span>
 			</div>
 			<div class="menuItem">
 				<div id="catWeather" page="pageWeather">
@@ -116,19 +113,14 @@
 				<span class="catText">Wetter </span>
 			</div>
 			<div class="menuItem">
-				<div id="catQuiz" page="pageQuiz">
-					<img alt="Page Quiz" src="images/quiz.###.png">
-					</div><br>
-				<span class="catText">Quiz</span>
+				<div id="catNews" page="pageNews">
+					<img alt="Page News" src="images/info.###.png">
+				</div><br>
+				<span class="catText">Information</span>
 			</div>
 			
 			<!-- Page Footer -->
-			<div id="mainFooter">
-				<div id="mainFootLeft">&nbsp;</div>
-				<div id="mainFootCenter">&nbsp;</div>
-				<div id="mainFootRight">&nbsp;</div>
-				<div class="sscrLogoPage"></div>
-			</div>
+			<div id="mainFooter"></div>
 		</div>
 		
 		<!-- Category pages -->
@@ -139,228 +131,293 @@
 				<div class="dateText">&nbsp;</div><br/>
 				<div id="titlePage">
 					<!-- Title -->
-					<img src="images/logo.png" alt="Altstatten" id="altstattenLogo"/>
-					<span>Veranstaltungen</span>
+					<img src="images/txt.Veranstunden.png" alt="Veranstunden" class="txtImage"/>
 				</div>
 			</div>
-			<br class="clear" />			
+			<br class="clear" />		
+				
 			<!-- Content Area -->
-			<div class="rssContainer" >
-				<div class="rssSlider">
-					<div class="divScrolledList">
-						<div class="divListTitle">
-							<span>Datum</span>
-							<span>Veranstaltung</span>
-						</div>
-						<div id="divEventsList" class="rssData"></div>
+			<div class="lrSlider" id="rssEvents">
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<span>Datum</span>
+						<span>Veranstaltung</span>
 					</div>
-					
-					<div id="divEventsDetail" class="rssDetails">
-						<div class="divListTitle">
-							<div class="buttonToList"></div>
-							<span id="rssDetailTitle"></span>
-						</div>
-						<div id="rssDetailTarget" class="rssData"></div>
+					<div class="swipeMask">
+						<div class="rssData" id="divItemsList"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<div class="buttonToList"></div>
+						<span id="rssDetailTitle"></span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="rssDetailTarget"></div>
+					</div>
+					<div class="divListFooter">
 					</div>
 				</div>
 			</div>
 			
 			<!-- Page Footer -->
-			<div id="mainFooter">
+			<div id="cntFooter">
 				<div id="mainFootLeft">&nbsp;</div>
 				<div id="mainFootCenter">
 					<div id="btnBack" class="buttonBack"></div>
 				</div>
 				<div id="mainFootRight">&nbsp;</div>
 			</div>
-
 		</div>
 
-		<!-- NEWS -->
-		<div id="pageNews">
+		<!-- QUIZ -->
+		<div id="pageQuiz">
 			<!-- Page header -->
-			<div id="mainHeader">
-				<span class="dateText">&nbsp;</span><br/>
-				<div>
+			<div id="listHeader">
+				<div class="dateText">&nbsp;</div><br/>
+				<div id="titlePage">
 					<!-- Title -->
-					<div id="titleLogo"></div>
-					
-					<!-- Analog Clock -->
-					<ul class="clock">	
-					   	<li class="sec"></li>
-					   	<li class="hour"></li>
-						<li class="min"></li>
-					</ul>
+					<img src="images/logo.png" alt="Altstatten" id="altstattenLogo"/>
+					<span>Quiz</span>
 				</div>
 			</div>
-			<br class="clear" />
-			
+			<br class="clear" />		
+				
 			<!-- Content Area -->
-			<div class="rssContainer" >
-				<div class="rssSlider">
-					<div id="divNewsList" class="rssData"></div>
-					<div id="divNewsDetail" class="rssDetails">
-						<div class="backToList"><< Back</div>
+			<div class="lrSliderQuiz">
+				<!-- Q1 -->
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<span id="rssDetailTitle"></span>
+						<div class="buttonToNext"></div>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="divQ1Content" data="Q1"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+
+				<!-- Q2 -->
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<div class="buttonToList"></div>
+						<span id="rssDetailTitle"></span>
+						<div class="buttonToNext"></div>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="divQ2Content" data="Q2"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+				
+				<!-- Q3 -->
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<div class="buttonToList"></div>
+						<span id="rssDetailTitle"></span>
+						<div class="buttonToNext"></div>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="divQ3Content" data="Q3"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+				
+				<!-- Q4 -->
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<div class="buttonToList"></div>
+						<span id="rssDetailTitle"></span>
+						<div class="buttonToNext"></div>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="divQ4Content" data="Q4"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+				
+				<!-- Q5 -->
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<div class="buttonToList"></div>
+						<span id="rssDetailTitle"></span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="divQ5Content" data="Q5"></div>
+					</div>
+					<div class="divListFooter">
 					</div>
 				</div>
 			</div>
-
+			
 			<!-- Page Footer -->
-			<div id="mainFooter">
-				<div id="mainFootLeft">
-					<span id="btnBack" class="button">Zurück</span>
+			<div id="cntFooter">
+				<div id="mainFootLeft">&nbsp;</div>
+				<div id="mainFootCenter">
+					<div id="btnBack" class="buttonBack"></div>
 				</div>
-				<div id="mainFootCenter">&nbsp;</div>
-				<div id="mainFootRight">
-					<div class="sscrLogoPageRight"></div>
-				</div>
+				<div id="mainFootRight">&nbsp;</div>
 			</div>
 		</div>
-		
+
 		<!-- Recreation / Tourism -->
 		<div id="pageTourism">
 			<!-- Page header -->
-			<div id="mainHeader">
-				<span class="dateText">&nbsp;</span><br/>
-				<div>
+			<div id="listHeader">
+				<div class="dateText">&nbsp;</div><br/>
+				<div id="titlePage">
 					<!-- Title -->
-					<div id="titleLogo"></div>
-					
-					<!-- Analog Clock -->
-					<ul class="clock">	
-					   	<li class="sec"></li>
-					   	<li class="hour"></li>
-						<li class="min"></li>
-					</ul>
+					<img src="images/txt.Freizeit.png" alt="Freizeit" class="txtImage"/>
 				</div>
 			</div>
-			<br class="clear" />
+			<br class="clear" />		
+				
+			<!-- Content Area -->
+			<div class="lrSlider" id="rssTourism">
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<span>Bild</span>
+						<span>Standort</span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="divItemsList"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<div class="buttonToList"></div>
+						<span id="rssDetailTitle"></span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="rssDetailTarget"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+			</div>
 			
-			<!-- Content container -->
-			<div id="dataContainerTourism" class="rssData"></div>
-
 			<!-- Page Footer -->
-			<div id="mainFooter">
-				<div id="mainFootLeft">
-					<span id="btnBack" class="button">Zurück</span>
+			<div id="cntFooter">
+				<div id="mainFootLeft">&nbsp;</div>
+				<div id="mainFootCenter">
+					<div id="btnBack" class="buttonBack"></div>
 				</div>
-				<div id="mainFootCenter">&nbsp;</div>
-				<div id="mainFootRight">
-					<div class="sscrLogoPageRight"></div>
-				</div>
+				<div id="mainFootRight">&nbsp;</div>
 			</div>
-
-		</div>
-
-		<!-- Culture -->
-		<div id="pageCulture">
-			<!-- Page header -->
-			<div id="mainHeader">
-				<span class="dateText">&nbsp;</span><br/>
-				<div>
-					<!-- Title -->
-					<div id="titleLogo"></div>
-					
-					<!-- Analog Clock -->
-					<ul class="clock">	
-					   	<li class="sec"></li>
-					   	<li class="hour"></li>
-						<li class="min"></li>
-					</ul>
-				</div>
-			</div>
-			<br class="clear" />
-
-			<!-- Page Footer -->
-			<div id="mainFooter">
-				<div id="mainFootLeft">
-					<span id="btnBack" class="button">Zurück</span>
-				</div>
-				<div id="mainFootCenter">&nbsp;</div>
-				<div id="mainFootRight">
-					<div class="sscrLogoPageRight"></div>
-				</div>
-			</div>
-		</div>
+		</div>		
 
 		<!-- Hotels -->
 		<div id="pageHotels">
 			<!-- Page header -->
-			<div id="mainHeader">
-				<span class="dateText">&nbsp;</span><br/>
-				<div>
+			<div id="listHeader">
+				<div class="dateText">&nbsp;</div><br/>
+				<div id="titlePage">
 					<!-- Title -->
-					<div id="titleLogo"></div>
-					
-					<!-- Analog Clock -->
-					<ul class="clock">	
-					   	<li class="sec"></li>
-					   	<li class="hour"></li>
-						<li class="min"></li>
-					</ul>
+					<img src="images/txt.Hotels.png" alt="Hotels" class="txtImage"/>
 				</div>
 			</div>
-			<br class="clear" />
-
+			<br class="clear" />		
+				
+			<!-- Content Area -->
+			<div class="lrSlider" id="rssHotels">
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<span>Hotel</span>
+						<span>Kontakttelefon</span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="divItemsList"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<div class="buttonToList"></div>
+						<span id="rssDetailTitle"></span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="rssDetailTarget"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+			</div>
+			
 			<!-- Page Footer -->
-			<div id="mainFooter">
-				<div id="mainFootLeft">
-					<span id="btnBack" class="button">Zurück</span>
+			<div id="cntFooter">
+				<div id="mainFootLeft">&nbsp;</div>
+				<div id="mainFootCenter">
+					<div id="btnBack" class="buttonBack"></div>
 				</div>
-				<div id="mainFootCenter">&nbsp;</div>
-				<div id="mainFootRight">
-					<div class="sscrLogoPageRight"></div>
-				</div>
+				<div id="mainFootRight">&nbsp;</div>
 			</div>
 		</div>
 
 		<!-- Restaurants -->
 		<div id="pageRestaurants">
 			<!-- Page header -->
-			<div id="mainHeader">
-				<span class="dateText">&nbsp;</span><br/>
-				<div>
+			<div id="listHeader">
+				<div class="dateText">&nbsp;</div><br/>
+				<div id="titlePage">
 					<!-- Title -->
-					<div id="titleLogo"></div>
-					
-					<!-- Analog Clock -->
-					<ul class="clock">	
-					   	<li class="sec"></li>
-					   	<li class="hour"></li>
-						<li class="min"></li>
-					</ul>
+					<img src="images/txt.Restaurant.png" alt="Gastronomie" class="txtImage"/>
 				</div>
 			</div>
-			<br class="clear" />
-
+			<br class="clear" />		
+				
+			<!-- Content Area -->
+			<div class="lrSlider" id="rssRestaurants">
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<span>Restaurant</span>
+						<span>Kontakttelefon</span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="divItemsList"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<div class="buttonToList"></div>
+						<span id="rssDetailTitle"></span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="rssDetailTarget"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+			</div>
+			
 			<!-- Page Footer -->
-			<div id="mainFooter">
-				<div id="mainFootLeft">
-					<span id="btnBack" class="button">Zurück</span>
+			<div id="cntFooter">
+				<div id="mainFootLeft">&nbsp;</div>
+				<div id="mainFootCenter">
+					<div id="btnBack" class="buttonBack"></div>
 				</div>
-				<div id="mainFootCenter">&nbsp;</div>
-				<div id="mainFootRight">
-					<div class="sscrLogoPageRight"></div>
-				</div>
+				<div id="mainFootRight">&nbsp;</div>
 			</div>
-
 		</div>
-
+			
 		<!-- Map -->
 		<div id="pageMap">
 			<!-- Page header -->
-			<div id="mainHeader">
-				<span class="dateText">&nbsp;</span><br/>
-				<div>
+			<div id="listHeader">
+				<div class="dateText">&nbsp;</div><br/>
+				<div id="titlePage">
 					<!-- Title -->
-					<div id="titleLogo"></div>
-					
-					<!-- Analog Clock -->
-					<ul class="clock">	
-					   	<li class="sec"></li>
-					   	<li class="hour"></li>
-						<li class="min"></li>
-					</ul>
+					<img src="images/txt.Map.png" alt="Otrsplan" class="txtImage"/>
 				</div>
 			</div>
 			<br class="clear" />
@@ -383,111 +440,120 @@
 			</div>
 			
 			<!-- Page Footer -->
-			<div id="mainFooter">
-				<div id="mainFootLeft">
-					<span id="btnBack" class="button">Zurück</span>
-				</div>
+			<div id="cntFooter">
+				<div id="mainFootLeft">&nbsp;</div>
 				<div id="mainFootCenter">
-					<input type="text" id="searchCondition" class="bottomTextBox" />
+					<div id="btnBack" class="buttonBack"></div>
 				</div>
-				<div id="mainFootRight">
-					<div class="sscrLogoPageRight"></div>
-				</div>
+				<div id="mainFootRight">&nbsp;</div>
 			</div>
 		</div>
 
-		<!-- Real Estate / Land -->
-		<div id="pageLand">
+		<!-- Schedule (BUS / TRAIN) -->
+		<div id="pageSchedule">
 			<!-- Page header -->
-			<div id="mainHeader">
-				<span class="dateText">&nbsp;</span><br/>
-				<div>
+			<div id="listHeader">
+				<div class="dateText">&nbsp;</div><br/>
+				<div id="titlePage">
 					<!-- Title -->
-					<div id="titleLogo"></div>
-					
-					<!-- Analog Clock -->
-					<ul class="clock">	
-					   	<li class="sec"></li>
-					   	<li class="hour"></li>
-						<li class="min"></li>
-					</ul>
+					<img src="images/txt.Train.png" alt="Fahrplan" class="txtImage"/>
 				</div>
 			</div>
 			<br class="clear" />
 			
-			
 			<!-- Page Footer -->
-			<div id="mainFooter">
-				<div id="mainFootLeft">
-					<span id="btnBack" class="button">Zurück</span>
+			<div id="cntFooter">
+				<div id="mainFootLeft">&nbsp;</div>
+				<div id="mainFootCenter">
+					<div id="btnBack" class="buttonBack"></div>
 				</div>
-				<div id="mainFootCenter">&nbsp;</div>
-				<div id="mainFootRight">
-					<div class="sscrLogoPageRight"></div>
-				</div>
+				<div id="mainFootRight">&nbsp;</div>
 			</div>
 		</div>
 
 		<!-- Weather -->
 		<div id="pageWeather">
 			<!-- Page header -->
-			<div id="mainHeader">
-				<span class="dateText">&nbsp;</span><br/>
-				<div>
+			<div id="listHeader">
+				<div class="dateText">&nbsp;</div><br/>
+				<div id="titlePage">
 					<!-- Title -->
-					<div id="titleLogo"></div>
-					
-					<!-- Analog Clock -->
-					<ul class="clock">	
-					   	<li class="sec"></li>
-					   	<li class="hour"></li>
-						<li class="min"></li>
-					</ul>
+					<img src="images/txt.Weather.png" alt="Wetter" class="txtImage"/>
 				</div>
 			</div>
-			<br class="clear" />
-
+			<br class="clear" />		
+				
+			<!-- Content Area -->
+			<div class="rssContainer" id="rssWeatherDetail">
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<span id="rssDetailTitle">Lokale Voraussichten</span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="divWeatherContent" data="weather"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+			</div>
+			
 			<!-- Page Footer -->
-			<div id="mainFooter">
-				<div id="mainFootLeft">
-					<span id="btnBack" class="button">Zurück</span>
+			<div id="cntFooter">
+				<div id="mainFootLeft">&nbsp;</div>
+				<div id="mainFootCenter">
+					<div id="btnBack" class="buttonBack"></div>
 				</div>
-				<div id="mainFootCenter">&nbsp;</div>
-				<div id="mainFootRight">
-					<div class="sscrLogoPageRight"></div>
-				</div>
+				<div id="mainFootRight">&nbsp;</div>
 			</div>
 		</div>
 		
-		<!-- QUIZ -->
-		<div id="pageQuiz">
+		<!-- Information / NEWS -->
+		<div id="pageNews">
 			<!-- Page header -->
-			<div id="mainHeader">
-				<span class="dateText">&nbsp;</span><br/>
-				<div>
+			<div id="listHeader">
+				<div class="dateText">&nbsp;</div><br/>
+				<div id="titlePage">
 					<!-- Title -->
-					<div id="titleLogo"></div>
-					
-					<!-- Analog Clock -->
-					<ul class="clock">	
-					   	<li class="sec"></li>
-					   	<li class="hour"></li>
-						<li class="min"></li>
-					</ul>
+					<img src="images/txt.Info.png" alt="Information" class="txtImage"/>
 				</div>
 			</div>
-			<br class="clear" />
-
+			<br class="clear" />		
+				
+			<!-- Content Area -->
+			<div class="lrSlider" id="rssNews">
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<span>Datum</span>
+						<span>Neuigkeiten</span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="divItemsList"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<div class="buttonToList"></div>
+						<span id="rssDetailTitle"></span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="rssDetailTarget"></div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+			</div>
+			
 			<!-- Page Footer -->
-			<div id="mainFooter">
-				<div id="mainFootLeft">
-					<span id="btnBack" class="button">Zurück</span>
+			<div id="cntFooter">
+				<div id="mainFootLeft">&nbsp;</div>
+				<div id="mainFootCenter">
+					<div id="btnBack" class="buttonBack"></div>
 				</div>
-				<div id="mainFootCenter">&nbsp;</div>
-				<div id="mainFootRight">
-					<div class="sscrLogoPageRight"></div>
-				</div>
+				<div id="mainFootRight">&nbsp;</div>
 			</div>
 		</div>
+
     </body>
 </html>

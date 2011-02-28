@@ -69,14 +69,46 @@ InfoSystem.prototype = {
 		rss.init(
 			[{
 				"src": "data/events.rss",
-				"target": "#divEventsList"
+				"target": "#rssEvents",
+				"layout": "date-title"
 			}, {
 				"src": "data/news.rss",
-				"target": "#divNewsList"
+				"target": "#rssNews",
+				"layout": "date-title"
+			}, {
+				"src": "data/tourism.rss",
+				"target": "#rssTourism",
+				"layout": "picture-title"
+			}, {
+				"src": "data/culture.rss",
+				"target": "#rssCulture",
+				"layout": "picture-title"
 			}]
 		);
 		
-/////////////////////////////////////////
+		// Weather data
+		rss.getDetails($('#divWeatherContent'), function(elm, content){
+			$(elm).html(content);
+		});
+		
+		// Quiz Data
+		rss.getDetails($('#divQ1Content'), function(elm, content){
+			$(elm).html(content);
+		});
+		rss.getDetails($('#divQ2Content'), function(elm, content){
+			$(elm).html(content);
+		});
+		rss.getDetails($('#divQ3Content'), function(elm, content){
+			$(elm).html(content);
+		});
+		rss.getDetails($('#divQ4Content'), function(elm, content){
+			$(elm).html(content);
+		});
+		rss.getDetails($('#divQ5Content'), function(elm, content){
+			$(elm).html(content);
+		});
+		
+		/////////////////////////////////////////
 		// Initialize menu items and their events
 		var catItems = $('div[id*="cat"]');
 		for (var i = 0; i < catItems.length; i++) {
@@ -102,17 +134,24 @@ InfoSystem.prototype = {
 		// Start activity monitor
 		setInterval(function() {
 			_this.checkActivity();
-			}, 
-		this.activityCheckInterval);
+		}, this.activityCheckInterval);
 		
 		// Intialize buttons
 		$('[id*="btn"]').click(function(){
-			/*$(this).css('-webkit-box-shadow', '0px 0px 20px #FFFFFF');
-			$(this).bind('webkitTransitionEnd', function() { 
-				var options = {};
-		         _this.showPage('pageMain');
-		     });*/
+			$('body').trigger('showPageMain');
 			_this.showPage('pageMain');
+		});
+		
+		// Bind Swipe handlers
+		$('.rssData').swipe();
+		
+		// Quiz events
+		$('.buttonToList').click(function(){
+			$('.lrSliderQuiz').animate({"left": "+=1060px"}, "slow");
+		});
+
+		$('.buttonToNext').click(function(){
+			$('.lrSliderQuiz').animate({"left": "-=1060px"}, "slow");
 		});
 	},
 	
