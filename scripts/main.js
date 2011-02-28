@@ -112,7 +112,10 @@ InfoSystem.prototype = {
 				var options = {};
 		         _this.showPage('pageMain');
 		     });*/
-			_this.showPage('pageMain');
+			$(this).parent().effect("shake", {times: 1,direction: 'down',distance: 5 }, 300,function(){
+				_this.showPage('pageMain');	
+			});
+			
 		});
 		
 		//Immobilien actions
@@ -126,6 +129,7 @@ InfoSystem.prototype = {
 									   icon:"images/marker.png"});
 			chLandMap.map.addPOI(poi);
 		});
+		
 	},
 	
 	/**
