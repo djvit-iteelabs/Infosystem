@@ -155,7 +155,7 @@ InfoSystem.prototype = {
 		});
 		
 		//Immobilien actions
-		$("#divLandsList span[class='rssItemTitle']").click(function(){
+		$("#divItemsList span[class='rssItemTitle']").click(function(){
 			var txt = $(this).text();
 			chLandMap.findAddress(txt);
 			

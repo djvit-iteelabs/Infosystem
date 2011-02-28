@@ -279,10 +279,10 @@ div[id*="page"] {
 	width: 900px;
 	margin: 85px 85px 0px 85px;
 	border: 3px #555555 solid; 
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-webkit-box-shadow: 5px 5px 10px black;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
 }
 
 #cornerTL{
@@ -315,14 +315,15 @@ div[id*="page"] {
 
 /*Eugene*/
 #mapContainerLand {
-	height:1000px;
-	width: 900px;
-	margin: 85px 85px 0px 85px;
+	height:750px;
+	width: 920px;
+	margin: 80px 80px 0px 80px;
 	border: 3px #555555 solid; 
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-webkit-box-shadow: 5px 5px 10px black;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	top: 300px;
 }
 
 #cornerTLLand{
@@ -359,7 +360,7 @@ div[id*="page"] {
  */
 #pageLand {
 	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.day.jpg) no-repeat;
+	background: transparent url(../images/bg.day.png) no-repeat;
 }
 
 /**
@@ -367,14 +368,14 @@ div[id*="page"] {
  */
 #pageWeather {
 	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.day.jpg) no-repeat;
+	background: transparent url(../images/bg.day.png) no-repeat;
 }
 
 /**
  * Quiz Page classes
  */
 #pageQuiz {
-	background: transparent url(../images/bg.day.jpg) no-repeat;
+	background: transparent url(../images/bg.day.png) no-repeat;
 }
 
 /**
@@ -469,9 +470,22 @@ div[id*="cat"] img {
 	top: 320px;
 }
 
+.lrSliderSchedule {
+	height: 300px;
+	width: 1080px;
+	position: absolute;
+	left: 0px;
+	top: 320px;	
+}
+
 .scrolledContainer {
 	display: inline-block;
 	height: 1150px;
+}
+
+.scrolledContainerSchedule {
+	display: inline-block;
+	height: 400px;
 }
 
 .divListTitle {
@@ -511,6 +525,29 @@ div[id*="cat"] img {
 
 .swipeMask {
 	height: 1050px;
+	width: 880px;
+	margin: 0px 70px 0px 70px;
+	padding: 0px 20px 0px 20px;
+	text-align: left;
+	display: inline-block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	
+	border-radius: 0px 0px 30px 30px;
+	-webkit-border-radius: 0px 0px 30px 30px;
+	-moz-border-radius: 0px 0px 30px 30px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	background: #000000;
+	text-align: left;
+	font-size: 36px;
+	font-weight: normal;
+	color: #FFFFFF;
+	overflow: hidden;
+}
+
+.swipeMaskSchedule {
+	height: 275px;
 	width: 880px;
 	margin: 0px 70px 0px 70px;
 	padding: 0px 20px 0px 20px;
