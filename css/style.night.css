@@ -549,6 +549,26 @@ div[id*="cat"] img {
 	background-image: url(../images/quiz.night.png);
 }
 
+#vidContainer {
+	width: 900px; 
+	padding: 20px; 
+	margin: 70px 40px 0px 40px;
+	background: #CCCCCC;
+	
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	
+}
+
+#altstattenVideo {
+	display: block;
+	margin: 0px; 
+	width: 900px; 
+	height: 675px;
+}
+
 /**
  * RSS related styles
  */
