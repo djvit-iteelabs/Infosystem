@@ -59,7 +59,7 @@ themesRotator.prototype = {
 			var name = this.thmThemes[i]['name'];
 			
 			if (start < end){
-				if ((t >= start) && (t <= end)) {
+				if ((t >= start) && (t < end)) {
 					th = this.thmThemes[i]['theme'];
 						
 					$("div.menuItem img").each(function(){
@@ -77,7 +77,7 @@ themesRotator.prototype = {
 				}
 			}
 			if (start > end){
-				if ((t >= start) || (t <= end)) {
+				if ((t >= start) || (t < end)) {
 					th = this.thmThemes[i]['theme'];
 					
 					$("div.menuItem img").each(function(){

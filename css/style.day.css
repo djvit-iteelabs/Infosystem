@@ -313,6 +313,47 @@ div[id*="page"] {
 	z-index:99999;
 }
 
+/*Eugene*/
+#mapContainerLand {
+	height:1000px;
+	width: 900px;
+	margin: 85px 85px 0px 85px;
+	border: 3px #555555 solid; 
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-webkit-box-shadow: 5px 5px 10px black;
+}
+
+#cornerTLLand{
+	position:absolute;
+	top: 500px;
+	left: 85px;
+	z-index:99999;
+}
+
+#cornerTRLand{
+	position:absolute;
+	top: 500px;
+	left: 971px;
+	z-index:99999;
+}
+
+#cornerBRLand{
+	position:absolute;
+	top: 1745px;
+	left: 970px;
+	z-index:99999;
+}
+
+#cornerBLLand{
+	position:absolute;
+	top: 1745px;
+	left: 85px;
+	z-index:99999;
+}
+/*Eugene End*/
+
 /**
  * Land Page classes
  */
@@ -497,6 +538,11 @@ div[id*="cat"] img {
 	left: 35px;
 	top: 0px;
 	width: 850px;
+/*Eugene*/
+.landHeight {
+}
+/*Eugene End*/
+
 }
 
 .rssData h2 {
