@@ -53,14 +53,14 @@ standbyHand.prototype = {
 	move_hand : function(){
 		var _this = this;
 		
-		this.sbhContainer.css("background", "url(../images/standby.hand.png)");
+		this.sbhContainer.css("background", "url(./images/standby.hand.png)");
 		
 		this.sbhContainer.animate({
 			marginLeft: "-=210px",
 			marginTop: "-=500px",
 			opacity: "toggle"
 		},this.sbhMoveTime,this.sbhStyle,function(){
-			_this.sbhContainer.css("background", "url(../images/hand.red.png)");}).
+			_this.sbhContainer.css("background", "url(./images/hand.red.png)");}).
 			delay(this.sbhDelay).animate({
 				marginLeft: "+=210px",
 				marginTop: "+=500px",

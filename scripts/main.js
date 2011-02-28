@@ -64,7 +64,8 @@ InfoSystem.prototype = {
 		// Initialize On Screen Keyboard
 		var osk = new OSK();
 		osk.init(chSearchMap.findAddress, 'de');
-				// Initialize RSS readers
+
+		// Initialize RSS readers
 		var rss = new RSS();
 		rss.init(
 			[{
@@ -119,6 +120,10 @@ InfoSystem.prototype = {
 					} );				
 			});
 		}
+		// Init video page link
+		$("#videoLink").click(function(){
+				_this.showPage($(this).attr('page'));
+		});
 		
 		// Register events
 		// Any "body" event resets the last activity time
@@ -154,17 +159,30 @@ InfoSystem.prototype = {
 			$('.lrSliderQuiz').animate({"left": "-=1060px"}, "slow");
 		});
 		
-		//Immobilien actions
+		// Schedule actions
 		$("#divItemsList span[class='rssItemTitle']").click(function(){
 			var txt = $(this).text();
 			chLandMap.findAddress(txt);
 			
 			var poi = new SearchChPOI({center: txt,
-									   title:"Immobilien",
+									   title:"Fahrplan",
 									   html: "<strong>"+txt+"<\/strong>", 
 									   icon:"images/marker.png"});
 			chLandMap.map.addPOI(poi);
 		});
+		$("#zoomOutLand").click(function(){
+			chLandMap.map.zoom(-1);
+		});
+		$("#zoomInLand").click(function(){
+			chLandMap.map.zoom(1);
+		});
+		$("#zoomOut").click(function(){
+			chSearchMap.map.zoom(-1);
+		});
+		$("#zoomIn").click(function(){
+			chSearchMap.map.zoom(1);
+		});
+
 	},
 	
 	/**

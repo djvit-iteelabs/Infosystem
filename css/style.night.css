@@ -4,15 +4,15 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #BBBBBB url(../images/bg.night.jpg) no-repeat;
+	background: #000000 url(../images/bg.night.png) no-repeat;
 	font-family: Helvetica, Arial,  sans-serif;
 }
 
 #imgWelcome {
 	background: transparent url(../images/i.night.png) no-repeat;
-	height: 500px;
-	width: 500px;
-	margin: 290px;
+	height: 600px;
+	width: 606px;
+	margin: 250px;
 }
 
 /**
@@ -28,11 +28,11 @@ body {
 }
 
 #titleLogo {
-	background: url(../images/title.night.png) no-repeat;
+	background: url(../images/title.day.png) no-repeat;
 	height: 165px;
-	width: 632px;
+	width: 600px;
 	display: inline-block;
-	margin: 130px 0px 0px 50px;
+	margin: 160px 0px 0px 50px;
 }
 
 #altstattenLogo {
@@ -81,7 +81,7 @@ body {
 #pageLanding {
 	height: 1920px;
 	width:1080px;
-	background: transparent url(../images/bg.night.jpg) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -101,10 +101,11 @@ div[id*="page"] {
 	border: 0px;
 	margin: 0px;
 	padding: 0px;
-	background: transparent url(../images/bg.night.jpg) repeat;
+	background: transparent url(../images/bg.night.png) repeat;
 	text-align: center;
 	vertical-align: middle;
 	display: none;
+	overflow: hidden;
 }
 
 #mainHeader {
@@ -122,31 +123,50 @@ div[id*="page"] {
 }
 
 #mainFooter {
-	background: transparent;
+	background: transparent url(../images/bottom.main.night.png) no-repeat;
 	position: absolute;
 	bottom:0;
- 	width:100%;
-	height: 75px;   /* Height of the footer */
+ 	width:1080px;
+	height:373px;   /* Height of the footer */
+}
+
+#videoLink {
+	background: transparent;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 100px;
+	left: 900px;
+}
+
+#cntFooter {
+	background: transparent url(../images/bottom.cnt.day.png) no-repeat;
+	position: absolute;
+	bottom:0;
+ 	width:1080px;
+	height:373px;   /* Height of the footer */
 }
 
 #mainFootLeft {
 	width: 200px;
-	height: 75px;
+	height: 74px;
 	display:inline-block;
 	float:left;
 }
 
 #mainFootCenter {
-	width: 650px;
-	height: 75px;
+	width: 272px; 
+	height: 108px; 
 	display:inline-block;
 	float:left;
-	padding: 0px 0px 0px 0px;
+	text-align: center;
+	padding: 00px 0px 0px 0px;
+	margin: 225px 0px 0px 205px;
 }
 
 #mainFootRight {
 	width:200px;
-	height: 75px;
+	height: 74px;
 	display:inline-block;
 	float:left;
 }
@@ -155,8 +175,36 @@ div[id*="page"] {
 	padding: 5px 0px 0px 60px;
 }
 
+#srchFootLeft {
+	width: 200px;
+	height: 108px;
+	display:inline-block;
+	float:left;
+	padding: 0px 0px 0px 0px;
+	margin: 225px 0px 0px 30px;
+}
+
+#srchFootCenter {
+	width: 200px; 
+	height: 108px; 
+	display:inline-block;
+	float:left;
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	margin: 225px 0px 0px 30px;
+}
+
+#srchFootRight {
+	width: 570px;
+	height: 108px;
+	display:inline-block;
+	float:left;
+	padding: 0px 0px 0px 0px;
+	margin: 245px 0px 0px 50px;
+}
+
 .headerText {
-	color: #FFFFFF;
+	color: #000000;
 	font-size: 90px;
 	font-family: Arial;
 	text-shadow: 2px 2px 2px #666666;
@@ -167,18 +215,26 @@ div[id*="page"] {
 }
 
 .bottomTextBox {
-	height: 40px;
+	height: 50px;
 	width: 500px;
 	color:#444444;
 	font-size:30px;
 	text-shadow: 1px 1px 0px #EEEEEE;
 	border: 3px #555555 solid; 
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-webkit-box-shadow: 5px 5px 10px black;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-webkit-box-shadow: 3px 3px 13px #222222;
 }
 
+#searchIcon {
+	background: transparent url(../images/magnifier.glass.png) no-repeat;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 248px; 
+	left: 990px;
+}
 
 .dateText {
 	font-size: 36px;
@@ -203,142 +259,199 @@ div[id*="page"] {
  * Main Page (Menu) classes
  */
 #pageMain {
-	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.night.jpg) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 }
 
 /**
  * News Page classes
  */
 #pageNews {
-	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.night.jpg) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 }
 
 /**
  * Events Page classes
  */
 #pageEvents {
-	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.night.jpg) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 }
 
 /**
  * Tourism Page classes
  */
 #pageTourism {
-	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.night.jpg) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 }
 
 /**
  * Culture Page classes
  */
 #pageCulture {
-	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.night.jpg) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 }
 
 /**
  * Hotels Page classes
  */
 #pageHotels {
-	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.night.jpg) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 }
 
 /**
  * Restaurants Page classes
  */
 #pageRestaurants {
-	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.night.jpg) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 }
 
 /**
  * Map Page classes
  */
 #pageMap {
-	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.night.jpg) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 }
 
 #mapContainer {
-	height:1250px;
+	height:1150px;
 	width: 900px;
-	margin: 85px 85px 0px 85px;
+	margin: 0px 85px 0px 85px;
 	border: 3px #555555 solid; 
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-webkit-box-shadow: 5px 5px 10px black;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
 }
 
-#cornerTL{
+#zoomOut {
+	position: absolute;
+	top: 430px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/zoom.out.night.png) no-repeat;
+	z-index:99999;
+}
+
+#zoomIn {
+	position: absolute;
+	top: 330px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/zoom.in.night.png) no-repeat;
+	z-index:99999;
+}
+
+#cornerTL {
 	position:absolute;
-	top: 500px;
+	top: 319px; 
 	left: 85px;
+	height: 30px;
+	width: 30px;
+	background: transparent url(../images/corner.01.L.night.png) no-repeat;
 	z-index:99999;
 }
 
-#cornerTR{
+#cornerTR {
 	position:absolute;
-	top: 500px;
-	left: 971px;
+	top: 319px; 
+	left: 961px;
+	height: 26px;
+	width: 46px;
+	background: transparent url(../images/corner.02.L.night.png) no-repeat;
 	z-index:99999;
 }
 
-#cornerBR{
+#cornerBR {
 	position:absolute;
-	top: 1745px;
-	left: 970px;
+	top: 1445px; 
+	left: 964px;
+	height: 45px;
+	width: 42px;
+	background: transparent url(../images/corner.03.L.night.png) no-repeat;
 	z-index:99999;
 }
 
-#cornerBL{
+#cornerBL {
 	position:absolute;
-	top: 1745px;
+	top: 1445px; 
 	left: 85px;
+	height: 45px;
+	width: 42px;
+	background: transparent url(../images/corner.04.L.night.png) no-repeat;
 	z-index:99999;
 }
 
-/*Eugene*/
+/* Eugene */
 #mapContainerLand {
-	height:1000px;
-	width: 900px;
-	margin: 85px 85px 0px 85px;
+	height:750px;
+	width: 920px;
+	margin: 80px 80px 0px 80px;
 	border: 3px #555555 solid; 
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-webkit-box-shadow: 5px 5px 10px black;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	top: 300px;
 }
 
-#cornerTLLand{
-	position:absolute;
-	top: 500px;
-	left: 85px;
+#zoomOutLand {
+	position: absolute;
+	top: 820px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/zoom.out.night.png) no-repeat;
 	z-index:99999;
 }
 
-#cornerTRLand{
-	position:absolute;
-	top: 500px;
-	left: 971px;
+#zoomInLand {
+	position: absolute;
+	top: 720px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/zoom.in.night.png) no-repeat;
 	z-index:99999;
 }
 
-#cornerBRLand{
+#cornerTLLand {
 	position:absolute;
-	top: 1745px;
-	left: 970px;
+	top: 699px;
+	left: 80px; 
+	height: 30px;
+	width: 30px;
+	background: transparent url(../images/corner.01.L.night.png) no-repeat;
 	z-index:99999;
 }
 
-#cornerBLLand{
+#cornerTRLand {
 	position:absolute;
-	top: 1745px;
-	left: 85px;
+	top: 699px;
+	left: 976px;
+	height: 26px;
+	width: 46px;
+	background: transparent url(../images/corner.02.L.night.png) no-repeat;
+	z-index:99999;
+}
+
+#cornerBRLand {
+	position:absolute;
+	top: 1425px; 
+	left: 979px;
+	height: 45px;
+	width: 42px;
+	background: transparent url(../images/corner.03.L.night.png) no-repeat;
+	z-index:99999;
+}
+
+#cornerBLLand {
+	position:absolute;
+	top: 1425px; 
+	left: 80px;
+	height: 45px;
+	width: 42px;
+	background: transparent url(../images/corner.04.L.night.png) no-repeat;
 	z-index:99999;
 }
 /*Eugene End*/
@@ -347,23 +460,21 @@ div[id*="page"] {
  * Land Page classes
  */
 #pageLand {
-	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.tile.png) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 }
 
 /**
  * Weather Page classes
  */
 #pageWeather {
-	/*background: transparent url(../images/Background.png) no-repeat; */
-	background: transparent url(../images/bg.tile.png) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 }
 
 /**
  * Quiz Page classes
  */
 #pageQuiz {
-	background: transparent url(../images/bg.tile.png) no-repeat;
+	background: transparent url(../images/bg.night.png) no-repeat;
 }
 
 /**
@@ -377,14 +488,14 @@ div[id*="page"] {
 div[id*="cat"] {
 	height: 276px;
 	width: 276px;
-	margin: 70px 30px 40px 30px;
+	margin: 40px 30px 20px 30px;
 	background: transparent;
 	text-align: center;
 	vertical-align: middle;
 	border-radius: 50px;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
-	-webkit-box-shadow: 10px 10px 30px black;
+	-webkit-box-shadow: 5px 5px 30px #444444;
 	display: inline-block;
 }
 
@@ -393,9 +504,9 @@ div[id*="cat"] img {
 }
 
 .catText {
-	font-size: 26px;
-	font-weight: bold;
-	color: #ffffff;
+	font-size: 28px;
+	font-weight: bolder;
+	color: #FFFFFF;
 }
 
 /**
@@ -410,16 +521,16 @@ div[id*="cat"] img {
 	background-image: url(../images/info.night.png);
 }
 
-#catTourism {
-	background-image: url(../images/recreation.night.png);
+#catSchedule {
+	background-image: url(../images/train.night.png);
 }
 
-#catCulture {
-	background-image: url(../images/culture.night.png);
+#catTourism {
+	background-image: url(../images/freizeit.night.png);
 }
 
 #catHotels {
-	background-image: url(../images/Hotels.png);
+	background-image: url(../images/hotel.night.png);
 }
 
 #catRestaurants {
@@ -428,10 +539,6 @@ div[id*="cat"] img {
 
 #catMap {
 	background-image: url(../images/map.night.png);
-}
-
-#catLand {
-	background-image: url(../images/realestate.night.png);
 }
 
 #catWeather {
@@ -445,91 +552,171 @@ div[id*="cat"] img {
 /**
  * RSS related styles
  */
-.rssContainer {
-	height: 1450px;
-	width: 1080px;
-	overflow: hidden;
-}
-
-.rssSlider {
-	height: 1470px;
+.lrSlider {
+	height: 1150px;
 	width: 2165px;
-	overflow: hidden;
 	position: absolute;
 	left: 0px;
 	top: 320px;
 }
 
-.divScrolledList {
-	border: none;
-	position: relative;
-	top: 0px;
+/* Assume 5 pages */
+.lrSliderQuiz {
+	height: 1150px;
+	width: 5340px;
+	position: absolute;
 	left: 0px;
+	top: 320px;
+}
+
+.lrSliderSchedule {
+	height: 300px;
+	width: 1080px;
+	position: absolute;
+	left: 0px;
+	top: 320px;	
+}
+
+.scrolledContainer {
+	display: inline-block;
+	height: 1150px;
+}
+
+.scrolledContainerSchedule {
+	display: inline-block;
+	height: 400px;
 }
 
 .divListTitle {
-	background: #000000;
+	background: #444444;
 	border-radius: 30px 30px 0px 0px;
 	-webkit-border-radius: 30px 30px 0px 0px;
 	-moz-border-radius: 30px 30px 0px 0px;
-	-webkit-box-shadow: 10px 10px 10px #000000;
+	-webkit-box-shadow: 10px 10px 10px #444444;
 
-	width: 960px;
-	height: 50px;
-	margin: 0px 50px 0px 50px;
-	padding: 10px;
+	width: 880px;
+	height: 52px;
+	margin: 0px 70px 0px 70px;
+	padding: 0px 20px 0px 20px;
 	text-align: left;
 	font-size: 36px;
 	font-weight: bold;
 	color: #FFFFFF;
-	z-index: -1;
-}
-.divListTitle span {
-	display: inline-block;
-	padding: 10px 0px 0px 10px;
-	min-width: 250px;
+	text-shadow: 1px 1px 0px #000000;
 }
 
-.rssData {
-	height: 1350px;
-	width: 960px;
-	margin: 0px 50px 0px 50px;
-	padding: 10px;
-	overflow: hidden;
+.divListFooter {
+	height: 30px;
+	width: 865px;
+	position: relative;
+	top: -30px;
+	left: 100px;
+	background: transparent url(../images/panel.bottom.bg.night.png) repeat-x;
+}
+
+.divListTitle span {
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 0px 0px 10px;
+	min-width: 250px;
+	height: 52px;
+	line-height: 52px;
+}
+
+.swipeMask {
+	height: 1050px;
+	width: 880px;
+	margin: 0px 70px 0px 70px;
+	padding: 0px 20px 0px 20px;
 	text-align: left;
 	display: inline-block;
-	float:left;
+	position: relative;
+	top: 0px;
+	left: 0px;
 	
 	border-radius: 0px 0px 30px 30px;
 	-webkit-border-radius: 0px 0px 30px 30px;
 	-moz-border-radius: 0px 0px 30px 30px;
-	-webkit-box-shadow: 10px 10px 10px #000000;
-	z-index: -2;
-	background: #DDDDDD;
-	padding: 10px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	background: #FFFFFF;
 	text-align: left;
 	font-size: 36px;
+	font-weight: normal;
 	color: #000000;
+	overflow: hidden;
 }
 
-/*Eugene*/
-.landHeight {
-	height: 400px;
-}
-/*Eugene End*/
-
-.rssDetails {
-	height: 1450px;
-	width: 1080px;
-	overflow:hidden;
+.swipeMaskSchedule {
+	height: 275px;
+	width: 880px;
+	margin: 0px 70px 0px 70px;
+	padding: 0px 20px 0px 20px;
 	text-align: left;
 	display: inline-block;
-	float:left;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	
+	border-radius: 0px 0px 30px 30px;
+	-webkit-border-radius: 0px 0px 30px 30px;
+	-moz-border-radius: 0px 0px 30px 30px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	background: #FFFFFF;
+	text-align: left;
+	font-size: 36px;
+	font-weight: normal;
+	color: #000000;
+	overflow: hidden;
+}
+
+.rssData {
+	padding: 0px 0px 0px 0px;
+	position: absolute;
+	left: 35px;
+	top: 0px;
+	width: 850px;
+/*Eugene End*/
+}
+
+/* Eugene */
+.landHeight {
+	
+}
+
+.rssData h2 {
+	font-size: 36px;	
+	font-weight: bold;
+}
+
+.rssData p b {
+	font-size: 34px;
+	font-weight: normal;
+}
+
+.rssData p b {
+	font-size: 34px;
+	font-weight: normal;
+}
+
+.rssData b {
+	font-size: 34px;
+	font-weight: bold;
+}
+	
+.rssDetails {
+	height: 1460px;
+	width: 1080px;
+	overflow: hidden;
+	text-align: left;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 1080px;
 }
 
 .rssItem {
 	margin: 0px 0px 0px 0px;
-	padding: 0px 10px 30px 10px;
+	padding: 10px 0px 20px 0px;
 	border-bottom: 3px solid #000000;
 	
 	width: auto;
@@ -539,12 +726,24 @@ div[id*="cat"] img {
 	background: transparent;
 }
 
+.rssItemWImage {
+	margin: 0px 0px 0px 0px;
+	padding: 10px 10px 10px 10px;
+	border-bottom: 3px solid #000000;
+	
+	width: auto;
+	height: 70px;
+	min-height: 70px;
+	max-height: 100px;
+	vertical-align: top;
+	background: transparent;
+}
+
 .rssImage {
-	width: 100px;
-	min-height: 100px;
+	width: 107px;
+	height: 70px;
 	margin: 0px 20px 20px 0px;
 	display: inline-block;
-	float: left;
 }
 
 .rssItemTitle {
@@ -552,10 +751,12 @@ div[id*="cat"] img {
 	color:#000000;
 	text-shadow: 0px 0px 1px #AAAAAA;
 	display: inline-block;
-	padding: 10px 0px 0px 10px;	
-	max-width: 660px;
+	padding: 0px 0px 0px 0px;	
+	max-width: 600px;
+	max-height: 85px;
 	overflow: hidden;
 	white-space: normal;
+	vertical-align: top;
 }
 
 .rssItemDate{
@@ -564,8 +765,9 @@ div[id*="cat"] img {
 	text-shadow: 0px 0px 1px #AAAAAA;
 	display: inline-block;
 	line-height: 36px;
-	padding: 10px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
 	min-width:250px;
+	vertical-align: top;
 }
 
 .rssItemDescription {
@@ -586,6 +788,11 @@ div[id*="cat"] img {
 /**
  * Generic Styles
  */
+
+.txtImage {
+	margin: 120px 0px 0px 70px;
+}
+
 .button {
 	display:inline-block;
 	height:50px;
@@ -620,10 +827,10 @@ div[id*="cat"] img {
 }
 
 .buttonBack {
-	height: 75px;
-	width: 495px;
-	margin: 0px 0px 0px 110px;
-	background: transparent url(../images/back.btn.day.png) no-repeat;
+	height: 102px;
+	width: 272px;
+	margin: 0px 0px 0px 0px;
+	background: transparent url(../images/back.btn.night.png) no-repeat;
 	
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
@@ -632,10 +839,20 @@ div[id*="cat"] img {
 }
 
 .buttonToList {
-	height: 51px;
-	width: 50px;
-	background: transparent url(../images/back.icon.day.png) no-repeat;
+	height: 52px;
+	width: 73px;
+	padding: 0px 30px 0px 0px;
+	background: transparent url(../images/back.icon.night.png) no-repeat;
 	display: inline-block;
+}
+
+.buttonToNext {
+	height: 52px;
+	width: 73px;
+	padding: 0px 0px 0px 0px;
+	background: transparent url(../images/back.icon.next.night.png) no-repeat;
+	display: inline-block;
+	float: right;
 }
 
 .left {
@@ -670,7 +887,7 @@ div[id*="cat"] img {
 	position: relative;
 	width: 276px;
 	height: 276px;
-	margin: 20px auto 0 auto;
+	margin: 0px auto 0px auto;
 	top: -280px;
 	left: 360px;
 	background: url(../images/clock.bg.night.png) no-repeat;
@@ -691,12 +908,12 @@ div[id*="cat"] img {
 }
    
 .min {
-	background: url(../images/clock.min.night.png) no-repeat;
+	background: url(../images/clock.min.day.png) no-repeat;
 	z-index: 2;
 }
    
 .hour {
-	background: url(../images/clock.hr.night.png) no-repeat;
+	background: url(../images/clock.hr.day.png) no-repeat;
 	z-index: 1;
 }
 
