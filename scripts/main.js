@@ -137,15 +137,12 @@ InfoSystem.prototype = {
 		});
 		
 		// Start activity monitor
-		setInterval(function() {
-			_this.checkActivity();
-			}, 
-		}, this.activityCheckInterval);
+		setInterval(function() { _this.checkActivity() }, this.activityCheckInterval);
 		
 		// Intialize buttons
 		$('[id*="btn"]').click(function(){
 			$('body').trigger('showPageMain');
-			$(this).parent().effect("shake", {times: 1,direction: 'down',distance: 5 }, 300,function(){
+			$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 5 }, 100, function(){
 				_this.showPage('pageMain');	
 			});
 			
@@ -175,7 +172,19 @@ InfoSystem.prototype = {
 			chLandMap.map.addPOI(poi);
 		});
 
-		$("#zoomOutLand").click(function(){			chLandMap.map.zoom(-1);		});		$("#zoomInLand").click(function(){			chLandMap.map.zoom(1);		});		$("#zoomOut").click(function(){			chSearchMap.map.zoom(-1);		});		$("#zoomIn").click(function(){			chSearchMap.map.zoom(1);		});	},
+		$("#zoomOutLand").click(function(){
+			chLandMap.map.zoom(-1);
+		});
+		$("#zoomInLand").click(function(){
+			chLandMap.map.zoom(1);
+		});
+		$("#zoomOut").click(function(){
+			chSearchMap.map.zoom(-1);
+		});
+		$("#zoomIn").click(function(){
+			chSearchMap.map.zoom(1);
+		});	
+	},
 	
 	/**
 	 * Pages control function
