@@ -342,6 +342,36 @@ div[id*="page"] {
 	z-index:99999;
 }
 
+#satMap {
+	position: absolute;
+	top: 530px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/sat.night.png) no-repeat;
+	z-index:99999;
+}
+
+#roadMap {
+	position: absolute;
+	top: 630px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/road.night.png) no-repeat;
+	z-index:99999;
+}
+
+#homeMap {
+	position: absolute;
+	top: 730px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/home.night.png) no-repeat;
+	z-index:99999;
+}
+
 #cornerTL {
 	position:absolute;
 	top: 319px; 
@@ -412,6 +442,36 @@ div[id*="page"] {
 	height: 102px;
 	width: 146px;
 	background: transparent url(../images/zoom.in.night.png) no-repeat;
+	z-index:99999;
+}
+
+#satLand {
+	position: absolute;
+	top: 920px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/sat.night.png) no-repeat;
+	z-index:99999;
+}
+
+#roadLand {
+	position: absolute;
+	top: 1020px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/road.night.png) no-repeat;
+	z-index:99999;
+}
+
+#homeLand {
+	position: absolute;
+	top: 1120px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/home.night.png) no-repeat;
 	z-index:99999;
 }
 

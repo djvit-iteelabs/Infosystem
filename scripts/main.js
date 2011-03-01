@@ -142,7 +142,7 @@ InfoSystem.prototype = {
 		// Intialize buttons
 		$('[id*="btn"]').click(function(){
 			$('body').trigger('showPageMain');
-			$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 5 }, 100, function(){
+			$(this).parent().effect("shake", {times: 2, direction: 'down', distance: 7 }, 200, function(){
 				_this.showPage('pageMain');	
 			});
 			
@@ -163,13 +163,16 @@ InfoSystem.prototype = {
 		// Schedule actions
 		$("#divItemsList span[class='rssItemTitle']").click(function(){
 			var txt = $(this).text();
-			chLandMap.findAddress(txt);
+						
+			chLandMap.map.removeAllPOIs();
 			
 			var poi = new SearchChPOI({center: txt,
 									   title:"Fahrplan",
 									   html: "<strong>"+txt+"<\/strong>", 
 									   icon:"images/marker.png"});
 			chLandMap.map.addPOI(poi);
+			
+			chLandMap.findAddress(txt);
 		});
 
 		$("#zoomOutLand").click(function(){
@@ -183,7 +186,31 @@ InfoSystem.prototype = {
 		});
 		$("#zoomIn").click(function(){
 			chSearchMap.map.zoom(1);
+		});
+		
+		$("#homeLand").click(function(){
+			chLandMap.resetMap();	
+		});
+		
+		$("#homeMap").click(function(){
+			chSearchMap.resetMap();
 		});	
+		
+		$("#satLand").click(function(){
+			chLandMap.satView();	
+		});
+
+		$("#roadLand").click(function(){
+			chLandMap.streetView();	
+		});
+
+		$("#satMap").click(function(){
+			chSearchMap.satView();	
+		});
+
+		$("#roadMap").click(function(){
+			chSearchMap.streetView();	
+		});
 	},
 	
 	/**
