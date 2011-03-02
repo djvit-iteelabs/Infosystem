@@ -222,6 +222,7 @@ div[id*="page"] {
 	text-shadow: 1px 1px 0px #EEEEEE;
 	border: 3px #555555 solid; 
 	border-radius: 20px;
+	margin: 50px 0px 0px 0px;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	-webkit-box-shadow: 3px 3px 13px #222222;
@@ -232,8 +233,8 @@ div[id*="page"] {
 	height: 50px;
 	width: 50px;
 	position: absolute;
-	top: 248px; 
-	left: 990px;
+	top: 1428px; 
+	left: 740px
 }
 
 .dateText {
@@ -312,7 +313,7 @@ div[id*="page"] {
 }
 
 #mapContainer {
-	height:1150px;
+	height:1050px;
 	width: 900px;
 	margin: 0px 85px 0px 85px;
 	border: 3px #555555 solid; 
@@ -342,6 +343,36 @@ div[id*="page"] {
 	z-index:99999;
 }
 
+#satMap {
+	position: absolute;
+	top: 530px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/sat.day.png) no-repeat;
+	z-index:99999;
+}
+
+#roadMap {
+	position: absolute;
+	top: 630px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/road.day.png) no-repeat;
+	z-index:99999;
+}
+
+#homeMap {
+	position: absolute;
+	top: 730px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/home.day.png) no-repeat;
+	z-index:99999;
+}
+
 #cornerTL {
 	position:absolute;
 	top: 319px; 
@@ -364,7 +395,7 @@ div[id*="page"] {
 
 #cornerBR {
 	position:absolute;
-	top: 1445px; 
+	top: 1345px; 
 	left: 964px;
 	height: 45px;
 	width: 42px;
@@ -374,7 +405,7 @@ div[id*="page"] {
 
 #cornerBL {
 	position:absolute;
-	top: 1445px; 
+	top: 1345px; 
 	left: 85px;
 	height: 45px;
 	width: 42px;
@@ -386,13 +417,13 @@ div[id*="page"] {
 #mapContainerLand {
 	height:750px;
 	width: 920px;
-	margin: 80px 80px 0px 80px;
+	margin: 0px 80px 0px 80px;
 	border: 3px #555555 solid; 
 	border-radius: 30px;
 	-moz-border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-webkit-box-shadow: 10px 10px 10px #444444;
-	top: 300px;
+	top: -6px;
 }
 
 #zoomOutLand {
@@ -412,6 +443,36 @@ div[id*="page"] {
 	height: 102px;
 	width: 146px;
 	background: transparent url(../images/zoom.in.day.png) no-repeat;
+	z-index:99999;
+}
+
+#satLand {
+	position: absolute;
+	top: 920px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/sat.day.png) no-repeat;
+	z-index:99999;
+}
+
+#roadLand {
+	position: absolute;
+	top: 1020px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/road.day.png) no-repeat;
+	z-index:99999;
+}
+
+#homeLand {
+	position: absolute;
+	top: 1120px;
+	left: 100px;
+	height: 102px;
+	width: 146px;
+	background: transparent url(../images/home.day.png) no-repeat;
 	z-index:99999;
 }
 
@@ -804,6 +865,52 @@ div[id*="cat"] img {
 	width: auto;
 	height: 48px;
 
+}
+
+/**
+ * Schedule page classes
+ */
+#scheduleTitle {
+	color: #BA001D;
+	font-size: 38px;
+	font-weight: bold;
+	text-align: left;
+	margin: 0px 0px 0px 100px;
+}
+
+.scheduleItems {
+
+}
+.scheduleItem {
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	
+	height: 80px;
+	width: 900px;
+	margin: 10px 90px 30px 90px;
+	background: #000000;
+	text-align: left;
+	font-size: 36px;
+	font-weight: normal;
+	color: #FFFFFF;
+	vertical-align: text-top;
+}
+
+.scheduleImage {
+	height: 60px;
+	margin: 10px;
+}
+
+.scheduleText {
+	display: inline-block;
+	position: relative;
+	top: -25px;
 }
 
 /**
