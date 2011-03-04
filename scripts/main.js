@@ -161,12 +161,14 @@ InfoSystem.prototype = {
 		});
 		
 		// Schedule actions
-		$("#divItemsList span[class='rssItemTitle']").click(function(){
-			var txt = $(this).text();
-
 			chLandMap.addMyPOI(txt);
 			chLandMap.findAddress(txt);
-		});
+
+		$('.scheduleItems .scheduleItem').click(function(){			var _clicked = $(this);			var txt = $(this).children('.scheduleText').text();			var x = $(this).children('.scheduleText').attr('x');			var y = $(this).children('.scheduleText').attr('y');			var cssShadow = $(this).css('-webkit-box-shadow');			_clicked.css('-webkit-box-shadow', '0px 0px 0px #000000');			_clicked.bind('webkitTransitionEnd', function() { 				_clicked.css('-webkit-box-shadow', '10px 10px 10px #444444').delay(500);		     });						//$(this).css('-webkit-box-shadow', '10px 10px 10px #444444').delay(500);			//$(this).effect("shake", {times: 1, direction: 'down', distance: 7 }, 100, function(){				chLandMap.map.removeAllPOIs();								var poi = new SearchChPOI({center : [x, y],										   title : "Fahrplan",										   html : "<strong>"+txt+"<\/strong>", 										   icon :"images/marker.50.png",										   circle : false});				chLandMap.map.addPOI(poi);								chLandMap.map.set({ center:[x, y], zoom:0.25 })			//});		});
+		
+		/*chLandMap.map.addEventListener("mouseclick", function(e) {
+			alert(e.mx + '\n' + e.my);
+		});*/
 
 		$("#zoomOutLand").click(function(){
 			chLandMap.map.zoom(-1);
@@ -223,9 +225,6 @@ InfoSystem.prototype = {
 			//p.show("slide",{},"slow",function(){_this.refreshPage();});
 			p.fadeIn(500, function(){
 				_this.refreshPage();
-				//if (pageId == 'pageEvents') {
-				//	$('.scroll-pane').jScrollPane();
-				//}
 			});
 		});
 	},

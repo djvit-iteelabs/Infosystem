@@ -56,7 +56,8 @@ RSS.prototype  = {
 	getList: function(rssUrl, targetContainer, rssListLayout, count) {
 		var _this = this;
 		// Get the RSS content
-		$.get(rssUrl, function(data) {
+		// $('body').append('<div style="display:none;" id="rss_dataContainer"></div>');
+		$.getJSON(rssUrl + '?callback=?', function(data) {
 
 			// Find each 'item' in the file and parse it
 			$(data).find('item').each( function(index) {

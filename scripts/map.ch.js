@@ -23,22 +23,24 @@ var chSearchMap = {
 										controls: "-",
 										circle: false});
 			this.defaultPOI();
-			this.map.addEventListener("mouseclick","mouseover");
 		}
 	},
 		
 	findAddress : function(address){
 		if (chSearchMap.map){
-			chSearchMap.map.go({ center:address, zoom:0.25 });
+			chSearchMap.map.set({ 
+				center:address, 
+				zoom:0.25 
+			});
 		} 
 	},
 	
 	resetMap : function(){
 		if (chSearchMap.map) {			
 			chSearchMap.map.removeAllPOIs();
-			chSearchMap.map.go({
+			chSearchMap.map.set({
 				center: [chSearchMap.lat,chSearchMap.lon],
-				zoom: 0.5
+				zoom: 0.25
 			});
 			chSearchMap.defaultPOI();
 		}		
@@ -58,7 +60,7 @@ var chSearchMap = {
 		var poi = new SearchChPOI({center: name,
 								   title:"Fahrplan",
 								   html: "<strong>"+name+"<\/strong>", 
-								   icon:"images/marker.png"});
+								   icon:"images/marker.50.png"});
 		chSearchMap.map.addPOI(poi);	
 	},
 	
@@ -66,7 +68,7 @@ var chSearchMap = {
 		var poi = new SearchChPOI({center: [chSearchMap.lat,chSearchMap.lon],
 								   title:"Fahrplan",
 								   html: "<strong>Altstatten<\/strong>", 
-								   icon:"images/marker.png"});
+								   icon:"images/marker.50.png"});
 		chSearchMap.map.addPOI(poi);			
 	}	
 }
@@ -97,22 +99,24 @@ var chLandMap = {
 										poigroups: "verkehr",
 										controls: "-",
 										circle: false});
-			this.defaultPOI();
-		}
+			this.defaultPOI();			this.map.disable("clickzoom");		}
 	},
 		
 	findAddress : function(address){
 		if (chLandMap.map){
-			chLandMap.map.go({ center:address, zoom:0.25 });
+			chLandMap.map.set({ 
+				center:address, 
+				zoom: 0.25 
+			});
 		} 
 	},
 	
 	resetMap : function(){
 		if (chLandMap.map) {			
 			chLandMap.map.removeAllPOIs();
-			chLandMap.map.go({
+			chLandMap.map.set({
 				center: [chLandMap.lat,chLandMap.lon],
-				zoom: 0.5
+				zoom: 0.25
 			});
 			chLandMap.defaultPOI();
 		}		
@@ -132,7 +136,7 @@ var chLandMap = {
 		var poi = new SearchChPOI({center: name,
 								   title:"Fahrplan",
 								   html: "<strong>"+name+"<\/strong>", 
-								   icon:"images/marker.png"});
+								   icon:"images/marker.50.png"});
 		chLandMap.map.addPOI(poi);	
 	},
 	
@@ -140,7 +144,7 @@ var chLandMap = {
 		var poi = new SearchChPOI({center: [chLandMap.lat,chLandMap.lon],
 								   title:"Fahrplan",
 								   html: "<strong>Altstatten<\/strong>", 
-								   icon:"images/marker.png"});
+								   icon:"images/marker.50.png"});
 		chLandMap.map.addPOI(poi);			
 	}	
 }

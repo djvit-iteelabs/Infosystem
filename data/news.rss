@@ -1,35 +1,36 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<?xml-stylesheet href="http://www.w3.org/2000/08/w3c-synd/style.css" type="text/css"?>
-<!-- generator="ICMS GemWeb v1.1" -->
+RSSData.News = "<?xml version='1.0' encoding='ISO-8859-1'?> \
+<?xml-stylesheet href='http://www.w3.org/2000/08/w3c-synd/style.css' type='text/css'?>";
+/*
+<!-- generator='ICMS GemWeb v1.1' -->
 <rdf:RDF
-    xmlns="http://purl.org/rss/1.0/"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:ev="http://www.w3.org/2001/xml-events">
-    <channel rdf:about="http://www.altstaetten.ch/de/news.rss">
+    xmlns='http://purl.org/rss/1.0/'
+    xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    xmlns:dc='http://purl.org/dc/elements/1.1/'
+    xmlns:ev='http://www.w3.org/2001/xml-events'>
+    <channel rdf:about='http://www.altstaetten.ch/de/news.rss'>
         <title>News : Gemeinde Altstätten </title>
         <description>Aktuelle Neuigkeiten der Gemeinde Altstätten </description>
         <link>http://www.altstaetten.ch/de/</link>
        <date>2011-02-14</date>
         <items>
             <rdf:Seq>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136384"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136305"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136109"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136026"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135766"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135290"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135133"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134864"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134756"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134645"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134303"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133984"/>
-                <rdf:li rdf:resource="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133982"/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136384'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136305'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136109'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136026'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135766'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135290'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135133'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134864'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134756'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134645'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134303'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133984'/>
+                <rdf:li rdf:resource='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133982'/>
             </rdf:Seq>
         </items>
     </channel>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136384">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136384'>
         <dc:format>text/html</dc:format>
         <date>2011-02-14</date>
         <title>Revision der Richtplanung</title>
@@ -68,7 +69,7 @@ Am Mittwoch, 23. Februar 2011, von 8.00 bis 14.00 Uhr, und Dienstag, 1. März 20
         <ev:startdate>2011-03-14</ev:startdate>
         <ev:enddate>2011-05-14</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136305">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136305'>
         <dc:format>text/html</dc:format>
         <date>2011-02-13</date>
         <title>Resultate Volksabstimmung vom 13. Februar 2011</title>
@@ -77,7 +78,7 @@ Am Mittwoch, 23. Februar 2011, von 8.00 bis 14.00 Uhr, und Dienstag, 1. März 20
         <ev:startdate>2011-03-13</ev:startdate>
         <ev:enddate>2011-05-13</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136109">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136109'>
         <dc:format>text/html</dc:format>
         <date>2011-02-10</date>
         <title>Baumschneidekurs am 19. Februar 2011</title>
@@ -100,7 +101,7 @@ Die Stadt Altstätten freut sich über eine grosse Anzahl Kursbesucherinnen und 
         <ev:startdate>2011-03-10</ev:startdate>
         <ev:enddate>2011-05-10</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136026">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=136026'>
         <dc:format>text/html</dc:format>
         <date>2011-02-09</date>
         <title>Frontoffice</title>
@@ -109,7 +110,7 @@ Die Stadt Altstätten freut sich über eine grosse Anzahl Kursbesucherinnen und 
         <ev:startdate>2011-03-09</ev:startdate>
         <ev:enddate>2011-06-09</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135766">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135766'>
         <dc:format>text/html</dc:format>
         <date>2011-02-07</date>
         <title>Abstimmungsbeschwerde abgewiesen</title>
@@ -134,7 +135,7 @@ Der Stadtrat ist erfreut über den für die Stadt Altstätten positiven Entschei
         <ev:startdate>2011-03-07</ev:startdate>
         <ev:enddate>2011-05-07</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135290">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135290'>
         <dc:format>text/html</dc:format>
         <date>2011-01-31</date>
         <title>Lichtmess- und Pelzfellmarkt am 3. Februar 2011</title>
@@ -153,7 +154,7 @@ Die Stadt Altstätten freut sich auf zahlreiche Besuchende. </description>
         <ev:startdate>2011-02-28</ev:startdate>
         <ev:enddate>2011-04-30</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135133">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=135133'>
         <dc:format>text/html</dc:format>
         <date>2011-01-28</date>
         <title>Positiver Steuerabschluss für das Jahr 2010</title>
@@ -197,7 +198,7 @@ Der Stadtrat dankt allen Steuerpflichtigen, welche die Steuern im Jahr 2010 fris
         <ev:startdate>2011-02-28</ev:startdate>
         <ev:enddate>2011-04-28</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134864">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134864'>
         <dc:format>text/html</dc:format>
         <date>2011-01-26</date>
         <title>Sirenentest am 2. Februar 2011</title>
@@ -217,7 +218,7 @@ Die Bevölkerung wird um Verständnis für die mit der Sirenenkontrolle verbunde
         <ev:startdate>2011-02-26</ev:startdate>
         <ev:enddate>2011-04-26</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134756">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134756'>
         <dc:format>text/html</dc:format>
         <date>2011-01-25</date>
         <title>Infostelle für Migrantinnen und Migranten im St. Galler Rheintal</title>
@@ -233,7 +234,7 @@ In speziellen Fällen helfen die Beraterinnen und Berater auch gerne beim Übers
         <ev:startdate>2011-02-25</ev:startdate>
         <ev:enddate>2011-04-25</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134645">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134645'>
         <dc:format>text/html</dc:format>
         <date>2011-01-24</date>
         <title>Neue Sammelstelle beim SBB-Bahnhof</title>
@@ -248,7 +249,7 @@ Die Bevölkerung wird gebeten, bei der Entsorgung die Ruhezeiten einzuhalten. An
         <ev:startdate>2011-02-24</ev:startdate>
         <ev:enddate>2011-04-24</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134303">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=134303'>
         <dc:format>text/html</dc:format>
         <date>2011-01-19</date>
         <title>Über 200 Medienmitteilungen der Stadt Altstätten</title>
@@ -259,7 +260,7 @@ Die Medien wurden im vergangenen Jahr mit 211 Medientexten (Vorjahr: 183 Medient
         <ev:startdate>2011-02-19</ev:startdate>
         <ev:enddate>2011-04-19</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133984">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133984'>
         <dc:format>text/html</dc:format>
         <date>2011-01-14</date>
         <title>Fahrverbote im Gebiet Gehrenmoos-Schachen-Baffles</title>
@@ -274,7 +275,7 @@ Die Kantonspolizei St. Gallen hat die Verkehrsmassnahmen geprüft und erachtet d
         <ev:startdate>2011-02-14</ev:startdate>
         <ev:enddate>2011-04-14</ev:enddate>
     </item>
-    <item rdf:about="http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133982">
+    <item rdf:about='http://www.altstaetten.ch/de/aktuelles/aktuellesinformationen/?action=showinfo&amp;info_id=133982'>
         <dc:format>text/html</dc:format>
         <date>2011-01-14</date>
         <title>Änderung Heizanschlüsse</title>
@@ -287,4 +288,4 @@ Die Stadt Altstätten dankt für das Verständnis.</description>
         <ev:startdate>2011-02-14</ev:startdate>
         <ev:enddate>2011-04-14</ev:enddate>
     </item>
-</rdf:RDF>
+</rdf:RDF>"; */
