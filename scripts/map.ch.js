@@ -4,6 +4,7 @@
 
 var chSearchMap = {
 	map : null,
+	container : null,
 	lat : null,
 	lon : null,
 	
@@ -14,11 +15,15 @@ var chSearchMap = {
 		else {
 			this.lat = 47.378315;
 			this.lon = 9.538313;
-			this.map = new SearchChMap({container: map_container, 
-										center:[this.lat,this.lon], 
-										zoom:"0.5", 
-										poigroups: "-",
-										controls: "-"});
+			this.container = map_container;
+			this.map = new SearchChMap({container: this.container, 
+										center: [this.lat,this.lon], 
+										zoom: "0.5", 
+										type: "aerial",
+										controls: "-",
+										circle: false});
+			this.defaultPOI();
+			this.map.addEventListener("mouseclick","mouseover");
 		}
 	},
 		
@@ -29,27 +34,51 @@ var chSearchMap = {
 	},
 	
 	resetMap : function(){
-		if (chSearchMap.map) {
+		if (chSearchMap.map) {			
 			chSearchMap.map.removeAllPOIs();
 			chSearchMap.map.go({
 				center: [chSearchMap.lat,chSearchMap.lon],
 				zoom: 0.5
 			});
+			chSearchMap.defaultPOI();
 		}		
 	},
-
+	
 	satView : function(){
 		chSearchMap.map.set({type: "aerial"});
 	},	
 
 	streetView : function(){
 		chSearchMap.map.set({type: "street"});
+	},
+	
+	addMyPOI : function(name){
+		chSearchMap.map.removeAllPOIs();
+			
+		var poi = new SearchChPOI({center: name,
+								   title:"Fahrplan",
+								   html: "<strong>"+name+"<\/strong>", 
+								   icon:"images/marker.png"});
+		chSearchMap.map.addPOI(poi);	
+	},
+	
+	defaultPOI : function(){			
+		var poi = new SearchChPOI({center: [chSearchMap.lat,chSearchMap.lon],
+								   title:"Fahrplan",
+								   html: "<strong>Altstatten<\/strong>", 
+								   icon:"images/marker.png"});
+		chSearchMap.map.addPOI(poi);			
 	}	
-
 }
+
+/**
+ * 
+ * @param {Object} map_container
+ */
 
 var chLandMap = {
 	map : null,
+	container : null,
 	lat : null,
 	lon : null,
 	
@@ -60,12 +89,15 @@ var chLandMap = {
 		else {
 			this.lat = 47.378315;
 			this.lon = 9.538313;
-			this.map = new SearchChMap({container: map_container, 
+			this.container = map_container;
+			this.map = new SearchChMap({container: this.container, 
 										center: [this.lat,this.lon], 
 										zoom: "0.5", 
 										type: "aerial",
 										poigroups: "verkehr",
-										controls: "-"});
+										controls: "-",
+										circle: false});
+			this.defaultPOI();
 		}
 	},
 		
@@ -76,12 +108,13 @@ var chLandMap = {
 	},
 	
 	resetMap : function(){
-		if (chLandMap.map) {
+		if (chLandMap.map) {			
 			chLandMap.map.removeAllPOIs();
 			chLandMap.map.go({
 				center: [chLandMap.lat,chLandMap.lon],
 				zoom: 0.5
 			});
+			chLandMap.defaultPOI();
 		}		
 	},
 	
@@ -91,5 +124,23 @@ var chLandMap = {
 
 	streetView : function(){
 		chLandMap.map.set({type: "street"});
+	},
+	
+	addMyPOI : function(name){
+		chLandMap.map.removeAllPOIs();
+			
+		var poi = new SearchChPOI({center: name,
+								   title:"Fahrplan",
+								   html: "<strong>"+name+"<\/strong>", 
+								   icon:"images/marker.png"});
+		chLandMap.map.addPOI(poi);	
+	},
+	
+	defaultPOI : function(){			
+		var poi = new SearchChPOI({center: [chLandMap.lat,chLandMap.lon],
+								   title:"Fahrplan",
+								   html: "<strong>Altstatten<\/strong>", 
+								   icon:"images/marker.png"});
+		chLandMap.map.addPOI(poi);			
 	}	
 }

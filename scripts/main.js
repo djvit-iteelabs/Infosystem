@@ -163,15 +163,8 @@ InfoSystem.prototype = {
 		// Schedule actions
 		$("#divItemsList span[class='rssItemTitle']").click(function(){
 			var txt = $(this).text();
-						
-			chLandMap.map.removeAllPOIs();
-			
-			var poi = new SearchChPOI({center: txt,
-									   title:"Fahrplan",
-									   html: "<strong>"+txt+"<\/strong>", 
-									   icon:"images/marker.png"});
-			chLandMap.map.addPOI(poi);
-			
+
+			chLandMap.addMyPOI(txt);
 			chLandMap.findAddress(txt);
 		});
 
@@ -192,10 +185,6 @@ InfoSystem.prototype = {
 			chLandMap.resetMap();	
 		});
 		
-		$("#homeMap").click(function(){
-			chSearchMap.resetMap();
-		});	
-		
 		$("#satLand").click(function(){
 			chLandMap.satView();	
 		});
@@ -204,6 +193,10 @@ InfoSystem.prototype = {
 			chLandMap.streetView();	
 		});
 
+		$("#homeMap").click(function(){
+			chSearchMap.resetMap();
+		});	
+		
 		$("#satMap").click(function(){
 			chSearchMap.satView();	
 		});
