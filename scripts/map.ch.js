@@ -83,23 +83,32 @@ var chLandMap = {
 	container : null,
 	lat : null,
 	lon : null,
+	x : null, 
+	y : null,
 	
 	initMap: function(map_container){
 		if (!SearchChMap.isBrowserCompatible()) {
 			document.getElementById(map_container).innerHTML = "Ihr Browser ist nicht kompatibel.";
-		} 
+		}
 		else {
 			this.lat = 47.378315;
 			this.lon = 9.538313;
+			this.x = 759943;
+			this.y = 249211;
 			this.container = map_container;
-			this.map = new SearchChMap({container: this.container, 
-										center: [this.lat,this.lon], 
-										zoom: "0.5", 
-										type: "aerial",
-										poigroups: "verkehr",
-										controls: "-",
-										circle: false});
-			this.defaultPOI();			this.map.disable("clickzoom");		}
+			this.map = new SearchChMap({
+				container: this.container,
+				center: [this.x, this.y],
+				zoom: "0.5",
+				type: "aerial",
+				poigroups: "verkehr",
+				controls: "-",
+				circle: false
+			});
+			
+			this.addMyPOI("Altstätten Bahnhof SBB");
+			this.map.disable("clickzoom");
+		}
 	},
 		
 	findAddress : function(address){
@@ -112,13 +121,12 @@ var chLandMap = {
 	},
 	
 	resetMap : function(){
-		if (chLandMap.map) {			
-			chLandMap.map.removeAllPOIs();
+		if (chLandMap.map) {
+			chLandMap.defaultPOI();			
 			chLandMap.map.set({
 				center: [chLandMap.lat,chLandMap.lon],
 				zoom: 0.25
 			});
-			chLandMap.defaultPOI();
 		}		
 	},
 	
@@ -140,7 +148,9 @@ var chLandMap = {
 		chLandMap.map.addPOI(poi);	
 	},
 	
-	defaultPOI : function(){			
+	defaultPOI : function(){
+		chLandMap.map.removeAllPOIs();
+					
 		var poi = new SearchChPOI({center: [chLandMap.lat,chLandMap.lon],
 								   title:"Fahrplan",
 								   html: "<strong>Altstatten<\/strong>", 

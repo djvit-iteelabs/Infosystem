@@ -62,7 +62,7 @@ themesRotator.prototype = {
 				if ((t >= start) && (t < end)) {
 					th = this.thmThemes[i]['theme'];
 						
-					$("div.menuItem img").each(function(){
+					$("div.menuItem img, .mapButton img").each(function(){
 						var str = $(this).attr("src");
 						
 						if ((_this.thmName == null) || (_this.thmName === 'undefined'))
@@ -80,7 +80,7 @@ themesRotator.prototype = {
 				if ((t >= start) || (t < end)) {
 					th = this.thmThemes[i]['theme'];
 					
-					$("div.menuItem img").each(function(){
+					$("div.menuItem img, div[id^=page] img").each(function(){
 						var str = $(this).attr("src");
 						
 						if ((_this.thmName == null) || (_this.thmName === 'undefined'))
