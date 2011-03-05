@@ -101,9 +101,7 @@ RSS.prototype  = {
 						$('.lrSlider').animate({"left": "-=1080px"}, "slow");
 					});
 				});
-				
-
-				
+								
 				// Append only given number of records
 				if (index > count) return;
 			});
