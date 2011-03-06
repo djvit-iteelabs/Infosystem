@@ -25,6 +25,7 @@ InfoSystem.prototype = {
 	eventsAPI: null,
 	map: null,
 	rss: null,
+	quiz: null,
 	
 	init: function() {
 		var _this = this; // Closure reference
@@ -100,30 +101,7 @@ InfoSystem.prototype = {
 				"layout": "details"
 			}}
 		);
-
-/*		
-		// Weather data
-		this.rss.getDetails($('#divWeatherContent'), function(elm, content){
-			$(elm).html(content);
-		});
-		
-		// Quiz Data
-		this.rss.getDetails($('#divQ1Content'), function(elm, content){
-			$(elm).html(content);
-		});
-		this.rss.getDetails($('#divQ2Content'), function(elm, content){
-			$(elm).html(content);
-		});
-		this.rss.getDetails($('#divQ3Content'), function(elm, content){
-			$(elm).html(content);
-		});
-		this.rss.getDetails($('#divQ4Content'), function(elm, content){
-			$(elm).html(content);
-		});
-		this.rss.getDetails($('#divQ5Content'), function(elm, content){
-			$(elm).html(content);
-		});
-*/	
+	
 		/////////////////////////////////////////
 		// Initialize menu items and their events
 		var catItems = $('div[id*="cat"]');
@@ -168,7 +146,7 @@ InfoSystem.prototype = {
 		
 		// Bind Swipe handlers
 		$('.rssData').swipe({'callback' : function(elm){
-			alert(elm);
+			//alert(elm);
 		}});
 		
 		// Quiz events
@@ -242,6 +220,9 @@ InfoSystem.prototype = {
 			$(this).children().hide("puff",{},500);
 			chSearchMap.streetView();	
 		});
+		
+		quiz = new QUIZ();
+		quiz.init();
 	},
 	
 	/**
@@ -310,7 +291,7 @@ InfoSystem.prototype = {
 				break;
 				
 			case 'pageQuiz':
-				// TODO: add Quiz Page Refresh to the beginning
+				quiz.resetQuiz();
 				break;
 				
 			case 'pageTourism':

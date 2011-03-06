@@ -821,7 +821,7 @@ span.titleLong {
 	border-bottom: 3px solid #000000;
 	
 	width: auto;
-	height: 70px;
+	height: 80px;
 	min-height: 70px;
 	max-height: 100px;
 	vertical-align: top;
@@ -830,7 +830,7 @@ span.titleLong {
 
 .rssImage {
 	width: 107px;
-	height: 70px;
+	height: 80px;
 	margin: 0px 20px 20px 0px;
 	display: inline-block;
 }

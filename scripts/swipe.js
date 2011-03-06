@@ -30,6 +30,7 @@
 			
 			// Bind a gesture handler
 			$this.bind('mousedown', function (e) {
+				$('body').attr('scrolled', 'false');
 				mDown = true;
 				e.stopPropagation();
 				downX = e.originalEvent.pageX;
@@ -65,8 +66,7 @@
 				
 				// Bind drag-end event
                 $('body').bind('mouseup', function (e) {
-					var event = e || window.event;
-					
+					e.stopPropagation();
 					mDown = false;
 					$('body').unbind();
 					var diffX = e.originalEvent.pageX - origX;
@@ -80,24 +80,21 @@
 						// Move / Restore original position if exceeded limits
 						if (settings.direction == 'V') {
 							if (top > 0 ) {
-								 $this.animate({ top: 0 }, 800);
+								 $this.animate({ top: 0 }, 800, function(){ settings.callback($this); });
 							} else if (($this.height() + top) <  $this.parent().height()) {
-								$this.animate({ top: ($this.height() - $this.parent().height())*-1 }, 800) 
+								$this.animate({ top: ($this.height() - $this.parent().height())*-1 }, 800, function(){ settings.callback($this); }) 
 							} else {
 								if (diffY > 0) { 
-									$this.animate({ top: top + 100 }, 600); 
+									$this.animate({ top: top + 100 }, 600, function(){ settings.callback($this); }); 
 								} else { 
-									$this.animate({ top: top - 100 }, 600); 
+									$this.animate({ top: top - 100 }, 600, function(){ settings.callback($this); }); 
 								}
 							}
 						} else if (settings.direction == 'H') {
 							// TODO: Add horizontal scrolling support
 						}
-						$('[data]').click(function() {
-							return false;
-						});
-						// in callback need to enable events back
-						settings.callback($this);
+						
+						$('body').attr('scrolled', 'true');
 					} else { // restore previous position if movement was small
 						if (settings.direction == 'V') {
 							$this.animate({ top: top }, 800);
@@ -105,6 +102,8 @@
 							$this.animate({ left: left }, 800);
 						}
 					}
+					
+					$(this).unbind();
                 });
             });
     	});
