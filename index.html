@@ -5,6 +5,7 @@
 		<title>PA - InfoSystem</title>
 		<link type="text/css" rel="stylesheet" href="css/style.day.css" />
 		<link type="text/css" rel="stylesheet" href="css/osk.css" />
+		<link type="text/css" rel="stylesheet" href="css/bgstretcher.css" />
 		
 		<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>		
 		<script type="text/javascript" src="scripts/jquery-ui-1.8.9.custom.min.js"></script>
@@ -23,15 +24,15 @@
 		<script type="text/javascript" src="scripts/swipe.js"></script>
 		<script type="text/javascript" src="http://map.search.ch/api/map.js?lang=de"></script>
 		<script type="text/javascript" src="scripts/map.ch.js"></script>
-
+		<script type="text/javascript" src="scripts/bgstretcher.js"></script>
 		
 		<script type="text/javascript">
-			$(document).ready(function(){
+			$(document).ready(function(){				
 				// Intialize InfoSystem
 				var infoSystem = new InfoSystem();
 				infoSystem.init();
 				
-				var str = 'testi\'n';
+				var str = 'testi\'n';				
 			});
 		</script>
     </head>
@@ -45,7 +46,7 @@
 		</div>
 		
 		<!-- Main menu page -->
-		<div id="pageMain">
+		<div id="pageMain"  style="z-index:2;">
 			<!-- Page header -->
 			<div id="mainHeader">
 				<span class="dateText">&nbsp;</span><br/>
