@@ -4,7 +4,7 @@
  * 
  * @version 0.0.1
  * @uses jQuery 1.4.2
- * @uses rss.template.js
+ * @uses rss.data.js
  */
 
 function RSS(){
@@ -139,7 +139,9 @@ RSS.prototype  = {
 			});
 			
 			// Nav to details handler
-			$('[data]').click(function() {
+			$('[data]').click( function() {
+				var scr = $('body').attr('scrolled'); 
+				if (scr == 'true') return false;
 				var detailsUrl = 'data/' + $(this).attr('data') + '.data'; 
 				var clickElm = $(this);
 				_this.getRSSContent(detailsUrl, function(){

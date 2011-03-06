@@ -24,7 +24,10 @@
 		<script type="text/javascript" src="scripts/swipe.js"></script>
 		<script type="text/javascript" src="http://map.search.ch/api/map.js?lang=de"></script>
 		<script type="text/javascript" src="scripts/map.ch.js"></script>
+		<script type="text/javascript" src="scripts/quiz.js"></script>
+		<script type="text/javascript" src="scripts/quiz.data.js"></script>
 		<script type="text/javascript" src="scripts/bgstretcher.js"></script>
+		
 		
 		<script type="text/javascript">
 			$(document).ready(function(){				
@@ -187,73 +190,33 @@
 			<br class="clear" />		
 				
 			<!-- Content Area -->
-			<div class="lrSliderQuiz">
-				<!-- Q1 -->
-				<div class="scrolledContainer">
-					<div class="divListTitle">
-						<span id="rssDetailTitle"></span>
-						<div class="buttonToNext"></div>
-					</div>
-					<div class="swipeMask">
-						<div class="rssData" id="divQ1Content" data="Q1"></div>
-					</div>
-					<div class="divListFooter">
+			<div id="quizContainer">
+				<div id="quizContent">
+					<div class="quizHeading">Frage</div>
+					<div class="quizNormal" id="quizQuestion"></div><br>
+					<div class="quizHeading">Auswahl und Lösung</div>
+					<div class="quizNormal">
+						<ul id="quizAnswers"></ul>
 					</div>
 				</div>
-				<!-- Q2 -->
-				<div class="scrolledContainer">
-					<div class="divListTitle">
-						<div class="buttonToList"></div>
-						<span id="rssDetailTitle"></span>
-						<div class="buttonToNext"></div>
+				<div id="quizMessage"></div>
+				
+				<div id="quizPopupOk">
+					<div id="quizAnswerDescription"></div><br>
+					<div id="quizNextQuestion">
+						<img alt="Next Question" src="images/back.icon.next.###.png">
 					</div>
-					<div class="swipeMask">
-						<div class="rssData" id="divQ2Content" data="Q2"></div>
-					</div>
-					<div class="divListFooter">
+				</div>
+				<div id="quizPopupFail">
+					<div id="quizAnswerDescription">
+						Ihre Antwort ist falsch. Bitte denken ein bisschen und holen Sie Ihre Antwort.
+					</div><br><br>
+					<div id="quizPrevQuestion">
+						<img alt="Next Question" src="images/back.icon.###.png">
 					</div>
 				</div>
 				
-				<!-- Q3 -->
-				<div class="scrolledContainer">
-					<div class="divListTitle">
-						<div class="buttonToList"></div>
-						<span id="rssDetailTitle"></span>
-						<div class="buttonToNext"></div>
-					</div>
-					<div class="swipeMask">
-						<div class="rssData" id="divQ3Content" data="Q3"></div>
-					</div>
-					<div class="divListFooter">
-					</div>
-				</div>
 				
-				<!-- Q4 -->
-				<div class="scrolledContainer">
-					<div class="divListTitle">
-						<div class="buttonToList"></div>
-						<span id="rssDetailTitle"></span>
-						<div class="buttonToNext"></div>
-					</div>
-					<div class="swipeMask">
-						<div class="rssData" id="divQ4Content" data="Q4"></div>
-					</div>
-					<div class="divListFooter">
-					</div>
-				</div>
-				
-				<!-- Q5 -->
-				<div class="scrolledContainer">
-					<div class="divListTitle">
-						<div class="buttonToList"></div>
-						<span id="rssDetailTitle"></span>
-					</div>
-					<div class="swipeMask">
-						<div class="rssData" id="divQ5Content" data="Q5"></div>
-					</div>
-					<div class="divListFooter">
-					</div>
-				</div>
 			</div>
 			
 			<!-- Footer -->
