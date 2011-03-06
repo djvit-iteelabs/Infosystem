@@ -21,7 +21,7 @@ InfoSystem.prototype = {
 	activePageIndex: null,
 	lastActivity: null,
 	activityCheckInterval: 10000, // Activity check interval
-	lastActivityLimit: 10000, // Last activity in milliseconds (1m)
+	lastActivityLimit: 300000, // Last activity in milliseconds (1m)
 	eventsAPI: null,
 	map: null,
 	rss: null,
@@ -178,7 +178,6 @@ InfoSystem.prototype = {
 
 			var x = $(this).children('.scheduleText').attr('x');
 			var y = $(this).children('.scheduleText').attr('y');
-			var cssShadow = $(this).css('-webkit-box-shadow');
 			_clicked.css('-webkit-box-shadow', '0px 0px 0px #000000');
 			_clicked.bind('webkitTransitionEnd', function(){
 				_clicked.css('-webkit-box-shadow', '10px 10px 10px #444444').delay(500);

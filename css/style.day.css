@@ -1130,8 +1130,12 @@ span.titleLong {
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
-	border: 1px solid #444444;
+	border: 3px solid #444444;
 	-webkit-box-shadow: 10px 10px 10px #444444;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	
 	margin: 10px 0px 20px 0px; 
 	padding: 10px 20px 10px 20px; 
@@ -1147,10 +1151,38 @@ span.titleLong {
 
 #quizPopupOk {
 	display: none;
+	position: absolute;
+	top: 400px;
+	left: 0px;
+	height: auto;
+	width: 780px;
+	margin: 200px 100px 200px 100px;
+	padding: 50px;
+	
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	
+	background: #FFFFFF;
+	color: #000000;
 }
 
 #quizPopupFail {
-	display: none;	
+	display: none;
+	position: absolute;
+	top: 400px;
+	left: 0px;
+	height: auto;
+	width: 780px;
+	margin: 200px 100px 200px 100px;
+	padding: 50px;
+	
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	
+	background: #FFFFFF;
+	color: #000000;
 }
 
 #quizAnswerDescription {
@@ -1158,5 +1190,9 @@ span.titleLong {
 }
 
 #quizNextQuestion {
-	
+	margin: 0px 0px 0px 700px;
+}
+
+#quizMessage {
+	display: none;
 }
