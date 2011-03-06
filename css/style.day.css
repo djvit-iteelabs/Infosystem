@@ -739,6 +739,14 @@ span.titleLong {
 	overflow: hidden;
 }
 
+.swipeMask div center table {
+	color: #000000;
+}
+
+.swipeMask div center table tbody tr td table tbody tr td table {
+	width: 800px;
+}
+
 .swipeMaskSchedule {
 	height: 275px;
 	width: 880px;
