@@ -20,10 +20,11 @@ InfoSystem.prototype = {
 	activePage: null,	
 	activePageIndex: null,
 	lastActivity: null,
-	activityCheckInterval: 30000, // Activity check interval
-	lastActivityLimit: 300000, // Last activity in milliseconds (5m)
+	activityCheckInterval: 10000, // Activity check interval
+	lastActivityLimit: 3000000, // Last activity in milliseconds (1m)
 	eventsAPI: null,
 	map: null,
+	rss: null,
 	
 	init: function() {
 		var _this = this; // Closure reference
@@ -66,49 +67,63 @@ InfoSystem.prototype = {
 		osk.init(chSearchMap.findAddress, 'de');
 
 		// Initialize RSS readers
-		var rss = new RSS();
-		rss.init(
-			[{
-				"src": "data/events.rss",
-				"target": "#rssEvents",
-				"layout": "date-title"
-			}, {
+		this.rss = new RSS();
+		this.rss.init(
+			{"pageNews": {
 				"src": "data/news.rss",
 				"target": "#rssNews",
 				"layout": "date-title"
-			}, {
+			}, 
+			"pageEvents": {
+				"src": "data/events.rss",
+				"target": "#rssEvents",
+				"layout": "date-title"
+			}, 
+			"pageTourism": {
 				"src": "data/tourism.rss",
 				"target": "#rssTourism",
 				"layout": "picture-title"
-			}, {
-				"src": "data/culture.rss",
-				"target": "#rssCulture",
-				"layout": "picture-title"
-			}]
+			}, 
+			"pageHotels": {
+				"src": "data/hotels.rss",
+				"target": "#rssHotels",
+				"layout": "title-description"
+			}, 
+			"pageRestaurants": {
+				"src": "data/restaurants.rss",
+				"target": "#rssRestaurants",
+				"layout": "title-description"
+			},
+			"pageWeather": {
+				"src": "data/weather.data",
+				"target": "#divWeatherContent",
+				"layout": "details"
+			}}
 		);
-		
+
+/*		
 		// Weather data
-		rss.getDetails($('#divWeatherContent'), function(elm, content){
+		this.rss.getDetails($('#divWeatherContent'), function(elm, content){
 			$(elm).html(content);
 		});
 		
 		// Quiz Data
-		rss.getDetails($('#divQ1Content'), function(elm, content){
+		this.rss.getDetails($('#divQ1Content'), function(elm, content){
 			$(elm).html(content);
 		});
-		rss.getDetails($('#divQ2Content'), function(elm, content){
+		this.rss.getDetails($('#divQ2Content'), function(elm, content){
 			$(elm).html(content);
 		});
-		rss.getDetails($('#divQ3Content'), function(elm, content){
+		this.rss.getDetails($('#divQ3Content'), function(elm, content){
 			$(elm).html(content);
 		});
-		rss.getDetails($('#divQ4Content'), function(elm, content){
+		this.rss.getDetails($('#divQ4Content'), function(elm, content){
 			$(elm).html(content);
 		});
-		rss.getDetails($('#divQ5Content'), function(elm, content){
+		this.rss.getDetails($('#divQ5Content'), function(elm, content){
 			$(elm).html(content);
 		});
-		
+*/	
 		/////////////////////////////////////////
 		// Initialize menu items and their events
 		var catItems = $('div[id*="cat"]');
@@ -127,7 +142,8 @@ InfoSystem.prototype = {
 		
 		// Register events
 		// Any "body" event resets the last activity time
-		$('body').click(function(){
+		$(document).click(function(){
+			_this.lastActivity = null;
 			_this.lastActivity = new Date();
 		});
 		
@@ -137,19 +153,23 @@ InfoSystem.prototype = {
 		});
 		
 		// Start activity monitor
-		setInterval(function() { _this.checkActivity() }, this.activityCheckInterval);
+		setInterval(function() { 
+			_this.checkActivity();
+		}, this.activityCheckInterval);
 		
 		// Intialize buttons
 		$('[id*="btn"]').click(function(){
-			$('body').trigger('showPageMain');
-			$(this).parent().effect("shake", {times: 2, direction: 'down', distance: 7 }, 200, function(){
+			//$('body').trigger('showPageMain');
+			$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
 				_this.showPage('pageMain');	
 			});
 			
 		});
 		
 		// Bind Swipe handlers
-		$('.rssData').swipe();
+		$('.rssData').swipe({'callback' : function(elm){
+			alert(elm);
+		}});
 		
 		// Quiz events
 		$('.buttonToList').click(function(){
@@ -160,35 +180,21 @@ InfoSystem.prototype = {
 			$('.lrSliderQuiz').animate({"left": "-=1060px"}, "slow");
 		});
 		
-		// Schedule actions
-		$(".scheduleItems .scheduleItem").click(function(){
-			var txt = $(this).text();
-
-			chLandMap.addMyPOI(txt);
-			chLandMap.findAddress(txt);
-		});
-/*		
-		$('.scheduleItems .scheduleItem').click(function(){			
+		// Schedule items clicks
+		$('.scheduleItems .scheduleItem').click( function(){			
 			var _clicked = $(this);
 			var txt = $(this).children('.scheduleText').text();
-
-			chLandMap.addMyPOI(txt);
-			chLandMap.findAddress(txt);
 
 			var x = $(this).children('.scheduleText').attr('x');
 			var y = $(this).children('.scheduleText').attr('y');
 			var cssShadow = $(this).css('-webkit-box-shadow');
 			_clicked.css('-webkit-box-shadow', '0px 0px 0px #000000');
-			_clicked.bind('webkitTransitionEnd', function() {
-				_clicked.css('-webkit-box-shadow', '10px 10px 10px #444444').delay(500);});
+			_clicked.bind('webkitTransitionEnd', function(){
+				_clicked.css('-webkit-box-shadow', '10px 10px 10px #444444').delay(500);
+			});
+			
+			chLandMap.setStation(x, y, txt);
 		});
-*/								
-			//$(this).css('-webkit-box-shadow', '10px 10px 10px #444444').delay(500);			
-			//$(this).effect("shake", {times: 1, direction: 'down', distance: 7 }, 100, function(){				chLandMap.map.removeAllPOIs();								var poi = new SearchChPOI({center : [x, y],										   title : "Fahrplan",										   html : "<strong>"+txt+"<\/strong>", 										   icon :"images/marker.50.png",										   circle : false});				chLandMap.map.addPOI(poi);								chLandMap.map.set({ center:[x, y], zoom:0.25 })			//});		});
-		
-		/*chLandMap.map.addEventListener("mouseclick", function(e) {
-			alert(e.mx + '\n' + e.my);
-		});*/
 
 		$("#zoomOutLand").click(function(){
 			$(this).children().hide("puff",{},500);
@@ -247,7 +253,7 @@ InfoSystem.prototype = {
 		var _this = this;
 		
 		// Reset button glow/shadow
-		$('span[id*="btn"]').css('-webkit-box-shadow', '0px 0px 0px #000000');
+		//$('span[id*="btn"]').css('-webkit-box-shadow', '0px 0px 0px #000000');
 		
 		// TODO: Use/Change some animation here
 		this.hidePages(function(){
@@ -292,12 +298,41 @@ InfoSystem.prototype = {
 	refreshPage: function(){
 		switch(this.activePage.id) {
 			case 'pageMap':
-				//googleMap.initMap('mapContainer');
 				chSearchMap.initMap('mapContainer');
+				break;
+				
+			case 'pageSchedule':
 				chLandMap.initMap('mapContainerLand'); 
 				break;
+				
+			case 'pageEvents':
+				this.rss.updatePageList('pageEvents');
+				break;
+				
+			case 'pageQuiz':
+				// TODO: add Quiz Page Refresh to the beginning
+				break;
+				
+			case 'pageTourism':
+				this.rss.updatePageList('pageTourism');
+				break;
+				
+			case 'pageHotels':
+				this.rss.updatePageList('pageHotels');
+				break;
+				
+			case 'pageRestaurants':
+				this.rss.updatePageList('pageRestaurants');
+				break;
+				
+			case 'pageWeather':
+				this.rss.updatePageContent('pageWeather');
+				break;
+				
+			case 'pageNews':
+				this.rss.updatePageList('pageNews');
+				break;	
 		}
-
 	},
 
 	/**
@@ -314,7 +349,7 @@ InfoSystem.prototype = {
 	/**
 	 * Returns formatted current Date string
 	 */
-	getDateString: function(){
+	getDateString: function() {
 		var date = new Date();
 		var dt = date.getDate();
 		var mn = date.getMonth();

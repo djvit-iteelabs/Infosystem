@@ -9,41 +9,41 @@ var chSearchMap = {
 	lon : null,
 	
 	initMap: function(map_container){
-		if (!SearchChMap.isBrowserCompatible()) {
-			document.getElementById(map_container).innerHTML = "Ihr Browser ist nicht kompatibel.";
-		} 
-		else {
-			this.lat = 47.378315;
-			this.lon = 9.538313;
-			this.container = map_container;
-			this.map = new SearchChMap({container: this.container, 
-										center: [this.lat,this.lon], 
-										zoom: "0.5", 
-										type: "aerial",
-										controls: "-",
-										circle: false});
-			this.defaultPOI();
-		}
+		if (this.map == null) {// Skip if already initialized
+			if (!SearchChMap.isBrowserCompatible()) {
+				document.getElementById(map_container).innerHTML = "Ihr Browser ist nicht kompatibel.";
+			}
+			else {
+				this.lat = 47.378315;
+				this.lon = 9.538313;
+				this.container = map_container;
+				this.map = new SearchChMap({
+					container: this.container,
+					center: [this.lat, this.lon],
+					zoom: "0.5",
+					type: "aerial",
+					poigroups: "-",
+					controls: "-",
+					circle: false
+				});
+				this.defaultPOI();
+				this.map.disable("clickzoom");
+			}
+		} else { this.resetMap(); }
 	},
 		
 	findAddress : function(address){
-		if (chSearchMap.map){
-			chSearchMap.map.set({ 
-				center:address, 
-				zoom:0.25 
-			});
+		if (chSearchMap.map) {
+			chSearchMap.addMyPOI(address);
+			chSearchMap.map.set({ center: address /*, zoom: 0.25*/});
 		} 
 	},
 	
 	resetMap : function(){
-		if (chSearchMap.map) {			
-			chSearchMap.map.removeAllPOIs();
-			chSearchMap.map.set({
-				center: [chSearchMap.lat,chSearchMap.lon],
-				zoom: 0.25
-			});
+		if (chSearchMap.map) {
 			chSearchMap.defaultPOI();
-		}		
+			chSearchMap.map.set({ center: [chSearchMap.lat, chSearchMap.lon], zoom: 0.25 });
+		}
 	},
 	
 	satView : function(){
@@ -54,23 +54,23 @@ var chSearchMap = {
 		chSearchMap.map.set({type: "street"});
 	},
 	
-	addMyPOI : function(name){
+	addMyPOI : function(name) {
 		chSearchMap.map.removeAllPOIs();
-			
 		var poi = new SearchChPOI({center: name,
-								   title:"Fahrplan",
-								   html: "<strong>"+name+"<\/strong>", 
+								   title: "Ortsplan",
+								   html: "<strong>" + name + "<\/strong>", 
 								   icon:"images/marker.50.png"});
 		chSearchMap.map.addPOI(poi);	
 	},
 	
-	defaultPOI : function(){			
-		var poi = new SearchChPOI({center: [chSearchMap.lat,chSearchMap.lon],
-								   title:"Fahrplan",
+	defaultPOI : function() {			
+		chSearchMap.map.removeAllPOIs();
+		var poi = new SearchChPOI({center: [chSearchMap.lat, chSearchMap.lon],
+								   title:"Ortsplan",
 								   html: "<strong>Altstatten<\/strong>", 
 								   icon:"images/marker.50.png"});
 		chSearchMap.map.addPOI(poi);			
-	}	
+	}
 }
 
 /**
@@ -87,74 +87,64 @@ var chLandMap = {
 	y : null,
 	
 	initMap: function(map_container){
-		if (!SearchChMap.isBrowserCompatible()) {
-			document.getElementById(map_container).innerHTML = "Ihr Browser ist nicht kompatibel.";
-		}
-		else {
-			this.lat = 47.378315;
-			this.lon = 9.538313;
-			this.x = 759943;
-			this.y = 249211;
-			this.container = map_container;
-			this.map = new SearchChMap({
-				container: this.container,
-				center: [this.x, this.y],
-				zoom: "0.5",
-				type: "aerial",
-				poigroups: "verkehr",
-				controls: "-",
-				circle: false
-			});
-			
-			this.addMyPOI("Altstätten Bahnhof SBB");
-			this.map.disable("clickzoom");
-		}
-	},
-		
-	findAddress : function(address){
-		if (chLandMap.map){
-			chLandMap.map.set({ 
-				center:address, 
-				zoom: 0.25 
-			});
-		} 
+		if (this.map == null) {// Skip if already initialized
+			if ((typeof(SearchChMap) !== 'undefined') && (!SearchChMap.isBrowserCompatible())) {
+				document.getElementById(map_container).innerHTML = "Ihr Browser ist nicht kompatibel.";
+			}
+			else {
+				this.x = 759943;
+				this.y = 249211;
+				this.container = map_container;
+				this.map = new SearchChMap({
+					container: this.container,
+					center: [this.x, this.y],
+					zoom: "0.5",
+					type: "aerial",
+					poigroups: "verkehr",
+					controls: "-",
+					circle: false
+				});
+				this.map.disable("clickzoom");
+				
+				this.defaultPOI();
+			}
+		} else { this.resetMap(); }
 	},
 	
 	resetMap : function(){
-		if (chLandMap.map) {
-			chLandMap.defaultPOI();			
-			chLandMap.map.set({
-				center: [chLandMap.lat,chLandMap.lon],
-				zoom: 0.25
-			});
+		if (this.map) {
+			this.defaultPOI();	
 		}		
 	},
 	
 	satView : function(){
-		chLandMap.map.set({type: "aerial"});
+		this.map.set({type: "aerial"});
 	},	
 
 	streetView : function(){
-		chLandMap.map.set({type: "street"});
-	},
-	
-	addMyPOI : function(name){
-		chLandMap.map.removeAllPOIs();
-			
-		var poi = new SearchChPOI({center: name,
-								   title:"Fahrplan",
-								   html: "<strong>"+name+"<\/strong>", 
-								   icon:"images/marker.50.png"});
-		chLandMap.map.addPOI(poi);	
+		this.map.set({type: "street"});
 	},
 	
 	defaultPOI : function(){
-		chLandMap.map.removeAllPOIs();
-					
-		var poi = new SearchChPOI({center: [chLandMap.lat,chLandMap.lon],
-								   title:"Fahrplan",
-								   html: "<strong>Altstatten<\/strong>", 
-								   icon:"images/marker.50.png"});
-		chLandMap.map.addPOI(poi);			
+		this.map.removeAllPOIs();
+		var poi = new SearchChPOI({center: [this.x, this.y],
+								   title : "Fahrplan",
+								   html : "<strong>Altstätten Bahnhof SBB<\/strong>", 
+								   icon :"images/marker.50.png",
+								   circle : false});
+		this.map.addPOI(poi);
+		this.map.set({ center: [this.x, this.y], zoom:0.25 });		
+	},
+	
+	setStation: function (_x, _y, _txt) {
+		this.map.removeAllPOIs();
+		var poi = new SearchChPOI({center : [_x, _y],
+								   title : "Fahrplan",
+								   html : "<strong>" + _txt + "<\/strong>", 
+								   icon :"images/marker.50.png",
+								   circle : false});
+		this.map.addPOI(poi);
+		
+		this.map.set({ center:[_x, _y], zoom:0.25 });
 	}	
 }

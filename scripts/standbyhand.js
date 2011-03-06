@@ -17,7 +17,7 @@ standbyHand.prototype = {
 	//i2 - delay before next move
 	//i3 - time hand travel
 	//p - moves effect
-	init : function(i1,i2,i3,p){ 
+	init : function(i1, i2, i3, p){ 
 		var _this = this;
 		
 		if(parseInt(i1) && (i1 > 1000))
@@ -42,11 +42,14 @@ standbyHand.prototype = {
 		this.move_hand();
 
 		if (!this.sbhTimer) {
-			this.sbhTimer = window.setInterval(function(){_this.move_hand();}, this.sbhGlobalDelay);
+			this.sbhTimer = window.setInterval(function(){
+				_this.move_hand();
+			}, this.sbhGlobalDelay);
 		}
 		else {
 			window.clearInterval(this.sbhTimer);
 			this.sbhTimer = null;
+			delete this.sbhTimer;
 		}		
 	},
 	
@@ -59,7 +62,7 @@ standbyHand.prototype = {
 			marginLeft: "-=210px",
 			marginTop: "-=500px",
 			opacity: "toggle"
-		},this.sbhMoveTime,this.sbhStyle,function(){
+		}, this.sbhMoveTime, this.sbhStyle, function(){
 			_this.sbhContainer.css("background", "url(./images/hand.red.png)");}).
 			delay(this.sbhDelay).animate({
 				marginLeft: "+=210px",

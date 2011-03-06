@@ -690,7 +690,7 @@ div[id*="cat"] img {
 	height: 30px;
 	width: 865px;
 	position: relative;
-	top: -30px;
+	top: -34px;
 	left: 100px;
 	background: transparent url(../images/panel.bottom.bg.night.png) repeat-x;
 }
@@ -701,7 +701,17 @@ div[id*="cat"] img {
 	padding: 5px 0px 0px 10px;
 	min-width: 250px;
 	height: 52px;
+	max-width: 720px;
 	line-height: 52px;
+	
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+span.titleLong {
+	min-width: 490px;
 }
 
 .swipeMask {
@@ -756,6 +766,9 @@ div[id*="cat"] img {
 	left: 35px;
 	top: 0px;
 	width: 850px;
+	
+	font-size: 30px;
+	font-weight: normal;
 /*Eugene End*/
 }
 
@@ -765,22 +778,17 @@ div[id*="cat"] img {
 }
 
 .rssData h2 {
-	font-size: 36px;	
+	font-size: 34px;	
 	font-weight: bold;
 }
 
 .rssData p b {
-	font-size: 34px;
-	font-weight: normal;
-}
-
-.rssData p b {
-	font-size: 34px;
+	font-size: 30px;
 	font-weight: normal;
 }
 
 .rssData b {
-	font-size: 34px;
+	font-size: 30px;
 	font-weight: bold;
 }
 	
@@ -851,11 +859,11 @@ div[id*="cat"] img {
 	vertical-align: top;
 }
 
-.rssItemDescription {
+.rssItem .rssItemDescription {
 	font-size: 20px;
 	color:#000000;
 	text-shadow: 1px 1px 2px #222222;
-	display: block;
+	display: inline-block;
 	
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -864,6 +872,41 @@ div[id*="cat"] img {
 	width: auto;
 	height: 48px;
 
+}
+
+.rssItemWDescription {
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 3px solid #000000;
+	
+	width: auto;
+	min-height: 70px;
+	max-height: 100px;
+	vertical-align: top;
+	background: transparent;
+}
+
+.rssItemWDescription .rssItemDescription {
+	font-size: 36px;
+	color:#000000;
+	display: inline-block;
+	
+	overflow: hidden;
+	width: 340px;
+	height: 48px;
+}
+
+.rssItemWDescription .rssItemTitle {
+	font-size: 36px;
+	color:#000000;
+	text-shadow: 0px 0px 1px #AAAAAA;
+	display: inline-block;
+	padding: 0px 0px 0px 0px;	
+	width: 510px;
+	height: 85px;
+	overflow: hidden;
+	white-space: normal;
+	vertical-align: top;
 }
 
 /**

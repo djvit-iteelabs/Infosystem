@@ -65,16 +65,17 @@
 				
 				// Bind drag-end event
                 $('body').bind('mouseup', function (e) {
+					var event = e || window.event;
+					
 					mDown = false;
-					$(this).unbind();
+					$('body').unbind();
 					var diffX = e.originalEvent.pageX - origX;
 					var diffY = e.originalEvent.pageY - origY;
                     var left = parseInt($this.css('left').replace('px', ''));
 					var top = parseInt($this.css('top').replace('px', ''));
-										
+
 					if ((Math.abs(diffX) > settings.threshold) || (Math.abs(diffY) > settings.threshold)) {
-						e.stopPropagation();
-						e.cancelBubble = true; 		
+		
 						
 						// Move / Restore original position if exceeded limits
 						if (settings.direction == 'V') {
@@ -89,14 +90,14 @@
 									$this.animate({ top: top - 100 }, 600); 
 								}
 							}
-							
-							//$this.css('top', top - diffY);	
 						} else if (settings.direction == 'H') {
-							//$this.css('left', left - diffX);	
+							// TODO: Add horizontal scrolling support
 						}
-						//$this.animate({ left: (pos * divWidth) }, speed);
-										
-						settings.callback();
+						$('[data]').click(function() {
+							return false;
+						});
+						// in callback need to enable events back
+						settings.callback($this);
 					} else { // restore previous position if movement was small
 						if (settings.direction == 'V') {
 							$this.animate({ top: top }, 800);

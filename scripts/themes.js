@@ -62,13 +62,14 @@ themesRotator.prototype = {
 				if ((t >= start) && (t < end)) {
 					th = this.thmThemes[i]['theme'];
 						
-					$("div.menuItem img, .mapButton img").each(function(){
+					$("div.menuItem img, div[id^=page] img").each(function(){
 						var str = $(this).attr("src");
+						if ((typeof(str) === 'undefined') || (str == null)) str = ''; 
 						
 						if ((_this.thmName == null) || (_this.thmName === 'undefined'))
 							str = str.replace("###",name);
 						else
-							str = str.replace(_this.thmName,name);
+							str = str.replace(_this.thmName, name);
 							
 						$(this).attr("src",str);	
 					});
