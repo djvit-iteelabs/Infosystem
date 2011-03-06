@@ -28,16 +28,23 @@ QUIZ.prototype  = {
 		// Bind next click
 		var options = {};
 		$('#quizNextQuestion').click(function() {
-			$('#quizPopupOk').hide('clip', options, 500, function(){
-				$('#quizContent').fadeOut(500, function() {
-					_this.moveNext();
-					if (_this.currentStep < QUIZ.quizData.length) $('#quizContent').fadeIn(500);
-				});	
+			$(this).children().hide("puff",{},500, function() {
+				$('#quizPopupOk').hide('clip', options, 500, function(){
+					$('#quizContent').fadeOut(500, function(){
+						_this.moveNext();
+						if (_this.currentStep < QUIZ.quizData.length) 
+							$('#quizContent').fadeIn(500);
+					});
+				});
+				
 			});
 		});
 		
 		$('#quizPrevQuestion').click(function() {
-			$('#quizPopupFail').hide('clip', options, 500);
+			$(this).children().hide("puff",{},500, function(){
+				$('#quizPopupFail').hide('clip', options, 500);
+			});
+			
 		});
 		
 		// Bind answer clicks
@@ -51,10 +58,12 @@ QUIZ.prototype  = {
 				// Show description box and move to the next question
 				$('#quizPopupFail').css('display', 'none');
 				$('#quizPopupOk').show('clip', options, 500);
+				$('#quizNextQuestion').children().show();
 			} else {
 				// Show incorrect answer message
 				$('#quizPopupOk').css('display', 'none');
 				$('#quizPopupFail').show('clip', options, 500);
+				$('#quizPrevQuestion').children().show();
 			}
 		});
 	},
