@@ -20,11 +20,12 @@ body {
  */
 #standbyHand{
 	position: absolute;
-	margin-left: 690px;
-	margin-top: -50px;
+	left: 1080px;
+	top: 1920px;
 	background: url(../images/standby.hand.png);
 	width: 390px;
 	height: 465px;
+	opacity: 0;
 }
 
 #titleLogo {
