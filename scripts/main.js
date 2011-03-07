@@ -26,6 +26,7 @@ InfoSystem.prototype = {
 	map: null,
 	rss: null,
 	quiz: null,
+	standbyhand: null,
 	
 	init: function() {
 		var _this = this; // Closure reference
@@ -48,8 +49,8 @@ InfoSystem.prototype = {
 		}
 		
 		// Initialize Stand By screen animation
-		var standbyhand = new standbyHand();
-		standbyhand.init(10000, 30000, 5000,"easeInOutQuart");
+		this.standbyhand = new standbyHand();
+		this.standbyhand.init(10000, 30000, 5000,"easeInOutQuart");
 		
 		this.showPage('pageLanding');		
 				// Initialize date
@@ -137,8 +138,13 @@ InfoSystem.prototype = {
 			_this.lastActivity = null;
 			_this.lastActivity = new Date();
 			$("#bgstretcher").hide();
-			standbyhand.kill_timer();
-			standbyhand = null;
+			/*
+			
+			$("#bgstretcher").hide();
+			this.standbyhand.kill_timer();
+			this.standbyhand = null;
+			
+			*/
 			
 		});
 		
@@ -160,11 +166,6 @@ InfoSystem.prototype = {
 			});
 			
 		});
-		
-		// Bind Swipe handlers
-		$('.rssData').swipe({'callback' : function(elm){
-			//alert(elm);
-		}});
 		
 		// Quiz events
 		$('.buttonToList').click(function(){
@@ -239,7 +240,28 @@ InfoSystem.prototype = {
 		
 		quiz = new QUIZ();
 		quiz.init();
-
+		
+		// Initialize
+		$('#divToggelVids').click(function(){
+			var vid = document.getElementById('altstattenVideo');
+			$(this).css('-webkit-box-shadow', '0px 0px 0px #000000');
+			$(this).bind('webkitTransitionEnd', function(){
+				$(this).css('-webkit-box-shadow', '10px 10px 10px #444444').delay(500);
+			});
+			
+			if (vid.getAttribute('src').indexOf('short') > 0) {
+				vid.pause();
+				$(this).text('Play Shorter Video');
+				vid.setAttribute('src', './video/Altstaetten_long.mp4');
+				vid.play();
+			}
+			else {
+				vid.pause();
+				$(this).text('Play Longer Video');
+				vid.setAttribute('src', './video/Altstaetten_short.mp4');
+				vid.play();
+			}
+		});
 	},
 	
 	/**
@@ -295,6 +317,23 @@ InfoSystem.prototype = {
 	 */
 	refreshPage: function(){
 		switch(this.activePage.id) {
+			
+			case 'pageMain':
+				// Reset positions
+				$('.lrSlider').css("left","0px");
+				$('.rssData').css('top', '0px');
+				$('.scrollIndicator').css('top', '0px');
+				quiz.resetQuiz();
+				
+				var vidEl = document.getElementById('altstattenVideo');
+				vidEl.pause();
+				
+				if (this.standbyhand != null) {
+					this.standbyhand.kill_timer();
+					this.standbyhand = null;
+				}
+				break;
+			
 			case 'pageMap':
 				chSearchMap.initMap('mapContainer');
 				break;
@@ -330,6 +369,13 @@ InfoSystem.prototype = {
 			case 'pageNews':
 				this.rss.updatePageList('pageNews');
 				break;	
+				
+			case 'pageVideo':
+				var vidEl = document.getElementById('altstattenVideo');
+				vidEl.setAttribute('src', './video/Altstaetten_short.mp4');
+				vidEl.play();
+				break;	
+				
 		}
 	},
 
@@ -340,11 +386,15 @@ InfoSystem.prototype = {
 		var currDate = new Date();
 		var diff = currDate - this.lastActivity;
 		if ( (this.activePage.id != 'pageLanding') && (diff > this.lastActivityLimit)) {
+			// Stop videos
+			var vidEl = document.getElementById('altstattenVideo');
+			vidEl.pause();
+
 			this.showPage('pageLanding');
 			$("#bgstretcher").show();
 			
-			var standbyhand = new standbyHand();
-			standbyhand.init(10000, 30000, 5000,"easeInOutQuart");
+			this.standbyhand = new standbyHand();
+			this.standbyhand.init(10000, 30000, 5000,"easeInOutQuart");
 		}
 	},
 	
@@ -380,26 +430,4 @@ InfoSystem.prototype = {
 	getDateTimeString: function(){
 		return this.getDateString() + ' ' + this.getTimeString();		
 	}
-	
-
-	
-	
-// Swipe Setup function - iPhone
-/*function setSwipe(div, callback) {
-    div.bind('touchstart', function (e) {
-        down_x = e.originalEvent.touches[0].pageX;
-        up_x = down_x;
-        $("body").unbind();
-        $("body").bind('touchmove', function (e) {
-            e.preventDefault();
-            var diff = e.originalEvent.touches[0].pageX - up_x;
-            var left = parseInt(div.css('left').replace('px', ''));
-            div.css('left', left + diff);
-            up_x = e.originalEvent.touches[0].pageX;
-        });
-        $("body").bind('touchend', function (e) {
-            callback();
-            $(this).unbind();
-        });
-    }); */
 }

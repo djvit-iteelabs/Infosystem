@@ -56,13 +56,13 @@ standbyHand.prototype = {
 						  animate({left:"485px"},{queue:false, duration: this.sbhMoveTime, easing: this.sbhStyle}).
 						  animate({opacity:"1"},{queue:false, duration: this.sbhMoveTime, easing: this.sbhStyle,
 						  complete: function(){
-						  	$(this).css("background", "url(../images/hand.red.png)");
+						  	$(this).css("background", "url(./images/hand.red.png)");
 						  }});
 						  				  
 		window.setTimeout(function(){
 			_this.default_position();
-			_this.sbhContainer.css("background", "url(../images/standby.hand.png)");
-		},this.sbhDelay);
+			_this.sbhContainer.css("background", "url(./images/standby.hand.png)");
+		}, this.sbhDelay);
 	},
 	
 	default_position : function(){
@@ -70,7 +70,7 @@ standbyHand.prototype = {
 						  animate({left:"1080px"},{queue:false, duration: this.sbhMoveTime, easing: this.sbhStyle}).
 						  animate({opacity:"0"},{queue:false, duration: this.sbhMoveTime, easing: this.sbhStyle,
 						  complete: function(){
-						  	$(this).css("background", "url(../images/standby.hand.png)");
+						  	$(this).css("background", "url(./images/standby.hand.png)");
 						  }});
 	},
 	

@@ -148,6 +148,8 @@ RSS.prototype  = {
 					$(targetContainer).parent().find('#rssDetailTitle').html(clickElm.attr('title'));
 					$(targetContainer).parent().find('#rssDetailTarget').html(RSSData.Detail);
 					$(targetContainer).parent().find('#rssDetailTarget').css('top', '0px');
+					// Bind Swipe handlers
+					$(targetContainer).parent().find('#rssDetailTarget').swipe();
 					﻿﻿$('.lrSlider').animate({'left': '-=1080px'}, 'slow');
 				});
 			});
@@ -158,6 +160,9 @@ RSS.prototype  = {
 	             old.parentNode.removeChild(old);  
 	             delete old;  
 	        }
+			
+			// Bind Swipe handlers
+			$(targetContainer).find('#divItemsList').swipe();
 		});
 	},
 	
