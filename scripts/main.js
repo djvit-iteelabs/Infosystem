@@ -21,7 +21,7 @@ InfoSystem.prototype = {
 	activePageIndex: null,
 	lastActivity: null,
 	activityCheckInterval: 10000, // Activity check interval
-	lastActivityLimit: 300000, // Last activity in milliseconds (1m)
+	lastActivityLimit: 60000, // Last activity in milliseconds (1m)
 	eventsAPI: null,
 	map: null,
 	rss: null,
