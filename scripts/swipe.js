@@ -28,6 +28,51 @@
 			// This reference for chainability
 			var $this = $(this);
 			
+			// Add scroll indicator
+			var mask = $this.parents('.swipeMask');
+			
+			// If content is small than mask - no need in scroll
+			if (mask.height() > $this.height()) return;
+			
+			var indicator = mask.find('.scrollIndicator');
+			if ((typeof(indicator) === 'undefined') || (indicator == null) || (indicator.length == 0)) {
+				mask.append('<div class="scrollIndicator"></div>');
+				indicator = mask.find('.scrollIndicator');
+			}
+			indicator.css('left', mask.css('width')); // Set the location of indicator
+			
+			function updateIndicator()
+			{
+				// If no indicator - return
+				if ((typeof(indicator) === 'undefined') || (indicator == null) || (indicator.length == 0))
+					return;
+				
+				// Get dimentions and update cooridinates
+				var dTop = parseInt($this.css('top').replace('px', ''));
+				var iTravel = mask.height() - indicator.height() - 30;
+				var dTravel = $this.height() - mask.height();
+				var ratio = iTravel / dTravel;
+				if ((dTop > 0) || (Math.abs(dTop) > Math.abs(dTravel))) return;
+
+				var iTop = Math.round(Math.abs(dTop) * ratio);
+				
+				indicator.css('top', iTop + "px");
+			}
+
+			function updateIndicatorAnimated(offset)
+			{	
+				var iTop = parseInt(indicator.css('top').replace('px', ''));
+				var dTop = parseInt($this.css('top').replace('px', ''));
+				var iTravel = mask.height() - indicator.height() - 30;
+				var dTravel = $this.height() - mask.height();
+				if ((dTop > 0) || (Math.abs(dTop) > Math.abs(dTravel))) return;
+
+				var ratio = iTravel / dTravel;
+				var iOffset = Math.round(offset * ratio);
+				
+				indicator.animate({ top: iTop + iOffset*-1}, 600);
+			}
+			
 			// Bind a gesture handler
 			$this.bind('mousedown', function (e) {
 				$('body').attr('scrolled', 'false');
@@ -56,6 +101,7 @@
 					// Move the target element
 					if (settings.direction == 'V') {
 						$this.css('top', top + diffY);	
+						updateIndicator();
 					} else if (settings.direction == 'H') {
 						$this.css('left', left + diffX);	
 					}
@@ -81,13 +127,17 @@
 						if (settings.direction == 'V') {
 							if (top > 0 ) {
 								 $this.animate({ top: 0 }, 800, function(){ settings.callback($this); });
+								 updateIndicator();
 							} else if (($this.height() + top) <  $this.parent().height()) {
-								$this.animate({ top: ($this.height() - $this.parent().height())*-1 }, 800, function(){ settings.callback($this); }) 
+								$this.animate({ top: ($this.height() - $this.parent().height())*-1 }, 600, function(){ settings.callback($this); })
+								updateIndicator(($this.height() - $this.parent().height())*-1); 
 							} else {
 								if (diffY > 0) { 
-									$this.animate({ top: top + 100 }, 600, function(){ settings.callback($this); }); 
+									$this.animate({ top: top + 100 }, 600, function(){ settings.callback($this); });
+									updateIndicatorAnimated(100); 
 								} else { 
-									$this.animate({ top: top - 100 }, 600, function(){ settings.callback($this); }); 
+									$this.animate({ top: top - 100 }, 600, function(){ settings.callback($this); });
+									updateIndicatorAnimated(-100); 
 								}
 							}
 						} else if (settings.direction == 'H') {
@@ -98,12 +148,14 @@
 					} else { // restore previous position if movement was small
 						if (settings.direction == 'V') {
 							$this.animate({ top: top }, 800);
+							updateIndicator();
 						} else if (settings.direction == 'H') {
 							$this.animate({ left: left }, 800);
 						}
 					}
 					
 					$(this).unbind();
+					$('body').disableSelection();
                 });
             });
     	});

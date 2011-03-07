@@ -6,6 +6,9 @@ body {
 	padding: 0px;
 	background: #FFFFFF url(../images/bg.day.png) no-repeat;
 	font-family: Helvetica, Arial,  sans-serif;
+	height: 1920px;
+	width: 1080px;
+	overflow: hidden;
 }
 
 #imgWelcome {
@@ -748,6 +751,21 @@ span.titleLong {
 	width: 800px;
 }
 
+.scrollIndicator {
+	height: 200px;
+	width: 10px;
+	margin: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background: #FFFFFF;
+	opacity: 0.5;
+	
+}
+
 .swipeMaskSchedule {
 	height: 275px;
 	width: 880px;
@@ -819,8 +837,8 @@ span.titleLong {
 	border-bottom: 3px solid #FFFFFF;
 	
 	width: auto;
-	min-height: 70px;
-	max-height: 100px;
+	min-height: 50px;
+	max-height: 140px;
 	vertical-align: top;
 	background: transparent;
 }
@@ -865,7 +883,7 @@ span.titleLong {
 	display: inline-block;
 	line-height: 36px;
 	padding: 0px 0px 0px 0px;
-	min-width:250px;
+	width:250px;
 	vertical-align: top;
 }
 
@@ -1204,4 +1222,26 @@ span.titleLong {
 
 #quizMessage {
 	display: none;
+}
+
+#divToggelVids {
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	
+	height: 45px;
+	width: 350px;
+	margin: 30px 30px 30px 300px;
+	padding: 10px 30px 10px 30px;
+	background: #000000;
+	text-align: center;
+	font-size: 36px;
+	font-weight: normal;
+	color: #FFFFFF;
+	vertical-align:middle;
 }

@@ -49,7 +49,7 @@ InfoSystem.prototype = {
 		
 		// Initialize Stand By screen animation
 		var standbyhand = new standbyHand();
-		standbyhand.init(10000, 30000, 5000,"easeInOutQuart");
+		standbyhand.init(5000, 15000, 3000,"easeInOutQuart");
 		
 		this.showPage('pageLanding');		
 				// Initialize date
@@ -73,8 +73,7 @@ InfoSystem.prototype = {
 							'images/sample-1.jpg', 
 							'images/sample-2.jpg', 
 							'images/sample-3.jpg', 
-							'images/sample-4.jpg'
-							],
+							'images/sample-4.jpg'],
 					slideShowSpeed: 5000,
 					nextSlideDelay: 10000
 				});
@@ -137,9 +136,6 @@ InfoSystem.prototype = {
 			_this.lastActivity = null;
 			_this.lastActivity = new Date();
 			$("#bgstretcher").hide();
-			standbyhand.kill_timer();
-			standbyhand = null;
-			
 		});
 		
 		// StandBy page click/touch - moves to the Main/Menu page  
@@ -239,7 +235,6 @@ InfoSystem.prototype = {
 		
 		quiz = new QUIZ();
 		quiz.init();
-
 	},
 	
 	/**
@@ -342,9 +337,6 @@ InfoSystem.prototype = {
 		if ( (this.activePage.id != 'pageLanding') && (diff > this.lastActivityLimit)) {
 			this.showPage('pageLanding');
 			$("#bgstretcher").show();
-			
-			var standbyhand = new standbyHand();
-			standbyhand.init(10000, 30000, 5000,"easeInOutQuart");
 		}
 	},
 	
