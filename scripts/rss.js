@@ -51,6 +51,7 @@ RSS.prototype  = {
 		if (rssData.layout == "details") {
 			this.getRSSContent(rssData.src, function(){
 				$(rssData.target).html(RSSData.Detail);
+				$(rssData.target).swipe();
 			});
 		}
 	},

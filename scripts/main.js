@@ -137,6 +137,7 @@ InfoSystem.prototype = {
 		$(document).click(function(){
 			_this.lastActivity = null;
 			_this.lastActivity = new Date();
+			$('body').append('<h1>test</h1><br>');
 			$("#bgstretcher").hide();
 			/*
 			
@@ -320,13 +321,14 @@ InfoSystem.prototype = {
 			
 			case 'pageMain':
 				// Reset positions
-				$('.lrSlider').css("left","0px");
+				$('.lrSlider').css('left','0px');
 				$('.rssData').css('top', '0px');
 				$('.scrollIndicator').css('top', '0px');
 				quiz.resetQuiz();
 				
 				var vidEl = document.getElementById('altstattenVideo');
-				vidEl.pause();
+				if ((typeof(vidEl) != 'undefined') && (vidEl != null))
+					vidEl.pause();
 				
 				if (this.standbyhand != null) {
 					this.standbyhand.kill_timer();
@@ -388,7 +390,7 @@ InfoSystem.prototype = {
 		if ( (this.activePage.id != 'pageLanding') && (diff > this.lastActivityLimit)) {
 			// Stop videos
 			var vidEl = document.getElementById('altstattenVideo');
-			vidEl.pause();
+			//vidEl.pause();
 
 			this.showPage('pageLanding');
 			$("#bgstretcher").show();
