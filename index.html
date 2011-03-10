@@ -32,10 +32,8 @@
 		<script type="text/javascript">
 			$(document).ready(function(){				
 				// Intialize InfoSystem
-				var infoSystem = new InfoSystem();
-				infoSystem.init();
-				
-				var str = 'testi\'n';				
+				document.infoSystem = new InfoSystem();
+				document.infoSystem.init();				
 			});
 		</script>
     </head>
@@ -564,6 +562,55 @@
 				</div>
 			</div>
 			
+			<!-- Content Area - contact info -->
+			<div class="rssContainer" id="rssContactDetail">
+				<div class="scrolledContainer">
+					<div class="divListTitle">
+						<span id="rssDetailTitle">Kontakte</span>
+					</div>
+					<div class="swipeMask">
+						<div class="rssData" id="divContactContent">
+							<span class="contactTextName">Vorwahl Schweiz: +41</span><br>
+							<br><b>Notrufe / Gesundheit</b><br>
+							<span class="contactTextName">Polizeinotruf</span><span class="contactText">117</span><br>
+							<span class="contactTextName">Feuerwehrnotruf</span><span class="contactText">118</span><br>
+							<span class="contactTextName">Sanitätsnotruf</span><span class="contactText">144</span><br>
+							<span class="contactTextName">Rettungsflugwacht Rega</span><span class="contactText">1414</span><br>
+							<span class="contactTextName">Notfallarzt (24 Stunden-Dienst)</span><span class="contactText">0900 144 441</span><br>
+							<span class="contactTextName">Polizeistation Altstätten</span><span class="contactText">071 757 30 00</span><br>
+							<span class="contactTextName">Spital Altstätten</span><span class="contactText">071 757 44 11</span><br>
+							<span class="contactTextName">Amavita Apotheke</span><span class="contactText">058 851 32 11</span><br>
+							<span class="contactTextName">Sternen Apotheke</span><span class="contactText">071 757 11 11</span><br>
+							
+							<br><b>Verkehr</b><br>
+							<span class="contactTextName">RTB Rheintal Bus</span><span class="contactText">071 757 30 40</span><br>
+							<span class="contactTextName">Rufbus zu bestimmten Betriebszeiten</span><span class="contactText">0848 783 287</span><br>
+							<span class="contactTextName">SBB, Bahnhof Altstätten SG</span><span class="contactText">0900 30 300 </span><br>
+							<span class="contactTextName">Migrolino-Shop</span><span class="contactText">071 755 89 33 </span><br>
+							<span class="contactTextName">AB Appenzeller Bahnen, Bahnhof Altstätten Stadt</span><span class="contactText">071 755 15 21</span><br>
+							<span class="contactTextName">Wenn keine Antwort</span><span class="contactText">071 788 50 50</span><br>
+							<span class="contactTextName">Taxi Non-Stop</span><span class="contactText">071 755 40 40</span><br>
+							<span class="contactTextName">Taxi Rheintal</span><span class="contactText">071 755 70 70</span><br>
+							<span class="contactTextName">Fahrradvermietung: Mano’s Veloshop</span><span class="contactText">071 755 15 42</span><br>
+							
+							<br><b>Tourismus</b><br>
+							<span class="contactTextName">Tourismusbüro Altstätten</span><span class="contactText">071 750 00 23</span><br>
+							<span class="contactTextName">Tourismusbüro Appenzell</span><span class="contactText">071 788 96 41</span><br>
+							<span class="contactTextName">Tourismusbüro Heiden</span><span class="contactText">071 898 33 00</span><br>
+							<span class="contactTextName">Tourismusbüro Rorschach</span><span class="contactText">071 841 70 34</span><br>
+							<span class="contactTextName">Tourismusbüro St. Gallen</span><span class="contactText">071 227 37 37</span><br>
+							<span class="contactTextName">Tourist Info Werdenberg, Buchs</span><span class="contactText">081 740 05 40</span><br>
+							
+							<br><b>Weitere </b><br>
+							<span class="contactTextName">Stadtverwaltung Altstätten</span><span class="contactText">071 757 77 11</span><br>
+							<span class="contactTextName">Sportanlagen Stadt Altstätten GESA</span><span class="contactText">071 757 78 46</span><br>
+						</div>
+					</div>
+					<div class="divListFooter">
+					</div>
+				</div>
+			</div>
+			
 			<!-- Page Footer -->
 			<div id="cntFooter">
 				<div id="mainFootLeft">&nbsp;</div>
@@ -591,7 +638,7 @@
 				<video id="altstattenVideo" src="./video/Altstaetten_short.mp4" controls="controls"></video>
 			</div>
 			<br>
-			<div id="divToggelVids">Play Longer Video</div>
+			<div id="divToggelVids">Lange Version ansehen</div>
 			
 			<!-- Page Footer -->
 			<div id="cntFooter">

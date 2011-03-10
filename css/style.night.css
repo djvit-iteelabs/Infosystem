@@ -789,7 +789,7 @@ span.titleLong {
 }
 
 .rssData {
-	padding: 0px 0px 0px 0px;
+	padding: 0px 30px 0px 0px;
 	position: absolute;
 	left: 35px;
 	top: 0px;
@@ -798,6 +798,23 @@ span.titleLong {
 	font-size: 30px;
 	font-weight: normal;
 /*Eugene End*/
+}
+.rssData table {
+	padding: 0px 30px 0px 0px;
+	width: 850px;
+	overflow: hidden;
+	text-overflow:clip;
+	white-space: normal;
+}
+
+.rssData table tbody tr td a {
+	display: inline-block;
+	width: 500px;
+	word-wrap:break-word;
+}
+
+.rssData table tbody tr td div span {
+	font-size:25px;
 }
 
 /* Eugene */
@@ -962,8 +979,8 @@ span.titleLong {
 	transition: all 0.2s ease-in-out;
 	
 	height: 80px;
-	width: 900px;
-	margin: 10px 90px 30px 90px;
+	width: 926px;
+	margin: 10px 90px 30px 80px;
 	background: #FFFFFF;
 	text-align: left;
 	font-size: 36px;
@@ -1235,7 +1252,7 @@ span.titleLong {
 	transition: all 0.2s ease-in-out;
 	
 	height: 45px;
-	width: 350px;
+	width: 400px;
 	margin: 30px 30px 30px 300px;
 	padding: 10px 30px 10px 30px;
 	background: #FFFFFF;
@@ -1244,4 +1261,8 @@ span.titleLong {
 	font-weight: normal;
 	color: #000000;
 	vertical-align:middle;
+}
+
+.tooltip {
+	font-size: 20px;
 }

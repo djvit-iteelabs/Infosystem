@@ -17,19 +17,16 @@ function RSS(){
 RSS.prototype  = {
 	template: null,
 	rssSrcList: null,
+	infoSys : null,
 	
 	/**
 	 * Initializes RSS processor
 	 * @param {Object} list
 	 */
-	init: function(list){
+	init: function(list, is){
 		this.rssSrcList = list;
-/*		
-		for(var r in this.rssSrcList) {
-			var rssData = this.rssSrcList[r];
-			this.getList(rssData.src, rssData.target, rssData.layout, 20);
-		}
-*/
+		this.infoSys = is;
+
 		// Bind the events
 		this.bindEvents();
 	},
@@ -78,7 +75,7 @@ RSS.prototype  = {
 		// Get the RSS content
 		// $('body').append('<div style="display:none;" id="rss_dataContainer"></div>');
 		_this.getRSSContent(rssUrl, function() {
-			$('body').append('<div id="div_Rss_Content_Container" style="display:none;">' + ﻿RSSData.Content + '</div>');
+			$('body').append('<div id="div_Rss_Content_Container" style="display:none;">' + RSSData.Content + '</div>');
 			
 			// Find each 'item' in the file and parse it
 			$('#div_Rss_Content_Container').find('item').each( function(index) {
@@ -122,19 +119,7 @@ RSS.prototype  = {
 	 
 				// Put that feed content on the screen!
 				$(targetContainer).find('#divItemsList').append($(htmlItem));
-/*				
-				// Bind events
-				$('[data="' + data + '"]').click(function() {
-					var detailsUrl = 'data/' + $(this).attr('data') + '.data'; 
-					var clickElm = $(this);
-					_this.getRSSContent(detailsUrl, function(){
-						$(targetContainer).parent().find('#rssDetailTitle').html(clickElm.attr('title'));
-						$(targetContainer).parent().find('#rssDetailTarget').html(RSSData.Detail);
-						$(targetContainer).parent().find('#rssDetailTarget').css('top', '0px');
-						﻿﻿$('.lrSlider').animate({'left': '-=1080px'}, 'slow');
-					});
-				});
-*/								
+				
 				// Append only given number of records
 				if (index > count) return;
 			});
@@ -149,9 +134,29 @@ RSS.prototype  = {
 					$(targetContainer).parent().find('#rssDetailTitle').html(clickElm.attr('title'));
 					$(targetContainer).parent().find('#rssDetailTarget').html(RSSData.Detail);
 					$(targetContainer).parent().find('#rssDetailTarget').css('top', '0px');
+					$(targetContainer).parent().find('#rssDetailTarget').find('table').removeAttr('width');
 					// Bind Swipe handlers
 					$(targetContainer).parent().find('#rssDetailTarget').swipe();
-					﻿﻿$('.lrSlider').animate({'left': '-=1080px'}, 'slow');
+					
+					// Remove not needed content
+					$(targetContainer).parent().find('.rssData table').last().html('');
+					$(targetContainer).parent().find('div span').css('font-size', '');
+					$('td').prepend('<br>');
+					
+					// Show details animated
+					$('.lrSlider').animate({'left': '-=1080px'}, 'slow');
+					
+					// Change "back" button handler
+					$('[id*="btn"]').unbind('click');
+					$('[id*="btn"]').click(function(){
+						$('.lrSlider').animate({"left": "+=1080px"}, "slow");
+						$('[id*="btn"]').unbind('click');
+						$('[id*="btn"]').click(function(){
+							$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
+								_this.infoSys.showPage('pageMain');	
+							});
+						});
+					});
 				});
 			});
 			

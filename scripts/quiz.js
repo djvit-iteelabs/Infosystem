@@ -93,7 +93,7 @@ QUIZ.prototype  = {
 		} else {
 			$('#quizContent').css('display', 'none');
 			$('#quizMessage').css('display', 'block');
-			$('#quizMessage').html('Vielen Dank für die Beantwortung dieser Frage Quiz. Wir hoffen, Sie genießen es und fand neue und interessante Informationen über Altstätten');
+			$('#quizMessage').html('Vielen Dank für die Beantwortung der Quizfragen. Wir wünschen Ihnen viel Spass in Altstätten!');
 		}
 	}
 }

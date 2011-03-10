@@ -8,7 +8,7 @@ body {
 	font-family: Helvetica, Arial,  sans-serif;
 	height: 1920px;
 	width: 1080px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 #imgWelcome {
@@ -574,6 +574,7 @@ div[id*="cat"] img {
 .catText {
 	font-size: 28px;
 	font-weight: bolder;
+	text-shadow: 0px 0px 1px #AAAAAA;
 	color: #000000;
 }
 
@@ -790,7 +791,7 @@ span.titleLong {
 }
 
 .rssData {
-	padding: 0px 0px 0px 0px;
+	padding: 0px 30px 0px 0px;
 	position: absolute;
 	left: 35px;
 	top: 0px;
@@ -798,6 +799,23 @@ span.titleLong {
 	font-size: 30px;
 	font-weight: normal;
 /*Eugene End*/
+}
+
+.rssData table {
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+	text-overflow:clip;
+	white-space: normal;
+}
+
+.rssData table tbody tr td a {
+	display: inline-block;
+	width: 300px;
+	word-wrap:break-word;
+}
+
+.rssData table tbody tr td div span {
+	font-size:25px;
 }
 
 /*Eugene*/
@@ -962,8 +980,8 @@ span.titleLong {
 	transition: all 0.2s ease-in-out;
 	
 	height: 80px;
-	width: 900px;
-	margin: 10px 90px 30px 90px;
+	width: 926px;
+	margin: 10px 90px 30px 80px;
 	background: #000000;
 	text-align: left;
 	font-size: 36px;
@@ -1235,7 +1253,7 @@ span.titleLong {
 	transition: all 0.2s ease-in-out;
 	
 	height: 45px;
-	width: 350px;
+	width: 400px;
 	margin: 30px 30px 30px 300px;
 	padding: 10px 30px 10px 30px;
 	background: #000000;

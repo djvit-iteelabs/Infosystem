@@ -28,6 +28,7 @@ var chSearchMap = {
 				});
 				this.defaultPOI();
 				this.map.disable("clickzoom");
+				
 			}
 		} else { this.resetMap(); }
 	},
@@ -133,7 +134,11 @@ var chLandMap = {
 								   icon :"images/marker.50.png",
 								   circle : false});
 		this.map.addPOI(poi);
-		this.map.set({ center: [this.x, this.y], zoom:0.25 });		
+		this.map.set({ center: [this.x, this.y], zoom:0.25 });	
+		
+		this.map.addEventListener("popupopen", function(){
+			alert(d);
+		});	
 	},
 	
 	setStation: function (_x, _y, _txt) {

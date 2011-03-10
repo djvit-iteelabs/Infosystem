@@ -156,6 +156,8 @@
 					
 					$(this).unbind();
 					$('body').disableSelection();
+					document.infoSystem.lastActivity = null;
+					document.infoSystem.lastActivity = new Date();
                 });
             });
     	});

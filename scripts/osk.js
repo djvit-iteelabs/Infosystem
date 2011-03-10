@@ -205,7 +205,7 @@ OSK.prototype = {
 		});
 		
 		// Bind hiding of the keyboard on click outside of it
-		$('body').click(function(e){
+		$(document).click(function(e){
 			var clickedOn = $(e.target);
 			if ((typeof(_this.oskTarget) === 'undefined') || (_this.oskTarget == null)) return;
 

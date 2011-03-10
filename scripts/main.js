@@ -21,12 +21,14 @@ InfoSystem.prototype = {
 	activePageIndex: null,
 	lastActivity: null,
 	activityCheckInterval: 10000, // Activity check interval
-	lastActivityLimit: 60000, // Last activity in milliseconds (1m)
+	lastActivityLimit: 18000, // Last activity in milliseconds (1m)
+	activityCheckerEnabled: true,
 	eventsAPI: null,
 	map: null,
 	rss: null,
 	quiz: null,
 	standbyhand: null,
+	osk: null, 
 	
 	init: function() {
 		var _this = this; // Closure reference
@@ -65,8 +67,8 @@ InfoSystem.prototype = {
 		chLandMap.initMap('mapContainerLand');
 
 		// Initialize On Screen Keyboard
-		var osk = new OSK();
-		osk.init(chSearchMap.findAddress, 'de');
+		this.osk = new OSK();
+		this.osk.init(chSearchMap.findAddress, 'de');
 		
 		//Initialize Background SlideShow
 		$(document).bgStretcher({
@@ -113,7 +115,7 @@ InfoSystem.prototype = {
 				"target": "#divWeatherContent",
 				"layout": "details"
 			}}
-		);
+		, this);
 
 	
 		/////////////////////////////////////////
@@ -137,16 +139,7 @@ InfoSystem.prototype = {
 		$(document).click(function(){
 			_this.lastActivity = null;
 			_this.lastActivity = new Date();
-			$('body').append('<h1>test</h1><br>');
 			$("#bgstretcher").hide();
-			/*
-			
-			$("#bgstretcher").hide();
-			this.standbyhand.kill_timer();
-			this.standbyhand = null;
-			
-			*/
-			
 		});
 		
 		// StandBy page click/touch - moves to the Main/Menu page  
@@ -165,7 +158,6 @@ InfoSystem.prototype = {
 			$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
 				_this.showPage('pageMain');	
 			});
-			
 		});
 		
 		// Quiz events
@@ -250,17 +242,20 @@ InfoSystem.prototype = {
 				$(this).css('-webkit-box-shadow', '10px 10px 10px #444444').delay(500);
 			});
 			
-			if (vid.getAttribute('src').indexOf('short') > 0) {
-				vid.pause();
-				$(this).text('Play Shorter Video');
-				vid.setAttribute('src', './video/Altstaetten_long.mp4');
-				vid.play();
-			}
-			else {
-				vid.pause();
-				$(this).text('Play Longer Video');
-				vid.setAttribute('src', './video/Altstaetten_short.mp4');
-				vid.play();
+			if (!vid.error) {
+			
+				if (vid.getAttribute('src').indexOf('short') > 0) {
+					vid.pause();
+					$(this).text('Kurze Version ansehen');
+					vid.setAttribute('src', './video/Altstaetten_long.mp4');
+					vid.play();
+				}
+				else {
+					vid.pause();
+					$(this).text('Lange Version ansehen');
+					vid.setAttribute('src', './video/Altstaetten_short.mp4');
+					vid.play();
+				}
 			}
 		});
 	},
@@ -316,7 +311,13 @@ InfoSystem.prototype = {
 	/**
 	 * Refreshes DOM/Layout of currently active page
 	 */
-	refreshPage: function(){
+	refreshPage: function() {
+		// Enable activity checker
+		this.lastActivity = null;
+		this.lastActivity = new Date();
+		this.activityCheckerEnabled = true;
+
+		// Switch to the needed page
 		switch(this.activePage.id) {
 			
 			case 'pageMain':
@@ -327,8 +328,7 @@ InfoSystem.prototype = {
 				quiz.resetQuiz();
 				
 				var vidEl = document.getElementById('altstattenVideo');
-				if ((typeof(vidEl) != 'undefined') && (vidEl != null))
-					vidEl.pause();
+				if (!vidEl.error) vidEl.pause();
 				
 				if (this.standbyhand != null) {
 					this.standbyhand.kill_timer();
@@ -374,10 +374,14 @@ InfoSystem.prototype = {
 				
 			case 'pageVideo':
 				var vidEl = document.getElementById('altstattenVideo');
-				vidEl.setAttribute('src', './video/Altstaetten_short.mp4');
-				vidEl.play();
+				if (!vidEl.error) {
+					vidEl.setAttribute('src', './video/Altstaetten_short.mp4');
+					vidEl.play();
+				}
+				// Disable activity checker
+				this.activityCheckerEnabled = false;
+
 				break;	
-				
 		}
 	},
 
@@ -387,10 +391,13 @@ InfoSystem.prototype = {
 	checkActivity: function(){
 		var currDate = new Date();
 		var diff = currDate - this.lastActivity;
-		if ( (this.activePage.id != 'pageLanding') && (diff > this.lastActivityLimit)) {
+		if ((this.activityCheckerEnabled == true) && (this.activePage.id != 'pageLanding') && (diff > this.lastActivityLimit)) {
 			// Stop videos
 			var vidEl = document.getElementById('altstattenVideo');
-			//vidEl.pause();
+			if (!vidEl.error) vidEl.pause();
+			
+			// Reset OSK
+			this.osk.hideKeyboard();
 
 			this.showPage('pageLanding');
 			$("#bgstretcher").show();
