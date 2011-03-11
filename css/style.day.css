@@ -326,6 +326,10 @@ div[id*="page"] {
 	-moz-border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-webkit-box-shadow: 10px 10px 10px #444444;
+	
+	color: #000000;
+	font-size: 36px;
+	background: transparent url(../images/map.placeholder.png);
 }
 
 #zoomOut {
@@ -429,6 +433,10 @@ div[id*="page"] {
 	-webkit-border-radius: 30px;
 	-webkit-box-shadow: 10px 10px 10px #444444;
 	top: -6px;
+	
+	color: #000000;
+	font-size: 36px;
+	background: transparent url(../images/map.placeholder.png);
 }
 
 #zoomOutLand {
@@ -1262,4 +1270,27 @@ span.titleLong {
 	font-weight: normal;
 	color: #FFFFFF;
 	vertical-align:middle;
+}
+
+.gotoMap {
+border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-box-shadow: 10px 10px 10px #222222;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	
+	height: 48px;
+	width: 200px;
+	margin: 10px 0px 0px 0px;
+	padding: 10px 20px 10px 0px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: normal;
+	color: #FFFFFF;	 
+	background: #444444;
+	
+	vertical-align: text-top;
 }

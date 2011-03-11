@@ -18,10 +18,11 @@ function InfoSystem(){
 InfoSystem.prototype = {
 	pages: [{}],
 	activePage: null,	
+	lastPage: null,
 	activePageIndex: null,
 	lastActivity: null,
 	activityCheckInterval: 10000, // Activity check interval
-	lastActivityLimit: 18000, // Last activity in milliseconds (1m)
+	lastActivityLimit: 180000, // Last activity in milliseconds (1m)
 	activityCheckerEnabled: true,
 	eventsAPI: null,
 	map: null,
@@ -63,7 +64,8 @@ InfoSystem.prototype = {
 		//Initialize themesRotator		
 		var themes = new themesRotator();
 		themes.init(60000);
-				
+
+		chSearchMap.initMap('mapContainer');				
 		chLandMap.initMap('mapContainerLand');
 
 		// Initialize On Screen Keyboard
@@ -265,6 +267,7 @@ InfoSystem.prototype = {
 	 */
 	showPage: function(pageId) {
 		var p = $(this.pages[pageId]);
+		this.lastPage = this.activePage; 
 		this.activePage = this.pages[pageId];
 		var _this = this;
 		
@@ -277,6 +280,40 @@ InfoSystem.prototype = {
 			//p.show("slide",{},"slow",function(){_this.refreshPage();});
 			p.fadeIn(500, function(){
 				_this.refreshPage();
+			});
+		});
+	},
+	
+	showMapPage: function(addr) {
+		var p = $(this.pages['pageMap']);
+		this.lastPage = this.activePage; 
+		this.activePage = this.pages['pageMap'];
+		var _this = this;
+		
+		// TODO: Use/Change some animation here
+		this.hidePages(function(){
+			p.fadeIn(500, function(){
+				chSearchMap.findAddress(addr);
+			});
+		});
+		
+		// Change Back button bindings
+		$('[id*="btn"]').unbind('click');
+		$('[id*="btn"]').click(function(){
+			_this.hidePages(function() {
+				$(_this.lastPage).fadeIn(500, function(){
+					_this.activePage = _this.lastPage; 
+					$('[id*="btn"]').unbind('click');
+					$('[id*="btn"]').click(function() {
+						$('.lrSlider').animate({"left": "+=1080px"}, "slow");
+						$('[id*="btn"]').unbind('click');
+						$('[id*="btn"]').click(function(){
+							$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
+								_this.showPage('pageMain');	
+							});
+						});
+					});
+				});
 			});
 		});
 	},
@@ -337,11 +374,11 @@ InfoSystem.prototype = {
 				break;
 			
 			case 'pageMap':
-				chSearchMap.initMap('mapContainer');
+				chSearchMap.resetMap();
 				break;
 				
 			case 'pageSchedule':
-				chLandMap.initMap('mapContainerLand'); 
+				chLandMap.resetMap(); 
 				break;
 				
 			case 'pageEvents':

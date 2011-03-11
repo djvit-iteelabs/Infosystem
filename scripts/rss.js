@@ -61,6 +61,14 @@ RSS.prototype  = {
 		// Back to List event handler
 		$('.buttonToList').click(function(){
 			$('.lrSlider').animate({"left": "+=1080px"}, "slow");
+			
+			// Restore bottom back button function
+			$('[id*="btn"]').unbind('click');
+			$('[id*="btn"]').click(function(){
+				$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
+					_this.infoSys.showPage('pageMain');	
+				});
+			});
 		});
 	},
 	
@@ -135,16 +143,14 @@ RSS.prototype  = {
 					$(targetContainer).parent().find('#rssDetailTarget').html(RSSData.Detail);
 					$(targetContainer).parent().find('#rssDetailTarget').css('top', '0px');
 					$(targetContainer).parent().find('#rssDetailTarget').find('table').removeAttr('width');
-					// Bind Swipe handlers
-					$(targetContainer).parent().find('#rssDetailTarget').swipe();
 					
 					// Remove not needed content
 					$(targetContainer).parent().find('.rssData table').last().html('');
 					$(targetContainer).parent().find('div span').css('font-size', '');
 					$('td').prepend('<br>');
 					
-					// Show details animated
-					$('.lrSlider').animate({'left': '-=1080px'}, 'slow');
+					// Update address if present
+					_this.processAddress(targetContainer);
 					
 					// Change "back" button handler
 					$('[id*="btn"]').unbind('click');
@@ -157,6 +163,12 @@ RSS.prototype  = {
 							});
 						});
 					});
+					
+					// Bind Swipe handlers
+					$(targetContainer).parent().find('#rssDetailTarget').swipe();
+					
+					// Show details animated
+					$('.lrSlider').animate({'left': '-=1080px'}, 'slow');
 				});
 			});
 			
@@ -210,6 +222,33 @@ RSS.prototype  = {
 		});
 		
 		return ;
+	},
+	
+	processAddress: function(elm) {
+		var _this = this;
+		$(elm).find('td').each(function(){
+			if ($(this).text() == 'Adresse') {
+				$(this).next().children('br').each(function() {
+					$(this).html('<br> &nbsp;');
+				});
+
+				var addr = $(this).next().text();
+
+				//$(elm).find('.divListTitle').append('<div address="' + addr + '" class="gotoMap">Zur Karte</div>');
+				$(this).next().append('<div address="' + addr + '" class="gotoMap"><img src="./images/marker.36.png" alt="Zur Karte"/>&nbsp;&nbsp;Zur Karte</div>');
+				$('.gotoMap').click(function() {
+					var btn = $(this);
+					btn.css('-webkit-box-shadow', '0px 0px 0px #000000');
+					btn.bind('webkitTransitionEnd', function(){
+						btn.css('-webkit-box-shadow', '10px 10px 10px #444444').delay(500);
+					});
+					setTimeout(function() {
+						_this.infoSys.showMapPage(addr);	
+					}, 500);
+				});
+			}
+		});
+		//Auf der karte anzeigen
 	},
 	
 	resetPanels: function() {

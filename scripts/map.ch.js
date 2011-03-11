@@ -9,6 +9,11 @@ var chSearchMap = {
 	lon : null,
 	
 	initMap: function(map_container){
+		if (typeof(SearchChMap) !== 'function') {
+			$('#' + map_container).text('Diese Funktion ist zur Zeit nicht verfügbar. Bitte versuchen Sie es später noch einmal.');
+			$('#divMapControls').html('');
+			return;
+		}
 		if (this.map == null) {// Skip if already initialized
 			if (!SearchChMap.isBrowserCompatible()) {
 				document.getElementById(map_container).innerHTML = "Ihr Browser ist nicht kompatibel.";
@@ -48,29 +53,45 @@ var chSearchMap = {
 	},
 	
 	satView : function(){
-		chSearchMap.map.set({type: "aerial"});
+		if (chSearchMap.map) {
+			chSearchMap.map.set({
+				type: "aerial"
+			});
+		}
 	},	
 
 	streetView : function(){
-		chSearchMap.map.set({type: "street"});
+		if (chSearchMap.map) {
+			chSearchMap.map.set({
+				type: "street"
+			});
+		}
 	},
 	
 	addMyPOI : function(name) {
-		chSearchMap.map.removeAllPOIs();
-		var poi = new SearchChPOI({center: name,
-								   title: "Ortsplan",
-								   html: "<strong>" + name + "<\/strong>", 
-								   icon:"images/marker.50.png"});
-		chSearchMap.map.addPOI(poi);	
+		if (chSearchMap.map) {
+			chSearchMap.map.removeAllPOIs();
+			var poi = new SearchChPOI({
+				center: name,
+				title: "Ortsplan",
+				html: "<strong>" + name + "<\/strong>",
+				icon: "images/marker.50.png"
+			});
+			chSearchMap.map.addPOI(poi);
+		}	
 	},
 	
 	defaultPOI : function() {			
-		chSearchMap.map.removeAllPOIs();
-		var poi = new SearchChPOI({center: [chSearchMap.lat, chSearchMap.lon],
-								   title:"Ortsplan",
-								   html: "<strong>Altstatten<\/strong>", 
-								   icon:"images/marker.50.png"});
-		chSearchMap.map.addPOI(poi);			
+		if (chSearchMap.map) {
+			chSearchMap.map.removeAllPOIs();
+			var poi = new SearchChPOI({
+				center: [chSearchMap.lat, chSearchMap.lon],
+				title: "Ortsplan",
+				html: "<strong>Altstatten<\/strong>",
+				icon: "images/marker.50.png"
+			});
+			chSearchMap.map.addPOI(poi);
+		}			
 	}
 }
 
@@ -87,7 +108,12 @@ var chLandMap = {
 	x : null, 
 	y : null,
 	
-	initMap: function(map_container){
+	initMap: function(map_container) {
+		if (typeof(SearchChMap) !== 'function') {
+			$('#' + map_container).text('Diese Funktion ist zur Zeit nicht verfügbar. Bitte versuchen Sie es später noch einmal.');
+			$('#divMapLandControls').html('');
+			return;
+		}
 		if (this.map == null) {// Skip if already initialized
 			if ((typeof(SearchChMap) !== 'undefined') && (!SearchChMap.isBrowserCompatible())) {
 				document.getElementById(map_container).innerHTML = "Ihr Browser ist nicht kompatibel.";
@@ -113,43 +139,61 @@ var chLandMap = {
 	},
 	
 	resetMap : function(){
-		if (this.map) {
+		if (chLandMap.map) {
 			this.defaultPOI();	
 		}		
 	},
 	
 	satView : function(){
-		this.map.set({type: "aerial"});
+		if (chLandMap.map) {
+			this.map.set({
+				type: "aerial"
+			});
+		}
 	},	
 
 	streetView : function(){
-		this.map.set({type: "street"});
+		if (chLandMap.map) {
+			this.map.set({
+				type: "street"
+			});
+		}
 	},
 	
 	defaultPOI : function(){
-		this.map.removeAllPOIs();
-		var poi = new SearchChPOI({center: [this.x, this.y],
-								   title : "Fahrplan",
-								   html : "<strong>Altstätten Bahnhof SBB<\/strong>", 
-								   icon :"images/marker.50.png",
-								   circle : false});
-		this.map.addPOI(poi);
-		this.map.set({ center: [this.x, this.y], zoom:0.25 });	
-		
-		this.map.addEventListener("popupopen", function(){
-			alert(d);
-		});	
+		if (chLandMap.map) {
+			this.map.removeAllPOIs();
+			var poi = new SearchChPOI({
+				center: [this.x, this.y],
+				title: "Fahrplan",
+				html: "<strong>Altstätten Bahnhof SBB<\/strong>",
+				icon: "images/marker.50.png",
+				circle: false
+			});
+			this.map.addPOI(poi);
+			this.map.set({
+				center: [this.x, this.y],
+				zoom: 0.25
+			});
+		}		
 	},
 	
 	setStation: function (_x, _y, _txt) {
-		this.map.removeAllPOIs();
-		var poi = new SearchChPOI({center : [_x, _y],
-								   title : "Fahrplan",
-								   html : "<strong>" + _txt + "<\/strong>", 
-								   icon :"images/marker.50.png",
-								   circle : false});
-		this.map.addPOI(poi);
-		
-		this.map.set({ center:[_x, _y], zoom:0.25 });
+		if (chLandMap.map) {
+			this.map.removeAllPOIs();
+			var poi = new SearchChPOI({
+				center: [_x, _y],
+				title: "Fahrplan",
+				html: "<strong>" + _txt + "<\/strong>",
+				icon: "images/marker.50.png",
+				circle: false
+			});
+			this.map.addPOI(poi);
+			
+			this.map.set({
+				center: [_x, _y],
+				zoom: 0.25
+			});
+		}
 	}	
 }
