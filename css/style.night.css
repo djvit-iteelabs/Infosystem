@@ -333,10 +333,10 @@ div[id*="page"] {
 
 #zoomOut {
 	position: absolute;
-	top: 430px;
+	top: 410px;
 	left: 100px;
-	height: 102px;
-	width: 146px;
+	height: 70px;
+	width: 100px;
 	background: transparent url(../images/zoom.out.night.png) no-repeat;
 	z-index:99999;
 }
@@ -345,38 +345,38 @@ div[id*="page"] {
 	position: absolute;
 	top: 330px;
 	left: 100px;
-	height: 102px;
-	width: 146px;
+	height: 70px;
+	width: 100px;
 	background: transparent url(../images/zoom.in.night.png) no-repeat;
 	z-index:99999;
 }
 
 #satMap {
 	position: absolute;
-	top: 530px;
+	top: 490px;
 	left: 100px;
-	height: 102px;
-	width: 146px;
+	height: 70px;
+	width: 100px;
 	background: transparent url(../images/sat.night.png) no-repeat;
 	z-index:99999;
 }
 
 #roadMap {
 	position: absolute;
-	top: 630px;
+	top: 570px;
 	left: 100px;
-	height: 102px;
-	width: 146px;
+	height: 70px;
+	width: 100px;
 	background: transparent url(../images/road.night.png) no-repeat;
 	z-index:99999;
 }
 
 #homeMap {
 	position: absolute;
-	top: 730px;
+	top: 650px;
 	left: 100px;
-	height: 102px;
-	width: 146px;
+	height: 70px;
+	width: 100px;
 	background: transparent url(../images/home.night.png) no-repeat;
 	z-index:99999;
 }
@@ -439,10 +439,10 @@ div[id*="page"] {
 
 #zoomOutLand {
 	position: absolute;
-	top: 820px;
+	top: 800px;
 	left: 100px;
-	height: 102px;
-	width: 146px;
+	height: 70px;
+	width: 100px;
 	background: transparent url(../images/zoom.out.night.png) no-repeat;
 	z-index:99999;
 }
@@ -451,38 +451,38 @@ div[id*="page"] {
 	position: absolute;
 	top: 720px;
 	left: 100px;
-	height: 102px;
-	width: 146px;
+	height: 70px;
+	width: 100px;
 	background: transparent url(../images/zoom.in.night.png) no-repeat;
 	z-index:99999;
 }
 
 #satLand {
 	position: absolute;
-	top: 920px;
+	top: 880px;
 	left: 100px;
-	height: 102px;
-	width: 146px;
+	height: 70px;
+	width: 100px;
 	background: transparent url(../images/sat.night.png) no-repeat;
 	z-index:99999;
 }
 
 #roadLand {
 	position: absolute;
-	top: 1020px;
+	top: 960px;
 	left: 100px;
-	height: 102px;
-	width: 146px;
+	height: 70px;
+	width: 100px;
 	background: transparent url(../images/road.night.png) no-repeat;
 	z-index:99999;
 }
 
 #homeLand {
 	position: absolute;
-	top: 1120px;
+	top: 1040px;
 	left: 100px;
-	height: 102px;
-	width: 146px;
+	height: 70px;
+	width: 100px;
 	background: transparent url(../images/home.night.png) no-repeat;
 	z-index:99999;
 }
