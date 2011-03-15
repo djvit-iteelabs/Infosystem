@@ -29,7 +29,8 @@ InfoSystem.prototype = {
 	rss: null,
 	quiz: null,
 	standbyhand: null,
-	osk: null, 
+	osk: null,
+	database: null,
 	
 	init: function() {
 		var _this = this; // Closure reference
@@ -156,7 +157,6 @@ InfoSystem.prototype = {
 		
 		// Intialize buttons
 		$('[id*="btn"]').click(function(){
-			//$('body').trigger('showPageMain');
 			$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
 				_this.showPage('pageMain');	
 			});
@@ -260,6 +260,13 @@ InfoSystem.prototype = {
 				}
 			}
 		});
+		
+		// Contact swipe
+		$('#divContactContent').swipe();
+		
+		// Initialize Database
+		this.database = new DB();
+		this.database.init();
 	},
 	
 	/**
@@ -276,8 +283,6 @@ InfoSystem.prototype = {
 		
 		// TODO: Use/Change some animation here
 		this.hidePages(function(){
-			//_this.refreshPage();
-			//p.show("slide",{},"slow",function(){_this.refreshPage();});
 			p.fadeIn(500, function(){
 				_this.refreshPage();
 			});
@@ -300,16 +305,22 @@ InfoSystem.prototype = {
 		// Change Back button bindings
 		$('[id*="btn"]').unbind('click');
 		$('[id*="btn"]').click(function(){
-			_this.hidePages(function() {
-				$(_this.lastPage).fadeIn(500, function(){
-					_this.activePage = _this.lastPage; 
-					$('[id*="btn"]').unbind('click');
-					$('[id*="btn"]').click(function() {
-						$('.lrSlider').animate({"left": "+=1080px"}, "slow");
+			$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
+				_this.hidePages(function() {
+					$(_this.lastPage).fadeIn(500, function(){
+						_this.activePage = _this.lastPage; 
+						
 						$('[id*="btn"]').unbind('click');
-						$('[id*="btn"]').click(function(){
+						$('[id*="btn"]').click(function() {
 							$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
-								_this.showPage('pageMain');	
+								$('div[class*="lrSlider"]').animate({"left": "+=1080px"}, "slow");
+								
+								$('[id*="btn"]').unbind('click');
+								$('[id*="btn"]').click(function(){
+									$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
+										_this.showPage('pageMain');	
+									});
+								});
 							});
 						});
 					});
@@ -353,15 +364,19 @@ InfoSystem.prototype = {
 		this.lastActivity = null;
 		this.lastActivity = new Date();
 		this.activityCheckerEnabled = true;
+		
+		// Save stats data
+		this.database.addRecord(this.getDateTimeString(), this.activePage.id, '');
 
 		// Switch to the needed page
 		switch(this.activePage.id) {
 			
 			case 'pageMain':
 				// Reset positions
-				$('.lrSlider').css('left','0px');
+				$('div[class*="lrSlider"]').css('left','0px');
 				$('.rssData').css('top', '0px');
 				$('.scrollIndicator').css('top', '0px');
+				$('#searchCondition').val('');
 				quiz.resetQuiz();
 				
 				var vidEl = document.getElementById('altstattenVideo');
@@ -466,8 +481,9 @@ InfoSystem.prototype = {
 		if (min < 10) min = "0" + min;
 
 		var sec = time.getSeconds();
+		if (sec < 10) sec = "0" + sec;
 		
-		return hr + ':' + min;
+		return hr + ':' + min + ':' + sec;
 	},
 	
 	/**

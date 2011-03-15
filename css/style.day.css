@@ -657,6 +657,14 @@ div[id*="cat"] img {
 	top: 320px;
 }
 
+.lrSliderSmall  {
+	height: 575px;
+	width: 2165px;
+	position: absolute;
+	left: 0px;
+	top: 320px;
+}
+
 /* Assume 5 pages */
 .lrSliderQuiz {
 	height: 1150px;
@@ -677,6 +685,12 @@ div[id*="cat"] img {
 .scrolledContainer {
 	display: inline-block;
 	height: 1150px;
+}
+
+.scrolledContainerSmall {
+	display: inline-block;
+	height: 575px;
+	width: 1080px;
 }
 
 .scrolledContainerSchedule {
@@ -757,6 +771,37 @@ span.titleLong {
 }
 
 .swipeMask div center table tbody tr td table tbody tr td table {
+	width: 800px;
+}
+
+.swipeMaskSmall {
+	height: 525px;
+	width: 880px;
+	margin: 0px 70px 0px 52px;
+	padding: 0px 20px 0px 20px;
+	text-align: left;
+	display: inline-block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	
+	border-radius: 0px 0px 30px 30px;
+	-webkit-border-radius: 0px 0px 30px 30px;
+	-moz-border-radius: 0px 0px 30px 30px;
+	-webkit-box-shadow: 10px 10px 10px #444444;
+	background: #000000;
+	text-align: left;
+	font-size: 36px;
+	font-weight: normal;
+	color: #FFFFFF;
+	overflow: hidden;
+}
+
+.swipeMaskSmall div center table {
+	color: #000000;
+}
+
+.swipeMaskSmall div center table tbody tr td table tbody tr td table {
 	width: 800px;
 }
 
@@ -864,7 +909,7 @@ span.titleLong {
 	
 	width: auto;
 	min-height: 50px;
-	max-height: 140px;
+	max-height: 160px;
 	vertical-align: top;
 	background: transparent;
 }
@@ -896,7 +941,7 @@ span.titleLong {
 	display: inline-block;
 	padding: 0px 0px 0px 0px;	
 	max-width: 600px;
-	max-height: 85px;
+	max-height: 160px;
 	overflow: hidden;
 	white-space: normal;
 	vertical-align: top;
@@ -934,8 +979,8 @@ span.titleLong {
 	border-bottom: 3px solid #FFFFFF;
 	
 	width: auto;
-	min-height: 70px;
-	max-height: 100px;
+	min-height: 50px;
+	max-height: 160px;
 	vertical-align: top;
 	background: transparent;
 }
@@ -947,7 +992,7 @@ span.titleLong {
 	
 	overflow: hidden;
 	width: 340px;
-	height: 48px;
+	max-height: 160px;
 }
 
 .rssItemWDescription .rssItemTitle {
@@ -957,7 +1002,7 @@ span.titleLong {
 	display: inline-block;
 	padding: 0px 0px 0px 0px;	
 	width: 510px;
-	height: 85px;
+	max-height: 160px;
 	overflow: hidden;
 	white-space: normal;
 	vertical-align: top;
@@ -1250,6 +1295,9 @@ span.titleLong {
 	display: none;
 }
 
+/**
+ * Videos toggle button
+ */
 #divToggelVids {
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -1293,4 +1341,34 @@ border-radius: 20px;
 	background: #444444;
 	
 	vertical-align: text-top;
+}
+
+/**
+ * Contacts info pane styles
+ */
+.rssContainerContacts {
+	position: absolute;
+	left: 0px;
+	top: 950px; 
+	height: 550px;
+	font-size: 30px;
+}
+
+.contactTextName {
+	display: inline-block;
+	width: 600px; 
+}
+
+.contactText {
+	display: inline-block;
+	width: 200px; 	
+}
+
+.divListFooterContacts {
+	height: 30px;
+	width: 865px;
+	position: relative;
+	top: -34px;
+	left: 100px;
+	background: transparent url(../images/panel.bottom.bg.day.png) repeat-x;
 }

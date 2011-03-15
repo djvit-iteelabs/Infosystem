@@ -4,7 +4,6 @@
  * 
  * @version 0.0.1
  * @extends jQuery 1.4.2
- * @uses jGesture 1.0.3
  */
 
 // Extend jQuery to bind Swipe event handling to the particular element
@@ -29,7 +28,7 @@
 			var $this = $(this);
 			
 			// Add scroll indicator
-			var mask = $this.parents('.swipeMask');
+			var mask = $this.parents('div[class*="swipeMask"]');
 			
 			// If content is small than mask - no need in scroll
 			if (mask.height() > $this.height()) return;
@@ -40,6 +39,7 @@
 				indicator = mask.find('.scrollIndicator');
 			}
 			indicator.css('left', mask.css('width')); // Set the location of indicator
+			indicator.css('top', '0px');
 			
 			function updateIndicator()
 			{

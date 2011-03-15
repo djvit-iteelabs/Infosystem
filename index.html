@@ -22,12 +22,12 @@
 		<script type="text/javascript" src="scripts/themes.js"></script>
 		<script type="text/javascript" src="scripts/standbyhand.js"></script>
 		<script type="text/javascript" src="scripts/clock.js"></script>
-		<script type="text/javascript" src="http://map1.search.ch/api/map.js?lang=de"></script>
+		<script type="text/javascript" src="http://map.search.ch/api/map.js?lang=de"></script>
 		<script type="text/javascript" src="scripts/map.ch.js"></script>
 		<script type="text/javascript" src="scripts/quiz.js"></script>
 		<script type="text/javascript" src="scripts/quiz.data.js"></script>
 		<script type="text/javascript" src="scripts/bgstretcher.js"></script>
-		
+		<script type="text/javascript" src="scripts/db.js"></script>
 		
 		<script type="text/javascript">
 			$(document).ready(function(){				
@@ -540,24 +540,24 @@
 			<br class="clear" />		
 				
 			<!-- Content Area -->
-			<div class="lrSlider" id="rssNews">
-				<div class="scrolledContainer">
+			<div class="lrSliderSmall" id="rssNews">
+				<div class="scrolledContainerSmall">
 					<div class="divListTitle">
 						<span>Datum</span>
 						<span>Neuigkeiten</span>
 					</div>
-					<div class="swipeMask">
+					<div class="swipeMaskSmall">
 						<div class="rssData" id="divItemsList"></div>
 					</div>
 					<div class="divListFooter">
 					</div>
 				</div>
-				<div class="scrolledContainer">
+				<div class="scrolledContainerSmall">
 					<div class="divListTitle">
 						<div class="buttonToList"></div>
 						<span id="rssDetailTitle"></span>
 					</div>
-					<div class="swipeMask">
+					<div class="swipeMaskSmall">
 						<div class="rssData" id="rssDetailTarget"></div>
 					</div>
 					<div class="divListFooter">
@@ -566,13 +566,14 @@
 			</div>
 			
 			<!-- Content Area - contact info -->
-			<div class="rssContainer" id="rssContactDetail">
-				<div class="scrolledContainer">
+			<div class="rssContainerContacts" id="rssContactDetail">
+				<div class="scrolledContainerSmall">
 					<div class="divListTitle">
-						<span id="rssDetailTitle">Kontakte</span>
+						<span id="rssDetailTitleContacts">Kontakte</span>
 					</div>
-					<div class="swipeMask">
+					<div class="swipeMaskSmall">
 						<div class="rssData" id="divContactContent">
+							<br>
 							<span class="contactTextName">Vorwahl Schweiz: +41</span><br>
 							<br><b>Notrufe / Gesundheit</b><br>
 							<span class="contactTextName">Polizeinotruf</span><span class="contactText">117</span><br>
@@ -607,9 +608,10 @@
 							<br><b>Weitere </b><br>
 							<span class="contactTextName">Stadtverwaltung Altstätten</span><span class="contactText">071 757 77 11</span><br>
 							<span class="contactTextName">Sportanlagen Stadt Altstätten GESA</span><span class="contactText">071 757 78 46</span><br>
+							<br>
 						</div>
 					</div>
-					<div class="divListFooter">
+					<div class="divListFooterContacts">
 					</div>
 				</div>
 			</div>

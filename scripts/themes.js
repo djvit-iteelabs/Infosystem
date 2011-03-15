@@ -11,6 +11,9 @@ themesRotator.prototype = {
 	thmInterval: null,	// how often check the time(milliseconds)
 	thmCount : null,    // themes count
 	thmName : null,     //current theme name
+	dtsTimer : null,	// DayTime service check timer
+	dtsInterval: 8640,// 24 hours = 86400 seconds = 86400000 ms
+	dtsUrl: 'data/DTS.data',
 	
 	init : function(i){ // i - initial interval
 		var _this = this;
@@ -37,12 +40,22 @@ themesRotator.prototype = {
 		
 		if (!this.thmTimer) 
 			this.thmTimer = window.setInterval(function(){
-				//$('link[href*=style]').attr('href','css/' + _this.thmThemes[Math.round(Math.random())]['theme']);
 				$('link[href*=style]').attr('href', 'css/' + _this.checktime());
 			}, this.thmInterval);
 		else {
 			window.clearInterval(this.thmTimer);
 			this.thmTimer = null;
+		}
+		
+		// Start DayTime service check timer
+		if (!this.dtsTimer) {
+			this.dtsTimer = window.setInterval(function() {
+				_this.checkDTS();
+			}, this.dtsInterval)
+		}
+		else {
+			window.clearInterval(this.dtsTimer);
+			this.dtsTimer = null;
 		}
 	},
 	
@@ -106,6 +119,50 @@ themesRotator.prototype = {
 	
 	setcount : function(c){
 		this.thmCount = c;
-	}
+	},
 	
+	checkDTS: function() {
+		var _this = this;
+		
+		this.getRSSContent(this.dtsUrl, function(){
+			for (var i = 0; i < _this.getcount(); i++) {
+				_this.thmThemes[i] = null;
+				_this.thmThemes[i] = {};
+			}
+	
+			_this.thmThemes[0]['name']  = 'day';
+			_this.thmThemes[0]['theme'] = 'style.day.css';
+			_this.thmThemes[0]['start'] = RSSData.Detail.sunrise;
+			_this.thmThemes[0]['end']   = RSSData.Detail.sunset;
+	
+			_this.thmThemes[1]['name']  = 'night';
+			_this.thmThemes[1]['theme'] = 'style.night.css';
+			_this.thmThemes[1]['start'] = RSSData.Detail.sunset;
+			_this.thmThemes[1]['end']   = RSSData.Detail.sunrise;
+		});
+	},
+	
+	getRSSContent: function(url, callback) {
+	    var randomnumber = Math.floor(Math.random()*1000001);
+		url += '?r=' + randomnumber;
+		if (jQuery.support.scriptEval) { 
+	        var old = document.getElementById('div_Theme_Processor_Container');  
+	        if (old != null) {  
+	             old.parentNode.removeChild(old);  
+	             delete old;  
+	        } 
+	        
+			var head = document.getElementsByTagName('head')[0]; 
+	        var script = document.createElement('script');
+	        script.id = 'div_Theme_Processor_Container';
+	        script.type = 'text/javascript';
+	        script.onload = callback; 
+	        script.src = url; 
+	        head.appendChild(script);  
+	    } else {
+	       $.getScript(url, function(){
+	            callback();
+	      });
+		}
+	},
 }
