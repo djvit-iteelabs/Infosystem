@@ -13,7 +13,8 @@
 
 	    var settings = {
 	      'direction' : 'V', // V || H
-	      'threshold' : '20',
+	      'threshold' : 20,
+		  'animatedScroll': 100,
 		  'callback' : function(){ /*alert('Swipe completed callback')*/} 
 	    };
 		var downX, upX, downY, upY, origX, origY, mDown;
@@ -40,6 +41,7 @@
 			}
 			indicator.css('left', mask.css('width')); // Set the location of indicator
 			indicator.css('top', '0px');
+			indicator.height(Math.round((mask.height() / $this.height()) * mask.height()));
 			
 			function updateIndicator()
 			{
@@ -121,8 +123,7 @@
 					var top = parseInt($this.css('top').replace('px', ''));
 
 					if ((Math.abs(diffX) > settings.threshold) || (Math.abs(diffY) > settings.threshold)) {
-		
-						
+
 						// Move / Restore original position if exceeded limits
 						if (settings.direction == 'V') {
 							if (top > 0 ) {
@@ -130,15 +131,19 @@
 								 updateIndicator();
 							} else if (($this.height() + top) <  $this.parent().height()) {
 								$this.animate({ top: ($this.height() - $this.parent().height())*-1 }, 600, function(){ settings.callback($this); })
-								updateIndicator(($this.height() - $this.parent().height())*-1); 
+								updateIndicator(); 
 							} else {
-								if (diffY > 0) { 
-									$this.animate({ top: top + 100 }, 600, function(){ settings.callback($this); });
-									updateIndicatorAnimated(100); 
-								} else { 
-									$this.animate({ top: top - 100 }, 600, function(){ settings.callback($this); });
-									updateIndicatorAnimated(-100); 
-								}
+								// Calculate animated scrolling distance
+								var scrollY = settings.animatedScroll;
+								if ( (Math.abs(top) < settings.animatedScroll) && (diffY > 0)) 
+									scrollY = Math.abs(top);
+								else if ( ((($this.height() + top) - $this.parent().height()) < settings.animatedScroll) && (diffY < 0))  
+									scrollY = (($this.height() + top) - $this.parent().height());
+								
+								if (diffY < 0) scrollY = scrollY *-1; 
+								
+								$this.animate({ top: top + scrollY}, 600, function(){ settings.callback($this); });
+								updateIndicatorAnimated(scrollY); 
 							}
 						} else if (settings.direction == 'H') {
 							// TODO: Add horizontal scrolling support
