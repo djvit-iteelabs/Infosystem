@@ -7,6 +7,11 @@ var chSearchMap = {
 	container : null,
 	lat : null,
 	lon : null,
+	panshift : null,
+	startx : null,
+	starty :  null,
+	x : null,
+	y : null,
 	
 	initMap: function(map_container){
 		if (typeof(SearchChMap) !== 'function') {
@@ -21,10 +26,15 @@ var chSearchMap = {
 			else {
 				this.lat = 47.378315;
 				this.lon = 9.538313;
+				this.x = 758549;
+				this.y = 249618;
+				this.startx = this.x;
+				this.starty = this.y;
+				this.panshift = 100;
 				this.container = map_container;
 				this.map = new SearchChMap({
 					container: this.container,
-					center: [this.lat, this.lon],
+					center: [this.x, this.y],
 					zoom: "0.5",
 					type: "aerial",
 					poigroups: "-",
@@ -33,7 +43,6 @@ var chSearchMap = {
 				});
 				this.defaultPOI();
 				this.map.disable("clickzoom");
-				
 			}
 		} else { this.resetMap(); }
 	},
@@ -92,7 +101,28 @@ var chSearchMap = {
 			});
 			chSearchMap.map.addPOI(poi);
 		}			
-	}
+	},
+	
+	moveUp : function(){
+		chSearchMap.starty += chSearchMap.panshift;
+		chSearchMap.map.set({center : [chSearchMap.startx, chSearchMap.starty]});
+	},
+
+	moveRight : function(){
+		chSearchMap.startx += chSearchMap.panshift;
+		chSearchMap.map.set({center : [chSearchMap.startx, chSearchMap.starty]});
+	},	
+
+	moveDown : function(){
+		chSearchMap.starty -= chSearchMap.panshift;
+		chSearchMap.map.set({center : [chSearchMap.startx, chSearchMap.starty]});
+	},
+
+	moveLeft : function(){
+		chSearchMap.startx -= chSearchMap.panshift;
+		chSearchMap.map.set({center : [chSearchMap.startx, chSearchMap.starty]});
+	}	
+
 }
 
 /**
@@ -107,6 +137,9 @@ var chLandMap = {
 	lon : null,
 	x : null, 
 	y : null,
+	startx : null,
+	starty : null,
+	panshift : null,
 	
 	initMap: function(map_container) {
 		if (typeof(SearchChMap) !== 'function') {
@@ -121,6 +154,10 @@ var chLandMap = {
 			else {
 				this.x = 759943;
 				this.y = 249211;
+				this.startx = this.x;
+				this.starty = this.y;
+				this.panshift = 100;
+				
 				this.container = map_container;
 				this.map = new SearchChMap({
 					container: this.container,
@@ -195,5 +232,26 @@ var chLandMap = {
 				zoom: 0.25
 			});
 		}
+	},
+	
+	moveUp : function(){
+		chLandMap.starty += chLandMap.panshift;
+		chLandMap.map.set({center : [chLandMap.startx, chLandMap.starty]});
+	},
+
+	moveRight : function(){
+		chLandMap.startx += chLandMap.panshift;
+		chLandMap.map.set({center : [chLandMap.startx, chLandMap.starty]});
+	},	
+
+	moveDown : function(){
+		chLandMap.starty -= chLandMap.panshift;
+		chLandMap.map.set({center : [chLandMap.startx, chLandMap.starty]});
+	},
+
+	moveLeft : function(){
+		chLandMap.startx -= chLandMap.panshift;
+		chLandMap.map.set({center : [chLandMap.startx, chLandMap.starty]});
 	}	
+	
 }

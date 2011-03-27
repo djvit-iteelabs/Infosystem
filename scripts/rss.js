@@ -61,7 +61,7 @@ RSS.prototype  = {
 		// Back to List event handler
 		$('.buttonToList').click(function(){
 			$('div[class*="lrSlider"]').animate({"left": "+=1080px"}, "slow");
-			
+
 			// Restore bottom back button function
 			$('[id*="btn"]').unbind('click');
 			$('[id*="btn"]').click(function(){
@@ -138,6 +138,12 @@ RSS.prototype  = {
 				if (scr == 'true') return false;
 				var detailsUrl = 'data/' + $(this).attr('data') + '.data'; 
 				var clickElm = $(this);
+				
+				// Save data
+				_this.infoSys.database.addRecord(_this.infoSys.getDateTimeString(), 
+												 _this.infoSys.activePage.id, 
+												 clickElm.attr('title'));
+				
 				_this.getRSSContent(detailsUrl, function(){
 					$(targetContainer).parent().find('#rssDetailTitle').html(clickElm.attr('title'));
 					$(targetContainer).parent().find('#rssDetailTarget').html(RSSData.Detail);
@@ -157,8 +163,6 @@ RSS.prototype  = {
 					$('[id*="btn"]').click(function(){
 						$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
 							$('div[class*="lrSlider"]').animate({"left": "+=1080px"}, "slow");
-							// Save data
-							_this.infoSys.database.addRecord(_this.infoSys.getDateTimeString(), _this.infoSys.activePage.id, detailsUrl);
 							
 							$('[id*="btn"]').unbind('click');
 							$('[id*="btn"]').click(function(){
