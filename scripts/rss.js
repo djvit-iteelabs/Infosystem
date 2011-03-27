@@ -86,6 +86,7 @@ RSS.prototype  = {
 			$('body').append('<div id="div_Rss_Content_Container" style="display:none;">' + RSSData.Content + '</div>');
 			
 			// Find each 'item' in the file and parse it
+			$(targetContainer).find('#divItemsList').html('');
 			$('#div_Rss_Content_Container').find('item').each( function(index) {
 				// Fetch title, URL, description and publication date
 				var $item = $(this);
