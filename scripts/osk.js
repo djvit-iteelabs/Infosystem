@@ -83,7 +83,7 @@ OSK.prototype = {
 					// Add Button SPAN
 					var oskButton = document.createElement("span");
 								
-					$(oskButton).text(button.text);
+					$(oskButton).html(button.text);
 					$(oskButton).attr('class', 'oskButton shadow');
 					$(lineContainer).append(oskButton);
 					
@@ -124,6 +124,7 @@ OSK.prototype = {
 									$(oskButton).click(function(){
 										if (typeof(_this.oskCallback) === 'function') {
 											_this.oskCallback($(_this.oskTarget).val());
+											$(_this.oskTarget).val('');
 										}
 										_this.hideKeyboard();
 

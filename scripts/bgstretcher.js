@@ -1,6 +1,6 @@
 /*
 	Background Stretcher jQuery Plugin
-	© 2009 ajaxBlender.com
+	ï¿½ 2009 ajaxBlender.com
 	For any questions please visit www.ajaxblender.com 
 	or email us at support@ajaxblender.com
 	
@@ -118,8 +118,8 @@
 		$(containerStr + ' LI').removeClass('bgs-current');
 		next.addClass('bgs-current');
 		
-		next.fadeIn( $.fn.bgStretcher.settings.slideShowSpeed );
-		current.fadeOut( $.fn.bgStretcher.settings.slideShowSpeed );
+		next.fadeIn( $.fn.bgStretcher.settings.slideShowSpeed, 'linear' );
+		current.fadeOut( $.fn.bgStretcher.settings.slideShowSpeed, 'linear' );
 		
 		if(!_bgStretcherPause){
 		  _bgStretcherTm = setTimeout('$.fn.bgStretcher.slideShow()', $.fn.bgStretcher.settings.nextSlideDelay);
@@ -132,8 +132,8 @@
 		resizeProportionally:       true,
 		resizeAnimate:              false,
 		images:                     [],
-		imageWidth:                 1024,
-		imageHeight:                768,
+		imageWidth:                 1080,
+		imageHeight:                1920,
 		nextSlideDelay:             3000,
 		slideShowSpeed:             'normal',
 		slideShow:                  true

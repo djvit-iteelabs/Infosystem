@@ -136,6 +136,15 @@ var chLandMap = {
 				this.defaultPOI();
 			}
 		} else { this.resetMap(); }
+		
+		//
+		$('#' + map_container).bind('mousemove click', function() {
+			var tooltip = $(this).find('table.tooltip');			
+			if (tooltip.length > 0) {
+				tooltip.find('.tttitle').next().html('');
+				tooltip.find('.ttform').html('');
+			}
+		});
 	},
 	
 	resetMap : function(){

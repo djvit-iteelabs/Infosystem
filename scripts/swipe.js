@@ -34,13 +34,33 @@
 			// If content is small than mask - no need in scroll
 			if (mask.height() > $this.height()) return;
 			
+			// Add UP - DOWN buttons
+			var btnUp = mask.find('.buttonUp');
+			if ((typeof(btnUp) === 'undefined') || (btnUp == null) || (btnUp.length == 0)) {
+				mask.append('<div class="buttonUp"><img alt="Up" src="images/pan.up.day.png"></div>');
+				btnUp = mask.find('.buttonUp');
+			}
+			$(btnUp).css('left', (mask.width() - $(btnUp).width() + 10) + 'px'); // Set the location of indicator
+			$(btnUp).css('top', '0px');
+
+			var btnDown = mask.find('.buttonDown');
+			if ((typeof(btnDown) === 'undefined') || (btnDown == null) || (btnDown.length == 0)) {
+				mask.append('<div class="buttonDown"><img alt="Down" src="images/pan.down.day.png"></div>');
+				btnDown = mask.find('.buttonDown');
+			}
+			$(btnDown).css('left', (mask.width() - $(btnDown).width() + 10) + 'px'); // Set the location of indicator
+			$(btnDown).css('top', (mask.height() - $(btnDown).height()*2) + 'px');
+			
+			var topOffset = $(btnUp).height() + $(btnDown).height();
+			
+			// Add indicator
 			var indicator = mask.find('.scrollIndicator');
 			if ((typeof(indicator) === 'undefined') || (indicator == null) || (indicator.length == 0)) {
 				mask.append('<div class="scrollIndicator"></div>');
 				indicator = mask.find('.scrollIndicator');
 			}
 			indicator.css('left', mask.css('width')); // Set the location of indicator
-			indicator.css('top', '0px');
+			indicator.css('top', (-1 * topOffset) + 'px');
 			indicator.height(Math.round((mask.height() / $this.height()) * mask.height()));
 			
 			function updateIndicator()
@@ -58,7 +78,7 @@
 
 				var iTop = Math.round(Math.abs(dTop) * ratio);
 				
-				indicator.css('top', iTop + "px");
+				indicator.css('top', (iTop - topOffset) + "px");
 			}
 
 			function updateIndicatorAnimated(offset)
@@ -72,12 +92,14 @@
 				var ratio = iTravel / dTravel;
 				var iOffset = Math.round(offset * ratio);
 				
-				indicator.animate({ top: iTop + iOffset*-1}, 600);
+				indicator.animate({ top: iTop - iOffset - topOffset}, 600);
 			}
 			
 			// Bind a gesture handler
-			$this.bind('mousedown', function (e) {
+			/*
+				$this.bind('mousedown', function (e) {
 				$('body').attr('scrolled', 'false');
+				$('body').disableSelection();
 				mDown = true;
 				e.stopPropagation();
 				downX = e.originalEvent.pageX;
@@ -90,6 +112,7 @@
 				// Bind movement events
 				$('body').unbind();
                 $('body').bind('mousemove', function (e) {
+					$('body').disableSelection();
 					if (mDown == false) return false; // If mouse is not pressed - just ignore movement
 					
                     e.preventDefault(); // Prevent default scrolling
@@ -114,6 +137,7 @@
 				
 				// Bind drag-end event
                 $('body').bind('mouseup', function (e) {
+					$('body').disableSelection();
 					e.stopPropagation();
 					mDown = false;
 					$('body').unbind();
@@ -164,7 +188,7 @@
 					document.infoSystem.lastActivity = null;
 					document.infoSystem.lastActivity = new Date();
                 });
-            });
+            }); */
     	});
 	};
 })( jQuery );

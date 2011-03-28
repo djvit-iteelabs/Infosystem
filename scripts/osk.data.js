@@ -25,6 +25,8 @@ var oskData = {
 						{ "text":"I", "char":"I", "type":"1" },
 						{ "text":"O", "char":"O", "type":"1" },
 						{ "text":"P", "char":"P", "type":"1" },
+						{ "text":"", "char":"", "type":"0" },
+						{ "text":"", "char":"", "type":"0" },
 						{ "text":"◄", "char":"", "type":"2", "command":"backspace" }
 					]
 				}, 
@@ -144,6 +146,8 @@ var oskData = {
 						{ "text":"P", "char":"P", "type":"1" },
 						{ "text":"Ü", "char":"Ü", "type":"1" },
 						{ "text":"", "char":"", "type":"0" },
+						{ "text":"", "char":"", "type":"0" },
+						{ "text":"", "char":"", "type":"0" },
 						{ "text":"◄", "char":"", "type":"2", "command":"backspace" }
 					]
 				}, 
@@ -182,7 +186,7 @@ var oskData = {
 				{
 					"buttons":[
 						{ "text":".123", "char":"", "type":"2", "command":"switchMode" },
-						{ "text":"", "char":"", "type":"2", "command":"space" },
+						{ "text":"&nbsp;", "char":"", "type":"2", "command":"space" },
 						{ "text":".123", "char":"", "type":"2", "command":"switchMode" }
 					]
 				}
@@ -204,6 +208,8 @@ var oskData = {
 						{ "text":"9", "char":"9", "type":"1" },
 						{ "text":"0", "char":"0", "type":"1" },
 						{ "text":"+", "char":"+", "type":"1" },
+						{ "text":"", "char":"", "type":"0" },
+						{ "text":"", "char":"", "type":"0" },
 						{ "text":"", "char":"", "type":"0" },
 						{ "text":"◄", "char":"", "type":"2", "command":"backspace" }
 					]
@@ -242,9 +248,8 @@ var oskData = {
 				},
 				{
 					"buttons":[
-						{"text":"","char":"","type":"0"},
 						{ "text":"ABC", "char":"", "type":"2", "command":"switchMode" },
-						{ "text":"", "char":"", "type":"2", "command":"space" },
+						{ "text":"&nbsp;", "char":"", "type":"2", "command":"space" },
 						{ "text":"ABC", "char":"", "type":"2", "command":"switchMode" }
 					]
 				}

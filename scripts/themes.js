@@ -95,14 +95,15 @@ themesRotator.prototype = {
 					th = this.thmThemes[i]['theme'];
 					
 					$("div.menuItem img, div[id^=page] img").each(function(){
-						var str = $(this).attr("src");
+						var str = '';
+						str = $(this).attr("src");
 						
 						if ((_this.thmName == null) || (_this.thmName === 'undefined'))
 							str = str.replace("###",name);
 						else
 							str = str.replace(_this.thmName,name);
 							
-						$(this).attr("src",str);	
+						$(this).attr("src", str);	
 					});
 					
 					this.thmName = this.thmThemes[i]['name'];

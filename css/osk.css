@@ -1,11 +1,11 @@
 #oskContainer {
 	position: absolute;
-	left: 60px;
-	top: 1110px;
+	left: 10px;
+	top: 1070px;
 	/*bottom: -1100px;*/
 	height:auto;
-	width:auto;
-	padding: 10px;
+	width:1060px;
+	padding: 5px;
 	background: #FFFFFF;
 	display: none;
 	/*border: 1px solid black;*/
@@ -17,12 +17,12 @@
 
 .oskButton {
 	display:inline-block;
-	width: 40px;
-	height: 30px;
-	padding: 8px;
-	margin : 8px;
+	width: 60px;
+	height: 50px;
+	padding: 15px 4px 4px 4px;
+	margin : 7px 7px 7px 6px;
 	font-weight: bold;
-	font-size: 30px; 
+	font-size: 34px; 
 	text-shadow: 2px 2px 2px #FFFFFF;	
 	text-align: center;
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#CCCCCC));
@@ -52,7 +52,7 @@
 }
 
 #space {
-	width: 540px;
+	width: 760px;
 }
 
 #enter {
@@ -60,7 +60,7 @@
 }
 
 #backspace {
-	width: 50px;
+	width: 64px;
 }
 
 #switchCase {
@@ -68,5 +68,5 @@
 }
 
 #switchMode{
-	width: 80px;
+	width: 115px;
 }

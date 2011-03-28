@@ -79,10 +79,16 @@ InfoSystem.prototype = {
 							'images/sample-1.jpg', 
 							'images/sample-2.jpg', 
 							'images/sample-3.jpg', 
-							'images/sample-4.jpg'
+							'images/sample-4.jpg',
+							'images/sample-5.jpg', 
+							'images/sample-6.jpg', 
+							'images/sample-7.jpg', 
+							'images/sample-8.jpg',
+							'images/sample-9.jpg', 
+							'images/sample-10.jpg' 
 							],
 					slideShowSpeed: 5000,
-					nextSlideDelay: 10000
+					nextSlideDelay: 20000
 				});
 
 		// Initialize RSS readers
@@ -260,10 +266,7 @@ InfoSystem.prototype = {
 				}
 			}
 		});
-		
-		// Contact swipe
-		$('#divContactContent').swipe();
-		
+	
 		// Initialize Database
 		this.database = new DB();
 		this.database.init();
@@ -422,6 +425,8 @@ InfoSystem.prototype = {
 				
 			case 'pageNews':
 				this.rss.updatePageList('pageNews');
+				// Contact swipe
+				$('#divContactContent').swipe();
 				break;	
 				
 			case 'pageVideo':

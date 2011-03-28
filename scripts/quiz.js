@@ -50,6 +50,10 @@ QUIZ.prototype  = {
 		// Bind answer clicks
 		$('.quizNormal ul').click(function(e) {
 			var answer = $(e.target).attr('answer');
+			if (typeof(answer) === 'undefined') {
+				answer = $(e.target).parent().attr('answer');
+			}
+			if (typeof(answer) === 'undefined')  return;
 			
 			$(e.target).css('-webkit-box-shadow', '0px 0px 0px #000000').delay(500).css('-webkit-box-shadow', '10px 10px 10px #444444');
 			

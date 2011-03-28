@@ -1,7 +1,8 @@
 /**
  * Generic classes
  */
-body {
+
+html, body {
 	margin: 0px;
 	padding: 0px;
 	background: #000000 url(../images/bg.night.png) no-repeat;
@@ -9,6 +10,7 @@ body {
 	height: 1920px;
 	width: 1080px;
 	/*overflow: hidden;*/
+	cursor: url(../images/empty.cur);
 }
 
 #imgWelcome {
@@ -85,7 +87,7 @@ body {
 #pageLanding {
 	height: 1920px;
 	width:1080px;
-	background: transparent url(../images/bg.night.png) no-repeat;
+	background: transparent;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -701,11 +703,11 @@ div[id*="cat"] img {
 	-webkit-box-shadow: 10px 10px 10px #444444;
 
 	width: 880px;
-	height: 52px;
+	height: 110px;
 	margin: 0px 70px 0px 70px;
 	padding: 0px 20px 0px 20px;
 	text-align: left;
-	font-size: 36px;
+	font-size: 44px;
 	font-weight: bold;
 	color: #FFFFFF;
 	text-shadow: 1px 1px 0px #000000;
@@ -723,9 +725,9 @@ div[id*="cat"] img {
 .divListTitle span {
 	display: inline-block;
 	vertical-align: top;
-	padding: 5px 0px 0px 10px;
-	min-width: 250px;
-	height: 52px;
+	padding: 30px 0px 0px 10px;
+	min-width: 230px;
+	height: 90px;
 	max-width: 720px;
 	line-height: 52px;
 	
@@ -771,7 +773,7 @@ span.titleLong {
 }
 
 .swipeMaskSmall {
-	height: 525px;
+	height: 490px;
 	width: 880px;
 	margin: 0px 70px 0px 52px;
 	padding: 0px 20px 0px 20px;
@@ -814,6 +816,26 @@ span.titleLong {
 	background: #000000;
 	opacity: 0.5;
 	
+}
+
+.buttonUp {
+	height: 102px;
+	width: 102px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background: transparent url(../images/pan.up.night.png);
+	opacity: 0.6;
+}
+
+.buttonDown {
+	height: 102px;
+	width: 102px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background: transparent url(../images/pan.down.night.png);
+	opacity: 0.6;
 }
 
 .swipeMaskSchedule {
@@ -859,8 +881,9 @@ span.titleLong {
 
 .rssData table tbody tr td a {
 	display: inline-block;
-	width: 300px;
+	width: 380px;
 	word-wrap:break-word;
+	font-size:25px;
 }
 
 .rssData table tbody tr td div span {
@@ -952,6 +975,10 @@ span.titleLong {
 	padding: 0px 0px 0px 0px;
 	width:250px;
 	vertical-align: top;
+}
+
+.rssItemDate span{
+	font-size: 26px;
 }
 
 .rssItem .rssItemDescription {
@@ -1104,18 +1131,20 @@ span.titleLong {
 }
 
 .buttonToList {
-	height: 52px;
-	width: 73px;
-	padding: 0px 30px 0px 0px;
-	background: transparent url(../images/back.icon.night.png) no-repeat;
+	height: 102px;
+	width: 102px;
+	padding: 0px 0px 0px 0px;
+	margin: 5px 0px 0px 0px;
+	background: transparent url(../images/prev.night.png) no-repeat;
 	display: inline-block;
 }
 
 .buttonToNext {
-	height: 52px;
-	width: 73px;
+	height: 102px;
+	width: 102px;
 	padding: 0px 0px 0px 0px;
-	background: transparent url(../images/back.icon.next.night.png) no-repeat;
+	margin: 5px 0px 0px 0px;
+	background: transparent url(../images/next.night.png) no-repeat;
 	display: inline-block;
 	float: right;
 }
@@ -1232,9 +1261,11 @@ span.titleLong {
 	transition: all 0.2s ease-in-out;
 	
 	margin: 10px 0px 20px 0px; 
-	padding: 10px 20px 10px 20px; 
+	padding: 25px 20px 10px 20px; 
 	width: 790px;
+	min-height: 60px;
 	display: inline-block;
+	font-size: 40px;
 }
 
 .quizNormal ul li img {
@@ -1251,7 +1282,7 @@ span.titleLong {
 	height: auto;
 	width: 780px;
 	margin: 200px 100px 200px 100px;
-	padding: 50px;
+	padding: 40px 50px 15px 50px;
 	
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -1269,7 +1300,7 @@ span.titleLong {
 	height: auto;
 	width: 780px;
 	margin: 200px 100px 200px 100px;
-	padding: 50px;
+	padding: 40px 50px 15px 50px;
 	
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;

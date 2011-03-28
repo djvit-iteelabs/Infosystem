@@ -7,7 +7,7 @@
 		<link type="text/css" rel="stylesheet" href="css/osk.css" />
 		<link type="text/css" rel="stylesheet" href="css/bgstretcher.css" />
 		
-		<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>		
+		<script type="text/javascript" src="scripts/jquery-1.5.1.min.js"></script>		
 		<script type="text/javascript" src="scripts/jquery-ui-1.8.9.custom.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery.easing.js"></script>
 		<script type="text/javascript" src="scripts/jgesture-1.0.3.js"></script>
@@ -30,6 +30,7 @@
 		<script type="text/javascript" src="scripts/db.js"></script>
 		
 		<script type="text/javascript">
+			jQuery.fx.interval = 40;
 			$(document).ready(function(){				
 				// Intialize InfoSystem
 				document.infoSystem = new InfoSystem();
@@ -202,15 +203,15 @@
 				<div id="quizPopupOk">
 					<div id="quizAnswerDescription"></div><br>
 					<div id="quizNextQuestion">
-						<img alt="Next Question" src="images/back.icon.next.###.png">
+						<img alt="Next Question" src="images/next.###.png">
 					</div>
 				</div>
 				<div id="quizPopupFail">
 					<div id="quizAnswerDescription">
-						Ihre Antwort ist falsch. Bitte denken ein bisschen und holen Sie Ihre Antwort.
+						Dies ist leider nicht richtig. Bitte denken Sie ein wenig nach und versuchen Sie es erneut.
 					</div><br><br>
 					<div id="quizPrevQuestion">
-						<img alt="Next Question" src="images/back.icon.###.png">
+						<img alt="Next Question" src="images/prev.###.png">
 					</div>
 				</div>
 				

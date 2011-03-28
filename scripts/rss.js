@@ -96,6 +96,14 @@ RSS.prototype  = {
 				var description = $item.find('description').text();
 				description = description.replace(/\n/gi, '<br />');
 				var pubDate = $item.find('date').html();
+				var pubDateHr = '';
+				if ((pubDate.indexOf('<br>') > 0) && (typeof(pubDate) !== 'undefined') && (pubDate != null) && (pubDate != '')) {
+					pubDateHr = pubDate.substring(pubDate.indexOf('<br>') + 4, pubDate.length);
+					pubDate = pubDate.substring(0, pubDate.indexOf('<br>'));
+					pubDateHr = '<span>' + pubDateHr + '</span>';
+					pubDate = pubDate + '<br>' + pubDateHr;
+				}
+				
 				var startIdx = link.indexOf('_id=') + 4;
 				var endIdx = link.indexOf('&', startIdx);
 				if (endIdx < 0) endIdx = link.length;
@@ -146,9 +154,30 @@ RSS.prototype  = {
 					$(targetContainer).parent().find('#rssDetailTarget').find('table').removeAttr('width');
 					
 					// Remove not needed content
-					$(targetContainer).parent().find('.rssData table').last().html('');
+					//$(targetContainer).parent().find('.rssData table').last().html('');
 					$(targetContainer).parent().find('div span').css('font-size', '');
 					$('td').prepend('<br>');
+					
+					// Remove links to PDFs
+					$(targetContainer).parent().find('a').each(function() {
+						if ($(this).text().indexOf('.pdf') > 0) {
+							$(this).parent().html('');
+						}
+					});
+					
+					// Remove Zur Übersicht
+					$(targetContainer).parent().find('table').each(function() {
+						if ($(this).text().indexOf('zur Übersicht') > 0) {
+							$(this).html('');
+						}
+					});
+					
+					// Remove extra <BR> before tables (Events category)
+					$(targetContainer).find('table').each(function() {
+						if ($(this).prev().is('br')) {
+							$(this).prev().html('');
+						}
+					});
 					
 					// Update address if present
 					_this.processAddress(targetContainer);
@@ -172,7 +201,6 @@ RSS.prototype  = {
 					
 					// Bind Swipe handlers
 					$(targetContainer).parent().find('#rssDetailTarget').swipe();
-					//$('#rssDetailTarget').parent().children('.scrollIndicator').css('top', '0px');
 					
 					// Show details animated
 					$('div[class*="lrSlider"]').animate({'left': '-=1080px'}, 'slow');
