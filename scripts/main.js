@@ -239,6 +239,46 @@ InfoSystem.prototype = {
 			chSearchMap.streetView();	
 		});
 		
+		$("#panUp").click(function(){
+			$(this).children().hide("puff",{},500);
+			chSearchMap.moveUp();
+		});
+
+		$("#panRight").click(function(){
+			$(this).children().hide("puff",{},500);
+			chSearchMap.moveRight();
+		});
+
+		$("#panDown").click(function(){
+			$(this).children().hide("puff",{},500);
+			chSearchMap.moveDown();
+		});
+
+		$("#panLeft").click(function(){
+			$(this).children().hide("puff",{},500);
+			chSearchMap.moveLeft();
+		});
+
+		$("#panLandUp").click(function(){
+			$(this).children().hide("puff",{},500);
+			chLandMap.moveUp();
+		});
+
+		$("#panLandRight").click(function(){
+			$(this).children().hide("puff",{},500);
+			chLandMap.moveRight();
+		});
+
+		$("#panLandDown").click(function(){
+			$(this).children().hide("puff",{},500);
+			chLandMap.moveDown();
+		});
+
+		$("#panLandLeft").click(function(){
+			$(this).children().hide("puff",{},500);
+			chLandMap.moveLeft();
+		});
+
 		quiz = new QUIZ();
 		quiz.init();
 		
@@ -368,9 +408,11 @@ InfoSystem.prototype = {
 		this.lastActivity = new Date();
 		this.activityCheckerEnabled = true;
 		
+		//alert(this.activePage.id);
+		
 		// Save stats data
 		this.database.addRecord(this.getDateTimeString(), this.activePage.id, '');
-
+			
 		// Switch to the needed page
 		switch(this.activePage.id) {
 			
@@ -470,7 +512,7 @@ InfoSystem.prototype = {
 	getDateString: function() {
 		var date = new Date();
 		var dt = date.getDate();
-		var mn = date.getMonth();
+		var mn = date.getMonth() + 1;
 		var yr = date.getFullYear();
 		
 		return dt + '/' + mn + '/' + yr;

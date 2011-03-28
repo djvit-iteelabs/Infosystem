@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>	
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=iso-8859-1" />
+		<title>PA - InfoSystem</title>
+		<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="scripts/db.js"></script>
+	</head>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var stat = new DB();
+			
+			//window.localStorage.clear();
+			
+			$("body").append(stat.getRecords());
+			$("body").append(stat.getRecordsGrouped());
+			
+		});
+	</script>
+	
+    <body>
+    	<h1>Site Statistics</h1>
+		<hr/>
+    </body>
+</html>
