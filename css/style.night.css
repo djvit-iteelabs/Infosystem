@@ -9,8 +9,8 @@ html, body {
 	font-family: Helvetica, Arial,  sans-serif;
 	height: 1920px;
 	width: 1080px;
-	/*overflow: hidden;*/
-	cursor: url(../images/empty.cur);
+	/*overflow: hidden;
+	cursor: url(../images/empty.cur);*/
 }
 
 #imgWelcome {
@@ -168,7 +168,7 @@ div[id*="page"] {
 	float:left;
 	text-align: center;
 	padding: 00px 0px 0px 0px;
-	margin: 225px 0px 0px 205px;
+	margin: 190px 0px 0px 120px;
 }
 
 #mainFootRight {
@@ -901,21 +901,22 @@ span.titleLong {
 .buttonUp {
 	height: 102px;
 	width: 102px;
-	position: relative;
+	position: absolute;
 	top: 0px;
 	left: 0px;
-	background: transparent url(../images/pan.up.night.png);
-	opacity: 0.6;
+	background: transparent url(../images/pan.up.day.png);
+	opacity: 0.7;
 }
 
 .buttonDown {
 	height: 102px;
 	width: 102px;
-	position: relative;
+	position: absolute;
 	top: 0px;
 	left: 0px;
-	background: transparent url(../images/pan.down.night.png);
-	opacity: 0.6;
+	background: transparent url(../images/pan.down.day.png);
+	opacity: 0.7;
+	z-index:1000;
 }
 
 .swipeMaskSchedule {
@@ -1199,8 +1200,8 @@ span.titleLong {
 }
 
 .buttonBack {
-	height: 102px;
-	width: 272px;
+	height: 161px;
+	width: 465px;
 	margin: 0px 0px 0px 0px;
 	background: transparent url(../images/back.btn.night.png) no-repeat;
 	

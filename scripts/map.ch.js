@@ -105,22 +105,22 @@ var chSearchMap = {
 	
 	moveUp : function(){
 		chSearchMap.starty += chSearchMap.panshift;
-		chSearchMap.map.set({center : [chSearchMap.startx, chSearchMap.starty]});
+		chSearchMap.map.go({center : [chSearchMap.startx, chSearchMap.starty]});
 	},
 
 	moveRight : function(){
 		chSearchMap.startx += chSearchMap.panshift;
-		chSearchMap.map.set({center : [chSearchMap.startx, chSearchMap.starty]});
+		chSearchMap.map.go({center : [chSearchMap.startx, chSearchMap.starty]});
 	},	
 
 	moveDown : function(){
 		chSearchMap.starty -= chSearchMap.panshift;
-		chSearchMap.map.set({center : [chSearchMap.startx, chSearchMap.starty]});
+		chSearchMap.map.go({center : [chSearchMap.startx, chSearchMap.starty]});
 	},
 
 	moveLeft : function(){
 		chSearchMap.startx -= chSearchMap.panshift;
-		chSearchMap.map.set({center : [chSearchMap.startx, chSearchMap.starty]});
+		chSearchMap.map.go({center : [chSearchMap.startx, chSearchMap.starty]});
 	}	
 
 }

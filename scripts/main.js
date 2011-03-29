@@ -37,6 +37,9 @@ InfoSystem.prototype = {
 		
 		// Disable text selections
 		$('body').disableSelection();
+		/*$('body').dblclick(function(e){ 
+    		e.preventDefault();
+		}); */
 
 		// Initialize pages
 		this.pages = new Array();
