@@ -181,6 +181,9 @@ var chLandMap = {
 				tooltip.find('.tttitle').next().html('');
 				tooltip.find('.ttform').html('');
 			}
+			$(this).find('a').each(function() {
+				$(this).removeAttr('href');
+			});
 		});
 	},
 	

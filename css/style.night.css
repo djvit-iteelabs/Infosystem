@@ -335,7 +335,7 @@ div[id*="page"] {
 
 #zoomOut {
 	position: absolute;
-	top: 420px;
+	top: 440px;
 	left: 100px;
 	height: 102px;
 	width: 146px;
@@ -355,7 +355,7 @@ div[id*="page"] {
 
 #satMap {
 	position: absolute;
-	top: 510px;
+	top: 550px;
 	left: 100px;
 	height: 102px;
 	width: 146px;
@@ -365,7 +365,7 @@ div[id*="page"] {
 
 #roadMap {
 	position: absolute;
-	top: 600px;
+	top: 660px;
 	left: 100px;
 	height: 102px;
 	width: 146px;
@@ -375,7 +375,7 @@ div[id*="page"] {
 
 #homeMap {
 	position: absolute;
-	top: 690px;
+	top: 770px;
 	left: 100px;
 	height: 102px;
 	width: 146px;
@@ -465,7 +465,7 @@ div[id*="page"] {
 
 /* Eugene */
 #mapContainerLand {
-	height:750px;
+	height:700px;
 	width: 920px;
 	margin: 0px 80px 0px 80px;
 	border: 3px #555555 solid; 
@@ -473,7 +473,8 @@ div[id*="page"] {
 	-moz-border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-webkit-box-shadow: 10px 10px 10px #444444;
-	top: -6px;
+	top: 10px;
+	
 	color: #000000;
 	font-size: 36px;
 	background: transparent url(../images/map.placeholder.png);
@@ -481,7 +482,7 @@ div[id*="page"] {
 
 #zoomOutLand {
 	position: absolute;
-	top: 810px;
+	top: 930px;
 	left: 100px;
 	height: 102px;
 	width: 146px;
@@ -491,7 +492,7 @@ div[id*="page"] {
 
 #zoomInLand {
 	position: absolute;
-	top: 720px;
+	top: 820px;
 	left: 100px;
 	height: 102px;
 	width: 146px;
@@ -501,7 +502,7 @@ div[id*="page"] {
 
 #satLand {
 	position: absolute;
-	top: 900px;
+	top: 1040px;
 	left: 100px;
 	height: 102px;
 	width: 146px;
@@ -511,7 +512,7 @@ div[id*="page"] {
 
 #roadLand {
 	position: absolute;
-	top: 990px;
+	top: 1150px;
 	left: 100px;
 	height: 102px;
 	width: 146px;
@@ -521,7 +522,7 @@ div[id*="page"] {
 
 #homeLand {
 	position: absolute;
-	top: 1080px;
+	top: 1260px;
 	left: 100px;
 	height: 102px;
 	width: 146px;
@@ -531,7 +532,7 @@ div[id*="page"] {
 
 #panLandUp {
 	position: absolute;
-	top: 720px;
+	top: 820px;
 	left: 810px;
 	height: 102px;
 	width: 102px;
@@ -541,7 +542,7 @@ div[id*="page"] {
 
 #panLandRight {
 	position: absolute;
-	top: 795px;
+	top: 895px;
 	left: 885px;
 	height: 102px;
 	width: 102px;
@@ -551,7 +552,7 @@ div[id*="page"] {
 
 #panLandDown {
 	position: absolute;
-	top: 870px;
+	top: 970px;
 	left: 810px;
 	height: 102px;
 	width: 102px;
@@ -561,7 +562,7 @@ div[id*="page"] {
 
 #panLandLeft {
 	position: absolute;
-	top: 795px;
+	top: 895px;
 	left: 735px;
 	height: 102px;
 	width: 102px;
@@ -571,7 +572,7 @@ div[id*="page"] {
 
 #cornerTLLand {
 	position:absolute;
-	top: 699px;
+	top: 807px;
 	left: 80px; 
 	height: 30px;
 	width: 30px;
@@ -581,7 +582,7 @@ div[id*="page"] {
 
 #cornerTRLand {
 	position:absolute;
-	top: 699px;
+	top: 807px;
 	left: 976px;
 	height: 26px;
 	width: 46px;
@@ -591,7 +592,7 @@ div[id*="page"] {
 
 #cornerBRLand {
 	position:absolute;
-	top: 1425px; 
+	top: 1483px; 
 	left: 979px;
 	height: 45px;
 	width: 42px;
@@ -601,7 +602,7 @@ div[id*="page"] {
 
 #cornerBLLand {
 	position:absolute;
-	top: 1425px; 
+	top: 1483px; 
 	left: 80px;
 	height: 45px;
 	width: 42px;
@@ -1008,7 +1009,7 @@ span.titleLong {
 	border-bottom: 3px solid #000000;
 	
 	width: auto;
-	min-height: 50px;
+	min-height: 75px;
 	max-height: 160px;
 	vertical-align: top;
 	background: transparent;
@@ -1021,7 +1022,7 @@ span.titleLong {
 	
 	width: auto;
 	height: 80px;
-	min-height: 70px;
+	min-height: 75px;
 	max-height: 100px;
 	vertical-align: top;
 	background: transparent;
@@ -1083,7 +1084,7 @@ span.titleLong {
 	border-bottom: 3px solid #000000;
 	
 	width: auto;
-	min-height: 50px;
+	min-height: 75px;
 	max-height: 160px;
 	vertical-align: top;
 	background: transparent;
@@ -1121,6 +1122,7 @@ span.titleLong {
 	font-weight: bold;
 	text-align: left;
 	margin: 0px 0px 0px 100px;
+	width: 900px;
 }
 
 .scheduleItems {
@@ -1397,6 +1399,11 @@ span.titleLong {
 
 #quizNextQuestion {
 	margin: 0px 0px 0px 700px;
+	background: transparent url(../images/next.night.png) no-repeat;
+}
+
+#quizPrevQuestion {
+	background: transparent url(../images/prev.night.png) no-repeat;
 }
 
 #quizMessage {

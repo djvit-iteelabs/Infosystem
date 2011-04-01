@@ -143,8 +143,8 @@ RSS.prototype  = {
 			
 			// Nav to details handler
 			$('[data]').click( function() {
-				var scr = $('body').attr('scrolled'); 
-				if (scr == 'true') return false;
+				//var scr = $('body').attr('scrolled'); 
+				//if (scr == 'true') return false;
 				var detailsUrl = 'data/' + $(this).attr('data') + '.data'; 
 				var clickElm = $(this);
 				
@@ -162,6 +162,7 @@ RSS.prototype  = {
 					// Remove not needed content
 					//$(targetContainer).parent().find('.rssData table').last().html('');
 					$(targetContainer).parent().find('div span').css('font-size', '');
+					$(targetContainer).parent().find('tr td img').css('width', '180px').css('height', 'auto');
 					$('td').prepend('<br>');
 					
 					// Remove links to PDFs

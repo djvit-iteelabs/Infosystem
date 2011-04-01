@@ -154,6 +154,11 @@ InfoSystem.prototype = {
 			$("#bgstretcher").hide();
 		});
 		
+		$(document).dblclick(function(e) {
+			e.preventDefault();
+			return false;
+		});
+		
 		// StandBy page click/touch - moves to the Main/Menu page  
 		$(this.pages['pageLanding']).click(function(){
 			_this.showPage('pageMain');
@@ -164,10 +169,11 @@ InfoSystem.prototype = {
 			_this.checkActivity();
 		}, this.activityCheckInterval);
 		
-		// Intialize buttons
+		/// Intialize buttons
 		$('[id*="btn"]').click(function(){
+			$(this).unbind();
 			$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
-				_this.showPage('pageMain');	
+				_this.showPage('pageMain');
 			});
 		});
 		
@@ -411,7 +417,7 @@ InfoSystem.prototype = {
 		this.lastActivity = new Date();
 		this.activityCheckerEnabled = true;
 		
-		//alert(this.activePage.id);
+		var _this = this;
 		
 		// Save stats data
 		this.database.addRecord(this.getDateTimeString(), this.activePage.id, '');
@@ -438,40 +444,49 @@ InfoSystem.prototype = {
 			
 			case 'pageMap':
 				chSearchMap.resetMap();
+
 				break;
 				
 			case 'pageSchedule':
 				chLandMap.resetMap(); 
+
 				break;
 				
 			case 'pageEvents':
 				this.rss.updatePageList('pageEvents');
+
 				break;
 				
 			case 'pageQuiz':
 				quiz.resetQuiz();
+
 				break;
 				
 			case 'pageTourism':
 				this.rss.updatePageList('pageTourism');
+
 				break;
 				
 			case 'pageHotels':
 				this.rss.updatePageList('pageHotels');
+
 				break;
 				
 			case 'pageRestaurants':
 				this.rss.updatePageList('pageRestaurants');
+
 				break;
 				
 			case 'pageWeather':
 				this.rss.updatePageContent('pageWeather');
+
 				break;
 				
 			case 'pageNews':
 				this.rss.updatePageList('pageNews');
 				// Contact swipe
 				$('#divContactContent').swipe();
+
 				break;	
 				
 			case 'pageVideo':
