@@ -268,7 +268,7 @@ InfoSystem.prototype = {
 			chSearchMap.moveLeft();
 		});
 
-		$("#panLandUp").click(function(){
+		/*$("#panLandUp").click(function(){
 			$(this).children().hide("puff",{},500);
 			chLandMap.moveUp();
 		});
@@ -286,7 +286,7 @@ InfoSystem.prototype = {
 		$("#panLandLeft").click(function(){
 			$(this).children().hide("puff",{},500);
 			chLandMap.moveLeft();
-		});
+		});*/
 
 		quiz = new QUIZ();
 		quiz.init();
