@@ -22,7 +22,7 @@ InfoSystem.prototype = {
 	activePageIndex: null,
 	lastActivity: null,
 	activityCheckInterval: 10000, // Activity check interval
-	lastActivityLimit: 180000, // Last activity in milliseconds (1m)
+	lastActivityLimit: 180000, // Last activity in milliseconds (3m)
 	activityCheckerEnabled: true,
 	eventsAPI: null,
 	map: null,
@@ -60,7 +60,8 @@ InfoSystem.prototype = {
 		this.standbyhand.init(10000, 30000, 5000,"easeInOutQuart");
 		
 		this.showPage('pageLanding');		
-				// Initialize date
+		
+		// Initialize date
 		//$('span[id*="date"]').text(this.getDateTimeString());
 		var timer = new Timer();
 		timer.setDate();
@@ -73,8 +74,8 @@ InfoSystem.prototype = {
 		chLandMap.initMap('mapContainerLand');
 
 		// Initialize On Screen Keyboard
-		this.osk = new OSK();
-		this.osk.init(chSearchMap.findAddress, 'de');
+		//this.osk = new OSK();
+		//this.osk.init(chSearchMap.findAddress, 'de');
 		
 		//Initialize Background SlideShow
 		$(document).bgStretcher({
@@ -171,7 +172,7 @@ InfoSystem.prototype = {
 		
 		/// Intialize buttons
 		$('[id*="btn"]').click(function(){
-			$(this).unbind();
+			//$(this).unbind();
 			$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
 				_this.showPage('pageMain');
 			});
@@ -514,13 +515,17 @@ InfoSystem.prototype = {
 			if (!vidEl.error) vidEl.pause();
 			
 			// Reset OSK
-			this.osk.hideKeyboard();
+			//if (this.osk != null)
+			//	this.osk.hideKeyboard();
 
 			this.showPage('pageLanding');
 			$("#bgstretcher").show();
 			
 			this.standbyhand = new standbyHand();
 			this.standbyhand.init(10000, 30000, 5000,"easeInOutQuart");
+			
+			// Reload the content
+			window.location.reload()
 		}
 	},
 	

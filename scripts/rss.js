@@ -192,15 +192,17 @@ RSS.prototype  = {
 					// Change "back" button handler
 					$('[id*="btn"]').unbind('click');
 					$('[id*="btn"]').click(function(){
+						$('[id*="btn"]').unbind('click');
+						
 						$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
 							$('div[class*="lrSlider"]').animate({"left": "+=1080px"}, "slow");
-							
-							$('[id*="btn"]').unbind('click');
-							$('[id*="btn"]').click(function(){
-								$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
-									_this.infoSys.showPage('pageMain');	
+							setTimeout(function() {
+								$('[id*="btn"]').click(function(){
+									$(this).parent().effect("shake", {times: 1, direction: 'down', distance: 7 }, 200, function(){
+										_this.infoSys.showPage('pageMain');	
+									});
 								});
-							});
+							}, 2000);
 						});
 					});
 					

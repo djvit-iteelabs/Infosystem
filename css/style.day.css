@@ -320,7 +320,7 @@ div[id*="page"] {
 }
 
 #mapContainer {
-	height:1050px;
+	height:1150px;
 	width: 900px;
 	margin: 0px 85px 0px 85px;
 	border: 3px #555555 solid; 
@@ -446,7 +446,7 @@ div[id*="page"] {
 
 #cornerBR {
 	position:absolute;
-	top: 1345px; 
+	top: 1445px; 
 	left: 964px;
 	height: 45px;
 	width: 42px;
@@ -456,7 +456,7 @@ div[id*="page"] {
 
 #cornerBL {
 	position:absolute;
-	top: 1345px; 
+	top: 1445px; 
 	left: 85px;
 	height: 45px;
 	width: 42px;
@@ -573,7 +573,7 @@ div[id*="page"] {
 
 #cornerTLLand {
 	position:absolute;
-	top: 807px;
+	top: 793px;
 	left: 80px; 
 	height: 30px;
 	width: 30px;
@@ -583,7 +583,7 @@ div[id*="page"] {
 
 #cornerTRLand {
 	position:absolute;
-	top: 807px;
+	top: 793px;
 	left: 976px;
 	height: 26px;
 	width: 46px;
@@ -593,7 +593,7 @@ div[id*="page"] {
 
 #cornerBRLand {
 	position:absolute;
-	top: 1483px; 
+	top: 1473px; 
 	left: 979px;
 	height: 45px;
 	width: 42px;
@@ -603,7 +603,7 @@ div[id*="page"] {
 
 #cornerBLLand {
 	position:absolute;
-	top: 1483px; 
+	top: 1473px; 
 	left: 80px;
 	height: 45px;
 	width: 42px;
@@ -907,9 +907,10 @@ span.titleLong {
 	height: 102px;
 	width: 102px;
 	position: absolute;
+	padding: 50px;
 	top: 0px;
 	left: 0px;
-	background: transparent url(../images/pan.up.day.png);
+	background: transparent url(../images/btn.up.day.png) no-repeat;
 	opacity: 0.7;
 }
 
@@ -917,9 +918,10 @@ span.titleLong {
 	height: 102px;
 	width: 102px;
 	position: absolute;
+	padding: 50px;
 	top: 0px;
 	left: 0px;
-	background: transparent url(../images/pan.down.day.png);
+	background: transparent url(../images/btn.down.day.png) no-repeat;
 	opacity: 0.7;
 	z-index:1000;
 }

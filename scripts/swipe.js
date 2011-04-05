@@ -40,16 +40,16 @@
 				mask.append('<div class="buttonUp"><img alt="Up" src="images/pan.up.day.png"></div>');
 				btnUp = mask.find('.buttonUp');
 			}
-			$(btnUp).css('left', (mask.width() - $(btnUp).width() + 45) + 'px'); // Set the location of indicator
-			$(btnUp).css('top', '0px');
+			$(btnUp).css('left', (mask.width() - $(btnUp).width() - 5) + 'px'); // Set the location of indicator
+			$(btnUp).css('top', '-50px');
 
 			var btnDown = mask.find('.buttonDown');
 			if ((typeof(btnDown) === 'undefined') || (btnDown == null) || (btnDown.length == 0)) {
 				mask.append('<div class="buttonDown"><img alt="Down" src="images/pan.down.day.png"></div>');
 				btnDown = mask.find('.buttonDown');
 			}
-			$(btnDown).css('left', (mask.width() - $(btnDown).width() + 45) + 'px'); // Set the location of indicator
-			$(btnDown).css('top', (mask.height() - $(btnDown).height()) + 'px');
+			$(btnDown).css('left', (mask.width() - $(btnDown).width() -5) + 'px'); // Set the location of indicator
+			$(btnDown).css('top', (mask.height() - $(btnDown).height() - 50) + 'px');
 			
 			var topOffset = $(btnUp).height();
 			
